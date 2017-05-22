@@ -18,16 +18,16 @@ L'applicazione semplifica la compravendita di prodotti online fra privati e graz
     
   __1.__ L’utente che si trova nella home page dell’applicazione clicca su bottone “Inserisci articolo”;  
   __2.__ Generato questo evento, il sistema reindirizza l’utente su una apposita pagina contente:  
-      __a.__ Nome dell’asta in formato stringa;  
-      __b.__ Descrizione del prodotto sotto forma di stringa;  
-      __c.__ Categoria che si presenta come una select, quindi senza avere la possibilità di aggiungerne di nuove oltre a quelle offerte dal sistema;  
-      __d.__ Immagini per un massimo di 5 elementi, di cui una obbligatoria;  
-      __e.__ Durata dell’asta espressa in ore che va da un minimo di 1 ora fino ad un massimo di 24 ore;  
-      __f.__ Prezzo di partenza che rappresenta la base da cui far partire le offerte.  
+    a. Nome dell’asta in formato stringa;  
+    b. Descrizione del prodotto sotto forma di stringa;  
+    c. Categoria che si presenta come una select, quindi senza avere la possibilità di aggiungerne di nuove oltre a quelle offerte dal sistema;  
+    d. Immagini per un massimo di 5 elementi, di cui una obbligatoria;  
+    e. Durata dell’asta espressa in ore che va da un minimo di 1 ora fino ad un massimo di 24 ore;  
+    f. Prezzo di partenza che rappresenta la base da cui far partire le offerte.  
   __3.__ L’utente inserisce tutti i dati nella form e clicca sul bottone submit;  
   __4.__ Il sistema risponderà all’utente in uno dei seguenti modi:  
-      __a.__ Se i dati sono stati inseriti correttamente, il sistema farà partire un alert formato da un testo ed un pulsante ok. Nel testo ci sarà scritto che il suo prodotto è stato aggiunto all’asta e al click del tasto ok l’utente verrà reindirizzato verso la home page. Inoltre il sistema invierà una email al contatto personale dell’utente comunicandogli l’avvenuta aggiunta del suo articolo all’asta e il riepilogo dei dati inseriti;  
-      __b.__ Se almeno uno dei campi della form non è conforme alle regole descritte precedentemente, verrà restituito un alert, formato da due pulsanti ed un testo, con scritto di ricontrollare i dati inseriti perché non corretti. Alla pressione del tasto ok, l’utente visualizzerà la pagina antecedente, mentre con l’altro pulsante l’utente potrà contattare l’amministratore via mail per ulteriori spiegazioni. Questo processo porta all’apertura del client di posta predefinito dell’utente e verrà creato un nuovo messaggio con oggetto e destinatario impostati automaticamente.  
+    a. Se i dati sono stati inseriti correttamente, il sistema farà partire un alert formato da un testo ed un pulsante ok. Nel testo ci sarà scritto che il suo prodotto è stato aggiunto all’asta e al click del tasto ok l’utente verrà reindirizzato verso la home page. Inoltre il sistema invierà una email al contatto personale dell’utente comunicandogli l’avvenuta aggiunta del suo articolo all’asta e il riepilogo dei dati inseriti;  
+    b. Se almeno uno dei campi della form non è conforme alle regole descritte precedentemente, verrà restituito un alert, formato da due pulsanti ed un testo, con scritto di ricontrollare i dati inseriti perché non corretti. Alla pressione del tasto ok, l’utente visualizzerà la pagina antecedente, mentre con l’altro pulsante l’utente potrà contattare l’amministratore via mail per ulteriori spiegazioni. Questo processo porta all’apertura del client di posta predefinito dell’utente e verrà creato un nuovo messaggio con oggetto e destinatario impostati automaticamente.  
   __5.__ L’utente, una volta che ha soddisfatto il punto 4a, potrà visualizzare lo stato dell’asta appena inserita nel suo profilo personale;  
   __6.__ Al termine dell’asta, il sistema invierà una email all’utente che ha inserito l’articolo, notificandogli l’utente che si è aggiudicato il prodotto con il relativo prezzo.  
 * _Offerta:_  
@@ -36,13 +36,13 @@ L'applicazione semplifica la compravendita di prodotti online fra privati e graz
     
   __1.__ Supponiamo che l’utente che si trova nella home page dell’applicazione web, sia interessato a partecipare ad un’asta di un prodotto di suo gradimento. Quindi cliccherà sul box relativo.  
   __2.__ Il sistema reindirizzerà l’utente verso la pagina relativa al prodotto selezionato. Qui l’utente troverà:  
-      __a.__ Le informazioni inserite dall’autore dell’asta descritte nel punto 2 del caso d’uso precedente;  
-      __b.__ Il prezzo dell’ultimo offerente;  
-      __c.__ Una form contenente un box per l’inserimento della propria offerta dove sarà possibile inserire numeri ed un tasto submit per concretizzare l’offerta.  
+    a. Le informazioni inserite dall’autore dell’asta descritte nel punto 2 del caso d’uso precedente;  
+    b. Il prezzo dell’ultimo offerente;  
+    c. Una form contenente un box per l’inserimento della propria offerta dove sarà possibile inserire numeri ed un tasto submit per concretizzare l’offerta.  
   __3.__ L’utente inserirà il prezzo dell’offerta che vuole effettuare nell’apposito box e cliccherà sul pulsante di submit;  
   __4.__ Il sistema risponderà all’utente in uno dei seguenti modi:  
-      __a.__ Se il prezzo inserito è maggiore di quello attuale verrà visualizzato un alert costituito da un testo ed un pulsante ok. Nel testo verrà indicato che l’offerta è valida e con il tasto ok verrà chiuso l’alert;  
-      __b.__ Se il prezzo inserito è minore di quello attuale verrà visualizzato un alert costituito da un testo ed un pulsante ok. Nel testo verrà indicato che l’offerta non è valida e con il tasto ok verrà chiuso l’alert.  
+    a. Se il prezzo inserito è maggiore di quello attuale verrà visualizzato un alert costituito da un testo ed un pulsante ok. Nel testo verrà indicato che l’offerta è valida e con il tasto ok verrà chiuso l’alert;  
+    b. Se il prezzo inserito è minore di quello attuale verrà visualizzato un alert costituito da un testo ed un pulsante ok. Nel testo verrà indicato che l’offerta non è valida e con il tasto ok verrà chiuso l’alert.  
   __5.__ L’utente potrà visualizzare lo stato delle proprie offerte sul proprio profilo, che saranno rappresentate come nella home (quindi sarà possibile tornare alla pagina del prodotto cliccando sul box e continuare a partecipare all’asta). Le seguenti aste avranno inoltre un indicatore che comunicherà all’utente se l’ultima offerta è la sua oppure no.  
   __6.__ Quando l’offerta dell’utente viene superata, il sistema gli notificherà questo cambiamento attraverso il suo indirizzo di posta elettronica, contenente come oggetto il nome del prodotto e come testo l’avviso del superamento della sua offerta ed il nuovo prezzo.   
 * _Valutazione del venditore:_ ogni utente che ha effettuato acquisti tramite l’app, ha la possibilità di rilisciare una valutazione (da 1 a 5) al venditore da cui ha acquistato il prodotto. Per effettuare ciò l’utente deve recarsi sul profilo del venditore nella quale troverà un apposito spazio addetto a tale compito. Ogni utente venditore avrà sul proprio profilo la media delle valutazioni ricevute per fornire maggiori dettagli ai prossimi acquirenti.
