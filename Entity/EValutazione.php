@@ -1,37 +1,24 @@
 <?php
     class EValutazione {
+
+        // ATTRIBUTI //
         private $voto;
         private $utente;
 
-        /**
-         * @return mixed
-         */
-        public function getVoto()
-        {
+        // METODI //
+        public function getVoto() {
             return $this->voto;
         }
 
-        /**
-         * @param mixed $voto
-         */
-        public function setVoto($voto)
-        {
+        public function setVoto($voto) {
             $this->voto = $voto;
         }
 
-        /**
-         * @return mixed
-         */
-        public function getUtente()
-        {
+        public function getUtente() {
             return $this->utente;
         }
 
-        /**
-         * @param mixed $utente
-         */
-        public function setUtente($utente)
-        {
+        public function setUtente($utente) {
             $this->utente = $utente;
         }
 
