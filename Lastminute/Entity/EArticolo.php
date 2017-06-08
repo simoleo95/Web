@@ -7,6 +7,14 @@
         private $Foto;
         private $Categoria;
 
+        // costruttore a cui vengono passsati dei parametri
+        function __construct($nome, $descrizione, $foto, $categoria)
+        {
+            $this->nome = $nome;
+            $this->descrizione = $descrizione;
+            $this->foto = $foto;
+            $this->categoria = $categoria;
+        }
 
         // METODI //
 
