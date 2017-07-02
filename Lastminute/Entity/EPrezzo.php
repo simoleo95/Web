@@ -25,8 +25,8 @@ class EAsta{
         $this->Importo = $Im;
     }
 
-    function setValuta($Va) {
-        $this->Valuta = $Va;
+    function setValuta($Val) {
+        $this->Valuta = $Val;
     }
 
 ?>
