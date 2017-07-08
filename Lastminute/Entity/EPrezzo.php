@@ -1,7 +1,7 @@
 <?php
 
 
-class EAsta{
+class EPrezzo{
     //ATTRIBUTI
     private $Importo;
     private $Valuta;
