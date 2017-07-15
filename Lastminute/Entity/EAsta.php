@@ -38,5 +38,5 @@ class EAsta{
     function setDataFine($Df) {
         $this->DataFine = $Df;
     }
-
+}
 ?>
