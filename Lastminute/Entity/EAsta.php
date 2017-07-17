@@ -4,39 +4,72 @@
 class EAsta{
     //ATTRIBUTI
     private $IdAsta;
-    private $DataInizio;
-    private $DataFine;
+    private $dataP;
+    private $dataF;
+    private $prezzoI;
+    private $prezzoF;
+    private $utentecreatore;
+    private $utentevincitore;
 
 
-    // costruttore a cui vengono passsati dei parametri
-    function __construct($Id, $Di, $Df) {
-        $this->IdAsta = $Id;
-        $this->DataInizio = $Di;
-        $this->DataFine = $Df;
-    }
     //METODI
     function getIdAsta() {
         return $this->IdAsta;
     }
 
-    function getDataInizio() {
-        return $this->DataInizio;
+    function getDataP() {
+        return $this->dataP;
     }
 
-    function getDataFine() {
-        return $this->DataFine;
+    function getDataF() {
+        return $this->dataF;
     }
 
-    function setIdAsta($id) {
-        $this->IdAsta = $id;
+
+    function getPrezzoF() {
+        return $this->prezzoF;
     }
 
-    function setDataInizio($Di) {
-        $this->DataInizio = $Di;
+    function setIdAsta($IdAsta) {
+        $this->IdAsta = $IdAsta;
     }
 
-    function setDataFine($Df) {
-        $this->DataFine = $Df;
+    function setDataP($dataP) {
+        $this->dataP = $dataP;
     }
+
+    function setDataF($dataF) {
+        $this->dataF = $dataF;
+    }
+
+    function setPrezzoI(EPrezzo $prezzoI) {
+        $this->prezzoI = $prezzoI;
+    }
+
+    function setPrezzoF(EPrezzo $prezzoF) {
+        $this->prezzoF = $prezzoF;
+    }
+
+   
+    function setUtentecreatore(EUtente $utentecreatore) {
+        $this->utentecreatore = $utentecreatore;
+    }
+
+    function setUtentevincitore(EUtente $utentevincitore) {
+        $this->utentevincitore = $utentevincitore;
+    }
+
+    public function offerta(EUtente $u,  EPrezzo $p){
+        
+        if($p->getvalore()> $this->prezzoF->getvalore()){
+            $this->utentevincitore=$u;
+        $this->prezzoF=$p;}
+        else 
+            return "errore";
+            
+        
+    }
+
+
 }
 ?>

@@ -3,7 +3,8 @@
 
         // ATTRIBUTI //
         private $voto;
-        private $utente;
+        private $utenteC;
+        private $utenteV;
 
         // METODI //
         public function getVoto() {
@@ -14,12 +15,20 @@
             $this->voto = $voto;
         }
 
-        public function getUtente() {
-            return $this->utente;
+        function getUtenteC() {
+            return $this->utenteC;
         }
 
-        public function setUtente($utente) {
-            $this->utente = $utente;
+        function getUtenteV() {
+            return $this->utenteV;
+        }
+
+        function setUtenteC(EUtente $utenteC) {
+            $this->utenteC = $utenteC;
+        }
+
+        function setUtenteV(EUtente $utenteV) {
+            $this->utenteV = $utenteV;
         }
 
 

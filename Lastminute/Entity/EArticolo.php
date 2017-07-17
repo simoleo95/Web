@@ -2,45 +2,58 @@
     class EArticolo {
 
         // ATTRIBUTI //
-        private $Name;
-        private $Descrizione;
-        private $Foto;
-        private $Categoria;
+        private $titolo;
+        private $descrizione;
+        private $foto;
+        private $categoria;
+        private $IDarticolo;
+        
 
         // costruttore a cui vengono passsati dei parametri
-        function __construct($nome, $descrizione, $foto, $categoria)
-        {
-            $this->nome = $nome;
-            $this->descrizione = $descrizione;
-            $this->foto = $foto;
-            $this->categoria = $categoria;
-        }
-
+    
         // METODI //
 
-        function getName() {
-            return $this->Name;
+        function getTitolo() {
+            return $this->titolo;
         }
 
         function getDescrizione() {
-            return $this->Descrizione;
+            return $this->descrizione;
+        }
+
+        function getFoto() {
+            return $this->foto;
         }
 
         function getCategoria() {
-            return $this->Categoria;
+            return $this->categoria;
         }
 
-        function setNme($Nme) {
-            $this->Nme = $Nme;
+        function setTitolo($titolo) {
+            $this->titolo = $titolo;
         }
 
-        function setDescrizione($Descrizione) {
-            $this->Descrizione = $Descrizione;
+        function setDescrizione($descrizione) {
+            $this->descrizione = $descrizione;
         }
 
-        function setCategoria($Categoria) {
-            $this->Categoria = $Categoria;
+        function setFoto($foto) {
+            $this->foto = $foto;
         }
+
+        function setCategoria($categoria) {
+            $this->categoria = $categoria;
+        }
+        function getIDvalutazione() {
+            return $this->IDvalutazione;
+        }
+
+        function setIDvalutazione($IDvalutazione) {
+            $this->IDvalutazione = $IDvalutazione;
+        }
+
+
+
 
     }
 ?>

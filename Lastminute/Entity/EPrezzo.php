@@ -3,30 +3,36 @@
 
 class EPrezzo{
     //ATTRIBUTI
-    private $Importo;
-    private $Valuta;
+    private $IDprezzo;
+    private $valore;
+    private $valuta;
 
-    // costruttore a cui vengono passsati dei parametri
-    function __construct($Im, $Va) {
-        $this->Importo = $Im;
-        $this->Valuta = $Va;
-    }
     //METODI
-    function getImporto() {
-        return $this->Importo;
+    function getIDprezzo() {
+        return $this->IDprezzo;
+    }
+
+    function getValore() {
+        return $this->valore;
     }
 
     function getValuta() {
-        return $this->Valuta;
-    }
-    }
-
-    function setImporto($Im) {
-        $this->Importo = $Im;
+        return $this->valuta;
     }
 
-    function setValuta($Val) {
-        $this->Valuta = $Val;
+    function setIDprezzo($IDprezzo) {
+        $this->IDprezzo = $IDprezzo;
     }
+
+    function setValore($valore) {
+        $this->valore = $valore;
+    }
+
+    function setValuta($valuta) {
+        $this->valuta = $valuta;
+    }
+
+
+}
 
 ?>

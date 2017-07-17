@@ -3,28 +3,14 @@
 
 class EPersona{
     //ATTRIBUTI
-    private $nome;
-    private $cognome;
-    private $email;
-    private $datanascita;
-   // private $luogodinacita;
-    private $username;
-    private $password;
+    protected $nome;
+    protected $cognome;
+    protected $email;
+    protected $username;
+    protected $password;
     
+     
     
-    // costruttore a cui vengono passsati dei parametri
-    function __construct($nome, $cognome, $email, $datanascita, $luogodinacita, $username, $password) {
-        $this->nome = $nome;
-        $this->cognome = $cognome;
-        $this->email = $email;
-        $this->datanascita = $datanascita;
-        $this->luogodinacita = $luogodinacita;
-        $this->username = $username;
-        $this->password = $password;
-        
-        
-        
-    }
     //METODI
     function getNome() {
         return $this->nome;

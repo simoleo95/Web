@@ -6,39 +6,20 @@
         private $descrizione;
         private $foto;
         private $categoria;
-       
-
-        // costruttore a cui vengono passsati dei parametri
 
         // METODI //
+        function __construct($titolo, $descrizione, $foto, $categoria) {
+            $this->titolo = $titolo;
+            $this->descrizione = $descrizione;
+            $this->foto = $foto;
+            $this->categoria = $categoria;
+        }
 
         function getName() {
             return $this->titolo;
         }
-
-        function getDescrizione() {
-            return $this->Descrizione;
-        }
-
-        function getCategoria() {
-            return $this->Categoria;
-        }
-
-        function setNme($Nme) {
-            $this->Nme = $Nme;
-        }
-
-        function setDescrizione($Descrizione) {
-            $this->Descrizione = $Descrizione;
-        }
-
-        function setCategoria($Categoria) {
-            $this->Categoria = $Categoria;
-        }
-
     }
 ?>
-
 <?php
 class Fdb{
     private $host;
@@ -47,7 +28,7 @@ class Fdb{
     
     private $user;
     
-    private $db;
+    public $db;
     
     Private $dbname;
     
@@ -57,7 +38,7 @@ class Fdb{
     
     protected $key;
     
-    private $result;
+    public $result;
     
     protected $result_class;
     
@@ -67,15 +48,17 @@ class Fdb{
         $this->dbname = "web";
         $this->user="root";
         $this->result_class='EArticolo';
+        $this->key="titolo";
+        $this->table="articolo";
     }
 // permette la connessione al databse
-   public function connet(){
+   public function connect(){
         
               try{
-                  $this->db= new PDO("mysql:host=$this->host;dbname=$this->dbname", "root", $this->password);}
- catch (PDOException $e){
-     echo "ERROR". $e->getMessage();
-     die();
+                  $this->db= new PDO("mysql:host=$this->host;dbname=$this->dbname", $this->user, $this->password);}
+                  catch (PDOException $e){
+                     echo "ERROR". $e->getMessage();
+                     die();
      
  }
         
@@ -87,39 +70,93 @@ class Fdb{
     }
     
     
-    
-    public function prova(){
-     
-        $sql=('SELECT titolo,foto,categoria,descrizione FROM articolo WHERE titolo = "automobile" ');
-        $l = $this->db->query($sql);
-        $l->setFetchMode(PDO::FETCH_CLASS, 'Earticolo');
-        $user = $l->fetch();
-        return $user;
-        
-    }
-    
     // restituisce un oggetto dalla query
-    
-    public function getresult(){
-        $numero_righe=$this->result->rowsCount();
-        if ($numero_righe> 0)
-        {
-            $res=$this->result->fetchObject($this->result_class);
-            $this->result=FALSE;
+         public function getObject(){
+        
+        $numero_colonne=$this->result->columnCount();
+        if ($numero_colonne ==0)
+            return  $this->result=false;
+        else{
+            $res= $this->result->fetchObject($this->result_class);
             return $res;
         }
-        else
-            return false;
+     }
+            
+            // ritorna un array di oggetti
+       public function getObjects(){
+            
+            $numero_colonne=$this->result->columnCount();
+        if ($numero_colonne ==0)
+            return  $this->result=false;
+        else{
+           while($user= $this->result->fetchObject($this->result_class)){
+            $users[]=$user;
+              }
+              return $users;
+           }
+       }
+           // esegue una query e restituisce un oggetto 
+       // non funziona su tabelle che hanno chiavi esterne
+       public function load($key){
+          $query='SELECT * ' .
+                'FROM `'.$this->table.'` ' .
+                'WHERE `'.$this->key.'` = \''.$key.'\'';
+           $this->result=$this->db->query($query);
+           return $this->getObject();
+       }
+       
+
+// torna un array contenente tutti i valori di una colonna
+       // serve per eventuali ricerche 
+           public function getresult(){
+               $numero_colonne=$this->result->columnCount();
+               if($numero_colonne != 0){
+                   $result=$this->result->fetchAll(PDO::FETCH_COLUMN);
+                   $this->result=false;
+                   return $result;
+               }
+               else return false;
+           }
+           
+           
+           //funzione vhe esegue una query
+           public function execute($query){
+               $this->result=$this->db->query($query);
+               return $this->result;
+           }
+       }
+       
+       $r="";
+               $t="";
+    $s=new EArticolo("no", "c", "w", "categoria")  ;
+    foreach ($s as $key=>$value) 
+        {
+        var_dump($value);
+        $r.=$key;
+        $t.=$value;
+        
+        
         
         
     }
-}
-    
-$f=new Fdb();
-$f->connet();
-$v=$f->prova();
-echo var_dump($v);
-echo $v->getName();
+       
+    print_r($r);
+    print_r($t);
+
+
+
+/*try {  
+  $f->db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+  $f->db->beginTransaction();
+  $f->db->exec("INSERT into articolo (IDarticolo, titolo, descrizione, foto, categoria) VALUES ('','vr','vt','','d')");
+ 
+     
+  $f->db->commit();
+  
+} catch (Exception $e) {
+  $f->db->rollBack();
+  echo "Failed: " . $e->getMessage();
+}*/
 
 ?>
-
