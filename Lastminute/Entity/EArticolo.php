@@ -44,12 +44,12 @@
         function setCategoria($categoria) {
             $this->categoria = $categoria;
         }
-        function getIDvalutazione() {
-            return $this->IDvalutazione;
+        function getIDarticolo() {
+            return $this->IDarticolo;
         }
 
-        function setIDvalutazione($IDvalutazione) {
-            $this->IDvalutazione = $IDvalutazione;
+        function setIDarticolo($IDvalutazione) {
+            $this->IDarticolo = $IDvalutazione;
         }
 
 

@@ -6,20 +6,18 @@
         private $descrizione;
         private $foto;
         private $categoria;
+        private $IDarticolo;
+        
 
+        // costruttore a cui vengono passsati dei parametri
+    
         // METODI //
-        function __construct($titolo, $descrizione, $foto, $categoria) {
-            $this->titolo = $titolo;
-            $this->descrizione = $descrizione;
-            $this->foto = $foto;
-            $this->categoria = $categoria;
-        }
 
-        function getName() {
+        function getTitolo() {
             return $this->titolo;
-        }
-    }
+    }}
 ?>
+
 <?php
 class Fdb{
     private $host;
@@ -121,42 +119,21 @@ class Fdb{
            
            //funzione vhe esegue una query
            public function execute($query){
-               $this->result=$this->db->query($query);
-               return $this->result;
+        $this->result=$this->db->query($query);
+           return $this->result;
+           
            }
+    
        }
        
-       $r="";
-               $t="";
-    $s=new EArticolo("no", "c", "w", "categoria")  ;
-    foreach ($s as $key=>$value) 
-        {
-        var_dump($value);
-        $r.=$key;
-        $t.=$value;
-        
-        
-        
-        
-    }
-       
-    print_r($r);
-    print_r($t);
+       $f=new Fdb();
+       $f->connect();
+       $s=new EArticolo("no", "c", "w", "categoria")  ;
+       $query="INSERT into articolo (IDarticolo, titolo, descrizione, foto, categoria) VALUES ('','vr','vt','','d')";
+       $f->execute($query);
+       $id=$f->db->lastInsertId("IDarticolo"); 
+       echo $id;
 
 
-
-/*try {  
-  $f->db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
-  $f->db->beginTransaction();
-  $f->db->exec("INSERT into articolo (IDarticolo, titolo, descrizione, foto, categoria) VALUES ('','vr','vt','','d')");
- 
-     
-  $f->db->commit();
-  
-} catch (Exception $e) {
-  $f->db->rollBack();
-  echo "Failed: " . $e->getMessage();
-}*/
 
 ?>

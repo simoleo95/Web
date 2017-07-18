@@ -17,6 +17,24 @@
         public function addArrayElement(EValutazione $val) {
             array_push($this->listaVal, $val);
         }
+        
+        public function createmedia(){
+            $i=0;
+            $media=0;
+            foreach ($this->listaVal as $v) {
+                $media+=$v->getVoto();
+                $i++;
+    
+}
+            
+         $media=$media/$i;
+         return $media;
+            
+            
+        }
+        
+        
+        
     }
     
 ?>

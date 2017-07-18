@@ -2,6 +2,7 @@
     class EValutazione {
 
         // ATTRIBUTI //
+        private $IDvalutazione;
         private $voto;
         private $utenteC;
         private $utenteV;
@@ -30,6 +31,14 @@
         function setUtenteV(EUtente $utenteV) {
             $this->utenteV = $utenteV;
         }
+        function getIDvalutazione() {
+            return $this->IDvalutazione;
+        }
+
+        function setIDvalutazione($IDvalutazione) {
+            $this->IDvalutazione = $IDvalutazione;
+        }
+
 
 
     }

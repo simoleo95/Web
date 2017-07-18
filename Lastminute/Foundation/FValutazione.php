@@ -11,14 +11,29 @@ class FValutazione extends Fdb{
         }
     
         
-public function loadvalutazioni($utenteV){
-    $query="SELECT * FROM ".$this->table."WHERE utenteV='".$utenteV."'";
-    parent::execute($query);
-    $valutazioni=parent::getObjects();
-    return $valutazioni;
+public function store(EValutazione $v){
+    $uc=$v->getUtenteC()->getUsername();
+    if($v != NULL){
+    $uv=$v->getUtenteV()->getUsername();
     }
+    $query="INSERT into valutazione (IDvalutazione,valutazione,personaV,personaC) VALUES ('','".$v->getVoto()."','".$uv."','".$uc."')";
+    parent::execute($query);
+    $b=$this->db->lastInsertId("IDvalutazione");
+    $v->setIDvalutazione($b);
     
     
+}
+    
+    public function load($key){
+        $valutazione=parent::load($key);
+        $utentev=new FUtente();
+        $utentec=new FUtente();
+        $u1 =$utentec->load($valutazione->personaC);
+        $u2= $utentev->load($valutazione->personaV);
+        $valutazione->setUtenteC($u1);
+        $valutazione->setUtenteV($u2);
+        return $valutazione;
+       }
     
     
 }
