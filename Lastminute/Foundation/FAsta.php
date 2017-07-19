@@ -2,8 +2,7 @@
 	class FAsta extends Fdb{
             
             public function __construct() {
-                parent::__construct();
-                parent::connect();
+                parent::__construct();             
                 $this->result_class("EAsta");
                 $this->key="IDasta";
                 $this->table="asta";
@@ -27,7 +26,22 @@
                 
             }
             
-            
+            public function store(EAsta $a) {
+                
+                $uc=$a->getUtentecreatore()->getUsername();
+                if($a->getUtentevincitore() != NULL)
+                    $uv=$a->getUtentevincitore()->getUsername();
+                else $uv="";
+                $pi=$a->getPrezzoI()->getIDprezzo();
+                if($a->getPrezzoF() != NULL)
+                    $pf=$a->getPrezzoF ()->getIDprezzo();
+                else $pf="";
+                $ida=$a->getArticolo()->getIDarticolo();
+                $query="INSERT into asta(IDasta,dataI,dataF,userC,userV,IDprezzoF,IDprezzoI,IDarticolo) VALUES ('','".$a->setDataI($dataF)."','".$a->getDataF()."','".$uc."','".$uv."','".$pf."','".$pi."','".$ida."')";
+                parent::execute($query);
+                $b=$this->db->lastInsertId("IDasta");
+                $a->setIdAsta($b);
+            }
             
             
             }

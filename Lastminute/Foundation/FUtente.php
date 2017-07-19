@@ -2,8 +2,7 @@
 
 class FUtente extends Fdb{
     function __construct() {
-        parent::__construct();
-        parent::connect();
+        parent::__construct();        
         $this->result_class("EUtente");
         $this->key="username";
         $this->table="persona";

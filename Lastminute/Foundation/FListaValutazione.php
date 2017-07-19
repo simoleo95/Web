@@ -8,8 +8,7 @@
 class FListaValutazione extends fdb{
 
 function __construct(){
-    parent::__construct();
-    parent::__connect();
+    parent::__construct();    
     $this->table="valutazionne";
     $this->key="IDvalutazione";
     $this->result_class="EValutazioine";

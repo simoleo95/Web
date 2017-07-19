@@ -40,6 +40,11 @@
         }
 
 
+public function Object_array(EValutazione $p){
+    
+    $t=  get_object_vars($p);
+    return $t;
+}
 
     }
 ?>

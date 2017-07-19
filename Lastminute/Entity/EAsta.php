@@ -10,6 +10,7 @@ class EAsta{
     private $prezzoF;
     private $utentecreatore;
     private $utentevincitore;
+    private $articolo;
 
 
     //METODI
@@ -69,7 +70,32 @@ class EAsta{
             
         
     }
+    function getPrezzoI() {
+        return $this->prezzoI;
+    }
 
+    function getUtentecreatore() {
+        return $this->utentecreatore;
+    }
+
+    function getUtentevincitore() {
+        return $this->utentevincitore;
+    }
+
+    function getArticolo() {
+        return $this->articolo;
+    }
+
+    function setArticolo(EArticolo $articolo) {
+        $this->articolo = $articolo;
+    }
+
+
+public function Object_array(EAsta $p){
+    
+    $t=  get_object_vars($p);
+    return $t;
+}
 
 }
 ?>

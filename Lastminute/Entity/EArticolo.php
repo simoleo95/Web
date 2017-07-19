@@ -52,7 +52,11 @@
             $this->IDarticolo = $IDvalutazione;
         }
 
-
+public function Object_array(EArticolo $p){
+    
+    $t=  get_object_vars($p);
+    return $t;
+}
 
 
     }

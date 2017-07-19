@@ -18,7 +18,11 @@ function setListavalutazione($r){
     
     $this->listavalutazioni=$r;
    }
-
+public function Object_array(EUtente $p){
+    
+    $t=  get_object_vars($p);
+    return $t;
+}
 
   }
 

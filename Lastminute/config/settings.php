@@ -3,11 +3,12 @@
 
 global $config;
 
-$config['dbms']="mysql:host=localhost;dbname=web";
-$config['host']="root";
-$config['password']="";
+$config['mysql']['dbms']="localhost";
+$config['mysql']['dbname']="web";
+$config['mysql']['host']="root";
+$config['mysql']['password']="";
  
-$password="";
+
 
 
 ?>

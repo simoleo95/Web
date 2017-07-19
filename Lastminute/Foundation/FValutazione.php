@@ -3,8 +3,7 @@
 class FValutazione extends Fdb{
     
     function __construct(){
-        parent::__construct();
-        parent::connect();
+        parent::__construct();        
         $this->key="IDvalutazione";
         $this->result_class="EValutazione";
         $this->table="valutazione";        
@@ -13,9 +12,7 @@ class FValutazione extends Fdb{
         
 public function store(EValutazione $v){
     $uc=$v->getUtenteC()->getUsername();
-    if($v != NULL){
     $uv=$v->getUtenteV()->getUsername();
-    }
     $query="INSERT into valutazione (IDvalutazione,valutazione,personaV,personaC) VALUES ('','".$v->getVoto()."','".$uv."','".$uc."')";
     parent::execute($query);
     $b=$this->db->lastInsertId("IDvalutazione");

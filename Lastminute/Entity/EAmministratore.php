@@ -17,6 +17,11 @@ class EAmministratore extends EPersona{
     
     
     
+public function Object_array(EAmministratore $p){
+    
+    $t=  get_object_vars($p);
+    return $t;
+}
     
     
 }

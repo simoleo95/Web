@@ -31,7 +31,11 @@ class EPrezzo{
     function setValuta($valuta) {
         $this->valuta = $valuta;
     }
-
+public function Object_array(EPrezzo $p){
+    
+    $t=  get_object_vars($p);
+    return $t;
+}
 
 }
 

@@ -1,38 +1,10 @@
 <?php
-    class EArticolo {
-
-        // ATTRIBUTI //
-        private $titolo;
-        private $descrizione;
-        private $foto;
-        private $categoria;
-        private $IDarticolo;
-        
-
-        // costruttore a cui vengono passsati dei parametri
-    
-        // METODI //
-
-        function getTitolo() {
-            return $this->titolo;
-    }}
-?>
-
-<?php
 class Fdb{
-    private $host;
     
-    private $password;
     
-    private $user;
-    
-    public $db;
-    
-    Private $dbname;
+    protected $db;
     
     protected $table;
-    
-    private $connection;
     
     protected $key;
     
@@ -40,20 +12,17 @@ class Fdb{
     
     protected $result_class;
     
-    function __construct() {
-        $this->host = "localhost";
-        $this->password = "";
-        $this->dbname = "web";
-        $this->user="root";
-        $this->result_class='EArticolo';
-        $this->key="titolo";
-        $this->table="articolo";
+    protected $autoincrement;
+    
+            function __construct() {
+        global $config;
+        $this->connect($config['mysql']['dbms'], $config['mysql']['dbname'], $config['mysql']['host'], $config['mysql']['password']);
     }
 // permette la connessione al databse
-   public function connect(){
+   public function connect($host,$dbname,$user,$password){
         
               try{
-                  $this->db= new PDO("mysql:host=$this->host;dbname=$this->dbname", $this->user, $this->password);}
+                  $this->db= new PDO("mysql:host=$host;dbname=$dbname", $user, $password);}
                   catch (PDOException $e){
                      echo "ERROR". $e->getMessage();
                      die();
@@ -104,7 +73,7 @@ class Fdb{
        }
        
 
-// torna un array contenente tutti i valori di una colonna
+//      // torna un array contenente tutti i valori di una colonna
        // serve per eventuali ricerche 
            public function getresult(){
                $numero_colonne=$this->result->columnCount();
@@ -119,21 +88,56 @@ class Fdb{
            
            //funzione vhe esegue una query
            public function execute($query){
-        $this->result=$this->db->query($query);
+           $this->result=$this->db->query($query);
            return $this->result;
            
            }
-    
+    public function store($object){
+        $t=$object->Object_array($object);
+                $i=0;
+        $values='';
+        $fields='';
+        foreach ($object as $key=>$value) {
+                if ($i==0) {
+                    $fields.='`'.$key.'`';
+                    $values.='\''.$value.'\'';
+                } else {
+                    $fields.=', `'.$key.'`';
+                    $values.=', \''.$value.'\'';
+                }
+                $i++;
+            
+        }
+        $query='INSERT INTO '.$this->_table.' ('.$fields.') VALUES ('.$values.')';
+        $return = $this->execute($query);
+        if ($this->auto_increment) {
+            $b=$this->db->lastInsertId("IDvalutazione");
+            return $b;
+        } 
+        else 
+            return $return;
+        
+         }
+         
+         public function delete(& $object) {
+        $t=$object->Object_array();
+        $query='DELETE ' .
+                'FROM `'.$this->_table.'` ' .
+                'WHERE `'.$this->_key.'` = \''.$t[$this->_key].'\'';
+        unset($object);
+        return $this->execute($query);
+    }
+         
+         
+         
+         
+         
+         
+         
+         
+         
        }
-       
-       $f=new Fdb();
-       $f->connect();
-       $s=new EArticolo("no", "c", "w", "categoria")  ;
-       $query="INSERT into articolo (IDarticolo, titolo, descrizione, foto, categoria) VALUES ('','vr','vt','','d')";
-       $f->execute($query);
-       $id=$f->db->lastInsertId("IDarticolo"); 
-       echo $id;
-
+      
 
 
 ?>
