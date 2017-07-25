@@ -10,8 +10,8 @@
 
         function __construct() {
             global $config;
-            //$this->connect($config['mysql']['dbms'], $config['mysql']['dbname'], $config['mysql']['host'], $config['mysql']['password']);
-            $this->connect('localhost','web','root','');
+            $this->connect($config['mysql']['dbms'], $config['mysql']['dbname'], $config['mysql']['host'], $config['mysql']['password']);
+            //$this->connect('localhost','web','root','');
         }
 
         // Esegue la connessione al databse
