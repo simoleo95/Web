@@ -44,5 +44,12 @@
             $b=$this->db->lastInsertId("IDasta");
             $a->setIdAsta($b);
         }
+
+        public function update(EAsta $a) {
+            $user=$a->getUtentevincitore()->getUsername();
+
+            $query='UPDATE `'.$this->table.'` SET userV=`'.$user.'` WHERE `'.$this->key.'` = \''.$a->getIdAsta().'\'';
+            return $this->execute($query);
+        }
     }
 ?>

@@ -27,5 +27,12 @@
             $valutazione->setUtenteV($u2);
             return $valutazione;
         }
+
+        public function update(EValutazione $a) {
+            $voto=$a->getVoto();
+
+            $query='UPDATE `'.$this->table.'` SET valore=`'.$voto.'` WHERE `'.$this->key.'` = \''.$a->getIDvalutazione().'\'';
+            return $this->execute($query);
+        }
     }
 ?>

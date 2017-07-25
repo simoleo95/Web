@@ -93,7 +93,7 @@ class EAsta{
 
 public function Object_array(EAsta $p){
     
-    $t=  get_object_vars($p);
+    $t=get_object_vars($p);
     return $t;
 }
 
