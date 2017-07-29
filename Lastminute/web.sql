@@ -30,7 +30,7 @@ CREATE TABLE `articolo` (
   `IDarticolo` int(11) NOT NULL,
   `titolo` char(20) DEFAULT NULL,
   `descrizione` text,
-  `foto` blob,
+  `foto` MEDIUMBLOB,
   `categoria` char(30) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
