@@ -1,4 +1,30 @@
-<!DOCTYPE html>
+<?php /* Smarty version Smarty-3.1.13, created on 2017-08-01 22:19:18
+         compiled from "C:\Users\andre\Documents\GitHub\Web\Lastminute\templates\templates\home.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:156985980e038d54607-20656346%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_valid = $_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    'd414f5e03cea654b33e7f17b1245ff4bf86f74b6' => 
+    array (
+      0 => 'C:\\Users\\andre\\Documents\\GitHub\\Web\\Lastminute\\templates\\templates\\home.tpl',
+      1 => 1501618753,
+      2 => 'file',
+    ),
+  ),
+  'nocache_hash' => '156985980e038d54607-20656346',
+  'function' => 
+  array (
+  ),
+  'version' => 'Smarty-3.1.13',
+  'unifunc' => 'content_5980e038e6a219_08091968',
+  'variables' => 
+  array (
+    'title' => 0,
+    'mainContent' => 0,
+  ),
+  'has_nocache_code' => false,
+),false); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_5980e038e6a219_08091968')) {function content_5980e038e6a219_08091968($_smarty_tpl) {?><!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -9,7 +35,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>{$title}</title>
+    <title><?php echo $_smarty_tpl->tpl_vars['title']->value;?>
+</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="templates/templates/css/bootstrap.min.css" rel="stylesheet">
@@ -39,7 +66,8 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">{$title}</a>
+                <a class="navbar-brand" href="#"><?php echo $_smarty_tpl->tpl_vars['title']->value;?>
+</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -109,7 +137,8 @@
 
                 <div class="row">
 
-                    {$mainContent}
+                    <?php echo $_smarty_tpl->tpl_vars['mainContent']->value;?>
+
 
                 </div>
 
@@ -145,3 +174,4 @@
 </body>
 
 </html>
+<?php }} ?>

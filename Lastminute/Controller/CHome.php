@@ -10,7 +10,7 @@
             // Da controllare impostazione con utente registrato e utente guest
             $VHome->impostaPagina();
 
-            $VHome->mostraContenuto();
+            $VHome->mostraPagina();
         }
     }
 

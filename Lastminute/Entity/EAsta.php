@@ -3,7 +3,7 @@
 
 class EAsta{
     //ATTRIBUTI
-    private $IdAsta;
+    private $IDasta;
     private $dataP;
     private $dataF;
     private $prezzoI;
@@ -15,7 +15,7 @@ class EAsta{
 
     //METODI
     function getIdAsta() {
-        return $this->IdAsta;
+        return $this->IDasta;
     }
 
     function getDataP() {
@@ -26,13 +26,12 @@ class EAsta{
         return $this->dataF;
     }
 
-
     function getPrezzoF() {
         return $this->prezzoF;
     }
 
     function setIdAsta($IdAsta) {
-        $this->IdAsta = $IdAsta;
+        $this->IDasta = $IdAsta;
     }
 
     function setDataP($dataP) {

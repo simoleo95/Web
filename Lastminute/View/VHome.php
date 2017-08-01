@@ -12,12 +12,12 @@
         public function impostaPagina() {
             $this->assign('title', 'Last Minute');
             $this->assign('content_title', 'Benvenuto ospite');
-            $this->assign('main_content', $this->mainContent);
+            $this->assign('mainContent', $this->mainContent);
             $this->assign('menu', $this->mainButton);
         }
 
         public function mostraPagina() {
-            $this->display('home.tpl');
+            $this->display('C:\Users\andre\Documents\GitHub\Web\Lastminute\templates\templates\home.tpl');
         }
     }
 

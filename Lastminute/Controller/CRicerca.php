@@ -6,7 +6,7 @@
             $ECatalogo=new ECatalogo();
             $VRicerca=new VRicerca();
 
-            $risultato[]=$ECatalogo->ricerca();
+            $risultato=$ECatalogo->ricerca();
             $VRicerca->impostaDati('dati',$risultato);
 
             return $VRicerca->processaTemplate();
