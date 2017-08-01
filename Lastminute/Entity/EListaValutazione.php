@@ -1,40 +1,42 @@
 <?php
-    class EListaValutazione {
+    class EListaValutazione
+    {
 
         // ATTRIBUTI //
         private $media;
         private $listaVal = array();
 
         // METODI //
-        public function getMedia() {
+        public function getMedia()
+        {
             return $this->media;
         }
 
-        public function setMedia($media) {
+        public function setMedia($media)
+        {
             $this->media = $media;
         }
 
-        public function addArrayElement(EValutazione $val) {
+        public function getListaVal() {
+            return $this->listaVal;
+        }
+
+        public function addArrayElement(EValutazione $val)
+        {
             array_push($this->listaVal, $val);
         }
-        
-        public function createmedia(){
-            $i=0;
-            $media=0;
+
+        public function createmedia()
+        {
+            $i = 0;
+            $media = 0;
             foreach ($this->listaVal as $v) {
-                $media+=$v->getVoto();
+                $media += $v->getVoto();
                 $i++;
-    
-}
-            
-         $media=$media/$i;
-         return $media;
-            
-            
+                $media = $media / $i;
+            }
+            return $media;
         }
-        
-        
-        
     }
     
 ?>

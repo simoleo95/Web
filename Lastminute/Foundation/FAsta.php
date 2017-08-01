@@ -25,9 +25,8 @@
             $articolo=new FArticolo();
             $art=$articolo->load($asta->IDArticolo);
             $asta->setArticolo($art);
-            return $asta;
-            
 
+            return $asta;
         }
             
         public function store(EAsta $a) {
