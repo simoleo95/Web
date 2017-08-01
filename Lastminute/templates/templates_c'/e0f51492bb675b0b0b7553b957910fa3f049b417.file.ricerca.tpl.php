@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2017-08-01 22:03:33
+<?php /* Smarty version Smarty-3.1.13, created on 2017-08-02 00:44:55
          compiled from "C:\Users\andre\Documents\GitHub\Web\Lastminute\templates\templates\ricerca.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:124155980db2e185194-52575212%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'e0f51492bb675b0b0b7553b957910fa3f049b417' => 
     array (
       0 => 'C:\\Users\\andre\\Documents\\GitHub\\Web\\Lastminute\\templates\\templates\\ricerca.tpl',
-      1 => 1501617771,
+      1 => 1501627486,
       2 => 'file',
     ),
   ),
@@ -32,7 +32,8 @@ $_smarty_tpl->tpl_vars['dato']->_loop = true;
 ?>
         <div class="col-sm-4 col-lg-4 col-md-4">
             <div class="thumbnail">
-                <img src="http://placehold.it/320x150" alt="">
+                <img src="data:image;base64,<?php echo $_smarty_tpl->tpl_vars['dato']->value->getArticolo()->getFoto();?>
+" alt="">
                 <div class="caption">
                     <h4 class="pull-right"><?php echo $_smarty_tpl->tpl_vars['dato']->value->getPrezzoI()->getValore();?>
  <?php echo $_smarty_tpl->tpl_vars['dato']->value->getPrezzoF()->getValuta();?>
