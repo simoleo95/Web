@@ -12,16 +12,17 @@
         }
 
         public function ricerca() {
+            // Da cambiare
             $FAsta=new FAsta();
             $query="SELECT * FROM Asta";
             $FAsta->execute($query);
-            $ris=$FAsta->getObjects();
+            $tmp=$FAsta->getObjects();
 
-            for($i=0;$i<count($ris);$i++) {
-                $ris2[]=$FAsta->load($ris[$i]['idAsta']);
+            for($i=0;$i<count($tmp);$i++) {
+                $ris[]=$FAsta->load($tmp[$i]->getIdAsta());
             }
 
-            return $ris2;
+            return $ris;
         }
     }
 ?>

@@ -3,7 +3,7 @@
             
         public function __construct() {
             parent::__construct();
-            $this->result_class("EAsta");
+            $this->result_class="EAsta";
             $this->key="IDasta";
             $this->table="asta";
         }

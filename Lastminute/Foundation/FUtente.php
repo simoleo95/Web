@@ -3,7 +3,7 @@
 
         function __construct() {
             parent::__construct();
-            $this->result_class("EUtente");
+            $this->result_class="EUtente";
             $this->key="username";
             $this->table="persona";
         }
@@ -12,7 +12,7 @@
             $utente= parent::load($key);
             $Fvalutazione= new FListaValutazione();
             $Fvalutazione->loadvalutazioni($utente->getUsername());
-            $utente->setListavalutazuione($Fvalutazione);
+            $utente->setListavalutazione($Fvalutazione);
 
             return $utente;
         }

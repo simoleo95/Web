@@ -5,7 +5,7 @@
             parent::__construct();
             $this->table="valutazionne";
             $this->key="IDvalutazione";
-            $this->result_class="EValutazioine";
+            $this->result_class="EValutazione";
         }
 
         public function loadvalutazioni($utenteV) {
