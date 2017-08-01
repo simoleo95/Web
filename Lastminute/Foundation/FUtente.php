@@ -9,10 +9,10 @@
         }
 
         public function load($key){
-            $utente= parent::load($key);
-            $Fvalutazione= new FListaValutazione();
-            $Fvalutazione->loadvalutazioni($utente->getUsername());
-            $utente->setListavalutazione($Fvalutazione);
+            $utente=parent::load($key);
+            /*$Fvalutazione= new FListaValutazione();
+            $f=$Fvalutazione->loadvalutazioni($utente->getUsername());
+            $utente->setListavalutazione($f);*/
 
             return $utente;
         }

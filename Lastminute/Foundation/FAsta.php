@@ -12,18 +12,18 @@
             $asta=parent::load($key);
             $utenteV=new FUtente();
             $utenteC=new FUtente();
-            $u1=$utenteC->load($asta->utenteC);
-            $u2=$utenteV->load($asta->utenteV);
+            $u1=$utenteC->load($asta->userC);
+            $u2=$utenteV->load($asta->userV);
             $asta->setUtentevincitore($u2);
             $asta->setUtentecreatore($u1);
             $prezzoi= new FPrezzo();
             $prezzof= new FPrezzo();
-            $p1= $prezzoi->load($asta->IDprezzoI);
+            $p1= $prezzoi->load($asta->IDprezzoP);
             $p2= $prezzof->load($asta->IDprezzoF);
             $asta->setPrezzoI($p1);
             $asta->setPrezzoF($p2);
             $articolo=new FArticolo();
-            $art=$articolo->load($asta->IDArticolo);
+            $art=$articolo->load($asta->IDarticolo);
             $asta->setArticolo($art);
 
             return $asta;
