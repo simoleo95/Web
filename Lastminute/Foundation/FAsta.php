@@ -22,6 +22,11 @@
             $p2= $prezzof->load($asta->IDprezzoF);
             $asta->setPrezzoI($p1);
             $asta->setPrezzoF($p2);
+            $articolo=new FArticolo();
+            $art=$articolo->load($asta->IDArticolo);
+            $asta->setArticolo($art);
+            return $asta;
+            
 
         }
             
