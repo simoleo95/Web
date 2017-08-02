@@ -58,9 +58,3 @@
         }
     }
 ?>
-/**
- * Created by PhpStorm.
- * User: Francesco
- * Date: 25/05/2017
- * Time: 14:22
- */
