@@ -1,4 +1,31 @@
-<!DOCTYPE html>
+<?php /* Smarty version Smarty-3.1.13, created on 2017-08-03 16:42:57
+         compiled from "C:\xampp\htdocs\Lastminute\templates\templates\home.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:38199088598303689ccbe9-09808263%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_valid = $_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    '354670e197bccf0348ceaa3612802c9f24f5ed27' => 
+    array (
+      0 => 'C:\\xampp\\htdocs\\Lastminute\\templates\\templates\\home.tpl',
+      1 => 1501771373,
+      2 => 'file',
+    ),
+  ),
+  'nocache_hash' => '38199088598303689ccbe9-09808263',
+  'function' => 
+  array (
+  ),
+  'version' => 'Smarty-3.1.13',
+  'unifunc' => 'content_598303689cfc26_13679561',
+  'variables' => 
+  array (
+    'title' => 0,
+    'errore' => 0,
+    'mainContent' => 0,
+  ),
+  'has_nocache_code' => false,
+),false); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_598303689cfc26_13679561')) {function content_598303689cfc26_13679561($_smarty_tpl) {?><!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -9,7 +36,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>{$title}</title>
+    <title><?php echo $_smarty_tpl->tpl_vars['title']->value;?>
+</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="templates/templates/css/bootstrap.min.css" rel="stylesheet">
@@ -39,7 +67,8 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">{$title}</a>
+                <a class="navbar-brand" href="#"><?php echo $_smarty_tpl->tpl_vars['title']->value;?>
+</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -78,7 +107,8 @@
                             <input type="text" placeholder="username" name="username" />
                             <input type="password" placeholder="password" name="password"/>
                             <button name="entra">login</button>
-                            <input type="text" name="errore" id="errore" value="{$errore}"/>
+                            <input type="text" name="errore" id="errore" value="<?php echo $_smarty_tpl->tpl_vars['errore']->value;?>
+"/>
                             <p class="message">Not registered? <a href="#">Create an account</a></p>
                         </form>
                     </div>
@@ -120,7 +150,8 @@
 
                 <div class="row">
 
-                    {$mainContent}
+                    <?php echo $_smarty_tpl->tpl_vars['mainContent']->value;?>
+
 
                 </div>
 
@@ -156,3 +187,4 @@
 </body>
 
 </html>
+<?php }} ?>

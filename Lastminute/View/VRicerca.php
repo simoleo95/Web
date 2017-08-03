@@ -7,7 +7,7 @@
         }
 
         public function processaTemplate() {
-            return $this->fetch('C:\Users\andre\Documents\GitHub\Web\Lastminute\templates\templates\ricerca.tpl');
+            return $this->fetch('C:\xampp\htdocs\Lastminute\templates\templates\ricerca.tpl');
         }
     }
 ?>

@@ -1,5 +1,5 @@
 <?php
-    require('C:\Users\andre\Documents\GitHub\Web\Lastminute\includes\smarty-libs\Smarty.class.php');
+    require('C:\xampp\htdocs\Lastminute\includes\smarty-libs\Smarty.class.php');
 
     class View extends Smarty {
         public function __construct() {

@@ -9,11 +9,11 @@
 
     // SMARTY
     $config['smarty']['template_dir'] =
-        'C:\Users\andre\Documents\GitHub\Web\Lastminute\templates\templates\'';
+        'C:\xampp\htdocs\Lastminute\templates\templates\'';
     $config['smarty']['compile_dir'] =
-        'C:\Users\andre\Documents\GitHub\Web\Lastminute\templates\templates_c\'';
+        'C:\xampp\htdocs\Lastminute\templates\templates_c\'';
     $config['smarty']['config_dir'] =
-        'C:\Users\andre\Documents\GitHub\Web\Lastminute\templates\configs\'';
+        'C:\xampp\htdocs\Lastminute\templates\configs\'';
     $config['smarty']['cache_dir'] =
-        'C:\Users\andre\Documents\GitHub\Web\Lastminute\templates\cache\'';
+        'C:\xampp\htdocs\Lastminute\templates\cache\'';
 ?>
