@@ -72,15 +72,41 @@
                     <a href="#" class="list-group-item">categoria 2</a>
                     <a href="#" class="list-group-item">categoria 3</a>
                 </div>
+                <h4 id="stringa" class="message" onclick="mostra()">Premi qui per registrarti</h4>
+
                 <div class="login-page">
                     <div class="form">
-                        <form class="login-form">
-                            <input type="text" placeholder="username" name="username" />
-                            <input type="password" placeholder="password" name="password"/>
+                        <form class="login-form" method="POST" style="display:{$displayL}">
+                            <input type="text" placeholder="username" name="username" 
+                            style="background: {$coloreU}"/>
+                            <input type="password" placeholder="password" name="password" style="background: {$coloreP}"/>
                             <button name="entra">login</button>
-                            <input type="text" name="errore" id="errore" value="{$errore}"/>
-                            <p class="message">Not registered? <a href="#">Create an account</a></p>
+                            <input type="text" name="errore" id="errore" value="{$errore}"
+                            />
                         </form>
+  
+                        <form class="registra-form" style="display:{$displayR}" method="POST">
+                            <input type="text" placeholder="username" name="usernameR"
+                            style="background: {$coloreU}"> 
+                            <input type="password" placeholder="password" name="passwordR" style="background: {$coloreP}"/> 
+                            <input type="text" placeholder="nome" name="nomeR"> 
+                            <input type="text" placeholder="cognome" name="cognomeR"/>
+                            <input type="text" placeholder="email" name="emailR"> 
+                            <button name="registra">registrati</button>  
+                            <input type="text" name="erroreR" id="erroreR" value="{$erroreR}"/>
+                        </form>
+                
+                        <form class="cancella-form" method="POST" style="display:{$displayC}">
+                            <input type="text" placeholder="username" name="username" 
+                            style="background: {$coloreU}"/>
+                            <input type="password" placeholder="password" name="password" style="background: {$coloreP}"/>
+                            <button name="cancella">cancella</button>
+                            <input type="text" name="erroreC" id="erroreC" value="{$erroreC}"
+                            />
+                        </form>
+
+                <h4 id="cancella" class="message" onclick="cancella()">Premi qui per cancellarti</h4>
+
                     </div>
                 </div>
             </div>
@@ -152,6 +178,56 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="templates/templates/js/bootstrap.min.js"></script>
+
+    <!-- Javascript -->
+    <script>
+    function mostra(){
+        var a = document.getElementsByClassName('cancella-form');
+        var x = document.getElementsByClassName('registra-form');
+        var z = document.getElementsByClassName('login-form');
+        var s = document.getElementById('stringa');
+        var y = x[0].style.display;
+        if(y == "none"){
+            s.innerHTML = "Premi qui per loggare";
+            for(var i =0; i<x.length; i++){
+                x[i].style.display ="block";
+                z[i].style.display ="none";
+                a[i].style.display ="none";
+            }
+        }
+        else{   
+                s.innerHTML="Premi qui per registrarti";
+                for(var i =0; i<x.length; i++){
+                    x[i].style.display ="none";
+                    z[i].style.display ="block";
+                    a[i].style.display ="none";                    
+            }
+        }
+    }
+    function cancella(){
+        var a = document.getElementsByClassName('cancella-form');
+        var x = document.getElementsByClassName('registra-form');
+        var z = document.getElementsByClassName('login-form');
+        var s = document.getElementById('stringa');
+        var y = a[0].style.display;
+        if(y == "none"){
+            for(var i =0; i<x.length; i++){
+                a[i].style.display ="block";
+                x[i].style.display ="none";
+                z[i].style.display ="none";                
+            }
+        }
+        else{    
+                s.innerHTML = "Premi qui per registrarti";
+                for(var i =0; i<x.length; i++){
+                a[i].style.display ="none";
+                x[i].style.display ="none";
+                z[i].style.display ="block";  
+
+            }
+        }
+    }
+    </script>
 
 </body>
 

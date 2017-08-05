@@ -13,23 +13,30 @@ class CRegistrazione
 
     public function Accedi($username , $password)
     {
-    	$FUtente = new FUtente();
-    	$this->username = $username;
-    	$this->password = $password;
-    	if ($username AND $password){
-    		if( $FUtente->load($username) ){
-    			//esiste
-    			$utente = $FUtente->load($username);
-    			if ($password == $utente->getPassword($utente) )
-    				return "giusto";
-    			if ($password !== $utente->getPassword($utente)) 
-    				return "sbagliato";
-    		}
+    	$EUtente = new EUtente();
+        return $EUtente->load($username, $password);
+    	
+    }
 
-    		if(!$FUtente->load($username))
-    			return "non esiste";
-    	}
-    	else return "vuoto";
+        public function Cancella($username , $password)
+    {
+        $EUtente = new EUtente();
+        if($EUtente->load($username, $password)=="giusto"){
+            return $EUtente->cancella($EUtente);
+        }
+        else return $EUtente->load($username, $password);    
+       
+    }
+
+    public function Registra($nomeR,$cognomeR,$emailR,$usernameR, $passwordR){
+        $EUtente = new EUtente();
+        $EUtente->setNome($nomeR);
+        $EUtente->setCognome($cognomeR);
+        $EUtente->setEmail($emailR);
+        $EUtente->setUsername($usernameR);
+        $EUtente->setPassword($passwordR);
+        return $EUtente->store();
+        
     }
 
 }

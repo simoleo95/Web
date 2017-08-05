@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2017-08-03 16:42:57
+<?php /* Smarty version Smarty-3.1.13, created on 2017-08-05 10:26:17
          compiled from "C:\xampp\htdocs\Lastminute\templates\templates\home.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:38199088598303689ccbe9-09808263%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '354670e197bccf0348ceaa3612802c9f24f5ed27' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Lastminute\\templates\\templates\\home.tpl',
-      1 => 1501771373,
+      1 => 1501921575,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,14 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'variables' => 
   array (
     'title' => 0,
+    'displayL' => 0,
+    'coloreU' => 0,
+    'coloreP' => 0,
     'errore' => 0,
+    'displayR' => 0,
+    'erroreR' => 0,
+    'displayC' => 0,
+    'erroreC' => 0,
     'mainContent' => 0,
   ),
   'has_nocache_code' => false,
@@ -101,16 +108,53 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                     <a href="#" class="list-group-item">categoria 2</a>
                     <a href="#" class="list-group-item">categoria 3</a>
                 </div>
+                <h4 id="stringa" class="message" onclick="mostra()">Premi qui per registrarti</h4>
+
                 <div class="login-page">
                     <div class="form">
-                        <form class="login-form">
-                            <input type="text" placeholder="username" name="username" />
-                            <input type="password" placeholder="password" name="password"/>
+                        <form class="login-form" method="POST" style="display:<?php echo $_smarty_tpl->tpl_vars['displayL']->value;?>
+">
+                            <input type="text" placeholder="username" name="username" 
+                            style="background: <?php echo $_smarty_tpl->tpl_vars['coloreU']->value;?>
+"/>
+                            <input type="password" placeholder="password" name="password" style="background: <?php echo $_smarty_tpl->tpl_vars['coloreP']->value;?>
+"/>
                             <button name="entra">login</button>
                             <input type="text" name="errore" id="errore" value="<?php echo $_smarty_tpl->tpl_vars['errore']->value;?>
-"/>
-                            <p class="message">Not registered? <a href="#">Create an account</a></p>
+"
+                            />
                         </form>
+  
+                        <form class="registra-form" style="display:<?php echo $_smarty_tpl->tpl_vars['displayR']->value;?>
+" method="POST">
+                            <input type="text" placeholder="username" name="usernameR"
+                            style="background: <?php echo $_smarty_tpl->tpl_vars['coloreU']->value;?>
+"> 
+                            <input type="password" placeholder="password" name="passwordR" style="background: <?php echo $_smarty_tpl->tpl_vars['coloreP']->value;?>
+"/> 
+                            <input type="text" placeholder="nome" name="nomeR"> 
+                            <input type="text" placeholder="cognome" name="cognomeR"/>
+                            <input type="text" placeholder="email" name="emailR"> 
+                            <button name="registra">registrati</button>  
+                            <input type="text" name="erroreR" id="erroreR" value="<?php echo $_smarty_tpl->tpl_vars['erroreR']->value;?>
+"/>
+                        </form>
+                
+                        <form class="cancella-form" method="POST" style="display:<?php echo $_smarty_tpl->tpl_vars['displayC']->value;?>
+">
+                            <input type="text" placeholder="username" name="username" 
+                            style="background: <?php echo $_smarty_tpl->tpl_vars['coloreU']->value;?>
+"/>
+                            <input type="password" placeholder="password" name="password" style="background: <?php echo $_smarty_tpl->tpl_vars['coloreP']->value;?>
+"/>
+                            <button name="cancella">cancella</button>
+                            <input type="text" name="erroreC" id="erroreC" value="<?php echo $_smarty_tpl->tpl_vars['erroreC']->value;?>
+"
+                            />
+                        </form>
+
+                <h4 id="cancella" class="message" onclick="cancella()">Premi qui per cancellarti</h4>
+
                     </div>
                 </div>
             </div>
@@ -183,6 +227,56 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
     <!-- Bootstrap Core JavaScript -->
     <script src="templates/templates/js/bootstrap.min.js"></script>
+
+    <!-- Javascript -->
+    <script>
+    function mostra(){
+        var a = document.getElementsByClassName('cancella-form');
+        var x = document.getElementsByClassName('registra-form');
+        var z = document.getElementsByClassName('login-form');
+        var s = document.getElementById('stringa');
+        var y = x[0].style.display;
+        if(y == "none"){
+            s.innerHTML = "Premi qui per loggare";
+            for(var i =0; i<x.length; i++){
+                x[i].style.display ="block";
+                z[i].style.display ="none";
+                a[i].style.display ="none";
+            }
+        }
+        else{   
+                s.innerHTML="Premi qui per registrarti";
+                for(var i =0; i<x.length; i++){
+                    x[i].style.display ="none";
+                    z[i].style.display ="block";
+                    a[i].style.display ="none";                    
+            }
+        }
+    }
+    function cancella(){
+        var a = document.getElementsByClassName('cancella-form');
+        var x = document.getElementsByClassName('registra-form');
+        var z = document.getElementsByClassName('login-form');
+        var s = document.getElementById('stringa');
+        var y = a[0].style.display;
+        if(y == "none"){
+            for(var i =0; i<x.length; i++){
+                a[i].style.display ="block";
+                x[i].style.display ="none";
+                z[i].style.display ="none";                
+            }
+        }
+        else{    
+                s.innerHTML = "Premi qui per registrarti";
+                for(var i =0; i<x.length; i++){
+                a[i].style.display ="none";
+                x[i].style.display ="none";
+                z[i].style.display ="block";  
+
+            }
+        }
+    }
+    </script>
 
 </body>
 

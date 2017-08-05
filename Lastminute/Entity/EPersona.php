@@ -12,74 +12,85 @@ class EPersona{
      
     
     //METODI
-    function getNome() {
+
+    public function getNome() {
         return $this->nome;
     }
 
-    function getCognome() {
+    public function getCognome() {
         return $this->cognome;
     }
 
-    function getEmail() {
+    public function getEmail() {
         return $this->email;
     }
 
-    function getDatanascita() {
-        return $this->datanascita;
-    }
 
-    function getLuogodinacita() {
-        return $this->luogodinacita;
-    }
-
-    function getUsername() {
+    public function getUsername() {
         return $this->username;
     }
 
-    function getPassword() {
+    public function getPassword() {
         return $this->password;
     }
 
-    function setNome($nome) {
+    public function setNome($nome) {
         $this->nome = $nome;
     }
 
-    function setCognome($cognome) {
+    public function setCognome($cognome) {
         $this->cognome = $cognome;
     }
 
-    function setEmail($email) {
+    public function setEmail($email) {
         $this->email = $email;
     }
 
-    function setDatanascita($datanascita) {
-        $this->datanascita = $datanascita;
-    }
-
-  /* function setLuogodinacita($luogodinacita) {
-  /    $this->luogodinacita = $luogodinacita;
-    }*/
-
-    function setUsername($username) {
+    public function setUsername($username) {
         $this->username = $username;
     }
 
-    function setPassword($password) {
+    public function setPassword($password) {
         $this->password = $password;
     
         }
+
+    public function store(){
+        $appoggio = new EUtente();
+        $appoggio->setNome($this->nome);
+        $appoggio->setCognome($this->cognome);
+        $appoggio->setEmail($this->email);
+        $appoggio->setUsername($this->username);
+        $appoggio->setPassword($this->password);
+        $FUtente = new FUtente();
+        if($FUtente->load($this->username))
+            return "Utente gia un uso";
+        else
+        return $FUtente->salva($appoggio);
+
+    }   
+
+    public function load($username, $password){
+        $FUtente = new FUtente();
+            if( $FUtente->load($username) ){
+                $utente = $FUtente->load($username);
+                if ($password == $utente->getPassword($utente) )
+                    return "giusto";
+                if ($password !== $utente->getPassword($utente)) 
+                    return "password errata";
+            }
+
+            if(!$FUtente->load($username))
+                return "l'utente non esiste";
+
     }
 
+        public function cancella(EUtente $appoggio){
+        $FUtente = new FUtente();
+        return $FUtente->delete($appoggio);
+                    
+    }
 
-
-
-
-
-
-
-
-
-
-
+}
 
 ?>
