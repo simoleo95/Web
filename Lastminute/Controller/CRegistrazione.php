@@ -21,11 +21,11 @@ class CRegistrazione
         public function Cancella($username , $password)
     {
         $EUtente = new EUtente();
-        if($EUtente->load($username, $password)=="giusto"){
-            return $EUtente->cancella($EUtente);
+        if($EUtente->load($username, $password)=="l'utente e' entrato"){
+            return $EUtente->cancella($username); 
         }
-        else return $EUtente->load($username, $password);    
-       
+        else return $EUtente->load($username, $password);
+
     }
 
     public function Registra($nomeR,$cognomeR,$emailR,$usernameR, $passwordR){

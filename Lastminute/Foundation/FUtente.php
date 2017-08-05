@@ -18,9 +18,10 @@
             $utente = $FUtente->load($username);
             return $utente->password;
         }
-        public function cancella($a){
-            $query=" DELETE FROM persona WHERE username = '".$a->getUsername()."' ";
+        public function cancella($u){
+            $query=" DELETE FROM persona WHERE username = '".$u."' ";
             parent::execute($query);
+            return "Utente cancellato";
            
         }
 

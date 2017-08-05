@@ -75,7 +75,7 @@ class EPersona{
             if( $FUtente->load($username) ){
                 $utente = $FUtente->load($username);
                 if ($password == $utente->getPassword($utente) )
-                    return "giusto";
+                    return "l'utente e' entrato";
                 if ($password !== $utente->getPassword($utente)) 
                     return "password errata";
             }
@@ -85,11 +85,11 @@ class EPersona{
 
     }
 
-        public function cancella(EUtente $appoggio){
-        $FUtente = new FUtente();
-        return $FUtente->delete($appoggio);
+        public function cancella($username){
+            $FUtente = new FUtente();       
+            return $FUtente->cancella($username);
                     
-    }
+        }
 
 }
 

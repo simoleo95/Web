@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2017-08-05 10:26:17
+<?php /* Smarty version Smarty-3.1.13, created on 2017-08-05 13:03:26
          compiled from "C:\xampp\htdocs\Lastminute\templates\templates\home.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:38199088598303689ccbe9-09808263%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '354670e197bccf0348ceaa3612802c9f24f5ed27' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Lastminute\\templates\\templates\\home.tpl',
-      1 => 1501921575,
+      1 => 1501930981,
       2 => 'file',
     ),
   ),
@@ -24,6 +24,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'coloreU' => 0,
     'coloreP' => 0,
     'errore' => 0,
+    'colore' => 0,
     'displayR' => 0,
     'erroreR' => 0,
     'displayC' => 0,
@@ -121,6 +122,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 "/>
                             <button name="entra">login</button>
                             <input type="text" name="errore" id="errore" value="<?php echo $_smarty_tpl->tpl_vars['errore']->value;?>
+" style="background: <?php echo $_smarty_tpl->tpl_vars['colore']->value;?>
 "
                             />
                         </form>
@@ -236,6 +238,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
         var z = document.getElementsByClassName('login-form');
         var s = document.getElementById('stringa');
         var y = x[0].style.display;
+
         if(y == "none"){
             s.innerHTML = "Premi qui per loggare";
             for(var i =0; i<x.length; i++){
@@ -249,7 +252,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                 for(var i =0; i<x.length; i++){
                     x[i].style.display ="none";
                     z[i].style.display ="block";
-                    a[i].style.display ="none";                    
+                    a[i].style.display ="none";
+                   
             }
         }
     }
@@ -263,7 +267,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
             for(var i =0; i<x.length; i++){
                 a[i].style.display ="block";
                 x[i].style.display ="none";
-                z[i].style.display ="none";                
+                z[i].style.display ="none"; 
+           
             }
         }
         else{    
@@ -271,7 +276,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                 for(var i =0; i<x.length; i++){
                 a[i].style.display ="none";
                 x[i].style.display ="none";
-                z[i].style.display ="block";  
+                z[i].style.display ="block";
+
 
             }
         }

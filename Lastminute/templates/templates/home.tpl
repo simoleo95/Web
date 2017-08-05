@@ -81,7 +81,7 @@
                             style="background: {$coloreU}"/>
                             <input type="password" placeholder="password" name="password" style="background: {$coloreP}"/>
                             <button name="entra">login</button>
-                            <input type="text" name="errore" id="errore" value="{$errore}"
+                            <input type="text" name="errore" id="errore" value="{$errore}" style="background: {$colore}"
                             />
                         </form>
   
@@ -187,6 +187,7 @@
         var z = document.getElementsByClassName('login-form');
         var s = document.getElementById('stringa');
         var y = x[0].style.display;
+
         if(y == "none"){
             s.innerHTML = "Premi qui per loggare";
             for(var i =0; i<x.length; i++){
@@ -200,7 +201,8 @@
                 for(var i =0; i<x.length; i++){
                     x[i].style.display ="none";
                     z[i].style.display ="block";
-                    a[i].style.display ="none";                    
+                    a[i].style.display ="none";
+                   
             }
         }
     }
@@ -214,7 +216,8 @@
             for(var i =0; i<x.length; i++){
                 a[i].style.display ="block";
                 x[i].style.display ="none";
-                z[i].style.display ="none";                
+                z[i].style.display ="none"; 
+           
             }
         }
         else{    
@@ -222,7 +225,8 @@
                 for(var i =0; i<x.length; i++){
                 a[i].style.display ="none";
                 x[i].style.display ="none";
-                z[i].style.display ="block";  
+                z[i].style.display ="block";
+
 
             }
         }

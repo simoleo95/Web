@@ -24,6 +24,7 @@
 
             $this->assign('colorP', 'white');
             $this->assign('coloreU', 'white');
+            $this->assign('colore', 'white');
 
             //verifico che l'utente voglia entrare
 
@@ -37,8 +38,10 @@
                     $this->assign('coloreU', '#e9967a');  
                 if($errore=="password errata")
                     $this->assign('coloreP', '#e9967a');                    
-                if($errore == "giusto")
+                if($errore == "l'utente e' entrato"){
                     $this->assign('title', $username);
+                    $this->assign('colore', '#20b2aa');
+                }
              } 
 
                 if (isset($_REQUEST['cancella'])) {
@@ -51,8 +54,10 @@
                     $this->assign('coloreU', '#e9967a');  
                 if($errore=="password errata")
                     $this->assign('coloreP', '#e9967a');                    
-                if($errore == "giusto")
+                if($errore == "giusto"){
                 $this->assign("cancellato");
+                $this->assign('colore', '#20b2aa');
+                }
 
              } 
 
@@ -74,7 +79,8 @@
                     $this->assign('displayR', 'none');
                     $this->assign('displayC', 'none');
                     $this->assign('displayL', 'block');
-                    $this->assign("errore", "registrazione avvenuta");  
+                    $this->assign("errore", "registrazione avvenuta"); 
+                    $this->assign('colore', '#20b2aa'); 
                 }
                 if($erroreR == "Utente gia un uso"){
                     $this->assign('coloreU', '#e9967a');
