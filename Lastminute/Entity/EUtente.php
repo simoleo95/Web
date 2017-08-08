@@ -24,6 +24,5 @@ public function Object_array(EUtente $p){
     return $t;
 }
 
-  }
-
+}
 ?>

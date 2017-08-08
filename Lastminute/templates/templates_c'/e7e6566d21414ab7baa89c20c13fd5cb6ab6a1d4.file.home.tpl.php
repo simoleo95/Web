@@ -1,4 +1,32 @@
-<!DOCTYPE html>
+<?php /* Smarty version Smarty-3.1.13, created on 2017-08-08 11:48:08
+         compiled from "C:\xampp\htdocs\Web\Lastminute\templates\templates\home.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:1145981807c738a01-79710874%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_valid = $_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    'e7e6566d21414ab7baa89c20c13fd5cb6ab6a1d4' => 
+    array (
+      0 => 'C:\\xampp\\htdocs\\Web\\Lastminute\\templates\\templates\\home.tpl',
+      1 => 1502185614,
+      2 => 'file',
+    ),
+  ),
+  'nocache_hash' => '1145981807c738a01-79710874',
+  'function' => 
+  array (
+  ),
+  'version' => 'Smarty-3.1.13',
+  'unifunc' => 'content_5981807c752ab0_30291969',
+  'variables' => 
+  array (
+    'title' => 0,
+    'login' => 0,
+    'logout' => 0,
+    'mainContent' => 0,
+  ),
+  'has_nocache_code' => false,
+),false); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_5981807c752ab0_30291969')) {function content_5981807c752ab0_30291969($_smarty_tpl) {?><!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -9,7 +37,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>{$title}</title>
+    <title><?php echo $_smarty_tpl->tpl_vars['title']->value;?>
+</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="templates/templates/css/bootstrap.min.css" rel="stylesheet">
@@ -42,7 +71,8 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">{$title}</a>
+                <a class="navbar-brand" href="#"><?php echo $_smarty_tpl->tpl_vars['title']->value;?>
+</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -76,8 +106,10 @@
                     <a href="#" class="list-group-item">Category 3</a>
 					<a href="index.php?controller=registra" class="list-group-item">Registrazione</a>
                 </div>
-				{$login}
-				{$logout}
+				<?php echo $_smarty_tpl->tpl_vars['login']->value;?>
+
+				<?php echo $_smarty_tpl->tpl_vars['logout']->value;?>
+
             </div>	
 			
 			 <div class="col-md-9">
@@ -117,7 +149,8 @@
 
                 <div class="row">
 
-                    {$mainContent}
+                    <?php echo $_smarty_tpl->tpl_vars['mainContent']->value;?>
+
 					
 
                 </div>
@@ -158,3 +191,4 @@
 </body>
 
 </html>
+<?php }} ?>

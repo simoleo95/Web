@@ -3,15 +3,15 @@
 
         function __construct() {
             parent::__construct();
-            $this->table="valutazionne";
+            $this->table="valutazione";
             $this->key="IDvalutazione";
             $this->result_class="EValutazione";
         }
 
         public function loadvalutazioni($utenteV) {
-            $query="SELECT * FROM ".$this->table."WHERE utenteV='".$utenteV."'";
-            parent::execute($query);
-            $valutazioni=parent::getObjects();
+            $query="SELECT ALL FROM ".$this->table."WHERE personaV ='".$utenteV."'";
+            $this->execute($query);
+            $valutazioni=$this->getObjects();
             return $valutazioni;
         }
     }

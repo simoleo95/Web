@@ -7,7 +7,9 @@
         }
 
         public function processaTemplate() {
-            return $this->fetch('C:\xampp\htdocs\Lastminute\templates\templates\ricerca.tpl');
+            global $config;
+            return $this->fetch($config['smarty']['template_dir'].'\ricerca.tpl');
         }
+       
     }
 ?>
