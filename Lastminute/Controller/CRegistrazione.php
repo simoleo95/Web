@@ -34,10 +34,25 @@ class CRegistrazione{
     }
   
     public function autentica($u,$p){
-      $Futente=new FUtente();
-    $f=$Futente->load($u);
-     if($f!=false){
-         if ($p==$f->getPassword()) {
+        $EUtente=USingleton::getInstance('EUtente');
+        $autenticato=$Eutente->autentica($u,$p);
+        switch ($autenticato){
+            case '0':
+                $session=  USingleton::getInstance('USession');
+                $session->imposta_valore('username',$this->username);
+                return true;
+            case '1':
+                $this->errore= 'Username o password errati';
+                 return false;
+            case '2':
+                $this->errore = 'L\'account non esiste';
+                return false;
+        }
+    }
+    /*  $Futente=new FUtente();
+    //$f=$Futente->load($u);
+     //if($f!=false){
+       //  if ($p==$f->getPassword()) {
              $session=USingleton::getInstance('USession');
                     $session->imposta_valore('username',$this->username);                                                                  
                     return true;
@@ -51,7 +66,7 @@ class CRegistrazione{
             //account non esiste
         }
         return false;
-    }
+    }*/
     
     public function registra() {
         $VRegistrazione=USingleton::getInstance('VRegistrazione');        
