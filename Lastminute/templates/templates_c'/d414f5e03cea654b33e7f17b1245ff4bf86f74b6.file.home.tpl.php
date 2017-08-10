@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2017-08-02 00:44:55
+<?php /* Smarty version Smarty-3.1.13, created on 2017-08-10 17:19:53
          compiled from "C:\Users\andre\Documents\GitHub\Web\Lastminute\templates\templates\home.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:156985980e038d54607-20656346%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'd414f5e03cea654b33e7f17b1245ff4bf86f74b6' => 
     array (
       0 => 'C:\\Users\\andre\\Documents\\GitHub\\Web\\Lastminute\\templates\\templates\\home.tpl',
-      1 => 1501627284,
+      1 => 1502378391,
       2 => 'file',
     ),
   ),
@@ -20,6 +20,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'variables' => 
   array (
     'title' => 0,
+    'login' => 0,
+    'logout' => 0,
     'mainContent' => 0,
   ),
   'has_nocache_code' => false,
@@ -54,7 +56,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 </head>
 
 <body>
-
+	
+	
+	
+	
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
@@ -66,7 +71,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#"><?php echo $_smarty_tpl->tpl_vars['title']->value;?>
+                <a class="navbar-brand" href="index.php"><?php echo $_smarty_tpl->tpl_vars['title']->value;?>
 </a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -94,15 +99,24 @@ $_valid = $_smarty_tpl->decodeProperties(array (
         <div class="row">
 
             <div class="col-md-3">
+
                 <p class="lead">Shop Name</p>
                 <div class="list-group">
                     <a href="#" class="list-group-item">Category 1</a>
                     <a href="#" class="list-group-item">Category 2</a>
                     <a href="#" class="list-group-item">Category 3</a>
+					<a href="#" class="list-group-item">Category 4</a>
                 </div>
-            </div>
 
-            <div class="col-md-9">
+                <?php echo $_smarty_tpl->tpl_vars['login']->value;?>
+
+                <?php echo $_smarty_tpl->tpl_vars['logout']->value;?>
+
+
+            </div>	
+			
+			 <div class="col-md-9">
+
 
                 <div class="row carousel-holder">
 
@@ -134,11 +148,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                     </div>
 
                 </div>
+				
 
                 <div class="row">
 
                     <?php echo $_smarty_tpl->tpl_vars['mainContent']->value;?>
 
+					
 
                 </div>
 
@@ -147,7 +163,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
         </div>
 
     </div>
-    <!-- /.container -->
+	
+	
+	
+    
+	<!-- /.container -->
 
     <div class="container">
 

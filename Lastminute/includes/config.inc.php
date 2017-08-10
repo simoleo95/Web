@@ -10,13 +10,13 @@
     // SMARTY
     $config['debug']=false;
     $config['smarty']['template_dir'] =
-        'C:\xampp\htdocs\Web\Lastminute\templates\templates';
+        'C:\Users\andre\Documents\GitHub\Web\Lastminute\templates\templates';
     $config['smarty']['compile_dir'] =
-        'C:\xampp\htdocs\Web\Lastminute\templates\templates_c\'';
+        'C:\Users\andre\Documents\GitHub\Web\Lastminute\templates\templates_c\'';
     $config['smarty']['config_dir'] =
-        'C:\xampp\htdocs\Web\Lastminute\templates\configs\'';
+        'C:\Users\andre\Documents\GitHub\Web\Lastminute\templates\configs\'';
     $config['smarty']['cache_dir'] =
-        'C:\xampp\htdocs\Web\Lastminute\templates\cache\'';
+        'C:\Users\andre\Documents\GitHub\Web\Lastminute\templates\cache\'';
     
 function debug($var){
     global $config;
