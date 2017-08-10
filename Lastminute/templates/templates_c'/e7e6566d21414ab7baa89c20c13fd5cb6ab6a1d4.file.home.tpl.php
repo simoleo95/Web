@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2017-08-10 17:34:22
+<?php /* Smarty version Smarty-3.1.13, created on 2017-08-10 18:10:53
          compiled from "C:\xampp\htdocs\Web\Lastminute\templates\templates\home.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:1145981807c738a01-79710874%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'e7e6566d21414ab7baa89c20c13fd5cb6ab6a1d4' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Web\\Lastminute\\templates\\templates\\home.tpl',
-      1 => 1502379258,
+      1 => 1502381348,
       2 => 'file',
     ),
   ),
@@ -71,7 +71,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#"><?php echo $_smarty_tpl->tpl_vars['title']->value;?>
+                <a class="navbar-brand" href="index.php"><?php echo $_smarty_tpl->tpl_vars['title']->value;?>
 </a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -101,16 +101,15 @@ $_valid = $_smarty_tpl->decodeProperties(array (
             <div class="col-md-3">
                 <p class="lead">Shop Name</p>
                 <div class="list-group">
-                    <a href="index.php" class="list-group-item">Home</a>
+                    <a href="#" class="list-group-item">Category 1</a>
                     <a href="#" class="list-group-item">Category 2</a>
                     <a href="#" class="list-group-item">Category 3</a>
-					<a href="index.php?controller=registra" class="list-group-item">Registrazione</a>
+					<a href="#" class="list-group-item">Category 4</a>
                 </div>
 				<?php echo $_smarty_tpl->tpl_vars['login']->value;?>
 
 				<?php echo $_smarty_tpl->tpl_vars['logout']->value;?>
 
-				
             </div>	
 			
 			 <div class="col-md-9">
