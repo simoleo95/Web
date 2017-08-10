@@ -78,8 +78,12 @@
                     <a href="#" class="list-group-item">Category 3</a>
 					<a href="#" class="list-group-item">Category 4</a>
                 </div>
-				{$login}
-				{$logout}
+                {if isset($login)}
+                    {$login}
+                {/if}
+                {if isset($logout)}
+                    {$logout}
+                {/if}
             </div>	
 			
 			 <div class="col-md-9">

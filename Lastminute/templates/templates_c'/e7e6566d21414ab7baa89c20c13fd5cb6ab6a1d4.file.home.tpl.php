@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2017-08-10 22:16:00
+<?php /* Smarty version Smarty-3.1.13, created on 2017-08-10 22:20:15
          compiled from "C:\xampp\htdocs\Web\Lastminute\templates\templates\home.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:1145981807c738a01-79710874%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'e7e6566d21414ab7baa89c20c13fd5cb6ab6a1d4' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Web\\Lastminute\\templates\\templates\\home.tpl',
-      1 => 1502396157,
+      1 => 1502396253,
       2 => 'file',
     ),
   ),
@@ -110,10 +110,14 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                     <a href="#" class="list-group-item">Category 3</a>
 					<a href="#" class="list-group-item">Category 4</a>
                 </div>
-				<?php echo $_smarty_tpl->tpl_vars['login']->value;?>
+                <?php if (isset($_smarty_tpl->tpl_vars['login']->value)){?>
+                    <?php echo $_smarty_tpl->tpl_vars['login']->value;?>
 
-				<?php echo $_smarty_tpl->tpl_vars['logout']->value;?>
+                <?php }?>
+                <?php if (isset($_smarty_tpl->tpl_vars['logout']->value)){?>
+                    <?php echo $_smarty_tpl->tpl_vars['logout']->value;?>
 
+                <?php }?>
             </div>	
 			
 			 <div class="col-md-9">
