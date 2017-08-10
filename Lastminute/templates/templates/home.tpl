@@ -67,8 +67,10 @@
     <div class="container">
 
         <div class="row">
-
             <div class="col-md-3">
+                {if isset($insAnnuncio)}
+                    {$insAnnuncio}
+                {/if}
                 <p class="lead">Shop Name</p>
                 <div class="list-group">
                     <a href="#" class="list-group-item">Category 1</a>

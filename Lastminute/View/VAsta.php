@@ -1,7 +1,7 @@
 <?php
 
 class VAsta extends View{
-    private $layout='\dettagli_asta.tpl';
+    private $layout='\tasto_insAnnuncio.tpl';
     
      public function getTask() {
         if (isset($_REQUEST['task']))
@@ -14,6 +14,12 @@ class VAsta extends View{
             return $_REQUEST['id_asta'];
         else
             return false;
+    }
+
+    public function processaTemplate() {
+        global $config;
+        $contenuto=$this->fetch($config['smarty']['template_dir'].$this->layout);
+        return $contenuto;
     }
     
 }

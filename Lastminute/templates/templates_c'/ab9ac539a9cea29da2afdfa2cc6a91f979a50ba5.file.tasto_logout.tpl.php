@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2017-08-10 18:05:15
+<?php /* Smarty version Smarty-3.1.13, created on 2017-08-10 18:33:11
          compiled from "C:\xampp\htdocs\Web\Lastminute\templates\templates\tasto_logout.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:3429598988d8705b07-99087170%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'ab9ac539a9cea29da2afdfa2cc6a91f979a50ba5' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Web\\Lastminute\\templates\\templates\\tasto_logout.tpl',
-      1 => 1502381073,
+      1 => 1502382789,
       2 => 'file',
     ),
   ),
@@ -17,6 +17,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'version' => 'Smarty-3.1.13',
   'unifunc' => 'content_598988d8732027_11088697',
+  'variables' => 
+  array (
+    'username' => 0,
+  ),
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_598988d8732027_11088697')) {function content_598988d8732027_11088697($_smarty_tpl) {?>    <!DOCTYPE HTML>
@@ -49,6 +53,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
         </style>
       </head>
       <body>
+        <p>Benvenuto <b><?php echo $_smarty_tpl->tpl_vars['username']->value;?>
+</b>!</p>
         <a class="pulsante" href="index.php?controller=logout">Logout</a>
       </body>
     </html>

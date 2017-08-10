@@ -28,7 +28,11 @@ class CRegistrazione{
         }
         $VRegistrazione->impostaErrore($this->errore);        
         $this->errore='';
-           return $autenticato;
+
+        // Da impostare qui i dati da inserire nel template dopo il login
+        $VRegistrazione->impostaDati($this->username);
+
+        return $autenticato;
     
     
     }
@@ -39,7 +43,7 @@ class CRegistrazione{
      if($f!=false){
          if ($p==$f->getPassword()) {
              $session=USingleton::getInstance('USession');
-                    $session->imposta_valore('username',$this->username);                                                                  
+                    $session->imposta_valore('username',$this->username);
                     return true;
          }
         else {

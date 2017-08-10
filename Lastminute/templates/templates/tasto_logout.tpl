@@ -28,6 +28,7 @@
         </style>
       </head>
       <body>
+        <p>Benvenuto <b>{$username}</b>!</p>
         <a class="pulsante" href="index.php?controller=logout">Logout</a>
       </body>
     </html>

@@ -37,5 +37,9 @@ private $layout='\login.tpl';
         $this->layout=$tlp;
                  
     }
+
+    public function impostaDati($user) {
+        $this->assign('username',$user);
+    }
 }
  ?>
