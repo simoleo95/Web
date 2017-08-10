@@ -49,7 +49,7 @@
 
         public function aggiungiBottoneInserimentoAnnuncio() {
             $VAsta=USingleton::getInstance('VAsta');
-            // Da settare il layout
+            $VAsta->setLayout('\tasto_insAnnuncio.tpl');
             return $VAsta->processaTemplate();
         }
     }

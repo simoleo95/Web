@@ -12,7 +12,6 @@ class EAsta{
     private $utentevincitore;
     private $articolo;
 
-
     //METODI
     function getIdAsta() {
         return $this->IDasta;
