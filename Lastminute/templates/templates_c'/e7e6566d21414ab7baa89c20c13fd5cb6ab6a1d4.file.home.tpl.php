@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2017-08-08 11:48:08
+<?php /* Smarty version Smarty-3.1.13, created on 2017-08-10 17:34:22
          compiled from "C:\xampp\htdocs\Web\Lastminute\templates\templates\home.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:1145981807c738a01-79710874%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'e7e6566d21414ab7baa89c20c13fd5cb6ab6a1d4' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Web\\Lastminute\\templates\\templates\\home.tpl',
-      1 => 1502185614,
+      1 => 1502379258,
       2 => 'file',
     ),
   ),
@@ -110,12 +110,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
 				<?php echo $_smarty_tpl->tpl_vars['logout']->value;?>
 
+				
             </div>	
 			
 			 <div class="col-md-9">
 
 
-                <div class="row carousel-holder">
+            <!--    <div class="row carousel-holder">
 
                     <div class="col-md-12">
                         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -144,19 +145,19 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                         </div>
                     </div>
 
-                </div>
+                </div> -->
 				
-
+  
                 <div class="row">
 
-                    <?php echo $_smarty_tpl->tpl_vars['mainContent']->value;?>
+                  <?php echo $_smarty_tpl->tpl_vars['mainContent']->value;?>
 
 					
 
                 </div>
 
             </div>
-
+           
         </div>
 
     </div>

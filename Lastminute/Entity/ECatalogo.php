@@ -13,7 +13,7 @@
 
         public function ricerca() {
             // Da cambiare
-            $FAsta=new FAsta();
+            $FAsta=  USingleton::getInstance('FAsta');
             $query="SELECT * FROM Asta";
             $FAsta->execute($query);
             $tmp=$FAsta->getObjects();

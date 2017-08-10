@@ -13,7 +13,6 @@
             /*$Fvalutazione= new FListaValutazione();
             $f=$Fvalutazione->loadvalutazioni($utente->getUsername());
             $utente->setListavalutazione($f);*/
-
             return $utente;
         }
 

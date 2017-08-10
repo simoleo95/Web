@@ -4,7 +4,7 @@
 
         public function inScadenza() {
             $ECatalogo=new ECatalogo();
-            $VRicerca=new VRicerca();
+            $VRicerca=  USingleton::getInstance('VRicerca');
 
             $risultato=$ECatalogo->ricerca();
             $VRicerca->impostaDati('dati',$risultato);

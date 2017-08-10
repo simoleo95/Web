@@ -26,6 +26,10 @@
             case 'registra':
                 $CRegistrazione = USingleton::getInstance('CRegistrazione');
                 return $CRegistrazione->registra();
+            case 'asta':
+                $CAsta= USingleton::getInstance('CAsta');
+                return $CAsta->smista();         
+            
                   
                 default:
                 $CRicerca=USingleton::getInstance('CRicerca');

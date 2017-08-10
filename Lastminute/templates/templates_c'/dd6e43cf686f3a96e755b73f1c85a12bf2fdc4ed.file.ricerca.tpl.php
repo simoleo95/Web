@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2017-08-02 09:34:20
+<?php /* Smarty version Smarty-3.1.13, created on 2017-08-10 14:31:09
          compiled from "C:\xampp\htdocs\Web\Lastminute\templates\templates\ricerca.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:311015981807c2d2ab2-51790956%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'dd6e43cf686f3a96e755b73f1c85a12bf2fdc4ed' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Web\\Lastminute\\templates\\templates\\ricerca.tpl',
-      1 => 1501658161,
+      1 => 1502368256,
       2 => 'file',
     ),
   ),
@@ -15,14 +15,14 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
+  'version' => 'Smarty-3.1.13',
+  'unifunc' => 'content_5981807c6a9fa9_49937655',
   'variables' => 
   array (
     'dati' => 0,
     'dato' => 0,
   ),
   'has_nocache_code' => false,
-  'version' => 'Smarty-3.1.13',
-  'unifunc' => 'content_5981807c6a9fa9_49937655',
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_5981807c6a9fa9_49937655')) {function content_5981807c6a9fa9_49937655($_smarty_tpl) {?><?php if ($_smarty_tpl->tpl_vars['dati']->value!=false){?>
     <?php  $_smarty_tpl->tpl_vars['dato'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['dato']->_loop = false;
@@ -38,10 +38,11 @@ $_smarty_tpl->tpl_vars['dato']->_loop = true;
                     <h4 class="pull-right"><?php echo $_smarty_tpl->tpl_vars['dato']->value->getPrezzoI()->getValore();?>
  <?php echo $_smarty_tpl->tpl_vars['dato']->value->getPrezzoF()->getValuta();?>
 </h4>
-                    <h4><a href="#"><?php echo $_smarty_tpl->tpl_vars['dato']->value->getArticolo()->getTitolo();?>
+                    <h4><a href="index.php?controller=asta&task=dettagli&id_asta=<?php echo $_smarty_tpl->tpl_vars['dato']->value->getIdAsta();?>
+"><?php echo $_smarty_tpl->tpl_vars['dato']->value->getArticolo()->getTitolo();?>
 </a>
                     </h4>
-                    <p><?php echo $_smarty_tpl->tpl_vars['dato']->value->getArticolo()->getDescrizione();?>
+					<p><?php echo $_smarty_tpl->tpl_vars['dato']->value->getArticolo()->getDescrizione();?>
 </p>
                 </div>
                 <div class="ratings">

@@ -23,17 +23,6 @@ public function Object_array(EUtente $p){
     $t=  get_object_vars($p);
     return $t;
 }
-public function autentica($u,$p){
-    $Futente=new FUtente();
-    $f=$Futente->load($u);
-     if($f!=false){
-         if ($p==$f->getPassword()) {
-             return '0';
-             
-         }
-    else {return '1';}
-}
-else return '2';
-}
+
 }
 ?>
