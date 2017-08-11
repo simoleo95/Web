@@ -44,7 +44,7 @@
                 $FUtente=USingleton::getInstance('FUtente');
                 $utente=$FUtente->load($session->leggi_valore('username'));
                 $asta->setUtentevincitore($utente);               
-                $FAsta->offerta($asta);
+                $FAsta->update($asta);
                 $VAsta->setLayout('\shop_item.tpl');
                 $VAsta->impostaDati('asta',$asta);
                 return $VAsta->processaTemplate();
