@@ -52,7 +52,9 @@
         public function update(EAsta $a) {
             $user=$a->getUtentevincitore()->getUsername();
 
-            $query='UPDATE `'.$this->table.'` SET userV=`'.$user.'` WHERE `'.$this->key.'` = \''.$a->getIdAsta().'\'';
+            $query='UPDATE '.$this->table.' SET userV=(
+                SELECT username FROM persona WHERE username=\''.$user.'\' 
+                ) WHERE '.$this->key.' = \''.$a->getIdAsta().'\'';
             return $this->execute($query);
         }
     }
