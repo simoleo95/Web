@@ -59,6 +59,13 @@
                 return false;
         }
 
+        public function getOfferta() {
+            if (isset($_POST['offerta']))
+                return $_POST['offerta'];
+            else
+                return false;
+        }
+
         public function processaTemplate() {
             global $config;
             $contenuto=$this->fetch($config['smarty']['template_dir'].$this->layout);

@@ -14,8 +14,30 @@
                     return $this->dettagli();
                 case 'inserisci':
                     return $this->inserisci();
-                case 'crea';
+                case 'crea':
                     $this->creaAsta();
+                case 'offerta':
+                    $this->offerta();
+            }
+        }
+
+        public function offerta() {
+            // Aggiungere esclusione su offerta
+            $VAsta=USingleton::getInstance('VAsta');
+            $FAsta=USingleton::getInstance('FAsta');
+            $asta=$FAsta->load($VAsta->getId());
+            $prezzo=$asta->getPrezzoF();
+            $result=$prezzo->setValore($VAsta->getOfferta());
+            if(!$result)
+                echo "<script type='text/javascript'>alert('Inserisci un prezzo maggiore di quello attuale!');</script>";
+            else {
+                $FPrezzo=USingleton::getInstance('FPrezzo');
+                $FPrezzo->update($prezzo);
+                $session=USingleton::getInstance('USession');
+                $FUtente=USingleton::getInstance('FUtente');
+                $utente=$FUtente->load($session->leggi_valore('username'));
+                $asta->setUtentevincitore($utente);
+                $FAsta->update($asta);
             }
         }
 
