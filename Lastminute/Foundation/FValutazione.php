@@ -34,5 +34,11 @@
             $query='UPDATE `'.$this->table.'` SET valore=`'.$voto.'` WHERE `'.$this->key.'` = \''.$a->getIDvalutazione().'\'';
             return $this->execute($query);
         }
+
+        public function media($user){
+            $query = "SELECT AVG(valutazione) FROM valutazione where  personaV = '".$user."'";
+            parent::execute($query);
+            //return parent::getObject();
+        }
     }
 ?>

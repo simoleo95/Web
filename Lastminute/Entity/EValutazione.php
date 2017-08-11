@@ -46,5 +46,11 @@ public function Object_array(EValutazione $p){
     return $t;
 }
 
+
+    public function media($username){
+        $Fvalutazione = new FValutazione();
+        return $Fvalutazione->media($username);
+    }
+
     }
 ?>

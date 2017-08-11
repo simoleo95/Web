@@ -1,6 +1,7 @@
 <div>
     <h1>Aste create</h1>
-
+    <h4>La tua valutazione e' di: </h4>
+    <p>{$tuaValutazione}</p>
     <div class="col-md-9">
 
     <div class="row">
@@ -47,6 +48,18 @@
                             </h4>
                             <p>{$dato->getArticolo()->getDescrizione()}</p>
                         </div>
+                                            <form method="post" enctype="multipart/form-data" action="index.php">
+                        <input type="text" name="username" value="{$dato->getUtentecreatore()->getUsername()}"  style="display:none">
+                        <input type="hidden" name="controller" value="asta">
+                        <input type="hidden" name="task" value="valuta">
+                        <table>
+
+                            <td><input type="number" name="valutazione" required/></td>
+
+                            <td><input type="submit" name="submit" value="Valuta"</td>
+
+                            </table>
+                    </form>
                         <div class="ratings">
                             <p class="pull-right">15 reviews</p>
                             <p>
@@ -58,9 +71,11 @@
                             </p>
                         </div>
                     </div>
+
                 </div>
             {/foreach}
         {/if}
     </div>
 </div>
+
 </div>

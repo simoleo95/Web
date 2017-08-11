@@ -20,6 +20,8 @@
                     $this->creaAsta();
                 case 'offerta':
                    return $this->offerta();
+                case 'valuta':
+                   return $this->valuta();    
             }
         }
 
@@ -74,6 +76,25 @@
             $VMieAste=USingleton::getInstance('VMieAste');
             $VMieAste->setLayout('\mieAste.tpl');
             return $VMieAste->processaTemplate();
+        }
+
+        public function valuta(){
+            $VMieAste=USingleton::getInstance('VMieAste');
+            $valutazione=$VMieAste->getValutazione();
+            $usernameC = $VMieAste->getUsername();
+            $session=USingleton::getInstance('USession');
+            $usernameV=$session->leggi_valore('username');
+            $EValutazione = new EValutazione();
+             echo "<script type='text/javascript'>alert('entrato');</script>";
+            $fdb = new Fdb();
+            $query="INSERT into valutazione(IDvalutazione,valutazione,personav,personac) VALUES ('','".$valutazione."','".$usernameV."','".$usernameC."')";
+
+
+            $fdb->execute($query);
+
+
+
+
         }
 
         public function creaAsta() {

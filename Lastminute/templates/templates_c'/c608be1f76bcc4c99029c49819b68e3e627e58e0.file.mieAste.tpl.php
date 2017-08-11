@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2017-08-11 18:40:27
+<?php /* Smarty version Smarty-3.1.13, created on 2017-08-11 20:17:22
          compiled from "C:\xampp\htdocs\Web\Lastminute\templates\templates\mieAste.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:561030435598dcb73c2a938-93326849%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'c608be1f76bcc4c99029c49819b68e3e627e58e0' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Web\\Lastminute\\templates\\templates\\mieAste.tpl',
-      1 => 1502469528,
+      1 => 1502475440,
       2 => 'file',
     ),
   ),
@@ -19,6 +19,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'unifunc' => 'content_598dcb73c4c359_45782442',
   'variables' => 
   array (
+    'tuaValutazione' => 0,
     'asteCreate' => 0,
     'dato' => 0,
     'asteVinte' => 0,
@@ -27,7 +28,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_598dcb73c4c359_45782442')) {function content_598dcb73c4c359_45782442($_smarty_tpl) {?><div>
     <h1>Aste create</h1>
-
+    <h4>La tua valutazione e' di: </h4>
+    <p><?php echo $_smarty_tpl->tpl_vars['tuaValutazione']->value;?>
+</p>
     <div class="col-md-9">
 
     <div class="row">
@@ -94,6 +97,19 @@ $_smarty_tpl->tpl_vars['dato']->_loop = true;
                             <p><?php echo $_smarty_tpl->tpl_vars['dato']->value->getArticolo()->getDescrizione();?>
 </p>
                         </div>
+                                            <form method="post" enctype="multipart/form-data" action="index.php">
+                        <input type="text" name="username" value="<?php echo $_smarty_tpl->tpl_vars['dato']->value->getUtentecreatore()->getUsername();?>
+"  style="display:none">
+                        <input type="hidden" name="controller" value="asta">
+                        <input type="hidden" name="task" value="valuta">
+                        <table>
+
+                            <td><input type="number" name="valutazione" required/></td>
+
+                            <td><input type="submit" name="submit" value="Valuta"</td>
+
+                            </table>
+                    </form>
                         <div class="ratings">
                             <p class="pull-right">15 reviews</p>
                             <p>
@@ -105,9 +121,11 @@ $_smarty_tpl->tpl_vars['dato']->_loop = true;
                             </p>
                         </div>
                     </div>
+
                 </div>
             <?php } ?>
         <?php }?>
     </div>
 </div>
+
 </div><?php }} ?>
