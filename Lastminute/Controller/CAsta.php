@@ -17,7 +17,7 @@
                 case 'crea':
                     $this->creaAsta();
                 case 'offerta':
-                    $this->offerta();
+                   return $this->offerta();
             }
         }
 
@@ -28,16 +28,22 @@
             $asta=$FAsta->load($VAsta->getId());
             $prezzo=$asta->getPrezzoF();
             $result=$prezzo->setValore($VAsta->getOfferta());
-            if(!$result)
+            if(!$result){
                 echo "<script type='text/javascript'>alert('Inserisci un prezzo maggiore di quello attuale!');</script>";
+                $VAsta->setLayout('\shop_item.tpl');
+                $VAsta->impostaDati('asta',$asta);
+            return $VAsta->processaTemplate();}
             else {
                 $FPrezzo=USingleton::getInstance('FPrezzo');
                 $FPrezzo->update($prezzo);
                 $session=USingleton::getInstance('USession');
                 $FUtente=USingleton::getInstance('FUtente');
                 $utente=$FUtente->load($session->leggi_valore('username'));
-                $asta->setUtentevincitore($utente);
-                $FAsta->update($asta);
+                $asta->setUtentevincitore($utente);               
+                $FAsta->offerta($asta);
+                $VAsta->setLayout('\shop_item.tpl');
+                $VAsta->impostaDati('asta',$asta);
+                return $VAsta->processaTemplate();
             }
         }
 

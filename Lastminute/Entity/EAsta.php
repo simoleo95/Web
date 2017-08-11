@@ -54,7 +54,7 @@ class EAsta{
         $this->utentecreatore = $utentecreatore;
     }
 
-    function setUtentevincitore(EUtente $utentevincitore) {
+    function setUtentevincitore( $utentevincitore) {
         $this->utentevincitore = $utentevincitore;
     }
 
