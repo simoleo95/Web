@@ -1,25 +1,25 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2017-08-08 11:49:49
-         compiled from "C:\xampp\htdocs\Web\Lastminute\templates\templates\tasto_logout.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:3429598988d8705b07-99087170%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /* Smarty version Smarty-3.1.13, created on 2017-08-08 17:35:04
+         compiled from "C:\xampp\htdocs\prova\Lastminute\templates\templates\tasto_logout.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:14833426845989da285e45b2-62918251%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
-    'ab9ac539a9cea29da2afdfa2cc6a91f979a50ba5' => 
+    'a029df665fda08ef0fb397917a952e0bbe8166a2' => 
     array (
-      0 => 'C:\\xampp\\htdocs\\Web\\Lastminute\\templates\\templates\\tasto_logout.tpl',
-      1 => 1502185783,
+      0 => 'C:\\xampp\\htdocs\\prova\\Lastminute\\templates\\templates\\tasto_logout.tpl',
+      1 => 1502191318,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '3429598988d8705b07-99087170',
+  'nocache_hash' => '14833426845989da285e45b2-62918251',
   'function' => 
   array (
   ),
-  'version' => 'Smarty-3.1.13',
-  'unifunc' => 'content_598988d8732027_11088697',
   'has_nocache_code' => false,
+  'version' => 'Smarty-3.1.13',
+  'unifunc' => 'content_5989da2864aa04_82366834',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_598988d8732027_11088697')) {function content_598988d8732027_11088697($_smarty_tpl) {?>    <!DOCTYPE HTML>
+<?php if ($_valid && !is_callable('content_5989da2864aa04_82366834')) {function content_5989da2864aa04_82366834($_smarty_tpl) {?>    <!DOCTYPE HTML>
     <html>
       <head>
         <title>Esempio</title>

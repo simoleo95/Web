@@ -1,5 +1,5 @@
 <?php
-    require('C:\xampp\htdocs\Web\Lastminute\includes\smarty-libs\Smarty.class.php');
+    require('C:\xampp\htdocs\prova\Lastminute\includes\smarty-libs\Smarty.class.php');
 
     class View extends Smarty {
         public function __construct() {
@@ -10,17 +10,6 @@
             $this->config_dir = $config['smarty']['config_dir'];
             $this->cache_dir = $config['smarty']['cache_dir'];
             $this->caching = false;
-        }
-
-        public function impostaDati($key,$valore) {
-            $this->assign($key,$valore);
-        }
-
-        public function getController() {
-            if (isset($_REQUEST['controller']))
-                return $_REQUEST['controller'];
-            else
-                return false;
         }
 }
 ?>

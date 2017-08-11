@@ -1,30 +1,30 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2017-08-06 12:05:01
-         compiled from "C:\xampp\htdocs\Web\Lastminute\templates\templates\modulo_registrazione.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:270735986e9cdb11e24-66361246%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /* Smarty version Smarty-3.1.13, created on 2017-08-11 11:35:56
+         compiled from "C:\xampp\htdocs\prova\Lastminute\templates\templates\modulo_registrazione.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:16799231885989db20e43cd6-38880643%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
-    '32c407b2fc7148b92bfba969e1a6f99fc9ee97bf' => 
+    'a786bc4356f26045603a5bf91f355eea008d4745' => 
     array (
-      0 => 'C:\\xampp\\htdocs\\Web\\Lastminute\\templates\\templates\\modulo_registrazione.tpl',
-      1 => 1502013132,
+      0 => 'C:\\xampp\\htdocs\\prova\\Lastminute\\templates\\templates\\modulo_registrazione.tpl',
+      1 => 1502444128,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '270735986e9cdb11e24-66361246',
+  'nocache_hash' => '16799231885989db20e43cd6-38880643',
   'function' => 
   array (
   ),
-  'has_nocache_code' => false,
   'version' => 'Smarty-3.1.13',
-  'unifunc' => 'content_5986e9cdb38a28_16538075',
+  'unifunc' => 'content_5989db20e6a097_24023038',
+  'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5986e9cdb38a28_16538075')) {function content_5986e9cdb38a28_16538075($_smarty_tpl) {?>      <a id="anchor-contact-1"></a>
+<?php if ($_valid && !is_callable('content_5989db20e6a097_24023038')) {function content_5989db20e6a097_24023038($_smarty_tpl) {?>      <a id="anchor-contact-1"></a>
         <div class="corner-content-1col-top"></div>        
         <div class="content-1col-nobox">
           <h1 class="contact">Modulo di registrazione</h1>
           <div class="contactform">
-            <form method="post" action="index.php">
+            <form method="post">
               <fieldset><legend>&nbsp;CREDENZIALI DI ACCESSO&nbsp;</legend>
                 <p><label for="username" class="left">Nome utente:</label>
                    <input type="text" name="username" id="username" class="field" value="" tabindex="5" /></p>
@@ -46,9 +46,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                    <input type="text" name="citta" id="citta" class="field" value="" tabindex="12" /></p>
                 <p><label for="email" class="left">Email:</label>
                    <input type="text" name="email" id="email" class="field" value="" tabindex="14" /></p>
-                <input type="hidden" name="controller" value="registrazione" />
-                <input type="hidden" name="task" value="salva" />
-                <p><input type="submit" name="submit" id="submit_1" class="button" value="Registrati" tabindex="15" /></p>
+                <p><button name = "registra">Registrati</button></p>
                </fieldset>
             </form>
           </div>
