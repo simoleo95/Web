@@ -68,8 +68,17 @@
 
         <div class="row">
             <div class="col-md-3">
+                {if isset($username)}
+                <p style="text-align: center">Benvenuto <b>{$username}</b>!</p>
+                {/if}
                 {if isset($insAnnuncio)}
                     {$insAnnuncio}
+                {/if}
+                {if isset($login)}
+                    {$login}
+                {/if}
+                {if isset($logout)}
+                    {$logout}
                 {/if}
                 <p class="lead">Categorie</p>
                 <div class="list-group">
@@ -78,12 +87,6 @@
                     <a href="#" class="list-group-item">Category 3</a>
 					<a href="#" class="list-group-item">Category 4</a>
                 </div>
-                {if isset($login)}
-                    {$login}
-                {/if}
-                {if isset($logout)}
-                    {$logout}
-                {/if}
             </div>	
 
             <!--    <div class="row carousel-holder">

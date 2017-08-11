@@ -15,7 +15,6 @@
                 
                 case 'registrazione':
                     return $this->registra();
-
                 case 'creautente':
                     return $this->salva();
             }
@@ -42,7 +41,7 @@
             $this->errore='';
 
             // Da impostare qui i dati da inserire nel template dopo il login
-            $VRegistrazione->impostaDati('username',$session->leggi_valore('username'));
+            //$VRegistrazione->impostaDati('username',$session->leggi_valore('username'));
 
             return $autenticato;
 

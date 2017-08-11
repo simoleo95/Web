@@ -9,6 +9,7 @@
         }
 
         public function impostaPaginaRegistrato() {
+            $session=USingleton::getInstance('USession');
             $this->assign('title', 'Last Minute');
             $this->assign('content_title', 'Benvenuto ospite');
             $this->assign('mainContent', $this->mainContent);
@@ -17,6 +18,7 @@
             $this->assign('logout', $result1);
             $result2=$this->aggiungiBottoneInserimentoAnnuncio();
             $this->assign('insAnnuncio', $result2);
+            $this->assign('username',$session->leggi_valore('username'));
         }
 
         public function impostaPaginaGuest() {
