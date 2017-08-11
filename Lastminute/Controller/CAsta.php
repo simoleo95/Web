@@ -73,7 +73,8 @@
             $EAsta->setArticolo($EArticolo);
 
             $FAsta->store($EAsta);
+
+            echo "<script type='text/javascript'>alert('Asta inserita correttamente!');window.location = 'index.php';</script>";
         }
     }
 ?>
-

@@ -7,15 +7,15 @@
         <table>
             <tr>
                 <td>Titolo</td>
-                <td><input type="text" name="titolo"/></td>
+                <td><input type="text" name="titolo" required/></td>
             </tr>
             <tr>
                 <td>Descrizione</td>
-                <td><textarea name="descrizione"></textarea></td>
+                <td><textarea name="descrizione" required></textarea></td>
             </tr>
             <tr>
                 <td>Foto</td>
-                <td><input type="file" name="foto"/></td>
+                <td><input type="file" name="foto" accept="image/jpeg" required/></td>
             </tr>
             <tr>
                 <td>Categoria</td>
@@ -29,14 +29,14 @@
             </tr>
             <tr>
                 <td>Data Scadenza</td>
-                <td><input type="datetime-local" name="dataf"/></td>
+                <td><input type="datetime-local" name="dataf" required/></td>
             </tr>
             <tr>
                 <td>Prezzo di partenza</td>
-                <td><input type="number" name="prezzop" min="1"/></td>
+                <td><input type="number" name="prezzop" min="1" required/></td>
             </tr>
             <tr>
-                <td><input type="submit" name="submit" value="Inserisci"/></td>
+                <td><input type="submit" name="submit" value="Inserisci"</td>
             </tr>
         </table>
     </form>
