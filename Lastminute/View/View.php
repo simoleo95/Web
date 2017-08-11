@@ -22,5 +22,12 @@
             else
                 return false;
         }
+
+        public function getTask() {
+            if (isset($_REQUEST['task']))
+                return $_REQUEST['task'];
+            else
+                return false;
+        }
 }
 ?>

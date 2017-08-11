@@ -15,7 +15,7 @@
                 case 'login':
                     return $this->registra();
                 case 'registrazione':
-                    return $this->registrazione();
+                    return $this->registra();
             }
         }
 
@@ -74,10 +74,6 @@
         public function logout(){
             $USession=USingleton::getInstance('USession');
             $USession->cancella_valore('username');
-        }
-
-        public function registrazione() {
-
         }
     }
 ?>
