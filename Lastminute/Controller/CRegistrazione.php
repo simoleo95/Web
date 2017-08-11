@@ -42,7 +42,7 @@
             $this->errore='';
 
             // Da impostare qui i dati da inserire nel template dopo il login
-            $VRegistrazione->impostaDati('username',$this->username);
+            $VRegistrazione->impostaDati('username',$session->leggi_valore('username'));
 
             return $autenticato;
 
@@ -98,7 +98,6 @@
         if($password!=$password_1)
             return "password diverse";
         else{
-            
         $errore = $EUtente->store();
          echo '<script type="text/javascript">alert("'.$errore.'");</script>';
         }
