@@ -42,7 +42,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">{$title}</a>
+                <a class="navbar-brand" href="index.php">{$title}</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -67,23 +67,26 @@
     <div class="container">
 
         <div class="row">
-
             <div class="col-md-3">
-                <p class="lead">Shop Name</p>
+                {if isset($insAnnuncio)}
+                    {$insAnnuncio}
+                {/if}
+                <p class="lead">Categorie</p>
                 <div class="list-group">
-                    <a href="index.php" class="list-group-item">Home</a>
+                    <a href="#" class="list-group-item">Category 1</a>
                     <a href="#" class="list-group-item">Category 2</a>
                     <a href="#" class="list-group-item">Category 3</a>
-					<a href="index.php?controller=registra" class="list-group-item">Registrazione</a>
+					<a href="#" class="list-group-item">Category 4</a>
                 </div>
-				{$login}
-				{$logout}
+                {if isset($login)}
+                    {$login}
+                {/if}
+                {if isset($logout)}
+                    {$logout}
+                {/if}
             </div>	
-			
-			 <div class="col-md-9">
 
-
-                <div class="row carousel-holder">
+            <!--    <div class="row carousel-holder">
 
                     <div class="col-md-12">
                         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -112,18 +115,10 @@
                         </div>
                     </div>
 
-                </div>
-				
+                </div> -->
 
-                <div class="row">
-
-                    {$mainContent}
-					
-
-                </div>
-
-            </div>
-
+            {$mainContent}
+           
         </div>
 
     </div>

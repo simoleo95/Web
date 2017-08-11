@@ -1,40 +1,36 @@
 <?php
 
     class CHome {
+
         public function impostaPagina() {
             $CRegistrazione = USingleton::getInstance('CRegistrazione');
-            $registrato=$CRegistrazione->getRegistrato();          
-            $VHome=new VHome();
+            $registrato = $CRegistrazione->getRegistrato();
+            $VHome = new VHome();
             // Da cambiare con funzione smista come bookstore
-            $contenuto=$this->smista();
+            $contenuto = $this->smista();
             $VHome->impostaContenuto($contenuto);
             // Da controllare impostazione con utente registrato e utente guest
-            if($registrato)
-                
-            $VHome->impostaPaginaRegistrato();
+            if ($registrato)
+                $VHome->impostaPaginaRegistrato();
             else
-            $VHome->impostaPaginaGuest();
-            
+                $VHome->impostaPaginaGuest();
+
             $VHome->mostraPagina();
         }
-    
-    
-    
-    public function smista(){
-        $view= USingleton::getInstance('VRegistrazione');
-        switch ($view->getController()) {
-            case 'registra':
-                $CRegistrazione = USingleton::getInstance('CRegistrazione');
-                return $CRegistrazione->registra();
-                  
-            default:
-                $CRicerca=USingleton::getInstance('CRicerca');
-                return $CRicerca->inScadenza();
 
-        }
+        public function smista() {
+            $view = USingleton::getInstance('VRegistrazione');
+            switch ($view->getController()) {
+                case 'registra':
+                    $CRegistrazione = USingleton::getInstance('CRegistrazione');
+                    return $CRegistrazione->registra();
+                case 'asta':
+                    $CAsta = USingleton::getInstance('CAsta');
+                    return $CAsta->smista();
+                default:
+                    $CRicerca = USingleton::getInstance('CRicerca');
+                    return $CRicerca->inScadenza();
+            }
         }
     }
-    
-    
-    
 ?>

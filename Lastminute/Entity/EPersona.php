@@ -68,20 +68,6 @@ class EPersona{
         $this->password = $password;
     
         }
-    function store(){
-        $appoggio = new EUtente();
-        $appoggio->setNome($this->nome);
-        $appoggio->setCognome($this->cognome);
-        $appoggio->setEmail($this->email);
-        $appoggio->setUsername($this->username);
-        $appoggio->setPassword($this->password);
-        $FUtente = new FUtente();
-        if($FUtente->load($this->username))
-            return "Utente gia un uso";
-        else
-        return $FUtente->salva($appoggio);
-
-        } 
     }
 
 

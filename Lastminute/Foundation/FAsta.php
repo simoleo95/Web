@@ -43,7 +43,7 @@
             else $pf="";
 
             $ida=$a->getArticolo()->getIDarticolo();
-            $query="INSERT into asta(IDasta,dataI,dataF,userC,userV,IDprezzoF,IDprezzoI,IDarticolo) VALUES ('','".$a->setDataI($dataF)."','".$a->getDataF()."','".$uc."','".$uv."','".$pf."','".$pi."','".$ida."')";
+            $query="INSERT into asta(IDasta,dataI,dataF,userC,userV,IDprezzoP,IDprezzoF,IDarticolo) VALUES ('','".$a->getDataP()."','".$a->getDataF()."','".$uc."','".$uv."','".$pi."','".$pf."','".$ida."')";
             parent::execute($query);
             $b=$this->db->lastInsertId("IDasta");
             $a->setIdAsta($b);

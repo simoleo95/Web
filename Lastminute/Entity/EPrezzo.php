@@ -25,7 +25,12 @@ class EPrezzo{
     }
 
     function setValore($valore) {
-        $this->valore = $valore;
+        if($valore>$this->valore){
+            $this->valore = $valore;
+            return true;
+        }
+        else
+            return false;
     }
 
     function setValuta($valuta) {

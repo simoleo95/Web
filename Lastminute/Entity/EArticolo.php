@@ -7,10 +7,7 @@
         private $foto;
         private $categoria;
         private $IDarticolo;
-        
 
-        // costruttore a cui vengono passsati dei parametri
-    
         // METODI //
 
         function getTitolo() {
