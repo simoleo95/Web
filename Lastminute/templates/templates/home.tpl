@@ -71,7 +71,7 @@
                 {if isset($insAnnuncio)}
                     {$insAnnuncio}
                 {/if}
-                <p class="lead">Shop Name</p>
+                <p class="lead">Categorie</p>
                 <div class="list-group">
                     <a href="#" class="list-group-item">Category 1</a>
                     <a href="#" class="list-group-item">Category 2</a>
@@ -85,9 +85,6 @@
                     {$logout}
                 {/if}
             </div>	
-			
-			 <div class="col-md-9">
-
 
             <!--    <div class="row carousel-holder">
 
@@ -119,16 +116,8 @@
                     </div>
 
                 </div> -->
-				
-  
-                <div class="row">
 
-                  {$mainContent}
-					
-
-                </div>
-
-            </div>
+            {$mainContent}
            
         </div>
 

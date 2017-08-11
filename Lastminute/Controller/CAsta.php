@@ -20,7 +20,7 @@
         }
 
         public function dettagli() {
-
+            
         }
 
         public function inserisci() {
@@ -61,7 +61,8 @@
             // Aggiungere metodo da qualche parte che fornisce l'utente attuale
             $EUtente=USingleton::getInstance('EUtente');
             $FUtente=USingleton::getInstance('FUtente');
-            $EUtente=$FUtente->load('andrecocc');
+            $session=USingleton::getInstance('USession');
+            $EUtente=$FUtente->load($session->leggi_valore('username'));
 
             $EAsta->setIdAsta('');
             $EAsta->setDataP(date("Y-m-d H:i:s"));
