@@ -20,7 +20,13 @@
         }
 
         public function dettagli() {
-            
+            $VAsta=USingleton::getInstance('VAsta');
+            $VAsta->setLayout('\shop_item.tpl');
+            $FAsta=USingleton::getInstance('FAsta');
+            $asta=$FAsta->load($VAsta->getId());
+            $VAsta->impostaDati('asta',$asta);
+
+            return $VAsta->processaTemplate();
         }
 
         public function inserisci() {

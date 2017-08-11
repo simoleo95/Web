@@ -11,5 +11,16 @@
             $this->cache_dir = $config['smarty']['cache_dir'];
             $this->caching = false;
         }
+
+        public function impostaDati($key,$valore) {
+            $this->assign($key,$valore);
+        }
+
+        public function getController() {
+            if (isset($_REQUEST['controller']))
+                return $_REQUEST['controller'];
+            else
+                return false;
+        }
 }
 ?>

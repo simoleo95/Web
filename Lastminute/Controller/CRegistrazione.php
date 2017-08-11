@@ -28,7 +28,7 @@
             $this->errore='';
 
             // Da impostare qui i dati da inserire nel template dopo il login
-            $VRegistrazione->impostaDati($this->username);
+            $VRegistrazione->impostaDati('username',$this->username);
 
             return $autenticato;
 

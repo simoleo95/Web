@@ -3,13 +3,6 @@
     class VRegistrazione extends View{
         private $layout='\login.tpl';
 
-        public function getController() {
-            if (isset($_REQUEST['controller']))
-                return $_REQUEST['controller'];
-            else
-                return false;
-        }
-
         public function getPassword() {
             if (isset($_REQUEST['password']))
                 return $_REQUEST['password'];
@@ -37,10 +30,6 @@
 
         public function setLayout($tlp) {
             $this->layout=$tlp;
-        }
-
-        public function impostaDati($user) {
-            $this->assign('username',$user);
         }
     }
 ?>
