@@ -5,7 +5,19 @@
         private $username=null;
         private $password=null;
         private $errore='';
+        private $task;
 
+        public function smista() {
+            $view=USingleton::getInstance('VRegistrazione');
+            $this->task=$view->getTask();
+
+            switch ($this->task){
+                case 'login':
+                    return $this->registra();
+                case 'registrazione':
+                    return $this->registrazione();
+            }
+        }
 
         public function getRegistrato(){
             $autenticato=false;
@@ -62,6 +74,10 @@
         public function logout(){
             $USession=USingleton::getInstance('USession');
             $USession->cancella_valore('username');
+        }
+
+        public function registrazione() {
+
         }
     }
 ?>

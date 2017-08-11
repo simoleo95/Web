@@ -2,6 +2,7 @@
     <p class="lead">Login</p>
     <!--Gestione errori-->
     <input type="hidden" name="controller" value="log" />
+    <input type="hidden" name="task" value="registra" />
     <p id="error">{$errore}</p>
 
     <div class="list-group">

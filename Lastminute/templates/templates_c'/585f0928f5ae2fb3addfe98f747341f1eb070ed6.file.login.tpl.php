@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2017-08-10 18:07:47
+<?php /* Smarty version Smarty-3.1.13, created on 2017-08-11 13:14:20
          compiled from "C:\xampp\htdocs\Web\Lastminute\templates\templates\login.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:78359848bc869a8b4-51848092%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '585f0928f5ae2fb3addfe98f747341f1eb070ed6' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Web\\Lastminute\\templates\\templates\\login.tpl',
-      1 => 1502381262,
+      1 => 1502450048,
       2 => 'file',
     ),
   ),
@@ -27,6 +27,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     <p class="lead">Login</p>
     <!--Gestione errori-->
     <input type="hidden" name="controller" value="log" />
+    <input type="hidden" name="task" value="registra" />
     <p id="error"><?php echo $_smarty_tpl->tpl_vars['errore']->value;?>
 </p>
 

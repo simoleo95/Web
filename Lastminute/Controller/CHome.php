@@ -23,7 +23,7 @@
             switch ($view->getController()) {
                 case 'registra':
                     $CRegistrazione = USingleton::getInstance('CRegistrazione');
-                    return $CRegistrazione->registra();
+                    return $CRegistrazione->smista();
                 case 'asta':
                     $CAsta = USingleton::getInstance('CAsta');
                     return $CAsta->smista();

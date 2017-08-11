@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2017-08-11 11:48:21
+<?php /* Smarty version Smarty-3.1.13, created on 2017-08-11 13:12:06
          compiled from "C:\xampp\htdocs\Web\Lastminute\templates\templates\shop_item.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:28922598d79ef4abbb0-87189210%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'a3216d14c5a1df902384e9234de22e8834fe7bd6' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Web\\Lastminute\\templates\\templates\\shop_item.tpl',
-      1 => 1502444900,
+      1 => 1502449050,
       2 => 'file',
     ),
   ),
@@ -29,7 +29,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
         <img class="img-responsive" style="height: 300px !important;" src="data:image;base64,<?php echo $_smarty_tpl->tpl_vars['asta']->value->getArticolo()->getFoto();?>
 " alt="">
         <div class="caption-full">
-            <h4 class="pull-right"><?php echo $_smarty_tpl->tpl_vars['asta']->value->getPrezzoI()->getValore();?>
+            <h4 class="pull-right">Prezzo di partenza: <?php echo $_smarty_tpl->tpl_vars['asta']->value->getPrezzoI()->getValore();?>
  <?php echo $_smarty_tpl->tpl_vars['asta']->value->getPrezzoI()->getValuta();?>
 </h4>
             <h4><a href="#"><?php echo $_smarty_tpl->tpl_vars['asta']->value->getArticolo()->getTitolo();?>
@@ -37,6 +37,25 @@ $_valid = $_smarty_tpl->decodeProperties(array (
             </h4>
             <p><?php echo $_smarty_tpl->tpl_vars['asta']->value->getArticolo()->getDescrizione();?>
 </p>
+        </div>
+        <div style="margin-bottom: 20px;">
+            <h4 class="pull-right">Prezzo attuale: <?php echo $_smarty_tpl->tpl_vars['asta']->value->getPrezzoF()->getValore();?>
+ <?php echo $_smarty_tpl->tpl_vars['asta']->value->getPrezzoF()->getValuta();?>
+</h4>
+            <div class="text-left" style="margin: 10px;">
+                <form method="post" action="index.php">
+                    <input type="hidden" name="controller" value="asta" />
+                    <input type="hidden" name="task" value="offerta" />
+                    <input type="hidden" name="id_asta" value="<?php echo $_smarty_tpl->tpl_vars['asta']->value->getIdAsta();?>
+"/>
+
+                    <input type="number" name="offerta" style="width: 70px;" min="<?php echo $_smarty_tpl->tpl_vars['asta']->value->getPrezzoF()->getValore();?>
+" placeholder="<?php echo $_smarty_tpl->tpl_vars['asta']->value->getPrezzoF()->getValore();?>
+" required/>  <?php echo $_smarty_tpl->tpl_vars['asta']->value->getPrezzoI()->getValuta();?>
+
+                    <input type="submit" class="btn btn-success" value="Partecipa"/>
+                </form>
+            </div>
         </div>
         <div class="ratings">
             <p class="pull-right">3 reviews</p>

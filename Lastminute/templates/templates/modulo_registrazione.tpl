@@ -18,6 +18,7 @@
         <p><label for="email" class="left">Email:</label>
            <input type="text" name="email" id="email" class="field" value="" tabindex="14" /></p>
         <input type="hidden" name="controller" value="salva" />
+        <input type="hidden" name="task" value="registrazione" />
         <p><input type="submit" name="submit" id="submit_1" class="button" value="Registrati" tabindex="15" /></p>
        </fieldset>
     </form>
