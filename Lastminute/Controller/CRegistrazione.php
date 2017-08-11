@@ -80,26 +80,21 @@
      }
     
     public function salva(){
-        echo '<script type="text/javascript">alert("entrato");</script>';
         $VCreaAccount=USingleton::getInstance('VCreaAccount');  
         $password=$VCreaAccount->getPassword();
         $password_1=$VCreaAccount->getPassword_1();
-        $username = $VCreaAccount->getUsername();
-        $nome = $VCreaAccount->getNome();
-        $cognome = $VCreaAccount->getCognome();
-        $email = $VCreaAccount->getEmail();
-
         $EUtente = new EUtente();
-        $EUtente->setNome($nome);
-        $EUtente->setCognome($cognome);
-        $EUtente->setEmail($email);
-        $EUtente->setUsername($username);
+        $EUtente->setNome($VCreaAccount->getNome());
+        $EUtente->setCognome($VCreaAccount->getCognome());
+        $EUtente->setEmail($VCreaAccount->getEmail());
+        $EUtente->setUsername($VCreaAccount->getUsername());
         $EUtente->setPassword($password);
         if($password!=$password_1)
             return "password diverse";
         else{
         $errore = $EUtente->store();
          echo '<script type="text/javascript">alert("'.$errore.'");</script>';
+         header('Location:index.php');
         }
     }
     
