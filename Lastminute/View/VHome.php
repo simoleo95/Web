@@ -18,6 +18,8 @@
             $this->assign('logout', $result1);
             $result2=$this->aggiungiBottoneInserimentoAnnuncio();
             $this->assign('insAnnuncio', $result2);
+            $result3=$this->aggiungiBottoneMieAste();
+            $this->assign('insMieAste', $result3);
             $this->assign('username',$session->leggi_valore('username'));
         }
 
@@ -52,6 +54,11 @@
         public function aggiungiBottoneInserimentoAnnuncio() {
             $VAsta=USingleton::getInstance('VAsta');
             $VAsta->setLayout('\tasto_insAnnuncio.tpl');
+            return $VAsta->processaTemplate();
+        }
+        public function aggiungiBottoneMieAste() {
+            $VAsta=USingleton::getInstance('VAsta');
+            $VAsta->setLayout('\tasto_insMieAste.tpl');
             return $VAsta->processaTemplate();
         }
     }

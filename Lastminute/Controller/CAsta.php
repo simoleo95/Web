@@ -14,6 +14,8 @@
                     return $this->dettagli();
                 case 'inserisci':
                     return $this->inserisci();
+                case 'mieAste':
+                    return $this->mieAste();
                 case 'crea':
                     $this->creaAsta();
                 case 'offerta':
@@ -61,6 +63,17 @@
             $VAsta=USingleton::getInstance('VAsta');
             $VAsta->setLayout('\insAnnuncio.tpl');
             return $VAsta->processaTemplate();
+        }
+
+        public function mieAste(){
+
+            $VAsta=USingleton::getInstance('VAsta');
+
+            
+            $VAsta->setLayout('\mieAste.tpl');
+            $VMieAste=USingleton::getInstance('VMieAste');
+            $VMieAste->setLayout('\mieAste.tpl');
+            return $VMieAste->processaTemplate();
         }
 
         public function creaAsta() {

@@ -71,6 +71,9 @@
                 {if isset($username)}
                 <p style="text-align: center">Benvenuto <b>{$username}</b>!</p>
                 {/if}
+                {if isset($insMieAste)}
+                    {$insMieAste}
+                {/if}
                 {if isset($insAnnuncio)}
                     {$insAnnuncio}
                 {/if}
