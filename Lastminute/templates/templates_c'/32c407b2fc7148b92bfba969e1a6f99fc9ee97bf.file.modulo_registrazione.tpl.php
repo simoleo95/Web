@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2017-08-11 15:02:05
+<?php /* Smarty version Smarty-3.1.13, created on 2017-08-11 15:45:57
          compiled from "C:\xampp\htdocs\Web\Lastminute\templates\templates\modulo_registrazione.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:270735986e9cdb11e24-66361246%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '32c407b2fc7148b92bfba969e1a6f99fc9ee97bf' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Web\\Lastminute\\templates\\templates\\modulo_registrazione.tpl',
-      1 => 1502456523,
+      1 => 1502459148,
       2 => 'file',
     ),
   ),
@@ -24,7 +24,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
         <div  style="border:groove; border-radius:10px 10px 10px 10px; padding-left:8px;">
           <h1 class="contact">Modulo di registrazione</h1>
           <div class="contactform">
-            <form method="post" action="index.php">
+            <form method="post">
               <fieldset><legend>&nbsp;CREDENZIALI DI ACCESSO&nbsp;</legend>
                 <p><label for="username" class="left">Nome utente:</label>
                    <input type="text" name="username" id="username" class="field" value="" tabindex="5" /></p>
@@ -40,9 +40,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                    <input type="text" name="cognome" id="cognome" class="field" value="" tabindex="9" /></p>
                 <p><label for="email" class="left">Email:</label>
                    <input type="text" name="email" id="email" class="field" value="" tabindex="14" /></p>
-                <input type="hidden" name="controller" value="salva" />
-                <input type="hidden" name="task" value="registrazione" />
-                <p><input type="submit" name="submit" id="submit_1" class="button" value="Registrati" tabindex="15" /></p>
+                <input type="hidden" name="controller" value="registra" />
+                <input type="hidden" name="task" value="creautente" />
+                <p><input type="submit" name="registra" id="submit_1" class="button" value="Registrati" tabindex="15" /></p>
                </fieldset>
             </form>
           </div>

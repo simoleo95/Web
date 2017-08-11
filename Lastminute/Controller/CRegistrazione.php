@@ -12,10 +12,12 @@
             $this->task=$view->getTask();
 
             switch ($this->task){
-                case 'login':
-                    return $this->registra();
+                
                 case 'registrazione':
                     return $this->registra();
+
+                case 'creautente':
+                    return $this->salva();
             }
         }
 
@@ -66,16 +68,44 @@
         }
 
         public function registra() {
-            $VRegistrazione=USingleton::getInstance('VRegistrazione');
-            $VRegistrazione->setLayout('\modulo_registrazione.tpl');
-            return $VRegistrazione->processaTemplate();
-        }
+        $VCreaAccount=USingleton::getInstance('VCreaAccount');        
+        $VCreaAccount->setLayout('\modulo_registrazione.tpl');
+        
 
-        public function logout(){
-            $USession=USingleton::getInstance('USession');
-            $USession->cancella_valore('username');
+        return $VCreaAccount->processaTemplate();
+    }
+     public function logout(){
+         $USession=USingleton::getInstance('USession');
+         $USession->cancella_valore('username');
+     }
+    
+    public function salva(){
+        echo '<script type="text/javascript">alert("entrato");</script>';
+        $VCreaAccount=USingleton::getInstance('VCreaAccount');  
+        $password=$VCreaAccount->getPassword();
+        $password_1=$VCreaAccount->getPassword_1();
+        $username = $VCreaAccount->getUsername();
+        $nome = $VCreaAccount->getNome();
+        $cognome = $VCreaAccount->getCognome();
+        $email = $VCreaAccount->getEmail();
+
+        $EUtente = new EUtente();
+        $EUtente->setNome($nome);
+        $EUtente->setCognome($cognome);
+        $EUtente->setEmail($email);
+        $EUtente->setUsername($username);
+        $EUtente->setPassword($password);
+        if($password!=$password_1)
+            return "password diverse";
+        else{
+            
+        $errore = $EUtente->store();
+         echo '<script type="text/javascript">alert("'.$errore.'");</script>';
         }
     }
-?>
     
 
+
+  }
+    
+    

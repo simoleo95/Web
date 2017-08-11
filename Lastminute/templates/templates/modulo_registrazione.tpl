@@ -3,7 +3,7 @@
         <div  style="border:groove; border-radius:10px 10px 10px 10px; padding-left:8px;">
           <h1 class="contact">Modulo di registrazione</h1>
           <div class="contactform">
-            <form method="post" action="index.php">
+            <form method="post">
               <fieldset><legend>&nbsp;CREDENZIALI DI ACCESSO&nbsp;</legend>
                 <p><label for="username" class="left">Nome utente:</label>
                    <input type="text" name="username" id="username" class="field" value="" tabindex="5" /></p>
@@ -19,9 +19,9 @@
                    <input type="text" name="cognome" id="cognome" class="field" value="" tabindex="9" /></p>
                 <p><label for="email" class="left">Email:</label>
                    <input type="text" name="email" id="email" class="field" value="" tabindex="14" /></p>
-                <input type="hidden" name="controller" value="salva" />
-                <input type="hidden" name="task" value="registrazione" />
-                <p><input type="submit" name="submit" id="submit_1" class="button" value="Registrati" tabindex="15" /></p>
+                <input type="hidden" name="controller" value="registra" />
+                <input type="hidden" name="task" value="creautente" />
+                <p><input type="submit" name="registra" id="submit_1" class="button" value="Registrati" tabindex="15" /></p>
                </fieldset>
             </form>
           </div>
