@@ -64,7 +64,7 @@
             $EUtente=$FUtente->load('andrecocc');
 
             $EAsta->setIdAsta('');
-            $EAsta->setDataP($_SERVER['REQUEST_TIME']);
+            $EAsta->setDataP(date("Y-m-d H:i:s"));
             $EAsta->setDataF($VAsta->getData());
             $EAsta->setPrezzoI($EPrezzo);
             $EAsta->setPrezzoF($EPrezzo);

@@ -2,7 +2,7 @@
     {foreach from=$dati item=dato}
         <div class="col-sm-4 col-lg-4 col-md-4">
             <div class="thumbnail">
-                <img src="data:image;base64,{$dato->getArticolo()->getFoto()}" alt="">
+                <img src="data:image;base64,{$dato->getArticolo()->getFoto()}" style="height: 150px !important;" alt="">
                 <div class="caption">
                     <h4 class="pull-right">{$dato->getPrezzoI()->getValore()} {$dato->getPrezzoF()->getValuta()}</h4>
                     <h4><a href="index.php?controller=asta&task=dettagli&id_asta={$dato->getIdAsta()}">{$dato->getArticolo()->getTitolo()}</a>

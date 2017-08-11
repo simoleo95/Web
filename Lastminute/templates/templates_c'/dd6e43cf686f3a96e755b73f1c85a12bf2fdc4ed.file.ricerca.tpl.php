@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2017-08-10 18:05:00
+<?php /* Smarty version Smarty-3.1.13, created on 2017-08-11 10:30:37
          compiled from "C:\xampp\htdocs\Web\Lastminute\templates\templates\ricerca.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:311015981807c2d2ab2-51790956%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'dd6e43cf686f3a96e755b73f1c85a12bf2fdc4ed' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Web\\Lastminute\\templates\\templates\\ricerca.tpl',
-      1 => 1502381073,
+      1 => 1502440236,
       2 => 'file',
     ),
   ),
@@ -33,7 +33,7 @@ $_smarty_tpl->tpl_vars['dato']->_loop = true;
         <div class="col-sm-4 col-lg-4 col-md-4">
             <div class="thumbnail">
                 <img src="data:image;base64,<?php echo $_smarty_tpl->tpl_vars['dato']->value->getArticolo()->getFoto();?>
-" alt="">
+" style="height: 150px !important;" alt="">
                 <div class="caption">
                     <h4 class="pull-right"><?php echo $_smarty_tpl->tpl_vars['dato']->value->getPrezzoI()->getValore();?>
  <?php echo $_smarty_tpl->tpl_vars['dato']->value->getPrezzoF()->getValuta();?>
