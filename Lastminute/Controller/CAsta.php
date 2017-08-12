@@ -85,16 +85,9 @@
             $session=USingleton::getInstance('USession');
             $usernameV=$session->leggi_valore('username');
             $EValutazione = new EValutazione();
-             echo "<script type='text/javascript'>alert('entrato');</script>";
-            $fdb = new Fdb();
-            $query="INSERT into valutazione(IDvalutazione,valutazione,personav,personac) VALUES ('','".$valutazione."','".$usernameV."','".$usernameC."')";
-
-
-            $fdb->execute($query);
-
-
-
-
+            $errore=$EValutazione->valuta($valutazione,$usernameV,$usernameC);
+            //header('Location: index.php?controller=asta&task=mieAste');
+            echo "<script type='text/javascript'>alert('".$errore."');window.location = 'index.php?controller=asta&task=mieAste';</script>";
         }
 
         public function creaAsta() {
@@ -144,6 +137,7 @@
             $FAsta->store($EAsta);
 
             echo "<script type='text/javascript'>alert('Asta inserita correttamente!');window.location = 'index.php';</script>";
+
         }
     }
 ?>

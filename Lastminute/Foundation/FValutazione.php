@@ -36,9 +36,23 @@
         }
 
         public function media($user){
-            $query = "SELECT AVG(valutazione) FROM valutazione where  personaV = '".$user."'";
-            parent::execute($query);
-            //return parent::getObject();
+            //$query = "SELECT AVG(valutazione) FROM valutazione where  personaV = '".$user."' ";
+                        $query = "SELECT valutazione FROM valutazione where  IDvalutazione = 1 ";
+           $result= parent::execute($query);
+
+            return parent::getObject()->getVoto();
         }
+
+        public function valuta($valutazione,$usernameV,$usernameC){
+
+            $query="INSERT into valutazione(IDvalutazione,valutazione,personav,personac) VALUES ('','".$valutazione."','".$usernameV."','".$usernameC."')";
+            parent::execute($query);
+        }
+
+        public function verificaValutazione($usernameV,$usernameC){
+            $query="SELECT * FROM valutazione WHERE personaC='".$usernameC."' ";
+            parent::execute($query);
+            return parent::getObject();   
+         }
     }
 ?>

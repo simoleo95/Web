@@ -39,7 +39,7 @@
        } 
        public function ricercaVincitore($user){
             $FAsta=  USingleton::getInstance('FAsta');
-            $query="SELECT * FROM Asta WHERE userv ='".$user."'";
+            $query="SELECT * FROM Asta WHERE userv ='".$user."' AND dataF < CURDATE()";
             $FAsta->execute($query);
             $tmp=$FAsta->getObjects();
 
