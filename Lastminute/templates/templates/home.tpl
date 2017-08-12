@@ -16,6 +16,8 @@
 
     <!-- Custom CSS -->
     <link href="templates/templates/css/shop-homepage.css" rel="stylesheet">
+	
+	<link href="templates/templates/css/ricerca.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -54,11 +56,14 @@
                         <a href="#">Services</a>
                     </li>
                     <li>
-                        <a href="#">Contact</a>
-                    </li>
-                </ul>
+                        <a href="#">Contact</a>						
+                    </li>				
+							
+               </ul>
+				
             </div>
             <!-- /.navbar-collapse -->
+			
         </div>
         <!-- /.container -->
     </nav>
@@ -83,6 +88,16 @@
                 {if isset($logout)}
                     {$logout}
                 {/if}
+				<p>Ricerca </p>
+				<div id="cerca-box" class="ricerca" onmouseover="coloreboxcerca('EEEEEE')" onmouseout="coloreboxcerca('999999')">
+                       <form method="post" action="index.php">
+					  <input type="hidden" name="controller" value="asta" />
+                       <input type="hidden" name="task" value="ricerca" />
+                      <input id="cerca-query" type="text" name="testo" class="query"/>
+                      <input type="image" src="templates/templates/images/bt_cerca.png"/>
+                      </form>
+                </div>
+				
                 <p class="lead">Categorie</p>
                 <div class="list-group">
                     <a href="#" class="list-group-item">Category 1</a>
@@ -155,6 +170,8 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="templates/templates/js/bootstrap.min.js"></script>
+	
+	<script src="templates/templates/js/ricerca.js"></script>
 
 </body>
 

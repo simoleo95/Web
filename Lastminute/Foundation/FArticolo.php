@@ -14,5 +14,26 @@
             $b=$this->db->lastInsertId("IDarticolo");
             $a->setIDarticolo($b);
         }
+        
+        public function ricercafull($array){
+            $FAsta=  USingleton::getInstance('FAsta');
+            $risultati=array();
+            $aste=array();
+            for($i=0;$i<count($array);$i++){
+                $query="SELECT IDarticolo, MATCH (`titolo`,`descrizione`) 
+                 AGAINST ('".$array[$i]."') AS new_tb
+                 FROM articolo 
+                 WHERE MATCH (`titolo`,`descrizione`) 
+                 AGAINST ('".$array[$i]."')
+                 ORDER BY new_tb DESC";
+                parent::execute($query);                
+                $risultati=array_merge($risultati,  parent::getresult());
+                
+            }
+             $aste=$FAsta->ricerca($risultati);
+             return $aste;
+        }
+        
+        
     }
 ?>

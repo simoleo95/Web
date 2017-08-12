@@ -21,8 +21,20 @@
                 case 'offerta':
                    return $this->offerta();
                 case 'valuta':
-                   return $this->valuta();    
+                   return $this->valuta();  
+                case 'ricerca':
+                    return $this->ricerca();
             }
+        }
+        public function ricerca(){
+            $VAsta= USingleton::getInstance('VAsta');
+            $v=$VAsta->getesto();
+            $fields=  explode(" ",$v);
+            $ECatalogo=  USingleton::getInstance('ECatalogo');
+            $ris=$ECatalogo->ricercafulltext($fields);
+            $VRicerca=  USingleton::getInstance('VRicerca');
+            $VRicerca->impostaDati('dati',$ris);
+            return $VRicerca->processaTemplate();
         }
 
         public function offerta() {
@@ -44,7 +56,7 @@
                 $FUtente=USingleton::getInstance('FUtente');
                 $utente=$FUtente->load($session->leggi_valore('username'));
                 $asta->setUtentevincitore($utente);               
-                $FAsta->offerta($asta);
+                $FAsta->update($asta);
                 $VAsta->setLayout('\shop_item.tpl');
                 $VAsta->impostaDati('asta',$asta);
                 return $VAsta->processaTemplate();

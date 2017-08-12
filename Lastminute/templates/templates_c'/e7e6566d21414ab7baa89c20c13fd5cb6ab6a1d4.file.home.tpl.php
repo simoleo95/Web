@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2017-08-11 18:03:22
+<?php /* Smarty version Smarty-3.1.13, created on 2017-08-12 11:34:50
          compiled from "C:\xampp\htdocs\Web\Lastminute\templates\templates\home.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:1145981807c738a01-79710874%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'e7e6566d21414ab7baa89c20c13fd5cb6ab6a1d4' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Web\\Lastminute\\templates\\templates\\home.tpl',
-      1 => 1502467399,
+      1 => 1502528752,
       2 => 'file',
     ),
   ),
@@ -48,6 +48,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
     <!-- Custom CSS -->
     <link href="templates/templates/css/shop-homepage.css" rel="stylesheet">
+	
+	<link href="templates/templates/css/ricerca.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -87,11 +89,14 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                         <a href="#">Services</a>
                     </li>
                     <li>
-                        <a href="#">Contact</a>
-                    </li>
-                </ul>
+                        <a href="#">Contact</a>						
+                    </li>				
+							
+               </ul>
+				
             </div>
             <!-- /.navbar-collapse -->
+			
         </div>
         <!-- /.container -->
     </nav>
@@ -121,6 +126,16 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                     <?php echo $_smarty_tpl->tpl_vars['logout']->value;?>
 
                 <?php }?>
+				<p>Ricerca </p>
+				<div id="cerca-box" class="ricerca" onmouseover="coloreboxcerca('EEEEEE')" onmouseout="coloreboxcerca('999999')">
+                       <form method="post" action="index.php">
+					  <input type="hidden" name="controller" value="asta" />
+                       <input type="hidden" name="task" value="ricerca" />
+                      <input id="cerca-query" type="text" name="testo" class="query"/>
+                      <input type="image" src="templates/templates/images/bt_cerca.png"/>
+                      </form>
+                </div>
+				
                 <p class="lead">Categorie</p>
                 <div class="list-group">
                     <a href="#" class="list-group-item">Category 1</a>
@@ -194,6 +209,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
     <!-- Bootstrap Core JavaScript -->
     <script src="templates/templates/js/bootstrap.min.js"></script>
+	
+	<script src="templates/templates/js/ricerca.js"></script>
 
 </body>
 
