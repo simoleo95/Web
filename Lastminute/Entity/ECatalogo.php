@@ -49,5 +49,17 @@
 
             return $ris;
        } 
-    }
+       
+       public function ricercafulltext($v){
+           $FArticolo=USingleton::getInstance('FArticolo');
+           $FAsta=  USingleton::getInstance('FAsta');
+           $ris=$FArticolo->ricercafull($v);
+           return $ris;
+           
+           }
+           
+           
+           
+       }
+    
 ?>

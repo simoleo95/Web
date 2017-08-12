@@ -57,5 +57,21 @@
                 ) WHERE '.$this->key.' = \''.$a->getIdAsta().'\'';
             return $this->execute($query);
         }
+        
+        
+        public function ricerca($array){            
+            $aste=array();
+            $id=array();
+            for($i=0;$i<count($array);$i++){
+                if(!in_array($array[$i], $id)){
+                 $query="SELECT * FROM asta WHERE IDarticolo='".$array[$i]."'";
+                 $T=parent::execute($query);                 
+                 $a=  parent::getObject();                           
+                 $asta= $this->load($a->getIdAsta());
+                 array_push($aste, $asta);}
+                 array_push($id, $array[$i]);
+             }
+            return $aste;
+        }
     }
 ?>

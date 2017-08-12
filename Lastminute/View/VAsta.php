@@ -9,6 +9,12 @@
             else
                 return false;
         }
+        public function getesto() {
+            if (isset($_REQUEST['testo']))
+                return $_REQUEST['testo'];
+            else
+                return false;
+        }
 
         public function getTitolo() {
             if (isset($_POST['titolo']))
