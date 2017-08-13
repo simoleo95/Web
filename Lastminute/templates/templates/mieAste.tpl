@@ -1,11 +1,11 @@
 <div>
-    <h1>Aste create</h1>
-    <h4>La tua valutazione e' di: </h4>
-    <p>{$tuaValutazione}</p>
+
     <div class="col-md-9">
 
     <div class="row">
         {if $asteCreate != false}
+            <h1>Aste create</h1>
+            <h4>La tua valutazione e' di: </h4>
             {foreach from=$asteCreate item=dato}
                 <div class="col-sm-4 col-lg-4 col-md-4">
                     <div class="thumbnail">
@@ -32,13 +32,15 @@
         {/if}
     </div>
 </div>
-<h1>Aste vinte</h1>
+
 
     <div class="col-md-9">
 
     <div class="row">
         {if $asteVinte != false}
+        <h1>Aste vinte</h1>
             {foreach from=$asteVinte item=dato}
+
                 <div class="col-sm-4 col-lg-4 col-md-4">
                     <div class="thumbnail">
                         <img src="data:image;base64,{$dato->getArticolo()->getFoto()}" style="height: 150px !important;" alt="">

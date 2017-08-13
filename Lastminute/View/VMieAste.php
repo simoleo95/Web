@@ -14,8 +14,9 @@
     $asteVinte=$ECatalogo->ricercaVincitore($user);
     $this->assign('asteCreate', $asteCreate);
     $this->assign('asteVinte', $asteVinte);
-    $medi=$valutazione->media($user);
-    $this->assign('tuaValutazione', $medi);
+    //$Evalutazione = new EValutazione();
+    //$ris = $Evalutazione->media($user);
+    //$this->assign('tuaValutazione', $ris);
     $contenuto=$this->fetch($config['smarty']['template_dir'].$this->layout);
     return $contenuto;
         }

@@ -36,11 +36,10 @@
         }
 
         public function media($user){
-            //$query = "SELECT AVG(valutazione) FROM valutazione where  personaV = '".$user."' ";
-                        $query = "SELECT valutazione FROM valutazione where  IDvalutazione = 1 ";
-           $result= parent::execute($query);
 
-            return parent::getObject()->getVoto();
+            $query="SELECT * FROM valutazione WHERE personaV ='".$user."'";
+            parent::execute($query);
+            return parent::getObject();  
         }
 
         public function valuta($valutazione,$usernameV,$usernameC){

@@ -42,15 +42,21 @@
 
 public function Object_array(EValutazione $p){
     
-    $t=  get_object_vars($p);
+    $t=get_object_vars($p);
     return $t;
 }
 
 
     public function media($username){
-        $Fvalutazione = new FValutazione();
-
-        return $Fvalutazione->media($username);
+            $FAsta=  USingleton::getInstance('FValutazione');
+            $query="SELECT * FROM valutazione WHERE personaV ='".$user."'";
+            $FAsta->execute($query);
+            $tmp=$FAsta->getObjects();
+            $somma = 10;
+            for($i=0;$i<count($tmp);$i++) {
+                $ris[]=$FAsta->load($tmp[$i]->getIDvalutazione());
+            }
+            return $ris;
     }
 
     public function valuta($valutazione,$usernameV,$usernameC){
