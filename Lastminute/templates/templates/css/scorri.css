@@ -1,0 +1,27 @@
+#scorri li{
+	display: block;
+}
+
+#scorri li a{
+	
+	display: block;
+	
+}
+
+#scorri ul {
+	position: absolute;
+	display: none;
+	list-style: none;
+	padding: 0;
+}
+
+#scorri ul a {
+	
+	display: block;
+	
+	
+}
+
+#scorri li a:hover {
+    color:#C00;
+}

@@ -10,6 +10,6 @@
         <input style="width:100%;" class="list-group-item" type="password" placeholder="Password" name="password"/>
         <br>
         <input style="width:100%;background:#ddd;" class="list-group-item" type="submit" value="Login" />
-        <p style="text-align: center; margin-top: 10px;">Non hai un account? <a href="index.php?controller=registra&task=registrazione">Registrati</a></p>
+        <p style="text-align: center; margin-top: 10px;">Non hai un account? <a href="Registrazione">Registrati</a></p>
     </div>
 </form>

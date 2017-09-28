@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2017-08-11 17:19:07
+<?php /* Smarty version Smarty-3.1.13, created on 2017-08-23 13:57:11
          compiled from "C:\xampp\htdocs\Web\Lastminute\templates\templates\tasto_logout.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:3429598988d8705b07-99087170%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'ab9ac539a9cea29da2afdfa2cc6a91f979a50ba5' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Web\\Lastminute\\templates\\templates\\tasto_logout.tpl',
-      1 => 1502463162,
+      1 => 1503489427,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'unifunc' => 'content_598988d8732027_11088697',
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_598988d8732027_11088697')) {function content_598988d8732027_11088697($_smarty_tpl) {?><form method="get" action="index.php">
+<?php if ($_valid && !is_callable('content_598988d8732027_11088697')) {function content_598988d8732027_11088697($_smarty_tpl) {?><form method="post" action="index.php">
   <input type="hidden" name="controller" value="logout" />
   <input style="width:100%;background:#ddd;margin-bottom: 15px;" class="list-group-item" type="submit" value="Logout" />
 </form>

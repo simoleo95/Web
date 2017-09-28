@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2017-08-12 18:56:22
+<?php /* Smarty version Smarty-3.1.13, created on 2017-09-28 11:15:55
          compiled from "C:\xampp\htdocs\Web\Lastminute\templates\templates\shop_item.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:28922598d79ef4abbb0-87189210%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'a3216d14c5a1df902384e9234de22e8834fe7bd6' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Web\\Lastminute\\templates\\templates\\shop_item.tpl',
-      1 => 1502456708,
+      1 => 1506589000,
       2 => 'file',
     ),
   ),
@@ -38,6 +38,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
             <p><?php echo $_smarty_tpl->tpl_vars['asta']->value->getArticolo()->getDescrizione();?>
 </p>
         </div>
+		<div class="caption-full">
+			<p id="timeout" tag="<?php echo $_smarty_tpl->tpl_vars['asta']->value->getDataF();?>
+"></p>
+			<br><br>
+		</div>
         <div style="margin-bottom: 20px;">
             <h4 class="pull-right">Prezzo attuale: <?php echo $_smarty_tpl->tpl_vars['asta']->value->getPrezzoF()->getValore();?>
  <?php echo $_smarty_tpl->tpl_vars['asta']->value->getPrezzoF()->getValuta();?>

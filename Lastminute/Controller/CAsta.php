@@ -24,6 +24,8 @@
                    return $this->valuta();  
                 case 'ricerca':
                     return $this->ricerca();
+                case 'seleziona':
+                    return $this->seleziona();
             }
         }
         public function ricerca(){
@@ -150,6 +152,17 @@
 
             echo "<script type='text/javascript'>alert('Asta inserita correttamente!');window.location = 'index.php';</script>";
 
+        }
+        public function seleziona(){
+            $Vasta=  USingleton::getInstance('VAsta');
+            $group=$Vasta->getGroup();            
+            $ECatalogo= USingleton::getInstance('Ecatalogo');
+            $ris=$ECatalogo->seleziona($group);
+            $VRicerca=  USingleton::getInstance('VRicerca');
+            $VRicerca->impostaDati('dati',$ris);
+            return $VRicerca->processaTemplate();
+            
+            
         }
     }
 ?>

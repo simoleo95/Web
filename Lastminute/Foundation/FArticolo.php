@@ -33,7 +33,7 @@
              $aste=$FAsta->ricerca($risultati);
              return $aste;
         }
-        
+      
         
     }
 ?>

@@ -64,6 +64,14 @@
             else
                 return false;
         }
+        
+           public function getGroup() {
+            if (isset($_REQUEST['group']))
+                return $_REQUEST['group'];
+            else
+                return false;
+        }
+        
 
         public function processaTemplate() {
             global $config;

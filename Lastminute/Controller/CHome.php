@@ -27,6 +27,9 @@
                 case 'asta':
                     $CAsta = USingleton::getInstance('CAsta');
                     return $CAsta->smista();
+                case 'categoria':
+                    $CAsta= USingleton::getInstance('CAsta');
+                    return $CAsta->smista();
                 default:
                     $CRicerca = USingleton::getInstance('CRicerca');
                     return $CRicerca->inScadenza();

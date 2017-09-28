@@ -4,7 +4,7 @@
         protected $db;
         protected $table;
         protected $key;
-        public $result;
+        protected $result;
         protected $result_class;
         protected $autoincrement=false;
 
@@ -48,7 +48,7 @@
         // Restituisce un array di oggetti
         public function getObjects() {
             $numero_colonne=$this->result->columnCount();
-            if ($numero_colonne ==0)
+            if ($numero_colonne == 0)
                 return  $this->result=false;
             else {
                while($user=$this->result->fetchObject($this->result_class)) {
