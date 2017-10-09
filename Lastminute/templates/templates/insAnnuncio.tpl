@@ -26,12 +26,10 @@
                 <td>Categoria</td>
                 <td>
                     <select type="" name="categoria">
-                        <option selected="selected">Abbigliamento</option>
+                        <option selected="selected">Immobili</option>
                         <option>Elettronica</option>
-                        <option>Sport</option>
-                        <option>Per la casa</option>
                         <option>Hobby</option>
-                        <option>Altro</option>
+						<option>Sport</option>
                     </select>
                 </td>
             </tr>
