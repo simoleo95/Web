@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2017-08-11 17:39:14
+<?php /* Smarty version Smarty-3.1.13, created on 2017-09-27 08:40:50
          compiled from "C:\xampp\htdocs\Web\Lastminute\templates\templates\insAnnuncio.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:5556598cc464407718-56485909%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '63f5c4c6ff0cac3ae626d3b7ecd37172a4d841e7' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Web\\Lastminute\\templates\\templates\\insAnnuncio.tpl',
-      1 => 1502456708,
+      1 => 1506435882,
       2 => 'file',
     ),
   ),
@@ -19,17 +19,22 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'unifunc' => 'content_598cc46442e102_94314597',
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_598cc46442e102_94314597')) {function content_598cc46442e102_94314597($_smarty_tpl) {?><div>
+<?php if ($_valid && !is_callable('content_598cc46442e102_94314597')) {function content_598cc46442e102_94314597($_smarty_tpl) {?><div class="col-md-9">
+    <div class="row">
+<div style="border:groove; border-radius:10px 10px 10px 10px; padding-left:8px;">
+	
     <h1>Inserisci Asta</h1>
 
     <form method="post" enctype="multipart/form-data" action="index.php">
         <input type="hidden" name="controller" value="asta">
         <input type="hidden" name="task" value="crea">
-        <table>
+        <table style="border-collapse: separate;  border-spacing: 15px;">
+			
             <tr>
                 <td>Titolo</td>
                 <td><input type="text" name="titolo" required/></td>
             </tr>
+			
             <tr>
                 <td>Descrizione</td>
                 <td><textarea name="descrizione" required></textarea></td>
@@ -42,9 +47,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                 <td>Categoria</td>
                 <td>
                     <select type="" name="categoria">
-                        <option selected="selected">Immobiliari</option>
-                        <option>Automobili</option>
-                        <option>Cose</option>
+                        <option selected="selected">Immobili</option>
+                        <option>Elettronica</option>
+                        <option>Hobby</option>
+						<option>Sport</option>
                     </select>
                 </td>
             </tr>
@@ -54,11 +60,14 @@ $_valid = $_smarty_tpl->decodeProperties(array (
             </tr>
             <tr>
                 <td>Prezzo di partenza</td>
-                <td><input type="number" name="prezzop" min="1" required/></td>
+                <td><input type="number" name="prezzop" min="1"  required/></td>
             </tr>
             <tr>
                 <td><input type="submit" name="submit" value="Inserisci"</td>
             </tr>
         </table>
+			
     </form>
+</div>
+		  </div>
 </div><?php }} ?>

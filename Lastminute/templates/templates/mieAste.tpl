@@ -30,13 +30,13 @@
                 </div>
             {/foreach}
         {/if}
-    </div>
+		</div>
 </div>
 
+ <div class="col-md-9" style=position:"relatve">
 
-    <div class="col-md-9">
-
-    <div class="row">
+    <div  class="row">
+      
         {if $asteVinte != false}
         <h1>Aste vinte</h1>
             {foreach from=$asteVinte item=dato}
@@ -50,7 +50,7 @@
                             </h4>
                             <p>{$dato->getArticolo()->getDescrizione()}</p>
                         </div>
-                                            <form method="post" enctype="multipart/form-data" action="index.php">
+                        <form method="post" enctype="multipart/form-data" action="index.php">
                         <input type="text" name="username" value="{$dato->getUtentecreatore()->getUsername()}"  style="display:none">
                         <input type="hidden" name="controller" value="asta">
                         <input type="hidden" name="task" value="valuta">

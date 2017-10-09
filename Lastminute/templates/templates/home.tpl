@@ -18,6 +18,16 @@
     <link href="templates/templates/css/shop-homepage.css" rel="stylesheet">
 	
 	<link href="templates/templates/css/ricerca.css" rel="stylesheet">
+	
+	<link href="templates/templates/css/scorri.css" rel="stylesheet">
+	<link href="templates/templates/css/timeTo.css" type="text/css" rel="stylesheet"/>
+
+	
+	<script src="templates/templates/jquery-libs/jquery-3.2.1.js" type="text/javascript"></script>
+	 <!-- jQuery -->
+    <script src="templates/templates/js/scorri.js"></script>
+	<script src="templates/templates/js/timeout.js"></script>
+	<script src="templates/templates/js/jquery.timeTo.js"></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -34,7 +44,7 @@
 	
 	
     <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <nav id= speriamo class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -47,8 +57,8 @@
                 <a class="navbar-brand" href="index.php">{$title}</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
+            <div  class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul id=scorri class="nav navbar-nav">
                     <li>
                         <a href="#">About</a>
                     </li>
@@ -57,8 +67,20 @@
                     </li>
                     <li>
                         <a href="#">Contact</a>						
-                    </li>				
-							
+                    </li>	
+					<li>
+						<a>Categorie</a>
+					 
+					  <ul>
+						  <li><a href="index.php?controller=categoria&task=seleziona&group=Elettronica" class="list-group-item">Elettronica</a></li> 
+						  <li><a href="index.php?controller=categoria&task=seleziona&group=Sport" class="list-group-item">Sport</a></li>
+						  <li><a href="index.php?controller=categoria&task=seleziona&group=Hobby" class="list-group-item">Hobby</a></li> 
+						  <li><a href="index.php?controller=categoria&task=seleziona&group=Immobili" class="list-group-item">Immobili</a></li>
+				    </li> 
+					  </ul>
+					
+                    </li>
+                				
                </ul>
 				
             </div>
@@ -88,14 +110,15 @@
                 {if isset($logout)}
                     {$logout}
                 {/if}
-				<p>Ricerca </p>
+				
+				<p class="lead">Ricerca </p>
 				<div id="cerca-box" class="ricerca" onmouseover="coloreboxcerca('EEEEEE')" onmouseout="coloreboxcerca('999999')">
-                       <form method="post" action="index.php">
+                    <form  id = myform method="post" action="index.php">
 					  <input type="hidden" name="controller" value="asta" />
-                       <input type="hidden" name="task" value="ricerca" />
-                      <input id="cerca-query" type="text" name="testo" class="query"/>
+                      <input type="hidden" name="task" value="ricerca" />
+                      <input id="cerca-query" type="text" name="testo" class="query"/>						   
                       <input type="image" src="templates/templates/images/bt_cerca.png"/>
-                      </form>
+                     </form>
                 </div>
 				
                 <p class="lead">Categorie</p>
@@ -153,7 +176,7 @@
 
     <div class="container">
 
-        <hr>
+        
 
         <!-- Footer -->
         <footer>
@@ -167,8 +190,7 @@
     </div>
     <!-- /.container -->
 
-    <!-- jQuery -->
-    <script src="templates/templates/js/jquery.js"></script>
+   
 
     <!-- Bootstrap Core JavaScript -->
     <script src="templates/templates/js/bootstrap.min.js"></script>

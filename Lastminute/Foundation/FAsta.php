@@ -73,5 +73,18 @@
              }
             return $aste;
         }
+          
+        public function seleziona($cat){
+            $risultato=array();
+            $query="SELECT IDasta FROM asta,articolo WHERE asta.IDarticolo=articolo.IDarticolo AND articolo.categoria='".$cat."'";
+            parent::execute($query);            
+            $ris=parent::getObjects();             
+            for($i=0;$i<count($ris);$i++){
+                $asta=$this->load($ris[$i]->getIdasta());
+                array_push($risultato, $asta);                
+                }
+            return $risultato;
+            
+     }
     }
 ?>

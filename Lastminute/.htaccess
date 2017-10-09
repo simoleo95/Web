@@ -1,0 +1,8 @@
+#Enable Rewriting
+
+RewriteEngine on
+
+
+RewriteRule ^home$ http://localhost/Web/Lastminute/index.php [L]
+
+RewriteRule ^Registrazione$ http://localhost/Web/Lastminute/index.php?controller=registra&task=registrazione [L]

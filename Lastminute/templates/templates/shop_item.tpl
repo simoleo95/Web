@@ -8,6 +8,10 @@
             </h4>
             <p>{$asta->getArticolo()->getDescrizione()}</p>
         </div>
+		<div class="caption-full">
+			<p id="timeout" tag="{$asta->getDataF()}"></p>
+			<br><br>
+		</div>
         <div style="margin-bottom: 20px;">
             <h4 class="pull-right">Prezzo attuale: {$asta->getPrezzoF()->getValore()} {$asta->getPrezzoF()->getValuta()}</h4>
             <div class="text-left" style="margin: 10px;">

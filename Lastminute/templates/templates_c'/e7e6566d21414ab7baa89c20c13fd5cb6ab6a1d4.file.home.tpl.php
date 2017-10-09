@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2017-08-13 19:21:30
+<?php /* Smarty version Smarty-3.1.13, created on 2017-10-06 19:48:20
          compiled from "C:\xampp\htdocs\Web\Lastminute\templates\templates\home.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:1145981807c738a01-79710874%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'e7e6566d21414ab7baa89c20c13fd5cb6ab6a1d4' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Web\\Lastminute\\templates\\templates\\home.tpl',
-      1 => 1502563272,
+      1 => 1507312036,
       2 => 'file',
     ),
   ),
@@ -50,6 +50,16 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     <link href="templates/templates/css/shop-homepage.css" rel="stylesheet">
 	
 	<link href="templates/templates/css/ricerca.css" rel="stylesheet">
+	
+	<link href="templates/templates/css/scorri.css" rel="stylesheet">
+	<link href="templates/templates/css/timeTo.css" type="text/css" rel="stylesheet"/>
+
+	
+	<script src="templates/templates/jquery-libs/jquery-3.2.1.js" type="text/javascript"></script>
+	 <!-- jQuery -->
+    <script src="templates/templates/js/scorri.js"></script>
+	<script src="templates/templates/js/timeout.js"></script>
+	<script src="templates/templates/js/jquery.timeTo.js"></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -66,7 +76,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 	
 	
     <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <nav id= speriamo class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -80,8 +90,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 </a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
+            <div  class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul id=scorri class="nav navbar-nav">
                     <li>
                         <a href="#">About</a>
                     </li>
@@ -90,8 +100,20 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                     </li>
                     <li>
                         <a href="#">Contact</a>						
-                    </li>				
-							
+                    </li>	
+					<li>
+						<a>Categorie</a>
+					 
+					  <ul>
+						  <li><a href="index.php?controller=categoria&task=seleziona&group=Elettronica" class="list-group-item">Elettronica</a></li> 
+						  <li><a href="index.php?controller=categoria&task=seleziona&group=Sport" class="list-group-item">Sport</a></li>
+						  <li><a href="index.php?controller=categoria&task=seleziona&group=Hobby" class="list-group-item">Hobby</a></li> 
+						  <li><a href="index.php?controller=categoria&task=seleziona&group=Immobili" class="list-group-item">Immobili</a></li>
+				    </li> 
+					  </ul>
+					
+                    </li>
+                				
                </ul>
 				
             </div>
@@ -126,23 +148,19 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                     <?php echo $_smarty_tpl->tpl_vars['logout']->value;?>
 
                 <?php }?>
-				<p>Ricerca </p>
+				
+				<p class="lead">Ricerca </p>
 				<div id="cerca-box" class="ricerca" onmouseover="coloreboxcerca('EEEEEE')" onmouseout="coloreboxcerca('999999')">
-                       <form method="post" action="index.php">
+                    <form  id = myform method="post" action="index.php">
 					  <input type="hidden" name="controller" value="asta" />
-                       <input type="hidden" name="task" value="ricerca" />
-                      <input id="cerca-query" type="text" name="testo" class="query"/>
+                      <input type="hidden" name="task" value="ricerca" />
+                      <input id="cerca-query" type="text" name="testo" class="query"/>						   
                       <input type="image" src="templates/templates/images/bt_cerca.png"/>
-                      </form>
+                     </form>
                 </div>
 				
-                <p class="lead">Categorie</p>
-                <div class="list-group">
-                    <a href="#" class="list-group-item">Category 1</a>
-                    <a href="#" class="list-group-item">Category 2</a>
-                    <a href="#" class="list-group-item">Category 3</a>
-					<a href="#" class="list-group-item">Category 4</a>
-                </div>
+                
+                
             </div>	
 
             <!--    <div class="row carousel-holder">
@@ -190,7 +208,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
     <div class="container">
 
-        <hr>
+        
 
         <!-- Footer -->
         <footer>
@@ -204,8 +222,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     </div>
     <!-- /.container -->
 
-    <!-- jQuery -->
-    <script src="templates/templates/js/jquery.js"></script>
+   
 
     <!-- Bootstrap Core JavaScript -->
     <script src="templates/templates/js/bootstrap.min.js"></script>

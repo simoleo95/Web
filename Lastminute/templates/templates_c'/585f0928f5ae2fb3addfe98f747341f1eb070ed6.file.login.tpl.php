@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2017-08-11 15:57:01
+<?php /* Smarty version Smarty-3.1.13, created on 2017-10-06 19:48:20
          compiled from "C:\xampp\htdocs\Web\Lastminute\templates\templates\login.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:78359848bc869a8b4-51848092%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '585f0928f5ae2fb3addfe98f747341f1eb070ed6' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Web\\Lastminute\\templates\\templates\\login.tpl',
-      1 => 1502459752,
+      1 => 1507312036,
       2 => 'file',
     ),
   ),
@@ -36,6 +36,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
         <input style="width:100%;" class="list-group-item" type="password" placeholder="Password" name="password"/>
         <br>
         <input style="width:100%;background:#ddd;" class="list-group-item" type="submit" value="Login" />
-        <p style="text-align: center; margin-top: 10px;">Non hai un account? <a href="index.php?controller=registra&task=registrazione">Registrati</a></p>
+        <p style="text-align: center; margin-top: 10px;">Non hai un account? <a href="Registrazione">Registrati</a></p>
     </div>
 </form><?php }} ?>
