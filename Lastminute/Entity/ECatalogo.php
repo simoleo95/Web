@@ -57,7 +57,15 @@
            return $ris;
            
            }
+          
+       public function seleziona($r){
+           $FAsta=  USingleton::getInstance('FAsta');
+           $ris=$FAsta->seleziona($r);
+           return $ris;
            
+           
+           
+       }
            
            
        }

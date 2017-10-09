@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2017-08-13 20:52:08
+<?php /* Smarty version Smarty-3.1.13, created on 2017-09-27 09:05:28
          compiled from "C:\xampp\htdocs\Web\Lastminute\templates\templates\mieAste.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:561030435598dcb73c2a938-93326849%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'c608be1f76bcc4c99029c49819b68e3e627e58e0' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Web\\Lastminute\\templates\\templates\\mieAste.tpl',
-      1 => 1502650187,
+      1 => 1506495925,
       2 => 'file',
     ),
   ),
@@ -67,13 +67,13 @@ $_smarty_tpl->tpl_vars['dato']->_loop = true;
                 </div>
             <?php } ?>
         <?php }?>
-    </div>
+		</div>
 </div>
 
+ <div class="col-md-9" style=position:"relatve">
 
-    <div class="col-md-9">
-
-    <div class="row">
+    <div  class="row">
+      
         <?php if ($_smarty_tpl->tpl_vars['asteVinte']->value!=false){?>
         <h1>Aste vinte</h1>
             <?php  $_smarty_tpl->tpl_vars['dato'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['dato']->_loop = false;
@@ -97,7 +97,7 @@ $_smarty_tpl->tpl_vars['dato']->_loop = true;
                             <p><?php echo $_smarty_tpl->tpl_vars['dato']->value->getArticolo()->getDescrizione();?>
 </p>
                         </div>
-                                            <form method="post" enctype="multipart/form-data" action="index.php">
+                        <form method="post" enctype="multipart/form-data" action="index.php">
                         <input type="text" name="username" value="<?php echo $_smarty_tpl->tpl_vars['dato']->value->getUtentecreatore()->getUsername();?>
 "  style="display:none">
                         <input type="hidden" name="controller" value="asta">
