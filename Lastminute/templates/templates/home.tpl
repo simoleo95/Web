@@ -21,12 +21,13 @@
 	
 	<link href="templates/templates/css/scorri.css" rel="stylesheet">
 	<link href="templates/templates/css/timeTo.css" type="text/css" rel="stylesheet"/>
+    <link href="templates/templates/css/popup.css" rel="stylesheet">
 
 	
 	<script src="templates/templates/jquery-libs/jquery-3.2.1.js" type="text/javascript"></script>
 	 <!-- jQuery -->
     <script src="templates/templates/js/scorri.js"></script>
-    <script src="templates/templates/js/ajax.js"></script>
+    <script src="templates/templates/js/popup.js"></script>
 	<script src="templates/templates/js/timeout.js"></script>
 	<script src="templates/templates/js/jquery.timeTo.js"></script>
 
@@ -40,10 +41,19 @@
 </head>
 
 <body>
-	
-	
-	
-	
+
+    <!-- Per il popup -->
+    <div id="example-popup" class="popup">
+        <div class="popup-body">
+            <span class="popup-exit"></span>
+            <div class="popup-content">
+
+            </div>
+        </div>
+    </div>
+    <div class="popup-overlay"></div>
+
+
     <!-- Navigation -->
     <nav id= speriamo class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">

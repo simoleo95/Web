@@ -8,8 +8,8 @@
                         <img src="data:image;base64,{$dato->getArticolo()->getFoto()}" style="height: 150px !important;" alt="">
                         <div class="caption">
                             <h4 class="pull-right">{$dato->getPrezzoI()->getValore()} {$dato->getPrezzoF()->getValuta()}</h4>
-                            <h4 class="getId">
-                                {$dato->getArticolo()->getTitolo()}
+                            <h4 class="popup-link" data-popup-target="#example-popup">
+                                <a href="#">{$dato->getArticolo()->getTitolo()}</a>
                                 <p class="id" style="display: none">{$dato->getIdAsta()}</p>
                             </h4>
 
