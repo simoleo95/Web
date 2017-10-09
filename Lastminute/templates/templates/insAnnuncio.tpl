@@ -21,9 +21,12 @@
                 <td>Categoria</td>
                 <td>
                     <select type="" name="categoria">
-                        <option selected="selected">Immobiliari</option>
-                        <option>Automobili</option>
-                        <option>Cose</option>
+                        <option selected="selected">Abbigliamento</option>
+                        <option>Elettronica</option>
+                        <option>Sport</option>
+                        <option>Per la casa</option>
+                        <option>Hobby</option>
+                        <option>Altro</option>
                     </select>
                 </td>
             </tr>

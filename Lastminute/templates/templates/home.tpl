@@ -100,10 +100,12 @@
 				
                 <p class="lead">Categorie</p>
                 <div class="list-group">
-                    <a href="#" class="list-group-item">Category 1</a>
-                    <a href="#" class="list-group-item">Category 2</a>
-                    <a href="#" class="list-group-item">Category 3</a>
-					<a href="#" class="list-group-item">Category 4</a>
+                    <a href="index.php?controller=ricerca&task=categoria&categoria=Abbigliamento" class="list-group-item">Abbigliamento</a>
+                    <a href="index.php?controller=ricerca&task=categoria&categoria=Elettronica" class="list-group-item">Elettronica</a>
+                    <a href="index.php?controller=ricerca&task=categoria&categoria=Sport" class="list-group-item">Sport</a>
+					<a href="index.php?controller=ricerca&task=categoria&categoria=Per la casa" class="list-group-item">Per la casa</a>
+                    <a href="index.php?controller=ricerca&task=categoria&categoria=Hobby" class="list-group-item">Hobby</a>
+                    <a href="index.php?controller=ricerca&task=categoria&categoria=Altro" class="list-group-item">Altro</a>
                 </div>
             </div>	
 
