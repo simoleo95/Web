@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2017-08-12 09:45:16
+<?php /* Smarty version Smarty-3.1.13, created on 2017-10-09 17:22:19
          compiled from "C:\xampp\htdocs\Web\Lastminute\templates\templates\ricerca.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:311015981807c2d2ab2-51790956%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'dd6e43cf686f3a96e755b73f1c85a12bf2fdc4ed' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Web\\Lastminute\\templates\\templates\\ricerca.tpl',
-      1 => 1502523534,
+      1 => 1507562536,
       2 => 'file',
     ),
   ),
@@ -41,10 +41,13 @@ $_smarty_tpl->tpl_vars['dato']->_loop = true;
                             <h4 class="pull-right"><?php echo $_smarty_tpl->tpl_vars['dato']->value->getPrezzoI()->getValore();?>
  <?php echo $_smarty_tpl->tpl_vars['dato']->value->getPrezzoF()->getValuta();?>
 </h4>
-                            <h4><a href="index.php?controller=asta&task=dettagli&id_asta=<?php echo $_smarty_tpl->tpl_vars['dato']->value->getIdAsta();?>
-"><?php echo $_smarty_tpl->tpl_vars['dato']->value->getArticolo()->getTitolo();?>
-</a>
+                            <h4 class="getId">
+                                <?php echo $_smarty_tpl->tpl_vars['dato']->value->getArticolo()->getTitolo();?>
+
+                                <p class="id" style="display: none"><?php echo $_smarty_tpl->tpl_vars['dato']->value->getIdAsta();?>
+</p>
                             </h4>
+
                             <p><?php echo $_smarty_tpl->tpl_vars['dato']->value->getArticolo()->getDescrizione();?>
 </p>
                         </div>

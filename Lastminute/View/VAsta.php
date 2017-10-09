@@ -71,12 +71,24 @@
             else
                 return false;
         }
+
+        public function getAjax() {
+            if (isset($_REQUEST['ajax']))
+                return $_REQUEST['ajax'];
+            else
+                return false;
+        }
         
 
         public function processaTemplate() {
             global $config;
             $contenuto=$this->fetch($config['smarty']['template_dir'].$this->layout);
             return $contenuto;
+        }
+
+        public function displayTemplate() {
+            global $config;
+            $this->display($config['smarty']['template_dir'].$this->layout);
         }
 
         public function setLayout($layout) {

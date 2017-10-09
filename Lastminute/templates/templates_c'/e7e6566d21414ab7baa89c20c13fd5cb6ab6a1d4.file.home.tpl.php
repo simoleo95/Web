@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2017-10-06 19:48:20
+<?php /* Smarty version Smarty-3.1.13, created on 2017-10-09 17:19:51
          compiled from "C:\xampp\htdocs\Web\Lastminute\templates\templates\home.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:1145981807c738a01-79710874%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'e7e6566d21414ab7baa89c20c13fd5cb6ab6a1d4' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Web\\Lastminute\\templates\\templates\\home.tpl',
-      1 => 1507312036,
+      1 => 1507562381,
       2 => 'file',
     ),
   ),
@@ -58,6 +58,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 	<script src="templates/templates/jquery-libs/jquery-3.2.1.js" type="text/javascript"></script>
 	 <!-- jQuery -->
     <script src="templates/templates/js/scorri.js"></script>
+    <script src="templates/templates/js/ajax.js"></script>
 	<script src="templates/templates/js/timeout.js"></script>
 	<script src="templates/templates/js/jquery.timeTo.js"></script>
 
@@ -193,9 +194,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                     </div>
 
                 </div> -->
+            <div id="mainContent">
+                <?php echo $_smarty_tpl->tpl_vars['mainContent']->value;?>
 
-            <?php echo $_smarty_tpl->tpl_vars['mainContent']->value;?>
-
+            </div>
            
         </div>
 

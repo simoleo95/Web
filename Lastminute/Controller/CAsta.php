@@ -72,7 +72,8 @@
             $asta=$FAsta->load($VAsta->getId());
             $VAsta->impostaDati('asta',$asta);
 
-            return $VAsta->processaTemplate();
+            $VAsta->displayTemplate();
+
         }
 
         public function inserisci() {

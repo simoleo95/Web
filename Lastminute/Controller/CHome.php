@@ -2,20 +2,30 @@
 
     class CHome {
 
-        public function impostaPagina() {
-            $CRegistrazione = USingleton::getInstance('CRegistrazione');
-            $registrato = $CRegistrazione->getRegistrato();
-            $VHome = new VHome();
-            // Da cambiare con funzione smista come bookstore
-            $contenuto = $this->smista();
-            $VHome->impostaContenuto($contenuto);
-            // Da controllare impostazione con utente registrato e utente guest
-            if ($registrato)
-                $VHome->impostaPaginaRegistrato();
-            else
-                $VHome->impostaPaginaGuest();
+        private $ajax;
 
-            $VHome->mostraPagina();
+        public function impostaPagina() {
+            $VAsta = USingleton::getInstance('VAsta');
+            $ajax = $VAsta->getAjax();
+
+            if($ajax) {
+                $this->smista();
+            }
+            else {
+                $CRegistrazione = USingleton::getInstance('CRegistrazione');
+                $registrato = $CRegistrazione->getRegistrato();
+                $VHome = new VHome();
+                // Da cambiare con funzione smista come bookstore
+                $contenuto = $this->smista();
+                $VHome->impostaContenuto($contenuto);
+                // Da controllare impostazione con utente registrato e utente guest
+                if ($registrato)
+                    $VHome->impostaPaginaRegistrato();
+                else
+                    $VHome->impostaPaginaGuest();
+
+                $VHome->mostraPagina();
+            }
         }
 
         public function smista() {

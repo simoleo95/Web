@@ -26,6 +26,7 @@
 	<script src="templates/templates/jquery-libs/jquery-3.2.1.js" type="text/javascript"></script>
 	 <!-- jQuery -->
     <script src="templates/templates/js/scorri.js"></script>
+    <script src="templates/templates/js/ajax.js"></script>
 	<script src="templates/templates/js/timeout.js"></script>
 	<script src="templates/templates/js/jquery.timeTo.js"></script>
 
@@ -155,8 +156,9 @@
                     </div>
 
                 </div> -->
-
-            {$mainContent}
+            <div id="mainContent">
+                {$mainContent}
+            </div>
            
         </div>
 
