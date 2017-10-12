@@ -1,33 +1,46 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2017-10-12 10:37:06
-         compiled from "C:\xampp\htdocs\Web\Lastminute\templates\templates\mieAste.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:561030435598dcb73c2a938-93326849%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /* Smarty version Smarty-3.1.13, created on 2017-10-12 12:03:29
+         compiled from "C:\xampp\htdocs\Web\Lastminute\templates\templates\Profilo.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:274059df2e0aa1cea0-74087436%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
-    'c608be1f76bcc4c99029c49819b68e3e627e58e0' => 
+    'ff4b8c1cd80c01cb49399df47f88b11f57be6fdf' => 
     array (
-      0 => 'C:\\xampp\\htdocs\\Web\\Lastminute\\templates\\templates\\mieAste.tpl',
-      1 => 1507560497,
+      0 => 'C:\\xampp\\htdocs\\Web\\Lastminute\\templates\\templates\\Profilo.tpl',
+      1 => 1507802598,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '561030435598dcb73c2a938-93326849',
+  'nocache_hash' => '274059df2e0aa1cea0-74087436',
   'function' => 
   array (
   ),
   'version' => 'Smarty-3.1.13',
-  'unifunc' => 'content_598dcb73c4c359_45782442',
+  'unifunc' => 'content_59df2e0aa7b3f6_64734766',
   'variables' => 
   array (
+    'Utente' => 0,
     'asteCreate' => 0,
     'dato' => 0,
     'asteVinte' => 0,
   ),
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_598dcb73c4c359_45782442')) {function content_598dcb73c4c359_45782442($_smarty_tpl) {?><div>
+<?php if ($_valid && !is_callable('content_59df2e0aa7b3f6_64734766')) {function content_59df2e0aa7b3f6_64734766($_smarty_tpl) {?><div class="col-md-9">
 
-    <div class="col-md-9">
+  <div  style="border:groove; border-radius:10px 10px 10px 10px; padding-left:8px;">
+          <h1 class="contact">Profilo Utente</h1>
+	  <table>
+    <tr><td>Nome :</td><td><?php echo $_smarty_tpl->tpl_vars['Utente']->value->getNome();?>
+</td></tr>
+    <tr><td>Cognome :</td><td><?php echo $_smarty_tpl->tpl_vars['Utente']->value->getCognome();?>
+</td></tr>
+    <tr><td>Indirizzo e_mail :</td><td><?php echo $_smarty_tpl->tpl_vars['Utente']->value->getEmail();?>
+</td></tr>
+   
+</table>
+	     
+	</div>
 
     <div class="row">
         <?php if ($_smarty_tpl->tpl_vars['asteCreate']->value!=false){?>
@@ -53,26 +66,17 @@ $_smarty_tpl->tpl_vars['dato']->_loop = true;
                             <p><?php echo $_smarty_tpl->tpl_vars['dato']->value->getArticolo()->getDescrizione();?>
 </p>
                         </div>
-                        <div class="ratings">
-                            <p class="pull-right">15 reviews</p>
-                            <p>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                            </p>
-                        </div>
+           
                     </div>
                 </div>
             <?php } ?>
         <?php }?>
 		</div>
-</div>
 
- <div class="col-md-9" style=position:"relatve">
 
-    <div  class="row">
+ 
+
+ <div  class="row">
       
         <?php if ($_smarty_tpl->tpl_vars['asteVinte']->value!=false){?>
         <h1>Aste vinte</h1>
@@ -110,22 +114,13 @@ $_smarty_tpl->tpl_vars['dato']->_loop = true;
 
                             </table>
                     </form>
-                        <div class="ratings">
-                            <p class="pull-right">15 reviews</p>
-                            <p>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                            </p>
-                        </div>
+               
                     </div>
 
                 </div>
             <?php } ?>
         <?php }?>
     </div>
-</div>
+
 
 </div><?php }} ?>

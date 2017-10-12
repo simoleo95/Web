@@ -1,6 +1,15 @@
-<div>
+<div class="col-md-9">
 
-    <div class="col-md-9">
+  <div  style="border:groove; border-radius:10px 10px 10px 10px; padding-left:8px;">
+          <h1 class="contact">Profilo Utente</h1>
+	  <table>
+    <tr><td>Nome :</td><td>{$Utente->getNome()}</td></tr>
+    <tr><td>Cognome :</td><td>{$Utente->getCognome()}</td></tr>
+    <tr><td>Indirizzo e_mail :</td><td>{$Utente->getEmail()}</td></tr>
+   
+</table>
+	     
+	</div>
 
     <div class="row">
         {if $asteCreate != false}
@@ -16,26 +25,17 @@
                             </h4>
                             <p>{$dato->getArticolo()->getDescrizione()}</p>
                         </div>
-                        <div class="ratings">
-                            <p class="pull-right">15 reviews</p>
-                            <p>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                            </p>
-                        </div>
+           
                     </div>
                 </div>
             {/foreach}
         {/if}
 		</div>
-</div>
 
- <div class="col-md-9" style=position:"relatve">
 
-    <div  class="row">
+ 
+
+ <div  class="row">
       
         {if $asteVinte != false}
         <h1>Aste vinte</h1>
@@ -62,22 +62,13 @@
 
                             </table>
                     </form>
-                        <div class="ratings">
-                            <p class="pull-right">15 reviews</p>
-                            <p>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                            </p>
-                        </div>
+               
                     </div>
 
                 </div>
             {/foreach}
         {/if}
     </div>
-</div>
+
 
 </div>

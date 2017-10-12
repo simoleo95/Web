@@ -87,9 +87,9 @@
             $VAsta=USingleton::getInstance('VAsta');
 
             
-            $VAsta->setLayout('\mieAste.tpl');
+            $VAsta->setLayout('\Profilo.tpl');
             $VMieAste=USingleton::getInstance('VMieAste');
-            $VMieAste->setLayout('\mieAste.tpl');
+            $VMieAste->setLayout('\Profilo.tpl');
             return $VMieAste->processaTemplate();
         }
 
