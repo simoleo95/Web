@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2017-10-09 18:09:36
+<?php /* Smarty version Smarty-3.1.13, created on 2017-10-10 15:59:00
          compiled from "C:\xampp\htdocs\Web\Lastminute\templates\templates\home.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:1145981807c738a01-79710874%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'e7e6566d21414ab7baa89c20c13fd5cb6ab6a1d4' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Web\\Lastminute\\templates\\templates\\home.tpl',
-      1 => 1507565373,
+      1 => 1507643756,
       2 => 'file',
     ),
   ),
@@ -60,7 +60,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 	 <!-- jQuery -->
     <script src="templates/templates/js/scorri.js"></script>
     <script src="templates/templates/js/popup.js"></script>
-    <script src="templates/templates/js/ajax.js"></script>
 	<script src="templates/templates/js/timeout.js"></script>
 	<script src="templates/templates/js/jquery.timeTo.js"></script>
 
@@ -138,8 +137,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     <!-- Page Content -->
     <div class="container">
 
-        <div class="row">
-            <div class="col-md-3">
+        <div  class="row">
+			
+            <div class="col-md-3"/>
                 <?php if (isset($_smarty_tpl->tpl_vars['username']->value)){?>
                 <p style="text-align: center">Benvenuto <b><?php echo $_smarty_tpl->tpl_vars['username']->value;?>
 </b>!</p>

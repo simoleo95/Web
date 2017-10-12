@@ -104,8 +104,9 @@
     <!-- Page Content -->
     <div class="container">
 
-        <div class="row">
-            <div class="col-md-3">
+        <div  class="row">
+			
+            <div class="col-md-3"/>
                 {if isset($username)}
                 <p style="text-align: center">Benvenuto <b>{$username}</b>!</p>
                 {/if}

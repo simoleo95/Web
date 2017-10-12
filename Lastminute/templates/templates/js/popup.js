@@ -12,7 +12,7 @@ $(document).ready(function () {
         $.ajax({
             url: url,
             success: function (result) {
-                $('.popup-content').append(result);
+                $('.popup-content').html(result);
             },
             error: function() {
                 alert("Errore ajax");

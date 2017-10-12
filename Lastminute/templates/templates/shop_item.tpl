@@ -15,7 +15,7 @@
         <div style="margin-bottom: 20px;">
             <h4 class="pull-right">Prezzo attuale: {$asta->getPrezzoF()->getValore()} {$asta->getPrezzoF()->getValuta()}</h4>
             <div class="text-left" style="margin: 10px;">
-                <form method="post" action="index.php">
+                <form method="get" action="index.php">
                     <input type="hidden" name="controller" value="asta" />
                     <input type="hidden" name="task" value="offerta" />
                     <input type="hidden" name="id_asta" value="{$asta->getIdAsta()}"/>
