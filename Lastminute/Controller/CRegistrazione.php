@@ -75,9 +75,9 @@
     }
      public function logout(){
          $USession=USingleton::getInstance('USession');
-         $USession->cancella_valore('username');
+         $USession->cancella_valore('username'); 
      }
-    
+    //Usato per la registrazione dell'utente
     public function salva(){
         $VCreaAccount=USingleton::getInstance('VCreaAccount');  
         $password=$VCreaAccount->getPassword();
@@ -88,12 +88,18 @@
         $EUtente->setEmail($VCreaAccount->getEmail());
         $EUtente->setUsername($VCreaAccount->getUsername());
         $EUtente->setPassword($password);
-        if($password!=$password_1)
-            return "password diverse";
+       
+
+        $errore = $EUtente->store();print($errore);
+        echo '<script type="text/javascript">
+        alert("entrato");
+              </script>';
+        if ($errore == 'Utente creato correttamente') {
+         header('Location:home');   
+        }
         else{
-        $errore = $EUtente->store();
-         echo '<script type="text/javascript">alert("'.$errore.'");</script>';
-         header('Location:index.php');
+         header('Location:Registrazione');
+        
         }
     }
     
