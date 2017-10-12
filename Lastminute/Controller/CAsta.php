@@ -73,7 +73,6 @@
             $VAsta->impostaDati('asta',$asta);
 
             $VAsta->displayTemplate();
-
         }
 
         public function inserisci() {

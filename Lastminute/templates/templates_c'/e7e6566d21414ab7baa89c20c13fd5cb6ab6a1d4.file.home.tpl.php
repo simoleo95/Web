@@ -1,30 +1,22 @@
-<<<<<<< Updated upstream
-<?php /* Smarty version Smarty-3.1.13, created on 2017-10-12 10:32:26
-=======
-<?php /* Smarty version Smarty-3.1.13, created on 2017-10-12 11:51:02
->>>>>>> Stashed changes
+<?php /* Smarty version Smarty-3.1.13, created on 2017-10-12 12:38:44
          compiled from "C:\xampp\htdocs\Web\Lastminute\templates\templates\home.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:1145981807c738a01-79710874%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:1936059df40c990b216-10814792%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'e7e6566d21414ab7baa89c20c13fd5cb6ab6a1d4' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Web\\Lastminute\\templates\\templates\\home.tpl',
-<<<<<<< Updated upstream
-      1 => 1507797068,
-=======
-      1 => 1507801859,
->>>>>>> Stashed changes
+      1 => 1507804710,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '1145981807c738a01-79710874',
+  'nocache_hash' => '1936059df40c990b216-10814792',
   'function' => 
   array (
   ),
   'version' => 'Smarty-3.1.13',
-  'unifunc' => 'content_5981807c752ab0_30291969',
+  'unifunc' => 'content_59df40c9db3831_32911114',
   'variables' => 
   array (
     'title' => 0,
@@ -37,7 +29,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5981807c752ab0_30291969')) {function content_5981807c752ab0_30291969($_smarty_tpl) {?><!DOCTYPE html>
+<?php if ($_valid && !is_callable('content_59df40c9db3831_32911114')) {function content_59df40c9db3831_32911114($_smarty_tpl) {?><!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -206,8 +198,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
                 </div> -->
             <div id="mainContent">
-                <?php echo $_smarty_tpl->tpl_vars['mainContent']->value;?>
+                <div id="ricerca" class="col-md-9">
+                    <?php echo $_smarty_tpl->tpl_vars['mainContent']->value;?>
 
+                </div>
             </div>
            
         </div>

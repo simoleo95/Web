@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2017-10-12 09:39:05
+<?php /* Smarty version Smarty-3.1.13, created on 2017-10-12 12:38:43
          compiled from "C:\xampp\htdocs\Web\Lastminute\templates\templates\ricerca.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:311015981807c2d2ab2-51790956%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'dd6e43cf686f3a96e755b73f1c85a12bf2fdc4ed' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Web\\Lastminute\\templates\\templates\\ricerca.tpl',
-      1 => 1507793697,
+      1 => 1507804710,
       2 => 'file',
     ),
   ),
@@ -24,7 +24,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5981807c6a9fa9_49937655')) {function content_5981807c6a9fa9_49937655($_smarty_tpl) {?><div class="col-md-9">
+<?php if ($_valid && !is_callable('content_5981807c6a9fa9_49937655')) {function content_5981807c6a9fa9_49937655($_smarty_tpl) {?>
 
     <div class="row">
         <?php if ($_smarty_tpl->tpl_vars['dati']->value!=false){?>
@@ -65,5 +65,4 @@ $_smarty_tpl->tpl_vars['dato']->_loop = true;
                 </div>
             <?php } ?>
         <?php }?>
-    </div>
-</div><?php }} ?>
+    </div><?php }} ?>

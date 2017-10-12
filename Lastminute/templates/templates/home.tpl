@@ -160,7 +160,9 @@
 
                 </div> -->
             <div id="mainContent">
-                {$mainContent}
+                <div id="ricerca" class="col-md-9">
+                    {$mainContent}
+                </div>
             </div>
            
         </div>
