@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2017-10-10 14:34:01
+<?php /* Smarty version Smarty-3.1.13, created on 2017-10-12 10:24:30
          compiled from "C:\xampp\htdocs\Web\Lastminute\templates\templates\insAnnuncio.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:5556598cc464407718-56485909%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '63f5c4c6ff0cac3ae626d3b7ecd37172a4d841e7' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Web\\Lastminute\\templates\\templates\\insAnnuncio.tpl',
-      1 => 1507560497,
+      1 => 1507796668,
       2 => 'file',
     ),
   ),
@@ -56,7 +56,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
             </tr>
             <tr>
                 <td>Data Scadenza</td>
-                <td><input type="datetime-local" name="dataf" required/></td>
+                <td><input type="date" name="dataf" required/></td>
             </tr>
             <tr>
                 <td>Prezzo di partenza</td>

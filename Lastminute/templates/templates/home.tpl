@@ -199,6 +199,7 @@
 
     <!-- jQuery -->
     <script src="templates/templates/js/scorri.js"></script>
+    <script src="templates/templates/js/scroll.js"></script>
     <script src="templates/templates/js/popup.js"></script>
 
 </body>

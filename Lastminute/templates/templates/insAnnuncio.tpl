@@ -35,7 +35,7 @@
             </tr>
             <tr>
                 <td>Data Scadenza</td>
-                <td><input type="datetime-local" name="dataf" required/></td>
+                <td><input type="date" name="dataf" required/></td>
             </tr>
             <tr>
                 <td>Prezzo di partenza</td>

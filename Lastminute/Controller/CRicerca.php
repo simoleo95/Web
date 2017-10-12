@@ -6,10 +6,18 @@
             $ECatalogo=new ECatalogo();
             $VRicerca=  USingleton::getInstance('VRicerca');
 
-            $risultato=$ECatalogo->ricerca();
+            $VAsta = USingleton::getInstance('VAsta');
+            $ajax = $VAsta->getAjax();
+
+            $risultato=$ECatalogo->inScadenza();
             $VRicerca->impostaDati('dati',$risultato);
 
-            return $VRicerca->processaTemplate();
+            if($ajax) {
+                // $VRicerca->processaTemplate();
+                $VRicerca->display();
+            }
+            else
+                return $VRicerca->processaTemplate();
         }
 
     }

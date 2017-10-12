@@ -11,10 +11,11 @@
             $this->catalogoAste[]=$a;
         }
 
-        public function ricerca() {
+        public function inScadenza() {
             // Da cambiare
             $FAsta=  USingleton::getInstance('FAsta');
-            $query="SELECT * FROM Asta";
+            //$query="SELECT * FROM `asta` WHERE dataF >= NOW() ORDER BY dataF ASC";
+            $query="SELECT * FROM `asta` ORDER BY dataF ASC LIMIT 6 OFFSET 1";
             $FAsta->execute($query);
             $tmp=$FAsta->getObjects();
 
@@ -62,9 +63,6 @@
            $FAsta=  USingleton::getInstance('FAsta');
            $ris=$FAsta->seleziona($r);
            return $ris;
-           
-           
-           
        }
            
            
