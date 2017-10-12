@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2017-10-10 15:27:21
+<?php /* Smarty version Smarty-3.1.13, created on 2017-10-12 10:15:41
          compiled from "C:\xampp\htdocs\Web\Lastminute\templates\templates\shop_item.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:28922598d79ef4abbb0-87189210%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'a3216d14c5a1df902384e9234de22e8834fe7bd6' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Web\\Lastminute\\templates\\templates\\shop_item.tpl',
-      1 => 1507642028,
+      1 => 1507796135,
       2 => 'file',
     ),
   ),
@@ -23,7 +23,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_598d79ef7bbde3_20874024')) {function content_598d79ef7bbde3_20874024($_smarty_tpl) {?><div class="col-md-9">
+<?php if ($_valid && !is_callable('content_598d79ef7bbde3_20874024')) {function content_598d79ef7bbde3_20874024($_smarty_tpl) {?><div>
 
     <div class="thumbnail">
         <img class="img-responsive" style="height: 300px !important;" src="data:image;base64,<?php echo $_smarty_tpl->tpl_vars['asta']->value->getArticolo()->getFoto();?>
@@ -62,6 +62,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                 </form>
             </div>
         </div>
+
+        <script src="templates/templates/jquery-libs/jquery-3.2.1.js" type="text/javascript"></script>
+        <script src="templates/templates/js/jquery.timeTo.js"></script>
+        <script src="templates/templates/js/timeout.js"></script>
+
+        <link href="templates/templates/css/timeTo.css" type="text/css" rel="stylesheet"/>
+        <!--
         <div class="ratings">
             <p class="pull-right">3 reviews</p>
             <p>
@@ -73,8 +80,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                 4.0 stars
             </p>
         </div>
+        -->
     </div>
 
+    <!--
     <div class="well">
 
         <div class="text-right">
@@ -126,5 +135,5 @@ $_valid = $_smarty_tpl->decodeProperties(array (
             </div>
         </div>
 
-    </div>
+    </div> -->
 </div><?php }} ?>

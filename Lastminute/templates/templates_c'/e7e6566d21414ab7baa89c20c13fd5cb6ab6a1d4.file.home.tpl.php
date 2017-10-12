@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2017-10-10 15:59:00
+<?php /* Smarty version Smarty-3.1.13, created on 2017-10-12 10:15:38
          compiled from "C:\xampp\htdocs\Web\Lastminute\templates\templates\home.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:1145981807c738a01-79710874%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'e7e6566d21414ab7baa89c20c13fd5cb6ab6a1d4' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Web\\Lastminute\\templates\\templates\\home.tpl',
-      1 => 1507643756,
+      1 => 1507796135,
       2 => 'file',
     ),
   ),
@@ -52,16 +52,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 	<link href="templates/templates/css/ricerca.css" rel="stylesheet">
 	
 	<link href="templates/templates/css/scorri.css" rel="stylesheet">
-	<link href="templates/templates/css/timeTo.css" type="text/css" rel="stylesheet"/>
-    <link href="templates/templates/css/popup.css" rel="stylesheet">
 
-	
-	<script src="templates/templates/jquery-libs/jquery-3.2.1.js" type="text/javascript"></script>
-	 <!-- jQuery -->
-    <script src="templates/templates/js/scorri.js"></script>
-    <script src="templates/templates/js/popup.js"></script>
-	<script src="templates/templates/js/timeout.js"></script>
-	<script src="templates/templates/js/jquery.timeTo.js"></script>
+    <link href="templates/templates/css/popup.css" type="text/css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -235,12 +227,18 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     </div>
     <!-- /.container -->
 
-   
+
+    <script src="templates/templates/jquery-libs/jquery-3.2.1.js" type="text/javascript"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="templates/templates/js/bootstrap.min.js"></script>
 	
 	<script src="templates/templates/js/ricerca.js"></script>
+
+
+    <!-- jQuery -->
+    <script src="templates/templates/js/scorri.js"></script>
+    <script src="templates/templates/js/popup.js"></script>
 
 </body>
 

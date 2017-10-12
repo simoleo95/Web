@@ -1,4 +1,4 @@
-<div class="col-md-9">
+<div>
 
     <div class="thumbnail">
         <img class="img-responsive" style="height: 300px !important;" src="data:image;base64,{$asta->getArticolo()->getFoto()}" alt="">
@@ -25,6 +25,13 @@
                 </form>
             </div>
         </div>
+
+        <script src="templates/templates/jquery-libs/jquery-3.2.1.js" type="text/javascript"></script>
+        <script src="templates/templates/js/jquery.timeTo.js"></script>
+        <script src="templates/templates/js/timeout.js"></script>
+
+        <link href="templates/templates/css/timeTo.css" type="text/css" rel="stylesheet"/>
+        <!--
         <div class="ratings">
             <p class="pull-right">3 reviews</p>
             <p>
@@ -36,8 +43,10 @@
                 4.0 stars
             </p>
         </div>
+        -->
     </div>
 
+    <!--
     <div class="well">
 
         <div class="text-right">
@@ -89,5 +98,5 @@
             </div>
         </div>
 
-    </div>
+    </div> -->
 </div>

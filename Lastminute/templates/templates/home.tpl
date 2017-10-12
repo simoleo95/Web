@@ -20,16 +20,8 @@
 	<link href="templates/templates/css/ricerca.css" rel="stylesheet">
 	
 	<link href="templates/templates/css/scorri.css" rel="stylesheet">
-	<link href="templates/templates/css/timeTo.css" type="text/css" rel="stylesheet"/>
-    <link href="templates/templates/css/popup.css" rel="stylesheet">
 
-	
-	<script src="templates/templates/jquery-libs/jquery-3.2.1.js" type="text/javascript"></script>
-	 <!-- jQuery -->
-    <script src="templates/templates/js/scorri.js"></script>
-    <script src="templates/templates/js/popup.js"></script>
-	<script src="templates/templates/js/timeout.js"></script>
-	<script src="templates/templates/js/jquery.timeTo.js"></script>
+    <link href="templates/templates/css/popup.css" type="text/css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -196,12 +188,18 @@
     </div>
     <!-- /.container -->
 
-   
+
+    <script src="templates/templates/jquery-libs/jquery-3.2.1.js" type="text/javascript"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="templates/templates/js/bootstrap.min.js"></script>
 	
 	<script src="templates/templates/js/ricerca.js"></script>
+
+
+    <!-- jQuery -->
+    <script src="templates/templates/js/scorri.js"></script>
+    <script src="templates/templates/js/popup.js"></script>
 
 </body>
 
