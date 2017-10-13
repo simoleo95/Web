@@ -20,6 +20,7 @@
 	<link href="templates/templates/css/scorri.css" type="text/css" rel="stylesheet">
     <link href="templates/templates/css/popup.css" type="text/css" rel="stylesheet">
     <link href="templates/templates/css/timeTo.css" type="text/css" rel="stylesheet"/>
+    <link href="templates/templates/css/registrazione.css" type="text/css" rel="stylesheet"/>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->

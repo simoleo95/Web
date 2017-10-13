@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2017-10-12 19:37:48
+<?php /* Smarty version Smarty-3.1.13, created on 2017-10-13 21:03:53
          compiled from "C:\xampp\htdocs\Web\Lastminute\templates\templates\login.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:78359848bc869a8b4-51848092%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '585f0928f5ae2fb3addfe98f747341f1eb070ed6' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Web\\Lastminute\\templates\\templates\\login.tpl',
-      1 => 1507829687,
+      1 => 1507921433,
       2 => 'file',
     ),
   ),
@@ -24,7 +24,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_59848bc86be951_78972865')) {function content_59848bc86be951_78972865($_smarty_tpl) {?><form method="post" action="index.php">
-    <p class="lead">Login</p>
+    <p class="lead" style="text-align: center;">Login</p>
     <!--Gestione errori-->
     <input type="hidden" name="controller" value="log" />
     <input type="hidden" name="task" value="registra" />
