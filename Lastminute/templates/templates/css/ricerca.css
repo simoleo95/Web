@@ -1,3 +1,20 @@
-.ricerca { border: 3px solid #336699; background: #999999; padding: 4px; float: left; }
-.ricerca input { float: left; height: 16px; }
-.ricerca input.query { background: #999999; border: none; width: 140px; font-family: verdana, arial, tahoma; font-size: 12px; color: #000000; }
+.ricerca {
+    border: 3px solid #336699;
+    background: red;
+    padding: 4px;
+    right: 0;
+}
+
+.ricerca input {
+    float: left;
+    height: 16px;
+}
+
+.ricerca input.query {
+    background: #999999;
+    border: none;
+    width: 140px;
+    font-family: verdana, arial, tahoma;
+    font-size: 12px;
+    color: #000000;
+}

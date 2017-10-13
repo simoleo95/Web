@@ -3,12 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="e1bf6216-67df-4474-abef-f8edc160635b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lastminute/Controller/CAsta.php" afterPath="$PROJECT_DIR$/Lastminute/Controller/CAsta.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lastminute/includes/config.inc.php" afterPath="$PROJECT_DIR$/Lastminute/includes/config.inc.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lastminute/templates/templates/css/ricerca.css" afterPath="$PROJECT_DIR$/Lastminute/templates/templates/css/ricerca.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lastminute/templates/templates/home.tpl" afterPath="$PROJECT_DIR$/Lastminute/templates/templates/home.tpl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lastminute/templates/templates/ricerca.tpl" afterPath="$PROJECT_DIR$/Lastminute/templates/templates/ricerca.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lastminute/templates/templates/shop_item.tpl" afterPath="$PROJECT_DIR$/Lastminute/templates/templates/shop_item.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lastminute/templates/templates_c'/a3216d14c5a1df902384e9234de22e8834fe7bd6.file.shop_item.tpl.php" afterPath="$PROJECT_DIR$/Lastminute/templates/templates_c'/a3216d14c5a1df902384e9234de22e8834fe7bd6.file.shop_item.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lastminute/templates/templates_c'/63f5c4c6ff0cac3ae626d3b7ecd37172a4d841e7.file.insAnnuncio.tpl.php" afterPath="$PROJECT_DIR$/Lastminute/templates/templates_c'/63f5c4c6ff0cac3ae626d3b7ecd37172a4d841e7.file.insAnnuncio.tpl.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lastminute/templates/templates_c'/dd6e43cf686f3a96e755b73f1c85a12bf2fdc4ed.file.ricerca.tpl.php" afterPath="$PROJECT_DIR$/Lastminute/templates/templates_c'/dd6e43cf686f3a96e755b73f1c85a12bf2fdc4ed.file.ricerca.tpl.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lastminute/templates/templates_c'/e7e6566d21414ab7baa89c20c13fd5cb6ab6a1d4.file.home.tpl.php" afterPath="$PROJECT_DIR$/Lastminute/templates/templates_c'/e7e6566d21414ab7baa89c20c13fd5cb6ab6a1d4.file.home.tpl.php" />
     </list>
@@ -41,13 +39,17 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ricerca.tpl" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ricerca.tpl" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Lastminute/templates/templates/ricerca.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="27" lean-forward="true" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
+            <state relative-caret-position="323">
+              <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="22" selection-end-column="32" />
               <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#src#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -63,11 +65,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="shop_item.tpl" pinned="false" current-in-tab="true">
+      <file leaf-file-name="shop_item.tpl" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Lastminute/templates/templates/shop_item.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="25" column="85" lean-forward="false" selection-start-line="25" selection-start-column="85" selection-end-line="25" selection-end-column="85" />
+            <state relative-caret-position="458">
+              <caret line="32" column="6" lean-forward="true" selection-start-line="32" selection-start-column="6" selection-end-line="32" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -76,12 +78,44 @@
       <file leaf-file-name="home.tpl" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Lastminute/templates/templates/home.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="191" column="4" lean-forward="false" selection-start-line="191" selection-start-column="4" selection-end-line="191" selection-end-column="98" />
+            <state relative-caret-position="612">
+              <caret line="80" column="25" lean-forward="false" selection-start-line="80" selection-start-column="25" selection-end-line="80" selection-end-column="25" />
               <folding>
+                <element signature="n#style#0;n#input#2;n#div#0;n#form#0;n#div#0;n#div#1;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#1;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#p#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#7056#7062#0#HTML" expanded="true" />
+                <element signature="e#5719#5725#0#HTML" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bootstrap.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Lastminute/templates/templates/css/bootstrap.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="76" lean-forward="false" selection-start-line="5" selection-start-column="76" selection-end-line="5" selection-end-column="76" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="shop-homepage.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Lastminute/templates/templates/css/shop-homepage.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="444">
+              <caret line="53" column="1" lean-forward="false" selection-start-line="53" selection-start-column="1" selection-end-line="53" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ricerca.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Lastminute/templates/templates/css/ricerca.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="19" lean-forward="false" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -125,9 +159,7 @@
         <option value="$PROJECT_DIR$/Lastminute/View/VHome.php" />
         <option value="$PROJECT_DIR$/Lastminute/index.php" />
         <option value="$PROJECT_DIR$/Lastminute/View/View.php" />
-        <option value="$PROJECT_DIR$/Lastminute/templates/templates/css/shop-homepage.css" />
         <option value="$PROJECT_DIR$/../../php/php.ini" />
-        <option value="$PROJECT_DIR$/Lastminute/templates/templates/css/bootstrap.css" />
         <option value="$PROJECT_DIR$/Lastminute/templates/templates/css/bootstrap.min.css" />
         <option value="$PROJECT_DIR$/Lastminute/templates/templates/login.tpl" />
         <option value="$PROJECT_DIR$/Lastminute/templates/templates/css/popup.css" />
@@ -139,12 +171,15 @@
         <option value="$PROJECT_DIR$/Lastminute/Controller/CRicerca.php" />
         <option value="$PROJECT_DIR$/Lastminute/Entity/ECatalogo.php" />
         <option value="$PROJECT_DIR$/Lastminute/includes/config.inc.php" />
-        <option value="$PROJECT_DIR$/Lastminute/templates/templates/home.tpl" />
         <option value="$PROJECT_DIR$/Lastminute/templates/templates/js/timeout.js" />
         <option value="$PROJECT_DIR$/Lastminute/templates/templates/js/timeout2.js" />
-        <option value="$PROJECT_DIR$/Lastminute/templates/templates/ricerca.tpl" />
         <option value="$PROJECT_DIR$/Lastminute/Controller/CAsta.php" />
         <option value="$PROJECT_DIR$/Lastminute/templates/templates/shop_item.tpl" />
+        <option value="$PROJECT_DIR$/Lastminute/templates/templates/css/ricerca.css" />
+        <option value="$PROJECT_DIR$/Lastminute/templates/templates/css/shop-homepage.css" />
+        <option value="$PROJECT_DIR$/Lastminute/templates/templates/css/bootstrap.css" />
+        <option value="$PROJECT_DIR$/Lastminute/templates/templates/home.tpl" />
+        <option value="$PROJECT_DIR$/Lastminute/templates/templates/ricerca.tpl" />
       </list>
     </option>
   </component>
@@ -305,6 +340,32 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Web" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Lastminute" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="includes" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -393,7 +454,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
-    <property name="SearchEverywhereHistoryKey" value="php&#9;ACTION&#9;ActivatePHP-CGIServerToolWindow" />
+    <property name="SearchEverywhereHistoryKey" value=".navbar-collapse&#9;null&#9;null&#10;php&#9;ACTION&#9;ActivatePHP-CGIServerToolWindow" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -548,7 +609,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45187000" />
+    <option name="totallyTimeSpent" value="50946000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -612,13 +673,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Lastminute/Entity/EAsta.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Lastminute/Entity/EArticolo.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
@@ -782,7 +836,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -808,20 +861,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Lastminute/templates/templates/css/shop-homepage.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="55" lean-forward="false" selection-start-line="7" selection-start-column="55" selection-end-line="7" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Lastminute/templates/templates/css/bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="4595" column="17" lean-forward="true" selection-start-line="4595" selection-start-column="17" selection-end-line="4595" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Lastminute/templates/templates/css/bootstrap.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -833,7 +872,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="23" lean-forward="false" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -892,7 +930,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="46" lean-forward="false" selection-start-line="5" selection-start-column="46" selection-end-line="5" selection-end-column="46" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -900,7 +937,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1258">
           <caret line="74" column="8" lean-forward="false" selection-start-line="74" selection-start-column="8" selection-end-line="79" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -935,14 +971,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Lastminute/templates/templates/js/timeout2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="21" lean-forward="true" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Lastminute/templates/templates/js/timeout2.js" />
     <entry file="file://$PROJECT_DIR$/Lastminute/templates/templates/js/timeout.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -975,32 +1004,62 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Lastminute/templates/templates/ricerca.tpl">
+    <entry file="file://$PROJECT_DIR$/Lastminute/templates/templates/shop_item.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="27" lean-forward="true" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="458">
+          <caret line="32" column="6" lean-forward="true" selection-start-line="32" selection-start-column="6" selection-end-line="32" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lastminute/templates/templates/css/ricerca.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="19" lean-forward="false" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lastminute/templates/templates/css/shop-homepage.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="444">
+          <caret line="53" column="1" lean-forward="false" selection-start-line="53" selection-start-column="1" selection-end-line="53" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lastminute/templates/templates/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="76" lean-forward="false" selection-start-line="5" selection-start-column="76" selection-end-line="5" selection-end-column="76" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Lastminute/templates/templates/home.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="191" column="4" lean-forward="false" selection-start-line="191" selection-start-column="4" selection-end-line="191" selection-end-column="98" />
+        <state relative-caret-position="612">
+          <caret line="80" column="25" lean-forward="false" selection-start-line="80" selection-start-column="25" selection-end-line="80" selection-end-column="25" />
           <folding>
+            <element signature="n#style#0;n#input#2;n#div#0;n#form#0;n#div#0;n#div#1;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#1;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#7056#7062#0#HTML" expanded="true" />
+            <element signature="e#5719#5725#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Lastminute/templates/templates/shop_item.tpl">
+    <entry file="file://$PROJECT_DIR$/Lastminute/templates/templates/ricerca.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="25" column="85" lean-forward="false" selection-start-line="25" selection-start-column="85" selection-end-line="25" selection-end-column="85" />
-          <folding />
+        <state relative-caret-position="323">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="22" selection-end-column="32" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#src#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
