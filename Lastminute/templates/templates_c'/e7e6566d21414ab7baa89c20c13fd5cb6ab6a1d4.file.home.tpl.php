@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2017-10-12 19:37:49
+<?php /* Smarty version Smarty-3.1.13, created on 2017-10-13 17:22:28
          compiled from "C:\xampp\htdocs\Web\Lastminute\templates\templates\home.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:1936059df40c990b216-10814792%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'e7e6566d21414ab7baa89c20c13fd5cb6ab6a1d4' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Web\\Lastminute\\templates\\templates\\home.tpl',
-      1 => 1507829687,
+      1 => 1507908146,
       2 => 'file',
     ),
   ),
@@ -48,12 +48,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
     <!-- Custom CSS -->
     <link href="templates/templates/css/shop-homepage.css" rel="stylesheet">
-	
 	<link href="templates/templates/css/ricerca.css" rel="stylesheet">
-	
 	<link href="templates/templates/css/scorri.css" rel="stylesheet">
-
     <link href="templates/templates/css/popup.css" type="text/css" rel="stylesheet">
+    <link href="templates/templates/css/timeTo.css" type="text/css" rel="stylesheet"/>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -203,19 +201,19 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
                 </div>
             </div>
-           
+
         </div>
 
     </div>
-	
-	
-	
-    
+
+
+
+
 	<!-- /.container -->
 
     <div class="container">
 
-        
+
 
         <!-- Footer -->
         <footer>
@@ -239,6 +237,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
 
     <!-- jQuery -->
+    <script src="templates/templates/js/jquery.timeTo.js"></script>
     <script src="templates/templates/js/scorri.js"></script>
     <script src="templates/templates/js/scroll.js"></script>
     <script src="templates/templates/js/popup.js"></script>

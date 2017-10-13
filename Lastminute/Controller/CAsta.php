@@ -71,6 +71,9 @@
             $FAsta=USingleton::getInstance('FAsta');
             $asta=$FAsta->load($VAsta->getId());
             $VAsta->impostaDati('asta',$asta);
+            $CRegistrazione = USingleton::getInstance('CRegistrazione');
+            $registrato = $CRegistrazione->getRegistrato();
+            $VAsta->impostaDati('user',$registrato);
 
             $VAsta->displayTemplate();
         }

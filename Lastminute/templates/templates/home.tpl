@@ -16,12 +16,10 @@
 
     <!-- Custom CSS -->
     <link href="templates/templates/css/shop-homepage.css" rel="stylesheet">
-	
 	<link href="templates/templates/css/ricerca.css" rel="stylesheet">
-	
 	<link href="templates/templates/css/scorri.css" rel="stylesheet">
-
     <link href="templates/templates/css/popup.css" type="text/css" rel="stylesheet">
+    <link href="templates/templates/css/timeTo.css" type="text/css" rel="stylesheet"/>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -164,19 +162,19 @@
                     {$mainContent}
                 </div>
             </div>
-           
+
         </div>
 
     </div>
-	
-	
-	
-    
+
+
+
+
 	<!-- /.container -->
 
     <div class="container">
 
-        
+
 
         <!-- Footer -->
         <footer>
@@ -200,6 +198,7 @@
 
 
     <!-- jQuery -->
+    <script src="templates/templates/js/jquery.timeTo.js"></script>
     <script src="templates/templates/js/scorri.js"></script>
     <script src="templates/templates/js/scroll.js"></script>
     <script src="templates/templates/js/popup.js"></script>

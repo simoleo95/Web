@@ -15,15 +15,9 @@
 
                             <p>{$dato->getArticolo()->getDescrizione()}</p>
                         </div>
-                        <div class="ratings">
-                            <p class="pull-right">15 reviews</p>
-                            <p>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                            </p>
+
+                        <div style="margin-top:-25px; text-align: center; font-size: 16px;">
+                            <p>Scade il: {$dato->getDataF()}</p>
                         </div>
                     </div>
                 </div>
