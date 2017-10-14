@@ -1,5 +1,5 @@
 <form method="post" action="index.php">
-    <p class="lead">Login</p>
+    <p class="lead" style="text-align: center;">Login</p>
     <!--Gestione errori-->
     <input type="hidden" name="controller" value="log" />
     <input type="hidden" name="task" value="registra" />

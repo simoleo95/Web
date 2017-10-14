@@ -23,9 +23,11 @@
                     <input type="hidden" name="id_asta" value="{$asta->getIdAsta()}"/>
 
 
+
                     <input type="number" name="offerta" style="width: 70px;" min="{$asta->getPrezzoF()->getValore()}" placeholder="{$asta->getPrezzoF()->getValore()}" required/>  {$asta->getPrezzoI()->getValuta()}
 					<a class="btn btn-success offerta" >Partecipa</a>
 			
+
 
                 </form>
 				{if isset($errore)}
