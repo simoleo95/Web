@@ -1,11 +1,12 @@
 $(document).ready(function () {
-    var called = 1;
-    $(window).scroll(function() {
-        if($(window).scrollTop() == $(document).height() - $(window).height()) {
+  var called = 1;
+	
+    $(window).scroll(function() {		    
+    if($(window).scrollTop() == $(document).height() - $(window).height()) {			
 
-            var url = "index.php?ajax=true&num="+(called++ * 6);
+            var url = "index.php?ajax=true&num="+(called++ * 6);		
 
-            $.ajax({
+             $.ajax({
                 url: url,
                 success: function(result) {
                     $('#ricerca').append(result);
@@ -13,7 +14,8 @@ $(document).ready(function () {
                 error: function() {
                     alert("Errore ajax");
                 }
-            })
+            });
         }
     });
 });
+

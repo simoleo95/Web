@@ -7,6 +7,8 @@
             $VRicerca=  USingleton::getInstance('VRicerca');
 
             $ajax = $VRicerca->getAjax();
+			
+			
 
             if($ajax) {
                 $num = $VRicerca->getNum();

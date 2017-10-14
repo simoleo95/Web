@@ -45,25 +45,35 @@
             $FAsta=USingleton::getInstance('FAsta');
             $asta=$FAsta->load($VAsta->getId());
             $prezzo=$asta->getPrezzoF();
-            $result=$prezzo->setValore($VAsta->getOfferta());
-            if(!$result){
-                echo "<script type='text/javascript'>alert('Inserisci un prezzo maggiore di quello attuale!');</script>";
-                $VAsta->setLayout('\shop_item.tpl');
-                $VAsta->impostaDati('asta',$asta);
-            return $VAsta->processaTemplate();}
-            else {
-                $FPrezzo=USingleton::getInstance('FPrezzo');
-                $FPrezzo->update($prezzo);
-                $session=USingleton::getInstance('USession');
+			$id_asta=$VAsta->getId();
+            $asta=$FAsta->load($id_asta);
+			$offerta=$VAsta->getOfferta();			
+			$prezzo=$asta->getPrezzoF()->getValore();			
+		   if($offerta>$prezzo){
+				$Prezzo=$asta->getPrezzoF();
+				$Prezzo->setValore($offerta);
+				$FPrezzo=USingleton::getInstance('FPrezzo');				
+                $FPrezzo->update($Prezzo);
+				$session=USingleton::getInstance('USession');
                 $FUtente=USingleton::getInstance('FUtente');
                 $utente=$FUtente->load($session->leggi_valore('username'));
-                $asta->setUtentevincitore($utente);               
+				$asta->setUtentevincitore($utente);  
+				
                 $FAsta->update($asta);
-                $VAsta->setLayout('\shop_item.tpl');
+				$VAsta->setLayout('\shop_item.tpl');
                 $VAsta->impostaDati('asta',$asta);
-                return $VAsta->processaTemplate();
-            }
-        }
+                $VAsta->displayTemplate();
+				
+			}
+			else {
+				$errore="<script type='text/javascript'>alert('Inserisci un prezzo maggiore di quello attuale!');</script>";;
+				$VAsta->setLayout('\shop_item.tpl');
+                $VAsta->impostaDati('asta',$asta);
+				$VAsta->impostaDati('errore',$errore);
+                $VAsta->displayTemplate();
+			}
+		}
+          
 
         public function dettagli() {
             $VAsta=USingleton::getInstance('VAsta');

@@ -17,15 +17,15 @@
         }
 
         public function getTitolo() {
-            if (isset($_POST['titolo']))
-                return $_POST['titolo'];
+            if (isset($_REQUEST['titolo']))
+                return $_REQUEST['titolo'];
             else
                 return false;
         }
 
         public function getDescrizione() {
-            if (isset($_POST['descrizione']))
-                return $_POST['descrizione'];
+            if (isset($_REQUEST['descrizione']))
+                return $_REQUEST['descrizione'];
             else
                 return false;
         }
@@ -38,29 +38,29 @@
         }
 
         public function getCategoria() {
-            if (isset($_POST['categoria']))
-                return $_POST['categoria'];
+            if (isset($_REQUEST['categoria']))
+                return $_REQUEST['categoria'];
             else
                 return false;
         }
 
         public function getData() {
-            if (isset($_POST['dataf']))
-                return $_POST['dataf'];
+            if (isset($_REQUEST['dataf']))
+                return $_REQUEST['dataf'];
             else
                 return false;
         }
 
         public function getPrezzo() {
-            if (isset($_POST['prezzop']))
-                return $_POST['prezzop'];
+            if (isset($_REQUEST['prezzop']))
+                return $_REQUEST['prezzop'];
             else
                 return false;
         }
 
         public function getOfferta() {
-            if (isset($_POST['offerta']))
-                return $_POST['offerta'];
+            if (isset($_REQUEST['offerta']))
+                return $_REQUEST['offerta'];
             else
                 return false;
         }

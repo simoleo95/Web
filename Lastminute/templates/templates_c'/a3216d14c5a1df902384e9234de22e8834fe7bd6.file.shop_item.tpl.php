@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2017-10-12 19:48:37
+<?php /* Smarty version Smarty-3.1.13, created on 2017-10-14 10:07:45
          compiled from "C:\xampp\htdocs\Web\Lastminute\templates\templates\shop_item.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:28922598d79ef4abbb0-87189210%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'a3216d14c5a1df902384e9234de22e8834fe7bd6' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Web\\Lastminute\\templates\\templates\\shop_item.tpl',
-      1 => 1507829687,
+      1 => 1507968458,
       2 => 'file',
     ),
   ),
@@ -20,12 +20,15 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'variables' => 
   array (
     'asta' => 0,
+    'errore' => 0,
   ),
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_598d79ef7bbde3_20874024')) {function content_598d79ef7bbde3_20874024($_smarty_tpl) {?><div>
+<?php if ($_valid && !is_callable('content_598d79ef7bbde3_20874024')) {function content_598d79ef7bbde3_20874024($_smarty_tpl) {?><script src="templates/templates/js/offerta.js"></script>
+<div>
 
     <div class="thumbnail">
+		
         <img class="img-responsive" style="height: 300px !important;" src="data:image;base64,<?php echo $_smarty_tpl->tpl_vars['asta']->value->getArticolo()->getFoto();?>
 " alt="">
         <div class="caption-full">
@@ -48,7 +51,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
  <?php echo $_smarty_tpl->tpl_vars['asta']->value->getPrezzoF()->getValuta();?>
 </h4>
             <div class="text-left" style="margin: 10px;">
-                <form method="get" action="index.php">
+                <form class=dati_offerta>
                     <input type="hidden" name="controller" value="asta" />
                     <input type="hidden" name="task" value="offerta" />
                     <input type="hidden" name="id_asta" value="<?php echo $_smarty_tpl->tpl_vars['asta']->value->getIdAsta();?>
@@ -58,8 +61,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 " placeholder="<?php echo $_smarty_tpl->tpl_vars['asta']->value->getPrezzoF()->getValore();?>
 " required/>  <?php echo $_smarty_tpl->tpl_vars['asta']->value->getPrezzoI()->getValuta();?>
 
-                    <input type="submit" class="btn btn-success" value="Partecipa"/>
+					<a class="btn btn-success offerta" value="Partecipa">Partecipa</a>
                 </form>
+				<?php if (isset($_smarty_tpl->tpl_vars['errore']->value)){?>
+                    <?php echo $_smarty_tpl->tpl_vars['errore']->value;?>
+
+				 <?php }?>
+
             </div>
         </div>
 
