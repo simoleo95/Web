@@ -60,7 +60,10 @@
 				$asta->setUtentevincitore($utente);  
 				
                 $FAsta->update($asta);
-				$VAsta->setLayout('\shop_item.tpl');
+			   $CRegistrazione = USingleton::getInstance('CRegistrazione');
+               $registrato = $CRegistrazione->getRegistrato();
+			   $VAsta->setLayout('\shop_item.tpl');
+                $VAsta->impostaDati('user',$registrato);				
                 $VAsta->impostaDati('asta',$asta);
                 $VAsta->displayTemplate();
 				
@@ -68,6 +71,9 @@
 			else {
 				$errore="<script type='text/javascript'>alert('Inserisci un prezzo maggiore di quello attuale!');</script>";;
 				$VAsta->setLayout('\shop_item.tpl');
+				$CRegistrazione = USingleton::getInstance('CRegistrazione');
+                $registrato = $CRegistrazione->getRegistrato();
+                $VAsta->impostaDati('user',$registrato); 				
                 $VAsta->impostaDati('asta',$asta);
 				$VAsta->impostaDati('errore',$errore);
                 $VAsta->displayTemplate();
