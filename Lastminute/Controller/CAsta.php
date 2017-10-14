@@ -84,6 +84,7 @@
             $CRegistrazione = USingleton::getInstance('CRegistrazione');
             $registrato = $CRegistrazione->getRegistrato();
             $VAsta->impostaDati('user',$registrato);
+			
 
             $VAsta->displayTemplate();
         }

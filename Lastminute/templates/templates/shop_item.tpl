@@ -17,6 +17,7 @@
         <div style="margin-bottom: 20px;">
             <h4 class="pull-right">Prezzo attuale: {$asta->getPrezzoF()->getValore()} {$asta->getPrezzoF()->getValuta()}</h4>
             <div class="text-left" style="margin: 10px;">
+				{if ($user != false)}
                 <form class=dati_offerta>
                     <input type="hidden" name="controller" value="asta" />
                     <input type="hidden" name="task" value="offerta" />
@@ -30,6 +31,7 @@
 
 
                 </form>
+				{/if}
 				{if isset($errore)}
                     {$errore}
 				 {/if}
