@@ -47,15 +47,23 @@
 
         // Restituisce un array di oggetti
         public function getObjects() {
+			$users =null;
             $numero_colonne=$this->result->columnCount();
+			
             if ($numero_colonne == 0)
                 return  $this->result=false;
             else {
                while($user=$this->result->fetchObject($this->result_class)) {
                    $users[]=$user;
-               }
-               return $users;
+               }				
+              				
             }
+			return $users;
+			/*if($users != false)
+				return $users;
+			else
+				return $users =null;*/
+			
         }
 
         // Esegue una query e restituisce un oggetto

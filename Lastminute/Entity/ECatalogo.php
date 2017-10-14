@@ -20,12 +20,16 @@
 
             $FAsta->execute($query);
             $tmp=$FAsta->getObjects();
+			
+			if($tmp != false){
 
             for($i=0;$i<count($tmp);$i++) {
                 $ris[]=$FAsta->load($tmp[$i]->getIdAsta());
             }
+			
 
-            return $ris;
+            return $ris;}
+			else{return $ris=null;}
         }
 
        public function ricercaDiUtente($user){

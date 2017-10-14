@@ -4,8 +4,9 @@ $(document).ready(function () {
      var called = 1;	
     $(window).scroll(function() {
 		var difference= $(document).height() - $(window).height();
+		
 		var difference= difference-1;
-		var top =$(document).scrollTop();
+		var top =$(window).scrollTop();
 		
 		
        if(top >= difference ) {
