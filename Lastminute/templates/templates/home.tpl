@@ -124,10 +124,10 @@
             </div>
 
             <div id="mainContent">
-                <div id="ricerca" class="col-md-9">
+                
                     {$mainContent}
-                </div>
-            </div>
+                
+            
 
         </div>
 
@@ -167,6 +167,7 @@
     <script src="templates/templates/js/jquery.timeTo.js"></script>
     <script src="templates/templates/js/scorri.js"></script>
     <script src="templates/templates/js/scroll.js"></script>
+
     <script src="templates/templates/js/popup.js"></script>
 
 </body>

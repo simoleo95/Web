@@ -1,6 +1,5 @@
-
-
-    <div class="row">
+<div id="ricerca" class="col-md-9">  
+<div class="row">
         {if $dati != false}
             {foreach from=$dati item=dato}
                 <div class="col-sm-4 col-lg-4 col-md-4">
@@ -26,3 +25,4 @@
             {/foreach}
         {/if}
     </div>
+</div>
