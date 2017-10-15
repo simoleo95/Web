@@ -1,31 +1,30 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2017-10-15 11:49:44
-         compiled from "C:\xampp\htdocs\Web\Lastminute\templates\templates\ricerca.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:311015981807c2d2ab2-51790956%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /* Smarty version Smarty-3.1.13, created on 2017-10-15 11:51:02
+         compiled from "C:\xampp\htdocs\Web\Lastminute\templates\templates\ricerca1.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:296059e32f86428bd9-94498015%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
-    'dd6e43cf686f3a96e755b73f1c85a12bf2fdc4ed' => 
+    '01fc9225ec7c69ebbcf7a7809c9a90dade5f6b6d' => 
     array (
-      0 => 'C:\\xampp\\htdocs\\Web\\Lastminute\\templates\\templates\\ricerca.tpl',
-      1 => 1508060117,
+      0 => 'C:\\xampp\\htdocs\\Web\\Lastminute\\templates\\templates\\ricerca1.tpl',
+      1 => 1508060121,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '311015981807c2d2ab2-51790956',
+  'nocache_hash' => '296059e32f86428bd9-94498015',
   'function' => 
   array (
   ),
-  'version' => 'Smarty-3.1.13',
-  'unifunc' => 'content_5981807c6a9fa9_49937655',
   'variables' => 
   array (
     'dati' => 0,
     'dato' => 0,
   ),
   'has_nocache_code' => false,
+  'version' => 'Smarty-3.1.13',
+  'unifunc' => 'content_59e32f86470fc3_66602390',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5981807c6a9fa9_49937655')) {function content_5981807c6a9fa9_49937655($_smarty_tpl) {?><div id="ricerca" class="col-md-9">
-<div class="row">
+<?php if ($_valid && !is_callable('content_59e32f86470fc3_66602390')) {function content_59e32f86470fc3_66602390($_smarty_tpl) {?><div class="row">
         <?php if ($_smarty_tpl->tpl_vars['dati']->value!=false){?>
             <?php  $_smarty_tpl->tpl_vars['dato'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['dato']->_loop = false;
  $_from = $_smarty_tpl->tpl_vars['dati']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
@@ -65,4 +64,5 @@ $_smarty_tpl->tpl_vars['dato']->_loop = true;
         <?php }?>
     </div>
 
-</div><?php }} ?>
+
+<script src="templates/templates/js/popup.js"></script><?php }} ?>
