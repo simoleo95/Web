@@ -124,10 +124,12 @@
             </div>
 
             <div id="mainContent">
+				
                 
                     {$mainContent}
                 
             
+				
         </div>
 
     </div>
