@@ -125,10 +125,11 @@
 
             <div id="mainContent">
 				
+				
                 
                     {$mainContent}
                 
-            
+			
 				
         </div>
 
