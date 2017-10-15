@@ -1,4 +1,3 @@
-<div id="ricerca" class="col-md-9">
 <div class="row">
         {if $dati != false}
             {foreach from=$dati item=dato}
@@ -28,4 +27,5 @@
         {/if}
     </div>
 
-</div>
+
+<script src="templates/templates/js/popup.js"></script>

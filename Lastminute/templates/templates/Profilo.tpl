@@ -19,10 +19,12 @@
                 <div class="col-sm-4 col-lg-4 col-md-4">
                     <div class="thumbnail">
                         <img src="data:image;base64,{$dato->getArticolo()->getFoto()}" style="height: 150px !important;" alt="">
-                        <div class="caption">
-                            <h4 class="pull-right">{$dato->getPrezzoI()->getValore()} {$dato->getPrezzoF()->getValuta()}</h4>
-                            <h4><a href="index.php?controller=asta&task=dettagli&id_asta={$dato->getIdAsta()}">{$dato->getArticolo()->getTitolo()}</a>
+                        <div class="caption">                            
+                            <h4 class="popup-link" data-popup-target="#example-popup">
+                                <a href="#">{$dato->getArticolo()->getTitolo()}</a>
+                                <p class="id" style="display: none">{$dato->getIdAsta()}</p>
                             </h4>
+							<p style="font-size: 14px; font-weight: bold;">{$dato->getPrezzoF()->getValore()} {$dato->getPrezzoF()->getValuta()}</p>
                             <p>{$dato->getArticolo()->getDescrizione()}</p>
                         </div>
            
@@ -34,8 +36,7 @@
 
 
  
-
- <div  class="row">
+<div  class="row">
       
         {if $asteVinte != false}
         <h1>Aste vinte</h1>
@@ -45,9 +46,11 @@
                     <div class="thumbnail">
                         <img src="data:image;base64,{$dato->getArticolo()->getFoto()}" style="height: 150px !important;" alt="">
                         <div class="caption">
-                            <h4 class="pull-right">{$dato->getPrezzoI()->getValore()} {$dato->getPrezzoF()->getValuta()}</h4>
-                            <h4><a href="index.php?controller=asta&task=dettagli&id_asta={$dato->getIdAsta()}">{$dato->getArticolo()->getTitolo()}</a>
+                            <h4 class="popup-link" data-popup-target="#example-popup">
+                                <a href="#">{$dato->getArticolo()->getTitolo()}</a>
+                                <p class="id" style="display: none">{$dato->getIdAsta()}</p>
                             </h4>
+							<p style="font-size: 14px; font-weight: bold;">{$dato->getPrezzoF()->getValore()} {$dato->getPrezzoF()->getValuta()}</p>
                             <p>{$dato->getArticolo()->getDescrizione()}</p>
                         </div>
                         <form method="post" enctype="multipart/form-data" action="index.php">
@@ -72,3 +75,4 @@
 
 
 </div>
+ 

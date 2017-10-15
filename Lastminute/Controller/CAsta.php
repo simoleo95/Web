@@ -103,10 +103,8 @@
 
         public function mieAste(){
 
-            $VAsta=USingleton::getInstance('VAsta');
-
-            
-            $VAsta->setLayout('\Profilo.tpl');
+           /* $VAsta=USingleton::getInstance('VAsta');            
+            $VAsta->setLayout('\Profilo.tpl');*/
             $VMieAste=USingleton::getInstance('VMieAste');
             $VMieAste->setLayout('\Profilo.tpl');
             return $VMieAste->processaTemplate();

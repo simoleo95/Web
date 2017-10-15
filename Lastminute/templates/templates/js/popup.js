@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    $('[data-popup-target]').click(function () {
+    $('.popup-link').click(function () {
         $('html').addClass('overlay');
         var activePopup = $(this).attr('data-popup-target');
         $(activePopup).addClass('visible');
