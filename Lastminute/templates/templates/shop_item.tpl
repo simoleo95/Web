@@ -2,36 +2,38 @@
 <div>
 
     <div class="thumbnail">
-		
-        <img class="img-responsive" style="height: 300px !important;" src="data:image;base64,{$asta->getArticolo()->getFoto()}" alt="">
-        <div class="caption-full">
-            <h4 class="pull-right">Prezzo di partenza: {$asta->getPrezzoI()->getValore()} {$asta->getPrezzoI()->getValuta()}</h4>
-            <h4><a href="#">{$asta->getArticolo()->getTitolo()}</a>
-            </h4>
-            <p>{$asta->getArticolo()->getDescrizione()}</p>
+        <div class="row">
+            <div class="col-md-6" style="width: 370px; height: 250px; position: relative; overflow: hidden;">
+                <img class="img-responsive" style="position: absolute; top: -9999px; left: -9999px; right: -9999px; bottom: -9999px; margin: auto;" src="data:image;base64,{$asta->getArticolo()->getFoto()}" alt="">
+            </div>
+            <div class="col-md-6 caption-full">
+                <h2 style="color: #1b6d85; font-weight: bold;">{$asta->getArticolo()->getTitolo()}</h2>
+                <p style="font-size: 19px; text-align: center;">Prezzo di partenza: <span style="font-weight: bold;">{$asta->getPrezzoI()->getValore()} {$asta->getPrezzoI()->getValuta()}</span></span></p>
+                <p style="font-size: 16px; text-align: center;">{$asta->getArticolo()->getDescrizione()}</p>
+            </div>
         </div>
-		<div class="caption-full">
-			<p id="timeout" tag="{$asta->getDataF()}"></p>
-			<br><br>
-		</div>
-        <div style="margin-bottom: 20px;">
-            <h4 class="pull-right">Prezzo attuale: {$asta->getPrezzoF()->getValore()} {$asta->getPrezzoF()->getValuta()}</h4>
-            <div class="text-left" style="margin: 10px;">
-				{if $user != false}
-                <form class=dati_offerta>
+        <div class="row" style="background: #eee; margin: 0 !important; padding-bottom: 40px;">
+            <div class="caption-full">
+                <p style="text-align: center; font-size: 16px;">Scade tra:</p>
+                <p id="timeout" class="col-md-12 center-block" tag="{$asta->getDataF()}"></p>
+            </div>
+        </div>
+        <div class="row" style="padding-top: 10px; margin: 0; background: #eee;">
+            <!--<div class="col-md-5 pull-left">
+                <p style="font-size: 19px; text-align: center; line-height: 50px;">Prezzo attuale: <span style="font-weight: bold;">{$asta->getPrezzoF()->getValore()} {$asta->getPrezzoF()->getValuta()}</span></p>
+            </div>-->
+            <div class="col-md-12 center-block" style="margin: 10px; padding-bottom: 10px;">
+                <form method="get" action="index.php">
                     <input type="hidden" name="controller" value="asta" />
                     <input type="hidden" name="task" value="offerta" />
                     <input type="hidden" name="id_asta" value="{$asta->getIdAsta()}"/>
 
+                    <p style="font-size: 19px;">Offerta attuale</p>
+                    <input type="number" class="field" style="width: 70px;height: 42px;border-radius: 5px;" name="offerta" style="width: 70px; height: 35px; border-radius: 5px;" {if !$user} disabled {/if} min="{$asta->getPrezzoF()->getValore()}" placeholder="{$asta->getPrezzoF()->getValore()}" required/>
+                    <input type="submit" style="display: inline;border-radius: 5px;" class="button list-group-item" {if !$user} disabled {/if} value="Partecipa"/>
 
-
-                    <input type="number" name="offerta" style="width: 70px;" min="{$asta->getPrezzoF()->getValore()}" placeholder="{$asta->getPrezzoF()->getValore()}" required/>  {$asta->getPrezzoI()->getValuta()}
-					<a class="btn btn-success offerta" >Partecipa</a>
-			
-
-
+                    {if !$user}<p style="text-align: center;">Registrati per poter effettuare un'offerta</p>{/if}
                 </form>
-				{/if}
 				{if isset($errore)}
                     {$errore}
 				 {/if}

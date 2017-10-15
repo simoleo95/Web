@@ -1,22 +1,20 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2017-10-13 17:00:19
+<?php /* Smarty version Smarty-3.1.13, created on 2017-10-15 11:44:33
          compiled from "C:\xampp\htdocs\Web\Lastminute\templates\templates\Profilo.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:274059df2e0aa1cea0-74087436%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:3076959e32e017d0a29-83911799%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'ff4b8c1cd80c01cb49399df47f88b11f57be6fdf' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Web\\Lastminute\\templates\\templates\\Profilo.tpl',
-      1 => 1507806270,
+      1 => 1508060480,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '274059df2e0aa1cea0-74087436',
+  'nocache_hash' => '3076959e32e017d0a29-83911799',
   'function' => 
   array (
   ),
-  'version' => 'Smarty-3.1.13',
-  'unifunc' => 'content_59df2e0aa7b3f6_64734766',
   'variables' => 
   array (
     'Utente' => 0,
@@ -25,8 +23,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'asteVinte' => 0,
   ),
   'has_nocache_code' => false,
+  'version' => 'Smarty-3.1.13',
+  'unifunc' => 'content_59e32e01855e32_60599557',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_59df2e0aa7b3f6_64734766')) {function content_59df2e0aa7b3f6_64734766($_smarty_tpl) {?><div class="col-md-9">
+<?php if ($_valid && !is_callable('content_59e32e01855e32_60599557')) {function content_59e32e01855e32_60599557($_smarty_tpl) {?><div class="col-md-9">
 
   <div  style="border:groove; border-radius:10px 10px 10px 10px; padding-left:8px;">
           <h1 class="contact">Profilo Utente</h1>
@@ -55,14 +55,16 @@ $_smarty_tpl->tpl_vars['dato']->_loop = true;
                     <div class="thumbnail">
                         <img src="data:image;base64,<?php echo $_smarty_tpl->tpl_vars['dato']->value->getArticolo()->getFoto();?>
 " style="height: 150px !important;" alt="">
-                        <div class="caption">
-                            <h4 class="pull-right"><?php echo $_smarty_tpl->tpl_vars['dato']->value->getPrezzoI()->getValore();?>
- <?php echo $_smarty_tpl->tpl_vars['dato']->value->getPrezzoF()->getValuta();?>
-</h4>
-                            <h4><a href="index.php?controller=asta&task=dettagli&id_asta=<?php echo $_smarty_tpl->tpl_vars['dato']->value->getIdAsta();?>
-"><?php echo $_smarty_tpl->tpl_vars['dato']->value->getArticolo()->getTitolo();?>
+                        <div class="caption">                            
+                            <h4 class="popup-link" data-popup-target="#example-popup">
+                                <a href="#"><?php echo $_smarty_tpl->tpl_vars['dato']->value->getArticolo()->getTitolo();?>
 </a>
+                                <p class="id" style="display: none"><?php echo $_smarty_tpl->tpl_vars['dato']->value->getIdAsta();?>
+</p>
                             </h4>
+							<p style="font-size: 14px; font-weight: bold;"><?php echo $_smarty_tpl->tpl_vars['dato']->value->getPrezzoF()->getValore();?>
+ <?php echo $_smarty_tpl->tpl_vars['dato']->value->getPrezzoF()->getValuta();?>
+</p>
                             <p><?php echo $_smarty_tpl->tpl_vars['dato']->value->getArticolo()->getDescrizione();?>
 </p>
                         </div>
@@ -75,8 +77,7 @@ $_smarty_tpl->tpl_vars['dato']->_loop = true;
 
 
  
-
- <div  class="row">
+<div  class="row">
       
         <?php if ($_smarty_tpl->tpl_vars['asteVinte']->value!=false){?>
         <h1>Aste vinte</h1>
@@ -91,13 +92,15 @@ $_smarty_tpl->tpl_vars['dato']->_loop = true;
                         <img src="data:image;base64,<?php echo $_smarty_tpl->tpl_vars['dato']->value->getArticolo()->getFoto();?>
 " style="height: 150px !important;" alt="">
                         <div class="caption">
-                            <h4 class="pull-right"><?php echo $_smarty_tpl->tpl_vars['dato']->value->getPrezzoI()->getValore();?>
- <?php echo $_smarty_tpl->tpl_vars['dato']->value->getPrezzoF()->getValuta();?>
-</h4>
-                            <h4><a href="index.php?controller=asta&task=dettagli&id_asta=<?php echo $_smarty_tpl->tpl_vars['dato']->value->getIdAsta();?>
-"><?php echo $_smarty_tpl->tpl_vars['dato']->value->getArticolo()->getTitolo();?>
+                            <h4 class="popup-link" data-popup-target="#example-popup">
+                                <a href="#"><?php echo $_smarty_tpl->tpl_vars['dato']->value->getArticolo()->getTitolo();?>
 </a>
+                                <p class="id" style="display: none"><?php echo $_smarty_tpl->tpl_vars['dato']->value->getIdAsta();?>
+</p>
                             </h4>
+							<p style="font-size: 14px; font-weight: bold;"><?php echo $_smarty_tpl->tpl_vars['dato']->value->getPrezzoF()->getValore();?>
+ <?php echo $_smarty_tpl->tpl_vars['dato']->value->getPrezzoF()->getValuta();?>
+</p>
                             <p><?php echo $_smarty_tpl->tpl_vars['dato']->value->getArticolo()->getDescrizione();?>
 </p>
                         </div>
@@ -123,4 +126,5 @@ $_smarty_tpl->tpl_vars['dato']->_loop = true;
     </div>
 
 
-</div><?php }} ?>
+</div>
+ <?php }} ?>

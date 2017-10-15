@@ -25,7 +25,7 @@ var check = function() {
      
 </script>
 
-<div class="col-md-12">
+<div class="col-md-9">
     <div class="row center-block">
         <div>
           <div class="contactform list-group">

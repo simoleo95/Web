@@ -1,22 +1,20 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2017-10-14 10:35:03
+<?php /* Smarty version Smarty-3.1.13, created on 2017-10-15 11:42:53
          compiled from "C:\xampp\htdocs\Web\Lastminute\templates\templates\home.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:1936059df40c990b216-10814792%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:729859e32d9d2035e9-93969630%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'e7e6566d21414ab7baa89c20c13fd5cb6ab6a1d4' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Web\\Lastminute\\templates\\templates\\home.tpl',
-      1 => 1507969317,
+      1 => 1508060480,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '1936059df40c990b216-10814792',
+  'nocache_hash' => '729859e32d9d2035e9-93969630',
   'function' => 
   array (
   ),
-  'version' => 'Smarty-3.1.13',
-  'unifunc' => 'content_59df40c9db3831_32911114',
   'variables' => 
   array (
     'title' => 0,
@@ -28,8 +26,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'mainContent' => 0,
   ),
   'has_nocache_code' => false,
+  'version' => 'Smarty-3.1.13',
+  'unifunc' => 'content_59e32d9d233133_63951124',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_59df40c9db3831_32911114')) {function content_59df40c9db3831_32911114($_smarty_tpl) {?><!DOCTYPE html>
+<?php if ($_valid && !is_callable('content_59e32d9d233133_63951124')) {function content_59e32d9d233133_63951124($_smarty_tpl) {?><!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -162,12 +162,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
             </div>
 
             <div id="mainContent">
-                <div id="ricerca" class="col-md-9">
+				
+                
                     <?php echo $_smarty_tpl->tpl_vars['mainContent']->value;?>
 
-                </div>
-            </div>
-
+                
+            
+				
         </div>
 
     </div>
@@ -206,6 +207,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     <script src="templates/templates/js/jquery.timeTo.js"></script>
     <script src="templates/templates/js/scorri.js"></script>
     <script src="templates/templates/js/scroll.js"></script>
+
     <script src="templates/templates/js/popup.js"></script>
 
 </body>
