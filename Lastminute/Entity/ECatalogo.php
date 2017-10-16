@@ -34,7 +34,7 @@
 
        public function ricercaDiUtente($user){
             $FAsta=  USingleton::getInstance('FAsta');
-            $query="SELECT * FROM Asta WHERE userc ='".$user."'";
+            $query="SELECT * FROM Asta WHERE userc ='".$user."' LIMIT 3";
             $FAsta->execute($query);
             $tmp=$FAsta->getObjects();
 
@@ -46,7 +46,7 @@
        } 
        public function ricercaVincitore($user){
             $FAsta=  USingleton::getInstance('FAsta');
-            $query="SELECT * FROM Asta WHERE userv ='".$user."' AND dataF < CURDATE()";
+            $query="SELECT * FROM Asta WHERE userv ='".$user."' AND dataF < CURDATE()  LIMIT 3";
             $FAsta->execute($query);
             $tmp=$FAsta->getObjects();
 

@@ -11,11 +11,15 @@
 	     
 	</div>
 
-    <div class="row">
+    <div class="row" style="border:groove; border-radius:10px 10px 10px 10px; padding-left:8px;">
+			 
         {if $asteCreate != false}
+		 
             <h1>Aste create</h1>
             <h4>La tua valutazione e' di: </h4>
-            {foreach from=$asteCreate item=dato}
+		
+           {foreach from=$asteCreate item=dato}
+	
                 <div class="col-sm-4 col-lg-4 col-md-4">
                     <div class="thumbnail">
                         <img src="data:image;base64,{$dato->getArticolo()->getFoto()}" style="height: 150px !important;" alt="">
@@ -30,8 +34,10 @@
            
                     </div>
                 </div>
+			
             {/foreach}
         {/if}
+		
 		</div>
 
 
