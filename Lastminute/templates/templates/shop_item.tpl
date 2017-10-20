@@ -8,6 +8,7 @@
             </div>
             <div class="col-md-6 caption-full">
                 <h2 style="color: #1b6d85; font-weight: bold;">{$asta->getArticolo()->getTitolo()}</h2>
+				 
                 <p style="font-size: 19px; text-align: center;">Prezzo di partenza: <span style="font-weight: bold;">{$asta->getPrezzoI()->getValore()} {$asta->getPrezzoI()->getValuta()}</span></span></p>
                 <p style="font-size: 16px; text-align: center;">{$asta->getArticolo()->getDescrizione()}</p>
             </div>
@@ -29,7 +30,11 @@
                     <input type="hidden" name="id_asta" value="{$asta->getIdAsta()}"/>
 
                     <p style="font-size: 19px;">Offerta attuale</p>
-                    <input type="number" class="field" style="width: 70px;height: 42px;border-radius: 5px;" name="offerta" style="width: 70px; height: 35px; border-radius: 5px;" {if !$user} disabled {/if} min="{$asta->getPrezzoF()->getValore()}" placeholder="{$asta->getPrezzoF()->getValore()}" required/>
+					{if ($asta->getPrezzoF()->getValore() == 0) }
+                    <input type="number" class="field" style="width: 70px;height: 42px;border-radius: 5px;" name="offerta" style="width: 70px; height: 35px; border-radius: 5px;" {if !$user} disabled {/if} min="{$asta->getPrezzoF()->getValore()}" placeholder="{$asta->getPrezzoI()->getValore()}" required/>
+					{else}
+					<input type="number" class="field" style="width: 70px;height: 42px;border-radius: 5px;" name="offerta" style="width: 70px; height: 35px; border-radius: 5px;" {if !$user} disabled {/if} min="{$asta->getPrezzoF()->getValore()}" placeholder="{$asta->getPrezzoF()->getValore()}" required/>
+					{/if}
 					{if $user}
 					<a class="btn btn-success offerta" >Partecipa</a>
 					{/if}

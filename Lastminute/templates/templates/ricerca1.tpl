@@ -13,14 +13,23 @@
                                 <p class="id" style="display: none">{$dato->getIdAsta()}</p>
                             </h4>
 
-                            <p style="font-size: 14px; font-weight: bold;">{$dato->getPrezzoF()->getValore()} {$dato->getPrezzoF()->getValuta()}</p>
+                            			
+                {if ($dato->getPrezzoF()->getValore() == 0) } 
+                            <p style="font-size: 14px; font-weight: bold;">{$dato->getPrezzoI()->getValore()} {$dato->getPrezzoF()->getValuta()}</p>
                             <p>{$dato->getArticolo()->getDescrizione()}</p>
+							
+							{else}
+				
+							 <p style="font-size: 14px; font-weight: bold;">{$dato->getPrezzoF()->getValore()} {$dato->getPrezzoF()->getValuta()}</p>
+                            <p>{$dato->getArticolo()->getDescrizione()}</p>
+							
+							{/if}
                         </div>
 						
 
-                        <div style="margin-top:-25px; text-align: center; font-size: 16px;">
+                     <!--   <div style="margin-top:-25px; text-align: center; font-size: 16px;">
                             <p style="font-weight: bold;">Scade il: {$dato->getDataF()}</p>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             {/foreach}

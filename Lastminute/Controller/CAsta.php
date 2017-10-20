@@ -126,13 +126,21 @@
             $VAsta=USingleton::getInstance('VAsta');
 
             // Creazione dell'oggetto EPrezzo
-            $EPrezzo=USingleton::getInstance('EPrezzo');
+            $EPrezzo=new EPrezzo();
+			$prezzofinale=new EPrezzo();
             $FPrezzo=USingleton::getInstance('FPrezzo');
-
+//prezzo iniziale
+			
             $EPrezzo->setIDprezzo('');
             $EPrezzo->setValore($VAsta->getPrezzo());
             $EPrezzo->setValuta('euro');
-
+// prezzo finale
+			
+			$EPrezzo->setIDprezzo('');            
+            $EPrezzo->setValuta('euro');
+			
+			
+            $FPrezzo->store($prezzofinale);
             $FPrezzo->store($EPrezzo);
 
             // Creazione dell'oggetto EArticolo
@@ -161,7 +169,7 @@
             $EAsta->setDataP(date("Y-m-d H:i:s"));
             $EAsta->setDataF($VAsta->getData());
             $EAsta->setPrezzoI($EPrezzo);
-            $EAsta->setPrezzoF($EPrezzo);
+            $EAsta->setPrezzoF($prezzofinale);
             $EAsta->setUtentecreatore($EUtente);
             $EAsta->setUtentevincitore($EUtente);
             $EAsta->setArticolo($EArticolo);
