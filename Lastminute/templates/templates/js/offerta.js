@@ -5,6 +5,7 @@ $(document).ready(function(){
 		var data= $(".dati_offerta").serialize();
 		
 		
+		
 		$.ajax({
 			type: "POST",
             url: "index.php?ajax=true",
@@ -13,6 +14,9 @@ $(document).ready(function(){
             success: function(result)
             {
              $('.popup-content').html(result);
+			
+			 
+			 ;
  
             },
              error: function()

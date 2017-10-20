@@ -1,7 +1,7 @@
 <div class="row">
         {if $dati != false}
             {foreach from=$dati item=dato}
-                <div class="col-sm-4 col-lg-4 col-md-4">
+                <div  id="{$dato->getIdAsta()}" class="col-sm-4 col-lg-4 col-md-4">
                     <div class="thumbnail">
 						 
                         <div style="position: relative; width: 260px; height: 178px; overflow: hidden;">

@@ -1,25 +1,17 @@
-<<<<<<< HEAD
-<?php /* Smarty version Smarty-3.1.13, created on 2017-10-15 11:42:53
-=======
-<?php /* Smarty version Smarty-3.1.13, created on 2017-10-15 12:02:06
->>>>>>> master
+<?php /* Smarty version Smarty-3.1.13, created on 2017-10-20 16:00:22
          compiled from "C:\xampp\htdocs\Web\Lastminute\templates\templates\home.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:729859e32d9d2035e9-93969630%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:2097759ea01767e18f7-46448675%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'e7e6566d21414ab7baa89c20c13fd5cb6ab6a1d4' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Web\\Lastminute\\templates\\templates\\home.tpl',
-<<<<<<< HEAD
-      1 => 1508060480,
-=======
       1 => 1508061721,
->>>>>>> master
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '729859e32d9d2035e9-93969630',
+  'nocache_hash' => '2097759ea01767e18f7-46448675',
   'function' => 
   array (
   ),
@@ -35,9 +27,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.13',
-  'unifunc' => 'content_59e32d9d233133_63951124',
+  'unifunc' => 'content_59ea017685baa3_34184371',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_59e32d9d233133_63951124')) {function content_59e32d9d233133_63951124($_smarty_tpl) {?><!DOCTYPE html>
+<?php if ($_valid && !is_callable('content_59ea017685baa3_34184371')) {function content_59ea017685baa3_34184371($_smarty_tpl) {?><!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -171,19 +163,12 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
             <div id="mainContent">
 				
-<<<<<<< HEAD
-=======
 				
->>>>>>> master
                 
                     <?php echo $_smarty_tpl->tpl_vars['mainContent']->value;?>
 
                 
-<<<<<<< HEAD
-            
-=======
 			
->>>>>>> master
 				
         </div>
 

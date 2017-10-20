@@ -23,6 +23,8 @@
             <!--<div class="col-md-5 pull-left">
                 <p style="font-size: 19px; text-align: center; line-height: 50px;">Prezzo attuale: <span style="font-weight: bold;">{$asta->getPrezzoF()->getValore()} {$asta->getPrezzoF()->getValuta()}</span></p>
             </div>-->
+			<p class="prezzoF" style="display: none">{$asta->getPrezzoF()->getValore()}</p>
+			<p class="astaID" style="display: none">{$asta->getIdAsta()}</p>
             <div class="col-md-12 center-block" style="margin: 10px; padding-bottom: 10px;">
                 <form class="dati_offerta"> <!--method="get" action="index.php"-->
                     <input type="hidden" name="controller" value="asta" />

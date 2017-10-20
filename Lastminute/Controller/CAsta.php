@@ -59,10 +59,13 @@
                 $utente=$FUtente->load($session->leggi_valore('username'));
 				$asta->setUtentevincitore($utente);  
 				
-                $FAsta->update($asta);
+               $FAsta->update($asta);
 			   $CRegistrazione = USingleton::getInstance('CRegistrazione');
                $registrato = $CRegistrazione->getRegistrato();
-			   $VAsta->setLayout('\shop_item.tpl');
+			   
+			  
+			   
+			    $VAsta->setLayout('\shop_item.tpl');
                 $VAsta->impostaDati('user',$registrato);				
                 $VAsta->impostaDati('asta',$asta);
                 $VAsta->displayTemplate();
