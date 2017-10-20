@@ -62,8 +62,7 @@
                $FAsta->update($asta);
 			   $CRegistrazione = USingleton::getInstance('CRegistrazione');
                $registrato = $CRegistrazione->getRegistrato();
-			   
-			  
+			   		  
 			   
 			    $VAsta->setLayout('\shop_item.tpl');
                 $VAsta->impostaDati('user',$registrato);				
@@ -139,8 +138,8 @@
             $EPrezzo->setValuta('euro');
 // prezzo finale
 			
-			$EPrezzo->setIDprezzo('');            
-            $EPrezzo->setValuta('euro');
+			$prezzofinale->setIDprezzo('');            
+            $prezzofinale->setValuta('euro');
 			
 			
             $FPrezzo->store($prezzofinale);

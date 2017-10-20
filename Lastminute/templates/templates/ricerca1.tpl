@@ -20,7 +20,7 @@
 							
 							{else}
 				
-							 <p style="font-size: 14px; font-weight: bold;">{$dato->getPrezzoF()->getValore()} {$dato->getPrezzoF()->getValuta()}</p>
+							 <p  class='pf' style="font-size: 14px; font-weight: bold;">{$dato->getPrezzoF()->getValore()} {$dato->getPrezzoF()->getValuta()}</p>
                             <p>{$dato->getArticolo()->getDescrizione()}</p>
 							
 							{/if}

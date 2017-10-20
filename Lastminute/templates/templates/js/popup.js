@@ -50,7 +50,7 @@ $(document).ready(function () {
 		var prezzo= $('.prezzoF').text();
 	    var id= $('.astaID').text();
 		
-	$("#"+id).find(".pf").text(prezzo);
+	$("#"+id).find(".pf").text(prezzo +" euro");
     }
 	
 
