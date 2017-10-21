@@ -1,22 +1,20 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2017-10-15 13:01:42
+<?php /* Smarty version Smarty-3.1.13, created on 2017-10-21 17:10:46
          compiled from "C:\xampp\htdocs\Web\Lastminute\templates\templates\shop_item.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:1207959e32fceebb3b1-33623136%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:2277059eb6376b43125-28141841%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'a3216d14c5a1df902384e9234de22e8834fe7bd6' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Web\\Lastminute\\templates\\templates\\shop_item.tpl',
-      1 => 1508065298,
+      1 => 1508595304,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '1207959e32fceebb3b1-33623136',
+  'nocache_hash' => '2277059eb6376b43125-28141841',
   'function' => 
   array (
   ),
-  'version' => 'Smarty-3.1.13',
-  'unifunc' => 'content_59e32fcf0090d8_31831246',
   'variables' => 
   array (
     'asta' => 0,
@@ -24,8 +22,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'errore' => 0,
   ),
   'has_nocache_code' => false,
+  'version' => 'Smarty-3.1.13',
+  'unifunc' => 'content_59eb6377135091_70524660',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_59e32fcf0090d8_31831246')) {function content_59e32fcf0090d8_31831246($_smarty_tpl) {?><script src="templates/templates/js/offerta.js"></script>
+<?php if ($_valid && !is_callable('content_59eb6377135091_70524660')) {function content_59eb6377135091_70524660($_smarty_tpl) {?><script src="templates/templates/js/offerta.js"></script>
 <div>
 
     <div class="thumbnail">
@@ -37,6 +37,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
             <div class="col-md-6 caption-full">
                 <h2 style="color: #1b6d85; font-weight: bold;"><?php echo $_smarty_tpl->tpl_vars['asta']->value->getArticolo()->getTitolo();?>
 </h2>
+				 
                 <p style="font-size: 19px; text-align: center;">Prezzo di partenza: <span style="font-weight: bold;"><?php echo $_smarty_tpl->tpl_vars['asta']->value->getPrezzoI()->getValore();?>
  <?php echo $_smarty_tpl->tpl_vars['asta']->value->getPrezzoI()->getValuta();?>
 </span></span></p>
@@ -57,18 +58,31 @@ $_valid = $_smarty_tpl->decodeProperties(array (
  <?php echo $_smarty_tpl->tpl_vars['asta']->value->getPrezzoF()->getValuta();?>
 </span></p>
             </div>-->
+			<p class="prezzoF" style="display: none"><?php echo $_smarty_tpl->tpl_vars['asta']->value->getPrezzoF()->getValore();?>
+</p>
+			<p class="astaID" style="display: none"><?php echo $_smarty_tpl->tpl_vars['asta']->value->getIdAsta();?>
+</p>
             <div class="col-md-12 center-block" style="margin: 10px; padding-bottom: 10px;">
-                <form method="get" action="index.php">
+                <form class="dati_offerta"> <!--method="get" action="index.php"-->
                     <input type="hidden" name="controller" value="asta" />
                     <input type="hidden" name="task" value="offerta" />
                     <input type="hidden" name="id_asta" value="<?php echo $_smarty_tpl->tpl_vars['asta']->value->getIdAsta();?>
 "/>
 
                     <p style="font-size: 19px;">Offerta attuale</p>
+					<?php if (($_smarty_tpl->tpl_vars['asta']->value->getPrezzoF()->getValore()==0)){?>
                     <input type="number" class="field" style="width: 70px;height: 42px;border-radius: 5px;" name="offerta" style="width: 70px; height: 35px; border-radius: 5px;" <?php if (!$_smarty_tpl->tpl_vars['user']->value){?> disabled <?php }?> min="<?php echo $_smarty_tpl->tpl_vars['asta']->value->getPrezzoF()->getValore();?>
+" placeholder="<?php echo $_smarty_tpl->tpl_vars['asta']->value->getPrezzoI()->getValore();?>
+" required/>
+					<?php }else{ ?>
+					<input type="number" class="field" style="width: 70px;height: 42px;border-radius: 5px;" name="offerta" style="width: 70px; height: 35px; border-radius: 5px;" <?php if (!$_smarty_tpl->tpl_vars['user']->value){?> disabled <?php }?> min="<?php echo $_smarty_tpl->tpl_vars['asta']->value->getPrezzoF()->getValore();?>
 " placeholder="<?php echo $_smarty_tpl->tpl_vars['asta']->value->getPrezzoF()->getValore();?>
 " required/>
-                    <input type="submit" style="display: inline;border-radius: 5px;" class="button list-group-item" <?php if (!$_smarty_tpl->tpl_vars['user']->value){?> disabled <?php }?> value="Partecipa"/>
+					<?php }?>
+					<?php if ($_smarty_tpl->tpl_vars['user']->value){?>
+					<a class="btn btn-success offerta" >Partecipa</a>
+					<?php }?>
+                   <!-- <input type="submit" style="display: inline;border-radius: 5px;" class="button list-group-item" <?php if (!$_smarty_tpl->tpl_vars['user']->value){?> disabled <?php }?> value="Partecipa"/>-->
 
                     <?php if (!$_smarty_tpl->tpl_vars['user']->value){?><p style="text-align: center;">Registrati per poter effettuare un'offerta</p><?php }?>
                 </form>

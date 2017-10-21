@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2017-10-15 11:44:31
+<?php /* Smarty version Smarty-3.1.13, created on 2017-10-21 16:24:55
          compiled from "C:\xampp\htdocs\Web\Lastminute\templates\templates\tasto_insAnnuncio.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:3269959e32dff8f0bf5-63827546%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:707959eb58b7bcf6e8-94977094%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,15 +11,15 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '3269959e32dff8f0bf5-63827546',
+  'nocache_hash' => '707959eb58b7bcf6e8-94977094',
   'function' => 
   array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.13',
-  'unifunc' => 'content_59e32dff902cd4_75016288',
+  'unifunc' => 'content_59eb58b7be2880_18811786',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_59e32dff902cd4_75016288')) {function content_59e32dff902cd4_75016288($_smarty_tpl) {?><form method="get" action="index.php">
+<?php if ($_valid && !is_callable('content_59eb58b7be2880_18811786')) {function content_59eb58b7be2880_18811786($_smarty_tpl) {?><form method="get" action="index.php">
     <input type="hidden" name="controller" value="asta" />
     <input type="hidden" name="task" value="inserisci" />
     <input style="width:100%;background:#ddd;margin-bottom: 15px;" class="list-group-item" type="submit" value="+ Inserisci Annuncio" />

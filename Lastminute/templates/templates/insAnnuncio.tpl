@@ -1,52 +1,47 @@
 <div class="col-md-9">
-    <div class="row">
-<div style="border:groove; border-radius:10px 10px 10px 10px; padding-left:8px;">
-	
-    <h1>Inserisci Asta</h1>
+    <div class="row center-block">
+        <div class="col-md-10 col-md-offset-1">
+            <div class="contactform list-group">
 
-    <form method="post" enctype="multipart/form-data" action="index.php">
-        <input type="hidden" name="controller" value="asta">
-        <input type="hidden" name="task" value="crea">
-        <table style="border-collapse: separate;  border-spacing: 15px;">
-			
-            <tr>
-                <td>Titolo</td>
-                <td><input type="text" name="titolo" required/></td>
-            </tr>
-			
-            <tr>
-                <td>Descrizione</td>
-                <td><textarea name="descrizione" required></textarea></td>
-            </tr>
-            <tr>
-                <td>Foto</td>
-                <td><input type="file" name="foto" accept="image/jpeg" required/></td>
-            </tr>
-            <tr>
-                <td>Categoria</td>
-                <td>
-                    <select type="" name="categoria">
-                        <option selected="selected">Immobili</option>
+                <form method="post" enctype="multipart/form-data" action="index.php">
+                    <input type="hidden" name="controller" value="asta">
+                    <input type="hidden" name="task" value="crea">
+
+                    <h1 class="contact">Inserisci Asta</h1><br>
+
+                    <input type="text" name="titolo" placeholder="Titolo" class="field list-group-item center-block" required/><br>
+
+                    <textarea name="descrizione" placeholder="Descrizione" class="field list-group-item center-block" required></textarea><br>
+
+                    <input type="file" name="foto" accept="image/jpeg" required class="list-group-item center-block"/><br>
+
+                    <div class="col-md-4">
+                    <select type="" name="categoria" class="field list-group-item center-block" required>
+                        <option selected disabled>Scegli una categoria</option>
+                        <option>Immobili</option>
                         <option>Elettronica</option>
                         <option>Hobby</option>
-						<option>Sport</option>
+                        <option>Sport</option>
                     </select>
-                </td>
-            </tr>
-            <tr>
-                <td>Data Scadenza</td>
-                <td><input type="date" name="dataf" required/></td>
-            </tr>
-            <tr>
-                <td>Prezzo di partenza</td>
-                <td><input type="number" name="prezzop" min="1"  required/></td>
-            </tr>
-            <tr>
-                <td><input type="submit" name="submit" value="Inserisci"</td>
-            </tr>
-        </table>
-			
-    </form>
-</div>
-		  </div>
+                    </div>
+
+                    <div class="col-md-4">
+                    <input type="date" name="dataf" value="Data" required class="field list-group-item center-block"/>
+                    </div>
+
+                    <div class="col-md-4">
+                    <input type="number" name="prezzop" min="1" placeholder="Prezzo di partenza" required class="field list-group-item center-block"/>
+                    </div>
+
+                    <br><br><br>
+
+                    <div class="col-md-13">
+                        <input type="submit" name="submit" value="Inserisci" class="button list-group-item center-block" style="width: 100%; margin-top: 15px;">
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+    </div>
 </div>

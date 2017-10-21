@@ -1,20 +1,22 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2017-10-20 16:00:22
+<?php /* Smarty version Smarty-3.1.13, created on 2017-10-21 17:23:39
          compiled from "C:\xampp\htdocs\Web\Lastminute\templates\templates\home.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:2097759ea01767e18f7-46448675%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:1865159eb587d6c09a1-87768354%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'e7e6566d21414ab7baa89c20c13fd5cb6ab6a1d4' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Web\\Lastminute\\templates\\templates\\home.tpl',
-      1 => 1508061721,
+      1 => 1508599415,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '2097759ea01767e18f7-46448675',
+  'nocache_hash' => '1865159eb587d6c09a1-87768354',
   'function' => 
   array (
   ),
+  'version' => 'Smarty-3.1.13',
+  'unifunc' => 'content_59eb587d70bc55_43833499',
   'variables' => 
   array (
     'title' => 0,
@@ -26,10 +28,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'mainContent' => 0,
   ),
   'has_nocache_code' => false,
-  'version' => 'Smarty-3.1.13',
-  'unifunc' => 'content_59ea017685baa3_34184371',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_59ea017685baa3_34184371')) {function content_59ea017685baa3_34184371($_smarty_tpl) {?><!DOCTYPE html>
+<?php if ($_valid && !is_callable('content_59eb587d70bc55_43833499')) {function content_59eb587d70bc55_43833499($_smarty_tpl) {?><!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -52,7 +52,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 	<link href="templates/templates/css/scorri.css" type="text/css" rel="stylesheet">
     <link href="templates/templates/css/popup.css" type="text/css" rel="stylesheet">
     <link href="templates/templates/css/timeTo.css" type="text/css" rel="stylesheet"/>
-    <link href="templates/templates/css/registrazione.css" type="text/css" rel="stylesheet"/>
+    <link href="templates/templates/css/form.css" type="text/css" rel="stylesheet"/>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->

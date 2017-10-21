@@ -10,11 +10,7 @@ $(document).ready(function () {
 		
 		
        if(top >= difference ) {
-	   
-	   
-	   
             var url = "index.php?ajax=true&num="+(called++ * 6);
-		   
 
            $.ajax({
                 url: url,
