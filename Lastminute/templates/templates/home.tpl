@@ -21,7 +21,9 @@
     <link href="templates/templates/css/popup.css" type="text/css" rel="stylesheet">
     <link href="templates/templates/css/timeTo.css" type="text/css" rel="stylesheet"/>
     <link href="templates/templates/css/form.css" type="text/css" rel="stylesheet"/>
-
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+   <link rel='stylesheet prefetch' href='http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css'>
+   <link href="templates/templates/css/rating.css" type="text/css" rel="stylesheet"/>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -171,7 +173,7 @@
     <script src="templates/templates/js/scroll.js"></script>
 
     <script src="templates/templates/js/popup.js"></script>
-
+    <script src="templates/templates/js/rating.js"></script>
 </body>
 
 </html>
