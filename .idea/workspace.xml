@@ -2,21 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e1bf6216-67df-4474-abef-f8edc160635b" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lastminute/templates/templates_c'/32c407b2fc7148b92bfba969e1a6f99fc9ee97bf.file.modulo_registrazione.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lastminute/templates/templates_c'/63f5c4c6ff0cac3ae626d3b7ecd37172a4d841e7.file.insAnnuncio.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lastminute/templates/templates_c'/ff4b8c1cd80c01cb49399df47f88b11f57be6fdf.file.Profilo.tpl.php" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lastminute/Controller/CAsta.php" afterPath="$PROJECT_DIR$/Lastminute/Controller/CAsta.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lastminute/includes/config.inc.php" afterPath="$PROJECT_DIR$/Lastminute/includes/config.inc.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lastminute/templates/templates/js/rating.js" afterPath="$PROJECT_DIR$/Lastminute/templates/templates/js/rating.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lastminute/templates/templates/shop_item.tpl" afterPath="$PROJECT_DIR$/Lastminute/templates/templates/shop_item.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lastminute/templates/templates_c'/585f0928f5ae2fb3addfe98f747341f1eb070ed6.file.login.tpl.php" afterPath="$PROJECT_DIR$/Lastminute/templates/templates_c'/585f0928f5ae2fb3addfe98f747341f1eb070ed6.file.login.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lastminute/templates/templates_c'/761f5145a91760afe928f53d78ffc6c4b1733048.file.tasto_insAnnuncio.tpl.php" afterPath="$PROJECT_DIR$/Lastminute/templates/templates_c'/761f5145a91760afe928f53d78ffc6c4b1733048.file.tasto_insAnnuncio.tpl.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lastminute/templates/templates_c'/a3216d14c5a1df902384e9234de22e8834fe7bd6.file.shop_item.tpl.php" afterPath="$PROJECT_DIR$/Lastminute/templates/templates_c'/a3216d14c5a1df902384e9234de22e8834fe7bd6.file.shop_item.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lastminute/templates/templates_c'/ab9ac539a9cea29da2afdfa2cc6a91f979a50ba5.file.tasto_logout.tpl.php" afterPath="$PROJECT_DIR$/Lastminute/templates/templates_c'/ab9ac539a9cea29da2afdfa2cc6a91f979a50ba5.file.tasto_logout.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lastminute/templates/templates_c'/dd6e43cf686f3a96e755b73f1c85a12bf2fdc4ed.file.ricerca.tpl.php" afterPath="$PROJECT_DIR$/Lastminute/templates/templates_c'/dd6e43cf686f3a96e755b73f1c85a12bf2fdc4ed.file.ricerca.tpl.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lastminute/templates/templates_c'/e7e6566d21414ab7baa89c20c13fd5cb6ab6a1d4.file.home.tpl.php" afterPath="$PROJECT_DIR$/Lastminute/templates/templates_c'/e7e6566d21414ab7baa89c20c13fd5cb6ab6a1d4.file.home.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lastminute/templates/templates_c'/ec28609ace976623b38fb407da98f90a6ad1c882.file.tasto_insMieAste.tpl.php" afterPath="$PROJECT_DIR$/Lastminute/templates/templates_c'/ec28609ace976623b38fb407da98f90a6ad1c882.file.tasto_insMieAste.tpl.php" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -50,8 +39,8 @@
       <file leaf-file-name="CAsta.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Lastminute/Controller/CAsta.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="92" column="59" lean-forward="true" selection-start-line="92" selection-start-column="59" selection-end-line="92" selection-end-column="59" />
+            <state relative-caret-position="374">
+              <caret line="91" column="12" lean-forward="false" selection-start-line="91" selection-start-column="12" selection-end-line="91" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -118,9 +107,9 @@
         <entry file="file://$PROJECT_DIR$/Lastminute/templates/templates/shop_item.tpl">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="237">
-              <caret line="40" column="32" lean-forward="false" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
+              <caret line="34" column="71" lean-forward="true" selection-start-line="34" selection-start-column="71" selection-end-line="34" selection-end-column="71" />
               <folding>
-                <marker date="1508704348702" expanded="true" signature="3505:3812" ph="..." />
+                <marker date="1508705080268" expanded="true" signature="3748:4055" ph="..." />
               </folding>
             </state>
           </provider>
@@ -658,12 +647,12 @@
       <workItem from="1508060535645" duration="4433000" />
       <workItem from="1508595455170" duration="6454000" />
       <workItem from="1508663449495" duration="4682000" />
-      <workItem from="1508702684804" duration="1681000" />
+      <workItem from="1508702684804" duration="2391000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80361000" />
+    <option name="totallyTimeSpent" value="81071000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1087,8 +1076,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Lastminute/Controller/CAsta.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="92" column="59" lean-forward="true" selection-start-line="92" selection-start-column="59" selection-end-line="92" selection-end-column="59" />
+        <state relative-caret-position="374">
+          <caret line="91" column="12" lean-forward="false" selection-start-line="91" selection-start-column="12" selection-end-line="91" selection-end-column="12" />
           <folding />
         </state>
       </provider>
@@ -1096,9 +1085,9 @@
     <entry file="file://$PROJECT_DIR$/Lastminute/templates/templates/shop_item.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="237">
-          <caret line="40" column="32" lean-forward="false" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
+          <caret line="34" column="71" lean-forward="true" selection-start-line="34" selection-start-column="71" selection-end-line="34" selection-end-column="71" />
           <folding>
-            <marker date="1508704348702" expanded="true" signature="3505:3812" ph="..." />
+            <marker date="1508705080268" expanded="true" signature="3748:4055" ph="..." />
           </folding>
         </state>
       </provider>
