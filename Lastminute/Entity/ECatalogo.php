@@ -38,23 +38,38 @@
             $FAsta->execute($query);
             $tmp=$FAsta->getObjects();
 
+             if ( $tmp != null){
+		     
+
             for($i=0;$i<count($tmp);$i++) {
                 $ris[]=$FAsta->load($tmp[$i]->getIdAsta());
             }
-
-            return $ris;
+		   
+		   
+		      return $ris;
+		   }
+		   else
+			   return $ris= null;
        } 
        public function ricercaVincitore($user){
             $FAsta=  USingleton::getInstance('FAsta');
             $query="SELECT * FROM Asta WHERE userv ='".$user."' AND dataF < CURDATE()  LIMIT 3";
             $FAsta->execute($query);
             $tmp=$FAsta->getObjects();
+		   
+		   if ( $tmp != null){
+		     
 
             for($i=0;$i<count($tmp);$i++) {
                 $ris[]=$FAsta->load($tmp[$i]->getIdAsta());
             }
-
-            return $ris;
+		   
+		   
+		      return $ris;
+		   }
+		   else
+			   return $ris= null;
+		   
        } 
        
        public function ricercafulltext($v){
