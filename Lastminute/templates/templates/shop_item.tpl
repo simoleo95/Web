@@ -31,7 +31,7 @@
                     <input type="hidden" name="task" value="offerta" />
                     <input type="hidden" name="id_asta" value="{$asta->getIdAsta()}"/>
 
-                    <p style="font-size: 19px;">Offerta attuale</p>
+                    <p style="font-size: 19px;">Offerta attuale: <a href="index.php?controller=asta&task=profilo&username={$asta->getUtentevincitore()->getUsername()}">{$asta->getUtentevincitore()->getUsername()}</a></p>
 					{if ($asta->getPrezzoF()->getValore() == 0) }
                     <input type="number" class="field" style="width: 70px;height: 42px;border-radius: 5px;" name="offerta" style="width: 70px; height: 35px; border-radius: 5px;" {if !$user} disabled {/if} min="{$asta->getPrezzoF()->getValore()}" placeholder="{$asta->getPrezzoI()->getValore()}" required/>
 					{else}
@@ -40,7 +40,6 @@
 					{if $user}
 					<a class="btn btn-success offerta" >Partecipa</a>
 					{/if}
-                   <!-- <input type="submit" style="display: inline;border-radius: 5px;" class="button list-group-item" {if !$user} disabled {/if} value="Partecipa"/>-->
 
                     {if !$user}<p style="text-align: center;">Registrati per poter effettuare un'offerta</p>{/if}
                 </form>

@@ -3,9 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="e1bf6216-67df-4474-abef-f8edc160635b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lastminute/View/VMieAste.php" afterPath="$PROJECT_DIR$/Lastminute/View/VMieAste.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lastminute/Controller/CAsta.php" afterPath="$PROJECT_DIR$/Lastminute/Controller/CAsta.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lastminute/includes/config.inc.php" afterPath="$PROJECT_DIR$/Lastminute/includes/config.inc.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lastminute/templates/templates/shop_item.tpl" afterPath="$PROJECT_DIR$/Lastminute/templates/templates/shop_item.tpl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lastminute/templates/templates_c'/a3216d14c5a1df902384e9234de22e8834fe7bd6.file.shop_item.tpl.php" afterPath="$PROJECT_DIR$/Lastminute/templates/templates_c'/a3216d14c5a1df902384e9234de22e8834fe7bd6.file.shop_item.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lastminute/templates/templates_c'/e7e6566d21414ab7baa89c20c13fd5cb6ab6a1d4.file.home.tpl.php" afterPath="$PROJECT_DIR$/Lastminute/templates/templates_c'/e7e6566d21414ab7baa89c20c13fd5cb6ab6a1d4.file.home.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lastminute/templates/templates_c'/ff4b8c1cd80c01cb49399df47f88b11f57be6fdf.file.Profilo.tpl.php" afterPath="$PROJECT_DIR$/Lastminute/templates/templates_c'/ff4b8c1cd80c01cb49399df47f88b11f57be6fdf.file.Profilo.tpl.php" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -49,8 +52,8 @@
       <file leaf-file-name="CAsta.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Lastminute/Controller/CAsta.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1122">
-              <caret line="123" column="127" lean-forward="false" selection-start-line="123" selection-start-column="127" selection-end-line="123" selection-end-column="127" />
+            <state relative-caret-position="51">
+              <caret line="123" column="66" lean-forward="false" selection-start-line="123" selection-start-column="66" selection-end-line="123" selection-end-column="66" />
               <folding />
             </state>
           </provider>
@@ -89,7 +92,7 @@
       <file leaf-file-name="EAsta.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Lastminute/Entity/EAsta.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
+            <state relative-caret-position="50">
               <caret line="74" column="32" lean-forward="false" selection-start-line="74" selection-start-column="13" selection-end-line="74" selection-end-column="32" />
               <folding />
             </state>
@@ -99,11 +102,35 @@
       <file leaf-file-name="shop_item.tpl" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Lastminute/templates/templates/shop_item.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="142" lean-forward="true" selection-start-line="10" selection-start-column="142" selection-end-line="10" selection-end-column="142" />
+            <state relative-caret-position="288">
+              <caret line="41" column="25" lean-forward="false" selection-start-line="41" selection-start-column="25" selection-end-line="41" selection-end-column="25" />
               <folding>
-                <marker date="1508666303381" expanded="true" signature="3430:3569" ph="..." />
+                <marker date="1508667775305" expanded="true" signature="3414:3552" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FAsta.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Lastminute/Foundation/FAsta.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="42" column="24" lean-forward="false" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="24" />
+              <folding>
+                <marker date="1507279742000" expanded="true" signature="1472:1656" ph="INSERT into asta... " />
+                <marker date="1507279742000" expanded="true" signature="2383:2435" ph="SELECT * FRO... asta" />
+                <marker date="1507279742000" expanded="true" signature="2869:2977" ph="SELECT IDast... asta" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.inc.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Lastminute/includes/config.inc.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="23" column="21" lean-forward="true" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -141,7 +168,6 @@
         <option value="$PROJECT_DIR$/Lastminute/includes/autoload.inc.php" />
         <option value="$PROJECT_DIR$/Lastminute/Entity/EListaValutazione.php" />
         <option value="$PROJECT_DIR$/Lastminute/Foundation/Fdb.php" />
-        <option value="$PROJECT_DIR$/Lastminute/Foundation/FAsta.php" />
         <option value="$PROJECT_DIR$/Lastminute/Foundation/FListaValutazione.php" />
         <option value="$PROJECT_DIR$/Lastminute/Foundation/FUtente.php" />
         <option value="$PROJECT_DIR$/Lastminute/View/VHome.php" />
@@ -164,7 +190,6 @@
         <option value="$PROJECT_DIR$/Lastminute/templates/templates/js/timeout.js" />
         <option value="$PROJECT_DIR$/Lastminute/templates/templates/css/popup.css" />
         <option value="$PROJECT_DIR$/Lastminute/templates/templates/js/popup.js" />
-        <option value="$PROJECT_DIR$/Lastminute/includes/config.inc.php" />
         <option value="$PROJECT_DIR$/Lastminute/Entity/EAsta.php" />
         <option value="$PROJECT_DIR$/Lastminute/templates/templates/css/registrazione.css" />
         <option value="$PROJECT_DIR$/Lastminute/templates/templates/home.tpl" />
@@ -173,8 +198,10 @@
         <option value="$PROJECT_DIR$/Lastminute/templates/templates/ricerca.tpl" />
         <option value="$PROJECT_DIR$/Lastminute/templates/templates/insAnnuncio.tpl" />
         <option value="$PROJECT_DIR$/Lastminute/templates/templates/tasto_insMieAste.tpl" />
-        <option value="$PROJECT_DIR$/Lastminute/Controller/CAsta.php" />
         <option value="$PROJECT_DIR$/Lastminute/View/VMieAste.php" />
+        <option value="$PROJECT_DIR$/Lastminute/includes/config.inc.php" />
+        <option value="$PROJECT_DIR$/Lastminute/Foundation/FAsta.php" />
+        <option value="$PROJECT_DIR$/Lastminute/Controller/CAsta.php" />
         <option value="$PROJECT_DIR$/Lastminute/templates/templates/shop_item.tpl" />
       </list>
     </option>
@@ -604,12 +631,12 @@
       <workItem from="1507794352020" duration="11447000" />
       <workItem from="1508060535645" duration="4433000" />
       <workItem from="1508595455170" duration="6454000" />
-      <workItem from="1508663449495" duration="3132000" />
+      <workItem from="1508663449495" duration="4324000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77130000" />
+    <option name="totallyTimeSpent" value="78322000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -663,13 +690,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Lastminute/Foundation/FPrezzo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="5" lean-forward="false" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Lastminute/Foundation/FListaValutazione.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -841,14 +861,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Lastminute/includes/config.inc.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="39" lean-forward="false" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Lastminute/templates/templates/login.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -874,18 +886,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="40" lean-forward="false" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Lastminute/Foundation/FAsta.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="52" lean-forward="true" selection-start-line="25" selection-start-column="52" selection-end-line="25" selection-end-column="52" />
-          <folding>
-            <marker date="1507279742000" expanded="true" signature="1472:1656" ph="INSERT into asta... " />
-            <marker date="1507279742000" expanded="true" signature="2383:2435" ph="SELECT * FRO... asta" />
-            <marker date="1507279742000" expanded="true" signature="2869:2977" ph="SELECT IDast... asta" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -983,26 +983,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Lastminute/Entity/EAsta.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="74" column="32" lean-forward="false" selection-start-line="74" selection-start-column="13" selection-end-line="74" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Lastminute/Entity/EUtente.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Lastminute/Entity/EPersona.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="34" column="26" lean-forward="false" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="26" />
           <folding />
         </state>
       </provider>
@@ -1015,18 +999,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Lastminute/Controller/CAsta.php">
+    <entry file="file://$PROJECT_DIR$/Lastminute/includes/config.inc.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1122">
-          <caret line="123" column="127" lean-forward="false" selection-start-line="123" selection-start-column="127" selection-end-line="123" selection-end-column="127" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Lastminute/templates/templates/tasto_insMieAste.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="49" lean-forward="true" selection-start-line="2" selection-start-column="49" selection-end-line="2" selection-end-column="49" />
+        <state relative-caret-position="391">
+          <caret line="23" column="21" lean-forward="true" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
           <folding />
         </state>
       </provider>
@@ -1039,12 +1015,64 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Lastminute/templates/templates/tasto_insMieAste.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="49" lean-forward="true" selection-start-line="2" selection-start-column="49" selection-end-line="2" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lastminute/Entity/EPersona.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="34" column="26" lean-forward="false" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lastminute/Entity/EAsta.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="74" column="32" lean-forward="false" selection-start-line="74" selection-start-column="13" selection-end-line="74" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lastminute/Foundation/FAsta.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="42" column="24" lean-forward="false" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="24" />
+          <folding>
+            <marker date="1507279742000" expanded="true" signature="1472:1656" ph="INSERT into asta... " />
+            <marker date="1507279742000" expanded="true" signature="2383:2435" ph="SELECT * FRO... asta" />
+            <marker date="1507279742000" expanded="true" signature="2869:2977" ph="SELECT IDast... asta" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lastminute/Controller/CAsta.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="123" column="66" lean-forward="false" selection-start-line="123" selection-start-column="66" selection-end-line="123" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lastminute/templates/templates/js/offerta.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Lastminute/templates/templates/shop_item.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="142" lean-forward="true" selection-start-line="10" selection-start-column="142" selection-end-line="10" selection-end-column="142" />
+        <state relative-caret-position="288">
+          <caret line="41" column="25" lean-forward="false" selection-start-line="41" selection-start-column="25" selection-end-line="41" selection-end-column="25" />
           <folding>
-            <marker date="1508666303381" expanded="true" signature="3430:3569" ph="..." />
+            <marker date="1508667775305" expanded="true" signature="3414:3552" ph="..." />
           </folding>
         </state>
       </provider>

@@ -48,7 +48,7 @@
 			$id_asta=$VAsta->getId();
             $asta=$FAsta->load($id_asta);
 			$offerta=$VAsta->getOfferta();			
-			$prezzo=$asta->getPrezzoF()->getValore();			
+			$prezzo=$asta->getPrezzoF()->getValore();
 		   if($offerta>$prezzo){
 				$Prezzo=$asta->getPrezzoF();
 				$Prezzo->setValore($offerta);
@@ -131,14 +131,15 @@
             $EPrezzo=new EPrezzo();
 			$prezzofinale=new EPrezzo();
             $FPrezzo=USingleton::getInstance('FPrezzo');
-//prezzo iniziale
-			
+
+            //prezzo iniziale
             $EPrezzo->setIDprezzo('');
             $EPrezzo->setValore($VAsta->getPrezzo());
             $EPrezzo->setValuta('euro');
-// prezzo finale
-			
-			$prezzofinale->setIDprezzo('');            
+
+            // prezzo finale
+			$prezzofinale->setIDprezzo('');
+			$prezzofinale->setValore($VAsta->getPrezzo());
             $prezzofinale->setValuta('euro');
 			
 			
