@@ -91,6 +91,8 @@
             $VAsta->impostaDati('asta',$asta);
             $CRegistrazione = USingleton::getInstance('CRegistrazione');
             $registrato = $CRegistrazione->getRegistrato();
+            $user=USingleton::getInstance('USession');
+            $VAsta->impostaDati('creatore',$user->leggi_valore('username'));
             $VAsta->impostaDati('user',$registrato);
 			
 
