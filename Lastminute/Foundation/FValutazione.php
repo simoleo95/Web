@@ -10,11 +10,18 @@
 
         public function store(EValutazione $v) {
             $uc=$v->getUtenteC()->getUsername();
+			var_dump($uc);
             $uv=$v->getUtenteV()->getUsername();
-            $query="INSERT into valutazione (IDvalutazione,valutazione,personaV,personaC) VALUES ('','".$v->getVoto()."','".$uv."','".$uc."')";
-            parent::execute($query);
-            $b=$this->db->lastInsertId("IDvalutazione");
-            $v->setIDvalutazione($b);
+			var_dump($uv);
+			$voto=$v->getVoto();
+			var_dump($voto);
+           $query="INSERT into valutazione (IDvalutazione,valutazione,personaV,personaC) VALUES ('','".$voto."','".$uv."','".$uc."')";
+			/*$query="INSERT into valutazione(IDvalutazione,valutazione,personaV,personaC) VALUES ('7','4','simoleo','andrecocc')";*/
+			var_dump($query);
+           $r= parent::execute($query);
+			var_dump($r);
+           /* $b=$this->db->lastInsertId("IDvalutazione");
+            $v->setIDvalutazione($b);*/
         }
 
         public function load($key) {

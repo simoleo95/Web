@@ -34,15 +34,15 @@
     }
 
     public function getUsername(){
-        if (isset($_GET['username']))
-            return $_GET['username'];
+        if (isset($_REQUEST['username']))
+            return $_REQUEST['username'];
         else
             return false;
     }
 
     public function getValutazione(){
-        if (isset($_POST['valutazione']))
-            return $_POST['valutazione'];
+        if (isset($_REQUEST['valutazione']))
+            return $_REQUEST['valutazione'];
         else
             return false;
     } 

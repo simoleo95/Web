@@ -43,21 +43,26 @@ $(document).ready(function(){
     else {
         msg = "We will improve ourselves. You rated this " + ratingValue + " stars.";
     }
-    responseMessage(msg);
+      
+	  responseMessage(msg);
+	  
+	  
 	  
 	  var utente= $("#utenteP").text();
-	  
-	  $.ajax({
+	  var valutazione=ratingValue;
+	  var url= "index.php?ajax=true&controller=asta&task=valuta&valutazione="+valutazione+"&username="+utente;
+	  alert(url);
+	 $.ajax({
 		  
 		  type: "POST",
-            url: "index.php?ajax=true&controller=asta&task=valuta&valutazione="+ratingValue+"&username="+utente,            
+            url: url,        
             dataType: "html",
-            success: function()
+            success: function(result)
             {
-            alert("valutazioneinserita correttamente");
+            alert(result);
 			
 			 
-			 ;
+			 
  
             },
              error: function()

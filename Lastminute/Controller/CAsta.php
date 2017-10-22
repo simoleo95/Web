@@ -114,14 +114,23 @@
 
         public function valuta(){
             $VMieAste=USingleton::getInstance('VMieAste');
+			$Futente=USingleton::getInstance('FUtente');
+			$Fvalutazione=USingleton::getInstance('FValutazione');
             $valutazione=$VMieAste->getValutazione();
+			var_dump($valutazione);
             $usernameC = $VMieAste->getUsername();
             $session=USingleton::getInstance('USession');
             $usernameV=$session->leggi_valore('username');
+			$uO=$Futente->load($usernameC);
+			$uR=$Futente->load($usernameV);
+			
+			if($usernameC != $usernameV){
 			$EValutazione = new EValutazione();
-			$errore=$EValutazione->valuta($valutazione,$usernameV,$usernameC);	
+			$EValutazione->valuta($valutazione,$uO,$uR);	
+			
 			}
-            
+			$Fvalutazione->store($EValutazione);
+			return "ciao";
             //header('Location: index.php?controller=asta&task=mieAste');
             //echo "<script type='text/javascript'>alert('".$errore."');window.location = 'index.php?controller=asta&task=profilo';</script>";
         }
