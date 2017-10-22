@@ -3,7 +3,7 @@
   <div  style="border:groove; border-radius:10px 10px 10px 10px; padding-left:8px;">
           <h1 class="contact">Profilo Utente</h1>
 	  <table>
-    <tr><td>Nome :</td><td>{$Utente->getNome()}</td></tr>
+    <tr><td>Nome :</td><td id="utenteP" >{$Utente->getNome()}</td></tr>
     <tr><td>Cognome :</td><td>{$Utente->getCognome()}</td></tr>
     <tr><td>Indirizzo e_mail :</td><td>{$Utente->getEmail()}</td></tr>
    

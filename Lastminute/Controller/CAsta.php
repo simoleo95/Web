@@ -118,11 +118,14 @@
             $usernameC = $VMieAste->getUsername();
             $session=USingleton::getInstance('USession');
             $usernameV=$session->leggi_valore('username');
-            $EValutazione = new EValutazione();
-            $errore=$EValutazione->valuta($valutazione,$usernameV,$usernameC);
+			$EValutazione = new EValutazione();
+			$errore=$EValutazione->valuta($valutazione,$usernameV,$usernameC);	
+			}
+            
             //header('Location: index.php?controller=asta&task=mieAste');
-            echo "<script type='text/javascript'>alert('".$errore."');window.location = 'index.php?controller=asta&task=profilo';</script>";
+            //echo "<script type='text/javascript'>alert('".$errore."');window.location = 'index.php?controller=asta&task=profilo';</script>";
         }
+			
 
         public function creaAsta() {
             $VAsta=USingleton::getInstance('VAsta');

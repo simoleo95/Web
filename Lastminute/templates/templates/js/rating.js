@@ -44,6 +44,31 @@ $(document).ready(function(){
         msg = "We will improve ourselves. You rated this " + ratingValue + " stars.";
     }
     responseMessage(msg);
+	  
+	  var utente= $("#utenteP").text();
+	  
+	  $.ajax({
+		  
+		  type: "POST",
+            url: "index.php?ajax=true&controller=asta&task=valuta&valutazione="+ratingValue+"&username="+utente,            
+            dataType: "html",
+            success: function()
+            {
+            alert("valutazioneinserita correttamente");
+			
+			 
+			 ;
+ 
+            },
+             error: function()
+            {
+             alert("Chiamata fallita, si è verificato un errore");
+            }
+		  
+		  
+		  
+	  })
+	  
     
   });
   
