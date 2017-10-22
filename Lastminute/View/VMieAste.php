@@ -4,25 +4,25 @@
         private $layout='\Profilo.tpl';
 
     public function processaTemplate() {
-    global $config;
+        global $config;
 
-    $ECatalogo=new ECatalogo();
-    $session=USingleton::getInstance('USession');
-    $user=$session->leggi_valore('username');
-    $Futente=USingleton::getInstance('FUtente');
-	$Utente=$Futente->load($user);
-    $asteCreate=$ECatalogo->ricercaDiUtente($user);
-    $valutazione = new EValutazione();
-    $asteVinte=$ECatalogo->ricercaVincitore($user);
-    $this->assign('asteCreate', $asteCreate);
-    $this->assign('asteVinte', $asteVinte);
-	$this->assign('Utente',$Utente);	
-    //$Evalutazione = new EValutazione();
-    //$ris = $Evalutazione->media($user);
-    //$this->assign('tuaValutazione', $ris);
-    $contenuto=$this->fetch($config['smarty']['template_dir'].$this->layout);
-    return $contenuto;
-        }
+        $ECatalogo=new ECatalogo();
+        $session=USingleton::getInstance('USession');
+        $user=$session->leggi_valore('username');
+        $Futente=USingleton::getInstance('FUtente');
+        $Utente=$Futente->load($user);
+        $asteCreate=$ECatalogo->ricercaDiUtente($user);
+        $valutazione = new EValutazione();
+        $asteVinte=$ECatalogo->ricercaVincitore($user);
+        $this->assign('asteCreate', $asteCreate);
+        $this->assign('asteVinte', $asteVinte);
+        $this->assign('Utente',$Utente);
+        //$Evalutazione = new EValutazione();
+        //$ris = $Evalutazione->media($user);
+        //$this->assign('tuaValutazione', $ris);
+        $contenuto=$this->fetch($config['smarty']['template_dir'].$this->layout);
+        return $contenuto;
+    }
 
     public function setLayout($layout) {
         $this->layout=$layout;

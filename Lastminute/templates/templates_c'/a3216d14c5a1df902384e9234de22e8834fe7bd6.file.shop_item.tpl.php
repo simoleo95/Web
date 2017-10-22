@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2017-10-21 17:10:46
+<?php /* Smarty version Smarty-3.1.13, created on 2017-10-22 11:26:22
          compiled from "C:\xampp\htdocs\Web\Lastminute\templates\templates\shop_item.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:2277059eb6376b43125-28141841%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'a3216d14c5a1df902384e9234de22e8834fe7bd6' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Web\\Lastminute\\templates\\templates\\shop_item.tpl',
-      1 => 1508595304,
+      1 => 1508664379,
       2 => 'file',
     ),
   ),
@@ -15,6 +15,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
+  'version' => 'Smarty-3.1.13',
+  'unifunc' => 'content_59eb6377135091_70524660',
   'variables' => 
   array (
     'asta' => 0,
@@ -22,8 +24,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'errore' => 0,
   ),
   'has_nocache_code' => false,
-  'version' => 'Smarty-3.1.13',
-  'unifunc' => 'content_59eb6377135091_70524660',
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_59eb6377135091_70524660')) {function content_59eb6377135091_70524660($_smarty_tpl) {?><script src="templates/templates/js/offerta.js"></script>
 <div>
@@ -37,7 +37,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
             <div class="col-md-6 caption-full">
                 <h2 style="color: #1b6d85; font-weight: bold;"><?php echo $_smarty_tpl->tpl_vars['asta']->value->getArticolo()->getTitolo();?>
 </h2>
-				 
+                <p style="font-size: 15px;">Venditore: <a href="#"><?php echo $_smarty_tpl->tpl_vars['asta']->value->getUtentecreatore()->getUsername();?>
+</a></p>
                 <p style="font-size: 19px; text-align: center;">Prezzo di partenza: <span style="font-weight: bold;"><?php echo $_smarty_tpl->tpl_vars['asta']->value->getPrezzoI()->getValore();?>
  <?php echo $_smarty_tpl->tpl_vars['asta']->value->getPrezzoI()->getValuta();?>
 </span></span></p>

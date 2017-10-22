@@ -8,7 +8,7 @@
             </div>
             <div class="col-md-6 caption-full">
                 <h2 style="color: #1b6d85; font-weight: bold;">{$asta->getArticolo()->getTitolo()}</h2>
-				 
+                <p style="font-size: 15px;">Venditore: <a href="#">{$asta->getUtentecreatore()->getUsername()}</a></p>
                 <p style="font-size: 19px; text-align: center;">Prezzo di partenza: <span style="font-weight: bold;">{$asta->getPrezzoI()->getValore()} {$asta->getPrezzoI()->getValuta()}</span></span></p>
                 <p style="font-size: 16px; text-align: center;">{$asta->getArticolo()->getDescrizione()}</p>
             </div>

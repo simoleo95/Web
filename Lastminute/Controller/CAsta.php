@@ -14,8 +14,8 @@
                     return $this->dettagli();
                 case 'inserisci':
                     return $this->inserisci();
-                case 'mieAste':
-                    return $this->mieAste();
+                case 'profilo':
+                    return $this->profilo();
                 case 'crea':
                     $this->creaAsta();
                 case 'offerta':
@@ -103,7 +103,7 @@
             return $VAsta->processaTemplate();
         }
 
-        public function mieAste(){
+        public function profilo(){
 
            /* $VAsta=USingleton::getInstance('VAsta');            
             $VAsta->setLayout('\Profilo.tpl');*/
@@ -121,7 +121,7 @@
             $EValutazione = new EValutazione();
             $errore=$EValutazione->valuta($valutazione,$usernameV,$usernameC);
             //header('Location: index.php?controller=asta&task=mieAste');
-            echo "<script type='text/javascript'>alert('".$errore."');window.location = 'index.php?controller=asta&task=mieAste';</script>";
+            echo "<script type='text/javascript'>alert('".$errore."');window.location = 'index.php?controller=asta&task=profilo';</script>";
         }
 
         public function creaAsta() {
