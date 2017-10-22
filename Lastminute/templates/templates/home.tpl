@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 
 <head>
 
@@ -143,14 +143,11 @@
 	<!-- /.container -->
 
     <div class="container">
-
-
-
         <!-- Footer -->
         <footer>
             <div class="row">
                 <div class="col-lg-12">
-                    <p>Copyright &copy; Your Website 2014</p>
+                    <!--<p>Copyright &copy; Your Website 2014</p>-->
                 </div>
             </div>
         </footer>
@@ -163,15 +160,13 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="templates/templates/js/bootstrap.min.js"></script>
-
-	<script src="templates/templates/js/ricerca.js"></script>
-
-
     <!-- jQuery -->
+    <script src="templates/templates/js/jquery.diyslider.min.js"></script>
+    <script src="templates/templates/js/ricerca.js"></script>
     <script src="templates/templates/js/jquery.timeTo.js"></script>
     <script src="templates/templates/js/scorri.js"></script>
     <script src="templates/templates/js/scroll.js"></script>
-
+    <script src="templates/templates/js/slider.js"></script>
     <script src="templates/templates/js/popup.js"></script>
     <script src="templates/templates/js/rating.js"></script>
 </body>

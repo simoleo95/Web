@@ -18,3 +18,24 @@
     font-size: 12px;
     color: #000000;
 }
+
+.imgContainer {
+    position: relative;
+    width: 260px;
+    height: 178px;
+    overflow: hidden;
+}
+
+.imgContainer img {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+    right: -9999px;
+    bottom: -9999px;
+    margin: auto;
+}
+
+.prezzo {
+    font-size: 14px;
+    font-weight: bold;
+}

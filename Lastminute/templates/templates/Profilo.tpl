@@ -1,129 +1,130 @@
 <div class="col-md-9">
+    <div class="row">
+        <div class="col-md-6">
+            <h1 style="text-align: center;">Riepilogo dati utente</h1>
+            <div style="text-align: center;">
+                <p><span style="font-weight: bold;">Nome:</span> {$Utente->getNome()}</p>
+                <p><span style="font-weight: bold;">Cognome:</span> {$Utente->getCognome()}</p>
+                <p><span style="font-weight: bold;">Username:</span> {$Utente->getUsername()}</p>
+                <p><span style="font-weight: bold;">Email:</span> {$Utente->getEmail()}</p>
+                <p id=utenteP style="display:none">{$Utente->getUsername()}</p>
+            </div>
+        </div>
 
-  <div  style="border:groove; border-radius:10px 10px 10px 10px; padding-left:8px;">
-	            <h1 class="contact">Profilo Utente</h1>
-	  	  <table>
-    <tr><td>Nome :</td><td >{$Utente->getNome()}</td></tr>
-    <tr><td>Cognome :</td><td>{$Utente->getCognome()}</td></tr>
-    <tr><td>Indirizzo e_mail :</td><td>{$Utente->getEmail()}</td></tr>
-    <p id=utenteP style="display:none">{$Utente->getUsername()}</p>
-</table>
-	     
-	</div>
-	
-	<div  style="border:groove; border-radius:10px 10px 10px 10px; padding-left:8px;">
-	
-		<h3>Valuta l'attività dell'utente</h3>
-		<section class='rating-widget'>
-  
-  <!-- Rating Stars Box -->
-  <div class='rating-stars text-center'>
-    <ul id='stars'>
-      <li class='star' title='Poor' data-value='1'>
-        <i class='fa fa-star fa-fw'></i>
-      </li>
-      <li class='star' title='Fair' data-value='2'>
-        <i class='fa fa-star fa-fw'></i>
-      </li>
-      <li class='star' title='Good' data-value='3'>
-        <i class='fa fa-star fa-fw'></i>
-      </li>
-      <li class='star' title='Excellent' data-value='4'>
-        <i class='fa fa-star fa-fw'></i>
-      </li>
-      <li class='star' title='WOW!!!' data-value='5'>
-        <i class='fa fa-star fa-fw'></i>
-      </li>
-    </ul>
-  </div>
-  
-  <div class='success-box'>
-    <div class='clearfix'></div>
-    <img alt='tick image' width='14' src='https://i.imgur.com/3C3apOp.png'/>
-    <div class='text-message'></div>
-    <div class='clearfix'></div>
-  </div>
-  
-  
-  
-</section>
-	
-	
-	
-	
-	
-	
-	
+        <div class="col-md-5 col-md-offset-1">
+            <h1 style="text-align: center;">Valuta l'attività dell'utente</h1>
+
+            <section class='rating-widget' style="">
+                <!-- Rating Stars Box -->
+                <div class='rating-stars text-center'>
+                    <ul id='stars'>
+                        <li class='star' title='Poor' data-value='1'>
+                            <i class='fa fa-star fa-fw'></i>
+                        </li>
+                        <li class='star' title='Fair' data-value='2'>
+                            <i class='fa fa-star fa-fw'></i>
+                        </li>
+                        <li class='star' title='Good' data-value='3'>
+                            <i class='fa fa-star fa-fw'></i>
+                        </li>
+                        <li class='star' title='Excellent' data-value='4'>
+                            <i class='fa fa-star fa-fw'></i>
+                        </li>
+                        <li class='star' title='WOW!!!' data-value='5'>
+                            <i class='fa fa-star fa-fw'></i>
+                        </li>
+                    </ul>
+                </div>
+
+                <p style="text-align: center;">Media voto: 4.3</p>
+
+                <div class='success-box'>
+                    <div class='clearfix'></div>
+                    <img alt='tick image' width='14' src='https://i.imgur.com/3C3apOp.png'/>
+                    <div class='text-message'></div>
+                    <div class='clearfix'></div>
+                </div>
+            </section>
+        </div>
 	</div>
 
-    <div class="row" style="border:groove; border-radius:10px 10px 10px 10px; padding-left:8px;">
-			 
+    <hr>
+
+    <div class="row">
+
         {if $asteCreate != false}
 		 
-            <h1>Aste create</h1>
-            <h4>La tua valutazione e' di: </h4>
-		
-           {foreach from=$asteCreate item=dato}
-	
-                <div class="col-sm-4 col-lg-4 col-md-4">
-                    <div class="thumbnail">
-                        <img src="data:image;base64,{$dato->getArticolo()->getFoto()}" style="height: 150px !important;" alt="">
-                        <div class="caption">                            
-                            <h4 class="popup-link" data-popup-target="#example-popup">
-                                <a href="#">{$dato->getArticolo()->getTitolo()}</a>
-                                <p class="id" style="display: none">{$dato->getIdAsta()}</p>
-                            </h4>
-							<p style="font-size: 14px; font-weight: bold;">{$dato->getPrezzoF()->getValore()} {$dato->getPrezzoF()->getValuta()}</p>
-                            <p>{$dato->getArticolo()->getDescrizione()}</p>
+            <h1 style="text-align: center;">Aste create</h1>
+            <br>
+
+            <button id="go-left">&laquo;</button>
+            <button id="go-right">&raquo;</button>
+
+            <div class="slider">
+                <div>
+                    {foreach from=$asteCreate item=dato}
+                        <div class="col-sm-4 col-lg-4 col-md-4" style="display: inline-block; float: left;">
+                            <div class="thumbnail">
+                                <div class="imgContainer">
+                                    <img src="data:image;base64,{$dato->getArticolo()->getFoto()}">
+                                </div>
+
+                                <div class="caption" style="text-align: center;">
+                                    <h4 class="popup-link" data-popup-target="#example-popup">
+                                        <a href="#">{$dato->getArticolo()->getTitolo()}</a>
+                                        <p class="id" style="display: none">{$dato->getIdAsta()}</p>
+                                    </h4>
+
+                                    <p class="prezzo">{$dato->getPrezzoF()->getValore()} {$dato->getPrezzoF()->getValuta()}</p>
+                                    <p>{$dato->getArticolo()->getDescrizione()}</p>
+                                </div>
+
+                            </div>
                         </div>
-           
-                    </div>
+
+                    {/foreach}
                 </div>
-			
-            {/foreach}
+            </div>
         {/if}
 		
 		</div>
 
+        <br><hr>
 
- 
-<div  class="row">
+        <!-- Da fixare scroll su aste vinte -->
+        <div class="row">
       
-        {if $asteVinte != false}
-        <h1>Aste vinte</h1>
-            {foreach from=$asteVinte item=dato}
+            {if $asteVinte != false}
 
-                <div class="col-sm-4 col-lg-4 col-md-4">
-                    <div class="thumbnail">
-                        <img src="data:image;base64,{$dato->getArticolo()->getFoto()}" style="height: 150px !important;" alt="">
-                        <div class="caption">
-                            <h4 class="popup-link" data-popup-target="#example-popup">
-                                <a href="#">{$dato->getArticolo()->getTitolo()}</a>
-                                <p class="id" style="display: none">{$dato->getIdAsta()}</p>
-                            </h4>
-							<p style="font-size: 14px; font-weight: bold;">{$dato->getPrezzoF()->getValore()} {$dato->getPrezzoF()->getValuta()}</p>
-                            <p>{$dato->getArticolo()->getDescrizione()}</p>
-                        </div>
-                        <form method="post" enctype="multipart/form-data" action="index.php">
-                        <input type="text" name="username" value="{$dato->getUtentecreatore()->getUsername()}"  style="display:none">
-                        <input type="hidden" name="controller" value="asta">
-                        <input type="hidden" name="task" value="valuta">
-                        <table>
+                <h1 style="text-align: center;">Aste vinte</h1>
+                <br>
 
-                            <td><input type="number" name="valutazione" required/></td>
+                <button class="go-left">&laquo;</button>
+                <button class="go-right">&raquo;</button>
 
-                            <td><input type="submit" name="submit" value="Valuta"</td>
+                <div class="slider">
+                    <div>
+                        {foreach from=$asteVinte item=dato}
 
-                            </table>
-                    </form>
-               
+                            <div class="col-sm-4 col-lg-4 col-md-4">
+                                <div class="thumbnail">
+                                    <div class="imgContainer">
+                                        <img src="data:image;base64,{$dato->getArticolo()->getFoto()}">
+                                    </div>
+                                    <div class="caption" style="text-align: center;">
+                                        <h4 class="popup-link" data-popup-target="#example-popup">
+                                            <a href="#">{$dato->getArticolo()->getTitolo()}</a>
+                                            <p class="id" style="display: none">{$dato->getIdAsta()}</p>
+                                        </h4>
+							            <p style="font-size: 14px; font-weight: bold;">{$dato->getPrezzoF()->getValore()} {$dato->getPrezzoF()->getValuta()}</p>
+                                        <p>{$dato->getArticolo()->getDescrizione()}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        {/foreach}
                     </div>
-
                 </div>
-            {/foreach}
-        {/if}
-    </div>
-
-
+            {/if}
+        </div>
 </div>
  
