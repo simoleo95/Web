@@ -203,6 +203,7 @@
     <script src="templates/templates/js/scorri.js"></script>
     <script src="templates/templates/js/scroll.js"></script>
     <script src="templates/templates/js/popup.js"></script>
+        <script src="templates/templates/js/Registrazione.js"></script>
 
 </body>
 
