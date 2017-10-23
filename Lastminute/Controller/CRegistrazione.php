@@ -61,6 +61,7 @@
                     $this->errore= 'Username o password errati';
             }
             else
+
                 $this->errore = 'L\'account non esiste';
 
             return false;
@@ -79,6 +80,8 @@
      }
     //Usato per la registrazione dell'utente
     public function salva(){
+
+        
         $VCreaAccount=USingleton::getInstance('VCreaAccount');  
         $password=$VCreaAccount->getPassword();
         $password_1=$VCreaAccount->getPassword_1();
@@ -88,12 +91,8 @@
         $EUtente->setEmail($VCreaAccount->getEmail());
         $EUtente->setUsername($VCreaAccount->getUsername());
         $EUtente->setPassword($password);
-       
+       $errore = $EUtente->store();
 
-        $errore = $EUtente->store();print($errore);
-        echo '<script type="text/javascript">
-        alert("entrato");
-              </script>';
         if ($errore == 'Utente creato correttamente') {
          header('Location:home');   
         }

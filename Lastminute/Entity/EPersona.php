@@ -76,6 +76,7 @@ class EPersona{
         $appoggio->setUsername($this->username);
         $appoggio->setPassword($this->password);
         $FUtente = new FUtente();
+        
         if($FUtente->load($this->username))
             return "Utente gia un uso";
         else

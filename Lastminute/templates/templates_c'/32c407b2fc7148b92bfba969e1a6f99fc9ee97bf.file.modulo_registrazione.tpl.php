@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2017-10-21 16:26:10
+<?php /* Smarty version Smarty-3.1.13, created on 2017-10-23 20:08:50
          compiled from "C:\xampp\htdocs\Web\Lastminute\templates\templates\modulo_registrazione.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:1333159eb59024eef96-69143312%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '32c407b2fc7148b92bfba969e1a6f99fc9ee97bf' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Web\\Lastminute\\templates\\templates\\modulo_registrazione.tpl',
-      1 => 1508065771,
+      1 => 1508782126,
       2 => 'file',
     ),
   ),
@@ -15,20 +15,20 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
-  'has_nocache_code' => false,
   'version' => 'Smarty-3.1.13',
   'unifunc' => 'content_59eb590251f745_13006174',
+  'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_59eb590251f745_13006174')) {function content_59eb590251f745_13006174($_smarty_tpl) {?><script>
 var myFunction = function() {
-    // if (document.getElementById('password').value == document.getElementById('password_1').value) {
-    //     alert('registrazione avvenuta con successo');
-    //     return true;
-    // }
-    // else {
-    //     alert('campi non validi prego ricontrollare');
-    //     return false;
-    //   }
+        if (document.getElementById('password').value !== document.getElementById('password_1').value || document.getElementById('password').value=='') {
+            alert('campi non validi prego ricontrollare');
+            return false;
+        }
+        else {
+            alert('registrazione avvenuta con successo');
+            return true;
+          }
 }
 
 var check = function() {
@@ -44,7 +44,7 @@ var check = function() {
   }
 }
      
-</script>
+</script> 
 
 <div  class="col-md-9">
     <div class="row center-block">

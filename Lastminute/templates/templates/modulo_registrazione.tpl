@@ -1,13 +1,13 @@
 <script>
 var myFunction = function() {
-    // if (document.getElementById('password').value == document.getElementById('password_1').value) {
-    //     alert('registrazione avvenuta con successo');
-    //     return true;
-    // }
-    // else {
-    //     alert('campi non validi prego ricontrollare');
-    //     return false;
-    //   }
+        if (document.getElementById('password').value !== document.getElementById('password_1').value || document.getElementById('password').value=='') {
+            alert('campi non validi prego ricontrollare');
+            return false;
+        }
+        else {
+            alert('registrazione avvenuta con successo');
+            return true;
+          }
 }
 
 var check = function() {
@@ -23,7 +23,7 @@ var check = function() {
   }
 }
      
-</script>
+</script> 
 
 <div  class="col-md-9">
     <div class="row center-block">
