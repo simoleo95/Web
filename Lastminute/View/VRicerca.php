@@ -7,6 +7,12 @@
 
             return $this->fetch($config['smarty']['template_dir'].'\ricerca.tpl');
         }
+		
+		public function processaTemplate1() {
+            global $config;
+
+            return $this->fetch($config['smarty']['template_dir'].'\ricerca1.tpl');
+        }
 
         public function getAjax() {
             if (isset($_REQUEST['ajax']))
@@ -25,6 +31,11 @@
         public function displayTemplate() {
             global $config;
             $this->display($config['smarty']['template_dir'].'\ricerca.tpl');
+        }
+		
+		public function displayTemplate1() {
+            global $config;
+            $this->display($config['smarty']['template_dir'].'\ricerca1.tpl');
         }
        
     }

@@ -20,12 +20,16 @@
 
             $FAsta->execute($query);
             $tmp=$FAsta->getObjects();
+			
+			if($tmp != false){
 
             for($i=0;$i<count($tmp);$i++) {
                 $ris[]=$FAsta->load($tmp[$i]->getIdAsta());
             }
+			
 
-            return $ris;
+            return $ris;}
+			else{return $ris=null;}
         }
 
        public function ricercaDiUtente($user){
@@ -34,23 +38,39 @@
             $FAsta->execute($query);
             $tmp=$FAsta->getObjects();
 
+             if ( $tmp != null){
+		     
+
             for($i=0;$i<count($tmp);$i++) {
                 $ris[]=$FAsta->load($tmp[$i]->getIdAsta());
             }
-
-            return $ris;
+		   
+		   
+		      return $ris;
+		   }
+		   else
+			   return $ris= null;
        } 
        public function ricercaVincitore($user){
             $FAsta=  USingleton::getInstance('FAsta');
-            $query="SELECT * FROM Asta WHERE userv ='".$user."' AND dataF < CURDATE()";
+            //$query="SELECT * FROM Asta WHERE userv ='".$user."' AND dataF < CURDATE()  LIMIT 3";
+            $query="SELECT * FROM Asta WHERE userv ='".$user."'";
             $FAsta->execute($query);
             $tmp=$FAsta->getObjects();
+		   
+		   if ( $tmp != null){
+		     
 
             for($i=0;$i<count($tmp);$i++) {
                 $ris[]=$FAsta->load($tmp[$i]->getIdAsta());
             }
-
-            return $ris;
+		   
+		   
+		      return $ris;
+		   }
+		   else
+			   return $ris= null;
+		   
        } 
        
        public function ricercafulltext($v){

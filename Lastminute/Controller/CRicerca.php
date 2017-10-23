@@ -7,12 +7,14 @@
             $VRicerca=  USingleton::getInstance('VRicerca');
 
             $ajax = $VRicerca->getAjax();
+			
+			
 
             if($ajax) {
                 $num = $VRicerca->getNum();
                 $risultato=$ECatalogo->inScadenza($num);
                 $VRicerca->impostaDati('dati',$risultato);
-                $VRicerca->displayTemplate();
+                $VRicerca->displayTemplate1();
             }
             else {
                 $risultato=$ECatalogo->inScadenza("");

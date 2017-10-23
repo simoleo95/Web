@@ -1,12 +1,12 @@
-$(document).ready(function () {
-
-    $('[data-popup-target]').click(function () {
+$(document).ready(function () {	
+	
+    $('.popup-link').click(function () {
         $('html').addClass('overlay');
         var activePopup = $(this).attr('data-popup-target');
         $(activePopup).addClass('visible');
 
         // Ajax call
-        var id = $(this).find(".id").text();
+       id = $(this).find(".id").text();
 
         var url = "index.php?controller=asta&task=dettagli&id_asta=" + id + "&ajax=true";
         $.ajax({
@@ -27,8 +27,11 @@ $(document).ready(function () {
     });
 
     $('.popup-exit').click(function () {
-        clearPopup();
-
+		//var id = $("input[name='id_asta']").val();
+		
+        clearPopup();		
+		
+		
     });
 
     $('.popup-overlay').click(function () {
@@ -36,12 +39,20 @@ $(document).ready(function () {
     });
 
     function clearPopup() {
+		
         $('.popup.visible').addClass('transitioning').removeClass('visible');
         $('html').removeClass('overlay');
 
         setTimeout(function () {
             $('.popup').removeClass('transitioning');
         }, 200);
+		
+		var prezzo= $('.prezzoF').text();
+	    var id= $('.astaID').text();
+		
+	$("#"+id).find(".pf").text(prezzo +" euro");
     }
+	
+
 
 });

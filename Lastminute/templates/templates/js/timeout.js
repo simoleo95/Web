@@ -3,8 +3,8 @@ $(document).ready(function(){
 		timeTo: new Date(new Date($('#timeout').attr('tag'))),
 		theme: "black",
 		displayCaptions: true,
-		fontSize: 40,
-		captionSize: 15
+		fontSize: 50,
+		captionSize: 18
 	})
 	var scadenza = new Date($('#timeout').attr('tag'));
 	var now = (new Date()).getTime();
