@@ -57,11 +57,10 @@
             <h1 style="text-align: center;">Aste create</h1>
             <br>
 
-            <button id="go-left">&laquo;</button>
-            <button id="go-right">&raquo;</button>
-
             <div class="slider">
-                <div>
+                <button id="go-left">&laquo;</button>
+                <button id="go-right">&raquo;</button>
+                <div style="margin-top: 20px;">
                     {foreach from=$asteCreate item=dato}
                         <div class="col-sm-4 col-lg-4 col-md-4" style="display: inline-block; float: left;">
                             <div class="thumbnail">
@@ -99,11 +98,10 @@
                 <h1 style="text-align: center;">Aste vinte</h1>
                 <br>
 
-                <button class="go-left">&laquo;</button>
-                <button class="go-right">&raquo;</button>
-
                 <div class="slider">
-                    <div>
+                    <button id="go-left">&laquo;</button>
+                    <button id="go-right">&raquo;</button>
+                    <div style="margin-top: 20px;">
                         {foreach from=$asteVinte item=dato}
 
                             <div class="col-sm-4 col-lg-4 col-md-4">

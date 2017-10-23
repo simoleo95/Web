@@ -10,18 +10,22 @@
 
         public function store(EValutazione $v) {
             $uc=$v->getUtenteC()->getUsername();
-			var_dump($uc);
             $uv=$v->getUtenteV()->getUsername();
-			var_dump($uv);
 			$voto=$v->getVoto();
-			var_dump($voto);
-           $query="INSERT into valutazione (IDvalutazione,valutazione,personaV,personaC) VALUES ('','".$voto."','".$uv."','".$uc."')";
-			/*$query="INSERT into valutazione(IDvalutazione,valutazione,personaV,personaC) VALUES ('7','4','simoleo','andrecocc')";*/
-			var_dump($query);
-           $r= parent::execute($query);
-			var_dump($r);
-           /* $b=$this->db->lastInsertId("IDvalutazione");
-            $v->setIDvalutazione($b);*/
+
+			$query="SELECT valutazione FROM valutazione WHERE personaC='".$uc."' AND personaV='".$uv."'";
+            $r=parent::execute($query);
+
+            if($r->rowCount()===0) {
+                $query = "INSERT into valutazione (IDvalutazione,valutazione,personaV,personaC) VALUES ('','" . $voto . "','" . $uv . "','" . $uc . "')";
+                parent::execute($query);
+                var_dump($query);
+            }
+            else {
+                $query = "UPDATE valutazione SET valutazione='".$voto."' WHERE personaC='".$uc."' AND personaV='".$uv."'";
+                parent::execute($query);
+                var_dump($query);
+            }
         }
 
         public function load($key) {

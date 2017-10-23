@@ -119,7 +119,6 @@
 			$Futente=USingleton::getInstance('FUtente');
 			$Fvalutazione=USingleton::getInstance('FValutazione');
             $valutazione=$VMieAste->getValutazione();
-			var_dump($valutazione);
             $usernameC = $VMieAste->getUsername();
             $session=USingleton::getInstance('USession');
             $usernameV=$session->leggi_valore('username');
@@ -127,9 +126,8 @@
 			$uR=$Futente->load($usernameV);
 			
 			if($usernameC != $usernameV){
-			$EValutazione = new EValutazione();
-			$EValutazione->valuta($valutazione,$uO,$uR);	
-			
+			    $EValutazione = new EValutazione();
+			    $EValutazione->valuta($valutazione,$uO,$uR);
 			}
 			$Fvalutazione->store($EValutazione);
 			return "ciao";

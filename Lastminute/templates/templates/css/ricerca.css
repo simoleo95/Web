@@ -39,3 +39,11 @@
     font-size: 14px;
     font-weight: bold;
 }
+
+#go-left {
+    float: left;
+}
+
+#go-right {
+    float: right;
+}

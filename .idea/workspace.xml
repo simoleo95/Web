@@ -2,15 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e1bf6216-67df-4474-abef-f8edc160635b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lastminute/templates/templates/js/jquery.diyslider.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lastminute/templates/templates/js/slider.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lastminute/Controller/CAsta.php" afterPath="$PROJECT_DIR$/Lastminute/Controller/CAsta.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lastminute/Entity/ECatalogo.php" afterPath="$PROJECT_DIR$/Lastminute/Entity/ECatalogo.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lastminute/Foundation/FValutazione.php" afterPath="$PROJECT_DIR$/Lastminute/Foundation/FValutazione.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lastminute/templates/templates/Profilo.tpl" afterPath="$PROJECT_DIR$/Lastminute/templates/templates/Profilo.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lastminute/templates/templates/css/rating.css" afterPath="$PROJECT_DIR$/Lastminute/templates/templates/css/rating.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lastminute/templates/templates/css/ricerca.css" afterPath="$PROJECT_DIR$/Lastminute/templates/templates/css/ricerca.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lastminute/templates/templates/home.tpl" afterPath="$PROJECT_DIR$/Lastminute/templates/templates/home.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lastminute/templates/templates/ricerca.tpl" afterPath="$PROJECT_DIR$/Lastminute/templates/templates/ricerca.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lastminute/templates/templates/js/slider.js" afterPath="$PROJECT_DIR$/Lastminute/templates/templates/js/slider.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lastminute/templates/templates_c'/a3216d14c5a1df902384e9234de22e8834fe7bd6.file.shop_item.tpl.php" afterPath="$PROJECT_DIR$/Lastminute/templates/templates_c'/a3216d14c5a1df902384e9234de22e8834fe7bd6.file.shop_item.tpl.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lastminute/templates/templates_c'/dd6e43cf686f3a96e755b73f1c85a12bf2fdc4ed.file.ricerca.tpl.php" afterPath="$PROJECT_DIR$/Lastminute/templates/templates_c'/dd6e43cf686f3a96e755b73f1c85a12bf2fdc4ed.file.ricerca.tpl.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lastminute/templates/templates_c'/e7e6566d21414ab7baa89c20c13fd5cb6ab6a1d4.file.home.tpl.php" afterPath="$PROJECT_DIR$/Lastminute/templates/templates_c'/e7e6566d21414ab7baa89c20c13fd5cb6ab6a1d4.file.home.tpl.php" />
@@ -45,37 +43,50 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ricerca.tpl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Lastminute/templates/templates/ricerca.tpl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="16" lean-forward="false" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
-              <folding>
-                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <marker date="1508709505847" expanded="true" signature="1256:1283" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="CAsta.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Lastminute/Controller/CAsta.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="289">
-              <caret line="113" column="49" lean-forward="true" selection-start-line="113" selection-start-column="49" selection-end-line="113" selection-end-column="49" />
+              <caret line="95" column="52" lean-forward="true" selection-start-line="95" selection-start-column="52" selection-end-line="95" selection-end-column="52" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VMieAste.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Lastminute/View/VMieAste.php">
+      <file leaf-file-name="FValutazione.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Lastminute/Foundation/FValutazione.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="272">
-              <caret line="16" column="52" lean-forward="true" selection-start-line="16" selection-start-column="52" selection-end-line="16" selection-end-column="52" />
+              <caret line="16" column="39" lean-forward="false" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
               <folding>
-                <marker date="1508702897888" expanded="true" signature="1158:1179" ph="..." />
-                <marker date="1508702897888" expanded="true" signature="1398:1460" ph="..." />
+                <marker date="1508766347344" expanded="true" signature="397:666" ph="INSERT into valutazione... " />
+                <marker date="1508766347344" expanded="true" signature="434:480" ph="SELECT valut... valutazione" />
+                <marker date="1508766347344" expanded="true" signature="434:486" ph="SELECT valut... valutazione" />
+                <marker date="1508766347344" expanded="true" signature="434:494" ph="SELECT valut... valutazione" />
+                <marker date="1508766347344" expanded="true" signature="434:509" ph="SELECT valut... valutazione" />
+                <marker date="1508766347344" expanded="true" signature="434:517" ph="SELECT valut... valutazione" />
+                <marker date="1508766347344" expanded="true" signature="886:922" ph="UPDATE valut... " />
+                <marker date="1508766347344" expanded="true" signature="886:932" ph="UPDATE valut... " />
+                <marker date="1508766347344" expanded="true" signature="886:938" ph="UPDATE valut... " />
+                <marker date="1508766347344" expanded="true" signature="886:955" ph="UPDATE valut... " />
+                <marker date="1508766347344" expanded="true" signature="886:978" ph="UPDATE valut... " />
+                <marker date="1508766347344" expanded="true" signature="886:980" ph="UPDATE valut... " />
+                <marker date="1508766347344" expanded="true" signature="886:1071" ph="UPDATE valut... " />
+                <marker date="1508766347344" expanded="true" signature="1805:1858" ph="SELECT * FRO... valutazione" />
+                <marker date="1508766347344" expanded="true" signature="2040:2173" ph="INSERT into valutazione... " />
+                <marker date="1508766347344" expanded="true" signature="2312:2369" ph="SELECT * FRO... valutazione" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Fdb.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Lastminute/Foundation/Fdb.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="38" column="56" lean-forward="true" selection-start-line="38" selection-start-column="43" selection-end-line="38" selection-end-column="56" />
+              <folding>
+                <marker date="1507978225878" expanded="true" signature="3322:3386" ph="INSERT INTO ${$this-&gt;_table}... " />
               </folding>
             </state>
           </provider>
@@ -84,15 +95,15 @@
       <file leaf-file-name="ECatalogo.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Lastminute/Entity/ECatalogo.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
-              <caret line="57" column="12" lean-forward="false" selection-start-line="57" selection-start-column="12" selection-end-line="57" selection-end-column="12" />
+            <state relative-caret-position="271">
+              <caret line="45" column="13" lean-forward="false" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
               <folding>
-                <marker date="1508711583164" expanded="true" signature="460:507" ph="SELECT * FRO... asta" />
-                <marker date="1508711583164" expanded="true" signature="993:1036" ph="SELECT * FRO... Asta" />
-                <marker date="1508711583164" expanded="true" signature="1486:1519" ph="SELECT * FRO... Asta" />
-                <marker date="1508711583164" expanded="true" signature="1486:1523" ph="SELECT * FRO... Asta" />
-                <marker date="1508711583164" expanded="true" signature="1486:1560" ph="SELECT * FRO... Asta" />
-                <marker date="1508711583164" expanded="true" signature="1584:1627" ph="SELECT * FRO... Asta" />
+                <marker date="1508752773714" expanded="true" signature="460:507" ph="SELECT * FRO... asta" />
+                <marker date="1508752773714" expanded="true" signature="993:1036" ph="SELECT * FRO... Asta" />
+                <marker date="1508752773714" expanded="true" signature="1486:1519" ph="SELECT * FRO... Asta" />
+                <marker date="1508752773714" expanded="true" signature="1486:1523" ph="SELECT * FRO... Asta" />
+                <marker date="1508752773714" expanded="true" signature="1486:1560" ph="SELECT * FRO... Asta" />
+                <marker date="1508752773714" expanded="true" signature="1583:1626" ph="SELECT * FRO... Asta" />
               </folding>
             </state>
           </provider>
@@ -101,8 +112,8 @@
       <file leaf-file-name="ricerca.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Lastminute/templates/templates/css/ricerca.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="458">
-              <caret line="41" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+            <state relative-caret-position="526">
+              <caret line="47" column="17" lean-forward="false" selection-start-line="47" selection-start-column="17" selection-end-line="47" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -111,28 +122,9 @@
       <file leaf-file-name="Profilo.tpl" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Lastminute/templates/templates/Profilo.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="274">
-              <caret line="93" column="47" lean-forward="false" selection-start-line="93" selection-start-column="47" selection-end-line="93" selection-end-column="47" />
-              <folding>
-                <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#p#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#p#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#p#2;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#p#3;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h1#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#section#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h1#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-                <element signature="e#2466#2473#1#HTML" expanded="true" />
-                <element signature="e#2517#2524#1#HTML" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h1#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-                <element signature="e#4102#4109#1#HTML" expanded="true" />
-                <element signature="e#4160#4167#1#HTML" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="68">
+              <caret line="61" column="37" lean-forward="false" selection-start-line="61" selection-start-column="37" selection-end-line="61" selection-end-column="37" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -140,41 +132,41 @@
       <file leaf-file-name="slider.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Lastminute/templates/templates/js/slider.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="8" lean-forward="false" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
+            <state relative-caret-position="306">
+              <caret line="18" column="16" lean-forward="false" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="timeout.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Lastminute/templates/templates/js/timeout.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="home.tpl" pinned="false" current-in-tab="true">
+      <file leaf-file-name="home.tpl" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Lastminute/templates/templates/home.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
+            <state relative-caret-position="526">
               <caret line="144" column="27" lean-forward="false" selection-start-line="144" selection-start-column="27" selection-end-line="144" selection-end-column="27" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jquery.diyslider.min.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Lastminute/templates/templates/js/jquery.diyslider.min.js">
+      <file leaf-file-name="EValutazione.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Lastminute/Entity/EValutazione.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+            <state relative-caret-position="272">
+              <caret line="64" column="38" lean-forward="true" selection-start-line="64" selection-start-column="38" selection-end-line="64" selection-end-column="38" />
               <folding>
-                <element signature="n#!!doc" expanded="true" />
+                <marker date="1508702897901" expanded="true" signature="1124:1177" ph="SELECT * FRO... valutazione" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="rating.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Lastminute/templates/templates/js/rating.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="212">
+              <caret line="58" column="27" lean-forward="false" selection-start-line="58" selection-start-column="23" selection-end-line="58" selection-end-column="27" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -205,7 +197,6 @@
       <list>
         <option value="$PROJECT_DIR$/Lastminute/Entity/EAsta" />
         <option value="$PROJECT_DIR$/Lastminute/Entity/EArticolo.php" />
-        <option value="$PROJECT_DIR$/Lastminute/Foundation/FValutazione.php" />
         <option value="$PROJECT_DIR$/Lastminute/Entity/EPrezzo.php" />
         <option value="$PROJECT_DIR$/Lastminute/Foundation/FArticolo.php" />
         <option value="$PROJECT_DIR$/Lastminute/Foundation/FPrezzo.php" />
@@ -239,19 +230,20 @@
         <option value="$PROJECT_DIR$/Lastminute/templates/templates/tasto_insMieAste.tpl" />
         <option value="$PROJECT_DIR$/Lastminute/View/VMieAste.php" />
         <option value="$PROJECT_DIR$/Lastminute/Foundation/FAsta.php" />
-        <option value="$PROJECT_DIR$/Lastminute/templates/templates/js/rating.js" />
         <option value="$PROJECT_DIR$/Lastminute/includes/config.inc.php" />
-        <option value="$PROJECT_DIR$/Lastminute/Controller/CAsta.php" />
         <option value="$PROJECT_DIR$/Lastminute/templates/templates/shop_item.tpl" />
         <option value="$PROJECT_DIR$/Lastminute/templates/templates/css/rating.css" />
-        <option value="$PROJECT_DIR$/Lastminute/templates/templates/css/ricerca.css" />
         <option value="$PROJECT_DIR$/Lastminute/templates/templates/css/bootstrap.css" />
         <option value="$PROJECT_DIR$/Lastminute/templates/templates/ricerca.tpl" />
         <option value="$PROJECT_DIR$/Lastminute/templates/templates/js/jquery.diyslider.min.js" />
+        <option value="$PROJECT_DIR$/Lastminute/templates/templates/home.tpl" />
+        <option value="$PROJECT_DIR$/Lastminute/Entity/ECatalogo.php" />
         <option value="$PROJECT_DIR$/Lastminute/templates/templates/js/slider.js" />
         <option value="$PROJECT_DIR$/Lastminute/templates/templates/Profilo.tpl" />
-        <option value="$PROJECT_DIR$/Lastminute/Entity/ECatalogo.php" />
-        <option value="$PROJECT_DIR$/Lastminute/templates/templates/home.tpl" />
+        <option value="$PROJECT_DIR$/Lastminute/templates/templates/css/ricerca.css" />
+        <option value="$PROJECT_DIR$/Lastminute/Controller/CAsta.php" />
+        <option value="$PROJECT_DIR$/Lastminute/templates/templates/js/rating.js" />
+        <option value="$PROJECT_DIR$/Lastminute/Foundation/FValutazione.php" />
       </list>
     </option>
   </component>
@@ -286,6 +278,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -518,7 +511,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -682,11 +674,14 @@
       <workItem from="1508595455170" duration="6454000" />
       <workItem from="1508663449495" duration="4682000" />
       <workItem from="1508702684804" duration="8799000" />
+      <workItem from="1508748006993" duration="586000" />
+      <workItem from="1508752614822" duration="4532000" />
+      <workItem from="1508763839145" duration="2540000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87479000" />
+    <option name="totallyTimeSpent" value="95137000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -699,12 +694,12 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20726173" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21633889" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -717,6 +712,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -739,14 +735,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Lastminute/View/VRegistrazione.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Lastminute/Foundation/Utility/USession.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -801,7 +789,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="15" column="9" lean-forward="false" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -861,7 +848,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="21" column="16" lean-forward="false" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -898,27 +884,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="13" column="93" lean-forward="false" selection-start-line="13" selection-start-column="93" selection-end-line="13" selection-end-column="93" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Lastminute/Entity/EValutazione.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Lastminute/Foundation/FValutazione.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="5" lean-forward="false" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
-          <folding>
-            <marker date="1508702897980" expanded="true" signature="418:539" ph="INSERT into valutazione... " />
-            <marker date="1508702897980" expanded="true" signature="1648:1701" ph="SELECT * FRO... valutazione" />
-            <marker date="1508702897980" expanded="true" signature="1883:2016" ph="INSERT into valutazione... " />
-            <marker date="1508702897980" expanded="true" signature="2155:2212" ph="SELECT * FRO... valutazione" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -965,7 +930,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="271">
           <caret line="86" column="9" lean-forward="true" selection-start-line="86" selection-start-column="9" selection-end-line="86" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -983,7 +947,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="49" lean-forward="false" selection-start-line="2" selection-start-column="49" selection-end-line="2" selection-end-column="49" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -991,17 +954,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="237">
           <caret line="34" column="71" lean-forward="true" selection-start-line="34" selection-start-column="71" selection-end-line="34" selection-end-column="71" />
-          <folding>
-            <marker date="1508705080268" expanded="true" signature="3748:4055" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Lastminute/templates/templates/js/rating.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="2" lean-forward="false" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1029,7 +981,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="203">
           <caret line="67" column="11" lean-forward="false" selection-start-line="67" selection-start-column="11" selection-end-line="67" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1037,22 +988,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="229">
           <caret line="5024" column="14" lean-forward="false" selection-start-line="5024" selection-start-column="14" selection-end-line="5024" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Lastminute/Controller/CAsta.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="113" column="49" lean-forward="true" selection-start-line="113" selection-start-column="49" selection-end-line="113" selection-end-column="49" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Lastminute/View/VMieAste.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
-          <caret line="16" column="52" lean-forward="true" selection-start-line="16" selection-start-column="52" selection-end-line="16" selection-end-column="52" />
+          <caret line="16" column="52" lean-forward="false" selection-start-line="16" selection-start-column="52" selection-end-line="16" selection-end-column="52" />
           <folding>
             <marker date="1508702897888" expanded="true" signature="1158:1179" ph="..." />
             <marker date="1508702897888" expanded="true" signature="1398:1460" ph="..." />
@@ -1065,7 +1007,6 @@
         <state relative-caret-position="17">
           <caret line="1" column="16" lean-forward="false" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
           <folding>
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <marker date="1508709505847" expanded="true" signature="1256:1283" ph="..." />
           </folding>
         </state>
@@ -1075,33 +1016,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Lastminute/templates/templates/css/ricerca.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="458">
-          <caret line="41" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Lastminute/templates/templates/js/jquery.diyslider.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
+        <state relative-caret-position="17">
           <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Lastminute/templates/templates/js/slider.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="8" lean-forward="false" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1113,53 +1037,111 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Lastminute/templates/templates/Profilo.tpl">
+    <entry file="file://$PROJECT_DIR$/Lastminute/templates/templates/js/slider.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="93" column="47" lean-forward="false" selection-start-line="93" selection-start-column="47" selection-end-line="93" selection-end-column="47" />
-          <folding>
-            <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#p#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#p#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#p#2;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#p#3;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h1#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#section#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h1#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="e#2466#2473#1#HTML" expanded="true" />
-            <element signature="e#2517#2524#1#HTML" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h1#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-            <element signature="e#4102#4109#1#HTML" expanded="true" />
-            <element signature="e#4160#4167#1#HTML" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="306">
+          <caret line="18" column="16" lean-forward="false" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lastminute/Controller/CAsta.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="95" column="52" lean-forward="true" selection-start-line="95" selection-start-column="52" selection-end-line="95" selection-end-column="52" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Lastminute/Entity/ECatalogo.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="57" column="12" lean-forward="false" selection-start-line="57" selection-start-column="12" selection-end-line="57" selection-end-column="12" />
+        <state relative-caret-position="271">
+          <caret line="45" column="13" lean-forward="false" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
           <folding>
-            <marker date="1508711583164" expanded="true" signature="460:507" ph="SELECT * FRO... asta" />
-            <marker date="1508711583164" expanded="true" signature="993:1036" ph="SELECT * FRO... Asta" />
-            <marker date="1508711583164" expanded="true" signature="1486:1519" ph="SELECT * FRO... Asta" />
-            <marker date="1508711583164" expanded="true" signature="1486:1523" ph="SELECT * FRO... Asta" />
-            <marker date="1508711583164" expanded="true" signature="1486:1560" ph="SELECT * FRO... Asta" />
-            <marker date="1508711583164" expanded="true" signature="1584:1627" ph="SELECT * FRO... Asta" />
+            <marker date="1508752773714" expanded="true" signature="460:507" ph="SELECT * FRO... asta" />
+            <marker date="1508752773714" expanded="true" signature="993:1036" ph="SELECT * FRO... Asta" />
+            <marker date="1508752773714" expanded="true" signature="1486:1519" ph="SELECT * FRO... Asta" />
+            <marker date="1508752773714" expanded="true" signature="1486:1523" ph="SELECT * FRO... Asta" />
+            <marker date="1508752773714" expanded="true" signature="1486:1560" ph="SELECT * FRO... Asta" />
+            <marker date="1508752773714" expanded="true" signature="1583:1626" ph="SELECT * FRO... Asta" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lastminute/Entity/EValutazione.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="64" column="38" lean-forward="true" selection-start-line="64" selection-start-column="38" selection-end-line="64" selection-end-column="38" />
+          <folding>
+            <marker date="1508702897901" expanded="true" signature="1124:1177" ph="SELECT * FRO... valutazione" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Lastminute/templates/templates/home.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
+        <state relative-caret-position="526">
           <caret line="144" column="27" lean-forward="false" selection-start-line="144" selection-start-column="27" selection-end-line="144" selection-end-column="27" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lastminute/templates/templates/css/ricerca.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="526">
+          <caret line="47" column="17" lean-forward="false" selection-start-line="47" selection-start-column="17" selection-end-line="47" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lastminute/templates/templates/Profilo.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="61" column="37" lean-forward="false" selection-start-line="61" selection-start-column="37" selection-end-line="61" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lastminute/templates/templates/js/rating.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="58" column="27" lean-forward="false" selection-start-line="58" selection-start-column="23" selection-end-line="58" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lastminute/Foundation/Fdb.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="38" column="56" lean-forward="true" selection-start-line="38" selection-start-column="43" selection-end-line="38" selection-end-column="56" />
+          <folding>
+            <marker date="1507978225878" expanded="true" signature="3322:3386" ph="INSERT INTO ${$this-&gt;_table}... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lastminute/Foundation/FValutazione.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="39" lean-forward="false" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
+          <folding>
+            <marker date="1508766347344" expanded="true" signature="397:666" ph="INSERT into valutazione... " />
+            <marker date="1508766347344" expanded="true" signature="434:480" ph="SELECT valut... valutazione" />
+            <marker date="1508766347344" expanded="true" signature="434:486" ph="SELECT valut... valutazione" />
+            <marker date="1508766347344" expanded="true" signature="434:494" ph="SELECT valut... valutazione" />
+            <marker date="1508766347344" expanded="true" signature="434:509" ph="SELECT valut... valutazione" />
+            <marker date="1508766347344" expanded="true" signature="434:517" ph="SELECT valut... valutazione" />
+            <marker date="1508766347344" expanded="true" signature="886:922" ph="UPDATE valut... " />
+            <marker date="1508766347344" expanded="true" signature="886:932" ph="UPDATE valut... " />
+            <marker date="1508766347344" expanded="true" signature="886:938" ph="UPDATE valut... " />
+            <marker date="1508766347344" expanded="true" signature="886:955" ph="UPDATE valut... " />
+            <marker date="1508766347344" expanded="true" signature="886:978" ph="UPDATE valut... " />
+            <marker date="1508766347344" expanded="true" signature="886:980" ph="UPDATE valut... " />
+            <marker date="1508766347344" expanded="true" signature="886:1071" ph="UPDATE valut... " />
+            <marker date="1508766347344" expanded="true" signature="1805:1858" ph="SELECT * FRO... valutazione" />
+            <marker date="1508766347344" expanded="true" signature="2040:2173" ph="INSERT into valutazione... " />
+            <marker date="1508766347344" expanded="true" signature="2312:2369" ph="SELECT * FRO... valutazione" />
+          </folding>
         </state>
       </provider>
     </entry>
