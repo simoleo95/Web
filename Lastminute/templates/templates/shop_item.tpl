@@ -41,14 +41,21 @@
                     <input type="number" class="field" style="width: 70px;height: 42px;border-radius: 5px;" name="offerta" style="width: 70px; height: 35px; border-radius: 5px;" {if !$user} disabled {/if} min="{$asta->getPrezzoF()->getValore()}" placeholder="{$asta->getPrezzoI()->getValore()}" required/>
 					{else}
 					<input type="number" class="field" style="width: 70px;height: 42px;border-radius: 5px;" name="offerta" style="width: 70px; height: 35px; border-radius: 5px;" {if !$user} disabled {/if} min="{$asta->getPrezzoF()->getValore()}" placeholder="{$asta->getPrezzoF()->getValore()}" required/>
+					
 					{/if}
 
                     {if $user && ($creatore neq $asta->getUtentecreatore()->getUsername())}
 					<a class="btn btn-success offerta">Partecipa</a>
-                    {/if}
+                    {/if} 
 
                     {if !$user}<p style="text-align: center;">Registrati per poter effettuare un'offerta</p>{/if}
-                    {if $creatore eq $asta->getUtentecreatore()->getUsername()}<p style="text-align: center;">Non puoi effettuare un'offerta su un tuo prodotto</p>{/if}
+                    {if $creatore eq $asta->getUtentecreatore()->getUsername()}<p style="text-align: center;">Non puoi effettuare un'offerta su un tuo prodotto</p>
+					{else}
+				
+					{/if}
+					
+					
+					
                 </form>
 				{if isset($errore)}
                     {$errore}

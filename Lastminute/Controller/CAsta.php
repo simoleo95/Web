@@ -57,7 +57,10 @@
 				$session=USingleton::getInstance('USession');
                 $FUtente=USingleton::getInstance('FUtente');
                 $utente=$FUtente->load($session->leggi_valore('username'));
-				$asta->setUtentevincitore($utente);  
+				$asta->setUtentevincitore($utente);
+			   //variabile creatore
+			   $user=USingleton::getInstance('USession');
+              
 				
                $FAsta->update($asta);
 			   $CRegistrazione = USingleton::getInstance('CRegistrazione');
@@ -67,6 +70,7 @@
 			    $VAsta->setLayout('\shop_item.tpl');
                 $VAsta->impostaDati('user',$registrato);				
                 $VAsta->impostaDati('asta',$asta);
+			    $VAsta->impostaDati('creatore',$user->leggi_valore('username'));
                 $VAsta->displayTemplate();
 				
 			}
@@ -130,7 +134,7 @@
 			    $EValutazione->valuta($valutazione,$uO,$uR);
 			}
 			$Fvalutazione->store($EValutazione);
-			return "ciao";
+			
             //header('Location: index.php?controller=asta&task=mieAste');
             //echo "<script type='text/javascript'>alert('".$errore."');window.location = 'index.php?controller=asta&task=profilo';</script>";
         }

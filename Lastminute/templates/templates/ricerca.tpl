@@ -14,7 +14,7 @@
                                 <p class="id" style="display: none">{$dato->getIdAsta()}</p>
                             </h4>
 
-                            <p class="prezzo">{$dato->getPrezzoF()->getValore()} {$dato->getPrezzoF()->getValuta()}</p>
+                            <p class="prezzo pf">{$dato->getPrezzoF()->getValore()} {$dato->getPrezzoF()->getValuta()}</p>
                             <p>{$dato->getArticolo()->getDescrizione()}</p>
                         </div>
                       <!--  <div style="margin-top:-25px; text-align: center; font-size: 16px;">

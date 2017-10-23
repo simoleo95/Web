@@ -14,16 +14,11 @@
                             </h4>
 
                             			
-                {if ($dato->getPrezzoF()->getValore() == 0) } 
-                            <p style="font-size: 14px; font-weight: bold;">{$dato->getPrezzoI()->getValore()} {$dato->getPrezzoF()->getValuta()}</p>
-                            <p>{$dato->getArticolo()->getDescrizione()}</p>
-							
-							{else}
-				
+          
 							 <p  class='pf' style="font-size: 14px; font-weight: bold;">{$dato->getPrezzoF()->getValore()} {$dato->getPrezzoF()->getValuta()}</p>
                             <p>{$dato->getArticolo()->getDescrizione()}</p>
 							
-							{/if}
+							
                         </div>
 						
 
