@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2017-10-21 18:02:39
+<?php /* Smarty version Smarty-3.1.13, created on 2017-10-23 18:22:28
          compiled from "C:\xampp\htdocs\Web\Lastminute\templates\templates\ricerca.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:2094959eb587d0480f8-69135490%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'dd6e43cf686f3a96e755b73f1c85a12bf2fdc4ed' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Web\\Lastminute\\templates\\templates\\ricerca.tpl',
-      1 => 1508601698,
+      1 => 1508775443,
       2 => 'file',
     ),
   ),
@@ -36,9 +36,9 @@ $_smarty_tpl->tpl_vars['dato']->_loop = true;
 " class="col-sm-4 col-lg-4 col-md-4">
                     <div class="thumbnail">
 						 
-                        <div style="position: relative; width: 260px; height: 178px; overflow: hidden;">
+                        <div class="imgContainer">
                             <img src="data:image;base64,<?php echo $_smarty_tpl->tpl_vars['dato']->value->getArticolo()->getFoto();?>
-" style="position: absolute; top: -9999px; left: -9999px; right: -9999px; bottom: -9999px; margin: auto;" alt="">
+">
                         </div>
                         <div class="caption" style="text-align: center;">
                             <h4 class="popup-link" data-popup-target="#example-popup">
@@ -47,26 +47,13 @@ $_smarty_tpl->tpl_vars['dato']->_loop = true;
                                 <p class="id" style="display: none"><?php echo $_smarty_tpl->tpl_vars['dato']->value->getIdAsta();?>
 </p>
                             </h4>
-							
-                <?php if (($_smarty_tpl->tpl_vars['dato']->value->getPrezzoF()->getValore()==0)){?> 
-                            <p style="font-size: 14px; font-weight: bold;"><?php echo $_smarty_tpl->tpl_vars['dato']->value->getPrezzoI()->getValore();?>
- <?php echo $_smarty_tpl->tpl_vars['dato']->value->getPrezzoF()->getValuta();?>
-</p>
-                            <p><?php echo $_smarty_tpl->tpl_vars['dato']->value->getArticolo()->getDescrizione();?>
-</p>
-							
-							<?php }else{ ?>
-				
-							 <p class="pf" style="font-size: 14px; font-weight: bold;"><?php echo $_smarty_tpl->tpl_vars['dato']->value->getPrezzoF()->getValore();?>
- <?php echo $_smarty_tpl->tpl_vars['dato']->value->getPrezzoF()->getValuta();?>
-</p>
-                            <p><?php echo $_smarty_tpl->tpl_vars['dato']->value->getArticolo()->getDescrizione();?>
-</p>
-							
-							<?php }?>
-                        </div>
-						
 
+                            <p class="prezzo pf"><?php echo $_smarty_tpl->tpl_vars['dato']->value->getPrezzoF()->getValore();?>
+ <?php echo $_smarty_tpl->tpl_vars['dato']->value->getPrezzoF()->getValuta();?>
+</p>
+                            <p><?php echo $_smarty_tpl->tpl_vars['dato']->value->getArticolo()->getDescrizione();?>
+</p>
+                        </div>
                       <!--  <div style="margin-top:-25px; text-align: center; font-size: 16px;">
                             <p style="font-weight: bold;">Scade il: <?php echo $_smarty_tpl->tpl_vars['dato']->value->getDataF();?>
 </p>

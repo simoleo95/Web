@@ -89,17 +89,17 @@
         $EUtente->setUsername($VCreaAccount->getUsername());
         $EUtente->setPassword($password);
        
-        if ($password==$password_1) {
-         $errore = $EUtente->store();
-        }else
-//         header('Location:Registrazione');     
 
-            if ($errore == 'Utente creato correttamente') {
+        $errore = $EUtente->store();print($errore);
+        echo '<script type="text/javascript">
+        alert("entrato");
+              </script>';
+        if ($errore == 'Utente creato correttamente') {
          header('Location:home');   
         }
         else{
-  //       header('Location:Registrazione');
-         
+         header('Location:Registrazione');
+        
         }
     }
     
