@@ -1,22 +1,22 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2017-10-23 18:22:23
+<?php /* Smarty version Smarty-3.1.13, created on 2017-10-23 18:55:44
          compiled from "C:\xampp\htdocs\Web\Lastminute\templates\templates\home.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:1936059df40c990b216-10814792%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:1865159eb587d6c09a1-87768354%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'e7e6566d21414ab7baa89c20c13fd5cb6ab6a1d4' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Web\\Lastminute\\templates\\templates\\home.tpl',
-      1 => 1508775733,
+      1 => 1508735960,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '1936059df40c990b216-10814792',
+  'nocache_hash' => '1865159eb587d6c09a1-87768354',
   'function' => 
   array (
   ),
   'version' => 'Smarty-3.1.13',
-  'unifunc' => 'content_59df40c9db3831_32911114',
+  'unifunc' => 'content_59eb587d70bc55_43833499',
   'variables' => 
   array (
     'title' => 0,
@@ -29,8 +29,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_59df40c9db3831_32911114')) {function content_59df40c9db3831_32911114($_smarty_tpl) {?><!DOCTYPE html>
-<html lang="en">
+<?php if ($_valid && !is_callable('content_59eb587d70bc55_43833499')) {function content_59eb587d70bc55_43833499($_smarty_tpl) {?><!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 
 <head>
 
@@ -47,14 +47,15 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     <link href="templates/templates/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="templates/templates/css/shop-homepage.css" rel="stylesheet">
-	
-	<link href="templates/templates/css/ricerca.css" rel="stylesheet">
-	
-	<link href="templates/templates/css/scorri.css" rel="stylesheet">
-
+    <link href="templates/templates/css/shop-homepage.css" type="text/css" rel="stylesheet">
+	<link href="templates/templates/css/ricerca.css" type="text/css" rel="stylesheet">
+	<link href="templates/templates/css/scorri.css" type="text/css" rel="stylesheet">
     <link href="templates/templates/css/popup.css" type="text/css" rel="stylesheet">
-
+    <link href="templates/templates/css/timeTo.css" type="text/css" rel="stylesheet"/>
+    <link href="templates/templates/css/form.css" type="text/css" rel="stylesheet"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+   <link rel='stylesheet prefetch' href='http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css'>
+   <link href="templates/templates/css/rating.css" type="text/css" rel="stylesheet"/>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -79,7 +80,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
 
     <!-- Navigation -->
-    <nav id= speriamo class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -96,41 +97,49 @@ $_valid = $_smarty_tpl->decodeProperties(array (
             <div  class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul id=scorri class="nav navbar-nav">
                     <li>
-                        <a href="#">About</a>
+                        <a>Categorie</a>
+
+                        <ul>
+                            <li><a href="index.php?controller=categoria&task=seleziona&group=Elettronica" class="list-group-item">Elettronica</a></li>
+                            <li><a href="index.php?controller=categoria&task=seleziona&group=Sport" class="list-group-item">Sport</a></li>
+                            <li><a href="index.php?controller=categoria&task=seleziona&group=Hobby" class="list-group-item">Hobby</a></li>
+                            <li><a href="index.php?controller=categoria&task=seleziona&group=Immobili" class="list-group-item">Immobili</a></li>
+                            </ul>
                     </li>
                     <li>
                         <a href="#">Services</a>
                     </li>
                     <li>
-                        <a href="#">Contact</a>						
-                    </li>	
-					<li>
-						<a>Categorie</a>
-					 
-					  <ul>
-						  <li><a href="index.php?controller=categoria&task=seleziona&group=Elettronica" class="list-group-item">Elettronica</a></li> 
-						  <li><a href="index.php?controller=categoria&task=seleziona&group=Sport" class="list-group-item">Sport</a></li>
-						  <li><a href="index.php?controller=categoria&task=seleziona&group=Hobby" class="list-group-item">Hobby</a></li> 
-						  <li><a href="index.php?controller=categoria&task=seleziona&group=Immobili" class="list-group-item">Immobili</a></li>
-				    </li> 
-					  </ul>
-					
+                        <a href="#">Contact</a>
                     </li>
-                				
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                </ul>
                </ul>
-				
+                <div class="col-sm-3 col-md-4 pull-right">
+                    
+                        <form class="navbar-form" role="search" method="post" action="index.php">
+                            <div class="input-group">
+                                <input type="hidden" name="controller" value="asta" />
+                                <input type="hidden" name="task" value="ricerca" />
+                                <input id="cerca-query" style="width: 300px; border-radius: 3px 0 0 3px; background: #444; border: 0; color: #ccc;" type="text" name="testo" class="query form-control" placeholder="Cerca"/>
+                                <div class="input-group-btn">
+                                    <button class="btn btn-default" style="color: #999; background: #444; border-color: #444;" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                                </div>
+                            </div>
+                        </form>
+                    
+                </div>
             </div>
-            <!-- /.navbar-collapse -->
-			
         </div>
-        <!-- /.container -->
     </nav>
 
     <!-- Page Content -->
     <div class="container">
 
         <div  class="row">
-			
+
             <div class="col-md-3"/>
                 <?php if (isset($_smarty_tpl->tpl_vars['username']->value)){?>
                 <p style="text-align: center">Benvenuto <b><?php echo $_smarty_tpl->tpl_vars['username']->value;?>
@@ -152,76 +161,32 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                     <?php echo $_smarty_tpl->tpl_vars['logout']->value;?>
 
                 <?php }?>
-				
-				<p class="lead">Ricerca </p>
-				<div id="cerca-box" class="ricerca" onmouseover="coloreboxcerca('EEEEEE')" onmouseout="coloreboxcerca('999999')">
-                    <form  id = myform method="post" action="index.php">
-					  <input type="hidden" name="controller" value="asta" />
-                      <input type="hidden" name="task" value="ricerca" />
-                      <input id="cerca-query" type="text" name="testo" class="query"/>						   
-                      <input type="image" src="templates/templates/images/bt_cerca.png"/>
-                     </form>
-                </div>
-				
-                
-                
-            </div>	
+            </div>
 
-            <!--    <div class="row carousel-holder">
-
-                    <div class="col-md-12">
-                        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                            <ol class="carousel-indicators">
-                                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                            </ol>
-                            <div class="carousel-inner">
-                                <div class="item active">
-                                    <img class="slide-image" src="http://placehold.it/800x300" alt="">
-                                </div>
-                                <div class="item">
-                                    <img class="slide-image" src="http://placehold.it/800x300" alt="">
-                                </div>
-                                <div class="item">
-                                    <img class="slide-image" src="http://placehold.it/800x300" alt="">
-                                </div>
-                            </div>
-                            <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-                                <span class="glyphicon glyphicon-chevron-left"></span>
-                            </a>
-                            <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-                                <span class="glyphicon glyphicon-chevron-right"></span>
-                            </a>
-                        </div>
-                    </div>
-
-                </div> -->
             <div id="mainContent">
-                <div id="ricerca" class="col-md-9">
+				
+				
+                
                     <?php echo $_smarty_tpl->tpl_vars['mainContent']->value;?>
 
-                </div>
-            </div>
-           
+                
+			
+				
         </div>
 
     </div>
-	
-	
-	
-    
+
+
+
+
 	<!-- /.container -->
 
     <div class="container">
-
-        
-
         <!-- Footer -->
         <footer>
             <div class="row">
                 <div class="col-lg-12">
-                    <p>Copyright &copy; Your Website 2014</p>
+                    <!--<p>Copyright &copy; Your Website 2014</p>-->
                 </div>
             </div>
         </footer>
@@ -234,15 +199,15 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
     <!-- Bootstrap Core JavaScript -->
     <script src="templates/templates/js/bootstrap.min.js"></script>
-	
-	<script src="templates/templates/js/ricerca.js"></script>
-
-
     <!-- jQuery -->
+    <script src="templates/templates/js/jquery.diyslider.min.js"></script>
+    <script src="templates/templates/js/ricerca.js"></script>
+    <script src="templates/templates/js/jquery.timeTo.js"></script>
     <script src="templates/templates/js/scorri.js"></script>
     <script src="templates/templates/js/scroll.js"></script>
+    <script src="templates/templates/js/slider.js"></script>
     <script src="templates/templates/js/popup.js"></script>
-
+    <script src="templates/templates/js/rating.js"></script>
 </body>
 
 </html>

@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2017-10-23 18:22:23
+<?php /* Smarty version Smarty-3.1.13, created on 2017-10-23 14:54:52
          compiled from "C:\xampp\htdocs\Web\Lastminute\templates\templates\Profilo.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:2120559ede69c5320e4-16652612%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'ff4b8c1cd80c01cb49399df47f88b11f57be6fdf' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Web\\Lastminute\\templates\\templates\\Profilo.tpl',
-      1 => 1508775443,
+      1 => 1508740604,
       2 => 'file',
     ),
   ),
@@ -15,8 +15,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
-  'version' => 'Smarty-3.1.13',
-  'unifunc' => 'content_59ede69c5a7cc6_29383205',
   'variables' => 
   array (
     'Utente' => 0,
@@ -25,6 +23,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'asteVinte' => 0,
   ),
   'has_nocache_code' => false,
+  'version' => 'Smarty-3.1.13',
+  'unifunc' => 'content_59ede69c5a7cc6_29383205',
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_59ede69c5a7cc6_29383205')) {function content_59ede69c5a7cc6_29383205($_smarty_tpl) {?><div class="col-md-9">
     <div class="row">
@@ -90,10 +90,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
             <h1 style="text-align: center;">Aste create</h1>
             <br>
 
+            <button id="go-left">&laquo;</button>
+            <button id="go-right">&raquo;</button>
+
             <div class="slider">
-                <button id="go-left">&laquo;</button>
-                <button id="go-right">&raquo;</button>
-                <div style="margin-top: 20px;">
+                <div>
                     <?php  $_smarty_tpl->tpl_vars['dato'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['dato']->_loop = false;
  $_from = $_smarty_tpl->tpl_vars['asteCreate']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
 foreach ($_from as $_smarty_tpl->tpl_vars['dato']->key => $_smarty_tpl->tpl_vars['dato']->value){
@@ -141,10 +142,11 @@ $_smarty_tpl->tpl_vars['dato']->_loop = true;
                 <h1 style="text-align: center;">Aste vinte</h1>
                 <br>
 
+                <button class="go-left">&laquo;</button>
+                <button class="go-right">&raquo;</button>
+
                 <div class="slider">
-                    <button id="go-left">&laquo;</button>
-                    <button id="go-right">&raquo;</button>
-                    <div style="margin-top: 20px;">
+                    <div>
                         <?php  $_smarty_tpl->tpl_vars['dato'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['dato']->_loop = false;
  $_from = $_smarty_tpl->tpl_vars['asteVinte']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
 foreach ($_from as $_smarty_tpl->tpl_vars['dato']->key => $_smarty_tpl->tpl_vars['dato']->value){
