@@ -48,9 +48,12 @@
 
         public function media($user){
 
-            $query="SELECT * FROM valutazione WHERE personaV ='".$user."'";
-            parent::execute($query);
-            return parent::getObject();  
+
+            $query="select avg(valutazione) as media from valutazione where valutazione.personaV = '".$user."'";
+            $FValutazione=  USingleton::getInstance('FValutazione');
+            $FValutazione->execute($query);
+            $tmp=$FValutazione->getresult();
+            return $tmp[0]; 
         }
 
         public function valuta($valutazione,$usernameV,$usernameC){

@@ -36,7 +36,7 @@
                     </ul>
                 </div>
 
-                <p style="text-align: center;">Media voto: 4.3</p>
+                <p style="text-align: center;">La media dei voti e': {$media}</p>
 
                 <div class='success-box'>
                     <div class='clearfix'></div>
