@@ -8,23 +8,23 @@ class EPrezzo{
     private $valuta;
 
     //METODI
-    function getIDprezzo() {
+    public function getIDprezzo() {
         return $this->IDprezzo;
     }
 
-    function getValore() {
+    public function getValore() {
         return $this->valore;
     }
 
-    function getValuta() {
+    public function getValuta() {
         return $this->valuta;
     }
 
-    function setIDprezzo($IDprezzo) {
+    public function setIDprezzo($IDprezzo) {
         $this->IDprezzo = $IDprezzo;
     }
 
-    function setValore($valore) {
+    public function setValore($valore) {
         if($valore>$this->valore){
             $this->valore = $valore;
             return true;
@@ -33,14 +33,20 @@ class EPrezzo{
             return false;
     }
 
-    function setValuta($valuta) {
+    public function setValuta($valuta) {
         $this->valuta = $valuta;
     }
-public function Object_array(EPrezzo $p){
+    public function Object_array(EPrezzo $p){
     
     $t=  get_object_vars($p);
     return $t;
 }
+
+    public function store($prezzo){
+        $FPrezzo=USingleton::getInstance('FPrezzo');     
+        $FPrezzo->store($prezzo);   
+
+    }
 
 }
 

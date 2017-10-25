@@ -60,13 +60,12 @@ public function Object_array(EValutazione $p){
 		$this->setUtenteV($usernameV);
 		$this->setVoto($valutazione);	
 		
-      /*if($FValutazione->verificaValutazione($usernameV, $usernameC))
-        return "utente gia valutato"; 
-        else{*/
-        /*$FValutazione->valuta($valutazione,$usernameV,$usernameC);    
-        return "utete valutato";*/
-       // }
 
+    }
+
+    public function store($EValutazione){
+        $FValutazione=  USingleton::getInstance('FValutazione');
+        $FValutazione->store($EValutazione);
     }
 
     }

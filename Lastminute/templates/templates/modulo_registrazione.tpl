@@ -5,8 +5,7 @@ var myFunction = function() {
             return false;
         }
         else {
-            alert('registrazione avvenuta con successo');
-            return true;
+             return true;
           }
 }
 
@@ -25,6 +24,10 @@ var check = function() {
      
 </script> 
 
+                        {if isset($errore)}
+                            {$errore}
+                        {/if}
+
 <div  class="col-md-9">
     <div class="row center-block">
         <div>
@@ -34,8 +37,10 @@ var check = function() {
                 <fieldset class="pull-left col-md-5 col-md-offset-1">
                     <legend><span class="number">1</span>Credenziali</legend>
                     <input type="text" name="username" id="username" class="field list-group-item center-block" value="" tabindex="5" required placeholder="Nome utente"/>
-                    <label id="eusername"></label>
-                    <input type="password" name="password" id="password" class="field list-group-item center-block" value="" tabindex="6" required placeholder="Password"/>
+                    <label id="eusername">
+                    </label>
+                    <input type="password" name="password" id="password" class="field list-group-item center-block" value="" 
+                 tabindex="6" required placeholder="Password"/>
                     <label id="epassword"></label>
                     <input type="password" name="password_1" id="password_1" class="field list-group-item center-block" value="" tabindex="7" onkeyup='check();' required placeholder="Ripeti la password"/>
                     <span id='message'></span>

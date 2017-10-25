@@ -83,6 +83,14 @@ class EPersona{
         return $FUtente->salva($appoggio);
 
         } 
+
+    public function load($id){
+
+        $FUtente=USingleton::getInstance('FUtente');
+        $appoggio=$FUtente->carica($id);
+        return $appoggio;
+   
+    }    
     }
 
 

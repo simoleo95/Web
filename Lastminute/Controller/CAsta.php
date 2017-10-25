@@ -28,6 +28,7 @@
                     return $this->seleziona();
             }
         }
+        //Effettua le ricerche tramite il parametro inserito
         public function ricerca(){
             $VAsta= USingleton::getInstance('VAsta');
             $v=$VAsta->getesto();
@@ -42,27 +43,29 @@
         public function offerta() {
             // Aggiungere esclusione su offerta
             $VAsta=USingleton::getInstance('VAsta');
-            $FAsta=USingleton::getInstance('FAsta');
-            $asta=$FAsta->load($VAsta->getId());
+            $EAsta=USingleton::getInstance('EAsta');
+            $asta=$EAsta->load($VAsta->getId());
             $prezzo=$asta->getPrezzoF();
 			$id_asta=$VAsta->getId();
-            $asta=$FAsta->load($id_asta);
+            $asta=$EAsta->load($id_asta);
 			$offerta=$VAsta->getOfferta();			
 			$prezzo=$asta->getPrezzoF()->getValore();
-		   if($offerta>$prezzo){
+            
+            //Se l'offerta e' corretta quindi maggiore del prezzo attuale
+		    if($offerta>$prezzo){
 				$Prezzo=$asta->getPrezzoF();
 				$Prezzo->setValore($offerta);
 				$FPrezzo=USingleton::getInstance('FPrezzo');				
                 $FPrezzo->update($Prezzo);
 				$session=USingleton::getInstance('USession');
-                $FUtente=USingleton::getInstance('FUtente');
-                $utente=$FUtente->load($session->leggi_valore('username'));
+                $EUtente=USingleton::getInstance('EUtente');
+                $utente=$EUtente->load($session->leggi_valore('username'));
 				$asta->setUtentevincitore($utente);
 			   //variabile creatore
 			   $user=USingleton::getInstance('USession');
               
 				
-               $FAsta->update($asta);
+               $EAsta->update($asta);
 			   $CRegistrazione = USingleton::getInstance('CRegistrazione');
                $registrato = $CRegistrazione->getRegistrato();
 			   		  
@@ -74,6 +77,7 @@
                 $VAsta->displayTemplate();
 				
 			}
+            //altrimenti rimani in questa pagina e mostra l'errores
 			else {
 				$errore="<script type='text/javascript'>alert('Inserisci un prezzo maggiore di quello attuale!');</script>";;
 				$VAsta->setLayout('\shop_item.tpl');
@@ -86,12 +90,12 @@
 			}
 		}
           
-
+        //Vai sulla pagina per i dettagli dell'asta
         public function dettagli() {
             $VAsta=USingleton::getInstance('VAsta');
             $VAsta->setLayout('\shop_item.tpl');
-            $FAsta=USingleton::getInstance('FAsta');
-            $asta=$FAsta->load($VAsta->getId());
+            $EAsta=USingleton::getInstance('EAsta');
+            $asta=$EAsta->load($VAsta->getId());
             $VAsta->impostaDati('asta',$asta);
             $CRegistrazione = USingleton::getInstance('CRegistrazione');
             $registrato = $CRegistrazione->getRegistrato();
@@ -103,12 +107,14 @@
             $VAsta->displayTemplate();
         }
 
+        //Vai sulla pagina inserisci nuovo annuncio
         public function inserisci() {
             $VAsta=USingleton::getInstance('VAsta');
             $VAsta->setLayout('\insAnnuncio.tpl');
             return $VAsta->processaTemplate();
         }
 
+        //Vai sulla pagina profilo    
         public function profilo(){
 
            /* $VAsta=USingleton::getInstance('VAsta');            
@@ -117,26 +123,25 @@
             $VMieAste->setLayout('\Profilo.tpl');
             return $VMieAste->processaTemplate();
         }
-
+        //Effettua la valutazione di un utente
         public function valuta(){
+            $EValutazione=USingleton::getInstance('EValutazione');
             $VMieAste=USingleton::getInstance('VMieAste');
-			$Futente=USingleton::getInstance('FUtente');
+			$Eutente=USingleton::getInstance('EUtente');
 			$Fvalutazione=USingleton::getInstance('FValutazione');
             $valutazione=$VMieAste->getValutazione();
             $usernameC = $VMieAste->getUsername();
             $session=USingleton::getInstance('USession');
             $usernameV=$session->leggi_valore('username');
-			$uO=$Futente->load($usernameC);
-			$uR=$Futente->load($usernameV);
+			$uO=$Eutente->load($usernameC);
+			$uR=$Eutente->load($usernameV);
 			
 			if($usernameC != $usernameV){
-			    $EValutazione = new EValutazione();
+
 			    $EValutazione->valuta($valutazione,$uO,$uR);
 			}
-			$Fvalutazione->store($EValutazione);
+			$EValutazione->store($EValutazione);
 			
-            //header('Location: index.php?controller=asta&task=mieAste');
-            //echo "<script type='text/javascript'>alert('".$errore."');window.location = 'index.php?controller=asta&task=profilo';</script>";
         }
 			
 
@@ -146,7 +151,7 @@
             // Creazione dell'oggetto EPrezzo
             $EPrezzo=new EPrezzo();
 			$prezzofinale=new EPrezzo();
-            $FPrezzo=USingleton::getInstance('FPrezzo');
+            $EPrezzo=USingleton::getInstance('EPrezzo');
 
             //prezzo iniziale
             $EPrezzo->setIDprezzo('');
@@ -159,30 +164,27 @@
             $prezzofinale->setValuta('euro');
 			
 			
-            $FPrezzo->store($prezzofinale);
-            $FPrezzo->store($EPrezzo);
+            $EPrezzo->store($prezzofinale);
+            $EPrezzo->store($EPrezzo);
 
             // Creazione dell'oggetto EArticolo
             $EArticolo=USingleton::getInstance('EArticolo');
-            $FArticolo=USingleton::getInstance('FArticolo');
-
+            
             $EArticolo->setIDarticolo('');
             $EArticolo->setTitolo($VAsta->getTitolo());
             $EArticolo->setDescrizione($VAsta->getDescrizione());
             $EArticolo->setFoto($VAsta->getFoto());
             $EArticolo->setCategoria($VAsta->getCategoria());
 
-            $FArticolo->store($EArticolo);
+            $EArticolo->store($EArticolo);
 
             // Creazione dell'oggetto EAsta
             $EAsta=USingleton::getInstance('EAsta');
-            $FAsta=USingleton::getInstance('FAsta');
 
             // Aggiungere metodo da qualche parte che fornisce l'utente attuale
             $EUtente=USingleton::getInstance('EUtente');
-            $FUtente=USingleton::getInstance('FUtente');
             $session=USingleton::getInstance('USession');
-            $EUtente=$FUtente->load($session->leggi_valore('username'));
+            $EUtente=$EUtente->load($session->leggi_valore('username'));
 
             $EAsta->setIdAsta('');
             $EAsta->setDataP(date("Y-m-d H:i:s"));
@@ -193,7 +195,7 @@
             $EAsta->setUtentevincitore($EUtente);
             $EAsta->setArticolo($EArticolo);
 
-            $FAsta->store($EAsta);
+            $EAsta->store($EAsta);
 
             echo "<script type='text/javascript'>alert('Asta inserita correttamente!');window.location = 'index.php';</script>";
 

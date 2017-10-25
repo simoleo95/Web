@@ -86,5 +86,25 @@
             return $risultato;
             
      }
+        public function inScadenza($num){
+                    $query="SELECT * FROM `asta` ORDER BY dataF ASC LIMIT 6";
+        if($num != "")
+          $query .= " OFFSET ".$num;
+          
+        parent::execute($query); 
+        return parent::getObjects();
+        }
+
+        public function ricercaDiUtente($user){
+            $query="SELECT * FROM Asta WHERE userc ='".$user."'";
+            parent::execute($query); 
+            return parent::getObjects();
+        }
+
+        public function ricercaVincitore($user){
+            $query="SELECT * FROM Asta WHERE userv ='".$user."'";
+            parent::execute($query); 
+            return parent::getObjects();
+        }
     }
 ?>

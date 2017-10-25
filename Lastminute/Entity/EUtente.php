@@ -37,6 +37,10 @@ class EUtente extends Epersona{
 		}
 	
 	}
-
+	public function load($username){
+		$FUtente=USingleton::getInstance('FUtente');
+		$utente=$FUtente->load($username);
+		return $utente;
+	}
 }
 ?>

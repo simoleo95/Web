@@ -59,15 +59,19 @@ private $layout='\modulo_registrazione.tpl';
                 return true;
  }    
 
-    public function processaTemplate() {
-        global $config;
-        $contenuto=$this->fetch($config['smarty']['template_dir'].$this->layout);
-        return $contenuto;
-    }
+        public function processaTemplate() {
+            global $config;
+            $contenuto=$this->fetch($config['smarty']['template_dir'].$this->layout);
+            return $contenuto;
+        }
 
-    public function setLayout($tlp) {
-        $this->layout=$tlp;
-                 
-    }
+        public function displayTemplate() {
+            global $config;
+            $this->display($config['smarty']['template_dir'].$this->layout);
+        }
+
+        public function setLayout($layout) {
+            $this->layout=$layout;
+        }
 }
  ?>

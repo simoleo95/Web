@@ -20,6 +20,7 @@
             }
         }
 
+        //Verifica se l'utente è loggato oppure no
         public function getRegistrato(){
             $autenticato=false;
             $session= USingleton::getInstance('USession');
@@ -27,6 +28,7 @@
             $controller=$VRegistrazione->getController();
             $this->username= $VRegistrazione->getUsername();
             $this->password=$VRegistrazione->getPassword();
+            
             if ($session->leggi_valore('username')!=false) {
                 $autenticato=true;
             }
@@ -41,13 +43,13 @@
             $this->errore='';
 
             // Da impostare qui i dati da inserire nel template dopo il login
-            //$VRegistrazione->impostaDati('username',$session->leggi_valore('username'));
 
             return $autenticato;
 
 
         }
 
+        //Verifica che l'utente registrato possa loggare correttamente
         public function autentica($u,$p){
             $Futente=new FUtente();
             $f=$Futente->load($u);
@@ -61,49 +63,51 @@
                     $this->errore= 'Username o password errati';
             }
             else
-
                 $this->errore = 'L\'account non esiste';
 
             return false;
         }
 
+        //Mostra pagina per la registrazione
         public function registra() {
-        $VCreaAccount=USingleton::getInstance('VCreaAccount');        
-        $VCreaAccount->setLayout('\modulo_registrazione.tpl');
-        
-
-        return $VCreaAccount->processaTemplate();
-    }
-     public function logout(){
-         $USession=USingleton::getInstance('USession');
-         $USession->cancella_valore('username'); 
-     }
-    //Usato per la registrazione dell'utente
-    public function salva(){
-
-        
-        $VCreaAccount=USingleton::getInstance('VCreaAccount');  
-        $password=$VCreaAccount->getPassword();
-        $password_1=$VCreaAccount->getPassword_1();
-        $EUtente = new EUtente();
-        $EUtente->setNome($VCreaAccount->getNome());
-        $EUtente->setCognome($VCreaAccount->getCognome());
-        $EUtente->setEmail($VCreaAccount->getEmail());
-        $EUtente->setUsername($VCreaAccount->getUsername());
-        $EUtente->setPassword($password);
-       $errore = $EUtente->store();
-
-        if ($errore == 'Utente creato correttamente') {
-         header('Location:home');   
+            $VCreaAccount=USingleton::getInstance('VCreaAccount');        
+            $VCreaAccount->setLayout('\modulo_registrazione.tpl');
+            return $VCreaAccount->processaTemplate();
         }
-        else{
-         header('Location:Registrazione');
         
+        //Esegue il logout
+        public function logout(){
+            $USession=USingleton::getInstance('USession');
+            $USession->cancella_valore('username'); 
         }
-    }
     
+        //Usato per la registrazione dell'utente
+        public function salva(){
+            $VCreaAccount=USingleton::getInstance('VCreaAccount');  
+            $password=$VCreaAccount->getPassword();
+            $password_1=$VCreaAccount->getPassword_1();
+            $user=$VCreaAccount->getUsername();
+            $EUtente = new EUtente();
+            $EUtente->setNome($VCreaAccount->getNome());
+            $EUtente->setCognome($VCreaAccount->getCognome());
+            $EUtente->setEmail($VCreaAccount->getEmail());
+            $EUtente->setUsername($user);
+            $EUtente->setPassword($password);
+        
+            $risultato = $EUtente->store();
 
-
-  }
+            //Se l'utente ha rispettato le regole per la registrazione viene reinderizzato alla home
+            if ($risultato == 'Utente creato correttamente') {
+                header('Location:home');   
+            }
+            //Altrimenti gli si mostra l'errore e rimane in quella pagina
+            else{
+                $errore="<script type='text/javascript'>alert('$risultato');</script>";
+                $VCreaAccount->setLayout('/modulo_registrazione.tpl');
+                $VCreaAccount->impostaDati('errore',$errore);
+                $VCreaAccount->displayTemplate();
+            }
+    }
+}
     
     

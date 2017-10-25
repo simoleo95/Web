@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2017-10-23 20:08:50
+<?php /* Smarty version Smarty-3.1.13, created on 2017-10-25 11:00:06
          compiled from "C:\xampp\htdocs\Web\Lastminute\templates\templates\modulo_registrazione.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:1333159eb59024eef96-69143312%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '32c407b2fc7148b92bfba969e1a6f99fc9ee97bf' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Web\\Lastminute\\templates\\templates\\modulo_registrazione.tpl',
-      1 => 1508782126,
+      1 => 1508922003,
       2 => 'file',
     ),
   ),
@@ -17,6 +17,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'version' => 'Smarty-3.1.13',
   'unifunc' => 'content_59eb590251f745_13006174',
+  'variables' => 
+  array (
+    'errore' => 0,
+  ),
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_59eb590251f745_13006174')) {function content_59eb590251f745_13006174($_smarty_tpl) {?><script>
@@ -26,8 +30,7 @@ var myFunction = function() {
             return false;
         }
         else {
-            alert('registrazione avvenuta con successo');
-            return true;
+             return true;
           }
 }
 
@@ -46,6 +49,11 @@ var check = function() {
      
 </script> 
 
+                        <?php if (isset($_smarty_tpl->tpl_vars['errore']->value)){?>
+                            <?php echo $_smarty_tpl->tpl_vars['errore']->value;?>
+
+                        <?php }?>
+
 <div  class="col-md-9">
     <div class="row center-block">
         <div>
@@ -55,8 +63,10 @@ var check = function() {
                 <fieldset class="pull-left col-md-5 col-md-offset-1">
                     <legend><span class="number">1</span>Credenziali</legend>
                     <input type="text" name="username" id="username" class="field list-group-item center-block" value="" tabindex="5" required placeholder="Nome utente"/>
-                    <label id="eusername"></label>
-                    <input type="password" name="password" id="password" class="field list-group-item center-block" value="" tabindex="6" required placeholder="Password"/>
+                    <label id="eusername">
+                    </label>
+                    <input type="password" name="password" id="password" class="field list-group-item center-block" value="" 
+                 tabindex="6" required placeholder="Password"/>
                     <label id="epassword"></label>
                     <input type="password" name="password_1" id="password_1" class="field list-group-item center-block" value="" tabindex="7" onkeyup='check();' required placeholder="Ripeti la password"/>
                     <span id='message'></span>
