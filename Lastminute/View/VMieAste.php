@@ -3,6 +3,8 @@
     class VMieAste extends View{
         private $layout='\Profilo.tpl';
 
+
+
     public function processaTemplate() {
         global $config;
 
@@ -22,6 +24,7 @@
         $this->assign('asteCreate', $asteCreate);
         $this->assign('asteVinte', $asteVinte);
         $this->assign('Utente',$Utente);
+        $this->assign('creatore',$session->leggi_valore('username'));
 
         //Calcolo della media dei voti
         $EValutazione =USingleton::getInstance('EValutazione');
