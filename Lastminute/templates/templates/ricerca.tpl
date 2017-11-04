@@ -1,4 +1,4 @@
-<div id="ricerca" class="col-md-9">
+{if !$ajax}<div id="ricerca" class="col-md-9">{/if}
 <div class="row">
         {if $dati != false}
             {foreach from=$dati item=dato}
@@ -17,13 +17,13 @@
                             <p class="prezzo pf">{$dato->getPrezzoF()->getValore()} {$dato->getPrezzoF()->getValuta()}</p>
                             <p>{$dato->getArticolo()->getDescrizione()}</p>
                         </div>
-                      <!--  <div style="margin-top:-25px; text-align: center; font-size: 16px;">
-                            <p style="font-weight: bold;">Scade il: {$dato->getDataF()}</p>
-                        </div> -->
+                     
                     </div>
                 </div>
             {/foreach}
         {/if}
     </div>
 
-</div>
+{if !$ajax}</div>{/if}
+
+<script src="templates/templates/js/popup.js"></script>

@@ -33,10 +33,6 @@
             $this->display($config['smarty']['template_dir'].'\ricerca.tpl');
         }
 		
-		public function displayTemplate1() {
-            global $config;
-            $this->display($config['smarty']['template_dir'].'\ricerca1.tpl');
-        }
-       
+		
     }
 ?>
