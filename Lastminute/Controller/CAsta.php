@@ -134,9 +134,6 @@
 			    $EValutazione->valuta($valutazione,$uO,$uR);
 			}
 			$Fvalutazione->store($EValutazione);
-			
-            //header('Location: index.php?controller=asta&task=mieAste');
-            //echo "<script type='text/javascript'>alert('".$errore."');window.location = 'index.php?controller=asta&task=profilo';</script>";
         }
 			
 

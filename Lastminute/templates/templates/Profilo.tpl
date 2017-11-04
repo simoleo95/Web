@@ -17,7 +17,7 @@
             <section class='rating-widget' style="">
                 <!-- Rating Stars Box -->
                 <div class='rating-stars text-center'>
-                    <ul id='stars'>
+                    <ul {if $creatore && ($creatore neq $Utente->getUsername())}id='stars'{/if}>
                         <li class='star' title='Poor' data-value='1'>
                             <i class='fa fa-star fa-fw'></i>
                         </li>
@@ -37,6 +37,9 @@
                 </div>
 
                 <p style="text-align: center;">Media voto: 4.3</p>
+
+                {if $creatore  eq $Utente->getUsername()} <p style="text-align: center; font-weight: bold;">Non puoi autovalutarti.</p> {/if}
+                {if !$creatore} <p style="text-align: center; font-weight: bold;"> Fai il login per valutare un utente. </p> {/if}
 
                 <div class='success-box'>
                     <div class='clearfix'></div>

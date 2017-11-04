@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e1bf6216-67df-4474-abef-f8edc160635b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lastminute/Foundation/FValutazione.php" afterPath="$PROJECT_DIR$/Lastminute/Foundation/FValutazione.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lastminute/includes/config.inc.php" afterPath="$PROJECT_DIR$/Lastminute/includes/config.inc.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Lastminute/templates/templates_c'/32c407b2fc7148b92bfba969e1a6f99fc9ee97bf.file.modulo_registrazione.tpl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Lastminute/templates/templates_c'/63f5c4c6ff0cac3ae626d3b7ecd37172a4d841e7.file.insAnnuncio.tpl.php" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lastminute/Controller/CAsta.php" afterPath="$PROJECT_DIR$/Lastminute/Controller/CAsta.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lastminute/View/VMieAste.php" afterPath="$PROJECT_DIR$/Lastminute/View/VMieAste.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lastminute/templates/templates/Profilo.tpl" afterPath="$PROJECT_DIR$/Lastminute/templates/templates/Profilo.tpl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lastminute/templates/templates_c'/585f0928f5ae2fb3addfe98f747341f1eb070ed6.file.login.tpl.php" afterPath="$PROJECT_DIR$/Lastminute/templates/templates_c'/585f0928f5ae2fb3addfe98f747341f1eb070ed6.file.login.tpl.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lastminute/templates/templates_c'/761f5145a91760afe928f53d78ffc6c4b1733048.file.tasto_insAnnuncio.tpl.php" afterPath="$PROJECT_DIR$/Lastminute/templates/templates_c'/761f5145a91760afe928f53d78ffc6c4b1733048.file.tasto_insAnnuncio.tpl.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lastminute/templates/templates_c'/a3216d14c5a1df902384e9234de22e8834fe7bd6.file.shop_item.tpl.php" afterPath="$PROJECT_DIR$/Lastminute/templates/templates_c'/a3216d14c5a1df902384e9234de22e8834fe7bd6.file.shop_item.tpl.php" />
@@ -11,13 +15,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lastminute/templates/templates_c'/dd6e43cf686f3a96e755b73f1c85a12bf2fdc4ed.file.ricerca.tpl.php" afterPath="$PROJECT_DIR$/Lastminute/templates/templates_c'/dd6e43cf686f3a96e755b73f1c85a12bf2fdc4ed.file.ricerca.tpl.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lastminute/templates/templates_c'/e7e6566d21414ab7baa89c20c13fd5cb6ab6a1d4.file.home.tpl.php" afterPath="$PROJECT_DIR$/Lastminute/templates/templates_c'/e7e6566d21414ab7baa89c20c13fd5cb6ab6a1d4.file.home.tpl.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lastminute/templates/templates_c'/ec28609ace976623b38fb407da98f90a6ad1c882.file.tasto_insMieAste.tpl.php" afterPath="$PROJECT_DIR$/Lastminute/templates/templates_c'/ec28609ace976623b38fb407da98f90a6ad1c882.file.tasto_insMieAste.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lastminute/templates/templates/Profilo.tpl" afterPath="$PROJECT_DIR$/Lastminute/templates/templates/Profilo.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lastminute/templates/templates/js/slider.js" afterPath="$PROJECT_DIR$/Lastminute/templates/templates/js/slider.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lastminute/templates/templates/css/ricerca.css" afterPath="$PROJECT_DIR$/Lastminute/templates/templates/css/ricerca.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lastminute/Controller/CAsta.php" afterPath="$PROJECT_DIR$/Lastminute/Controller/CAsta.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lastminute/templates/templates_c'/ff4b8c1cd80c01cb49399df47f88b11f57be6fdf.file.Profilo.tpl.php" afterPath="$PROJECT_DIR$/Lastminute/templates/templates_c'/ff4b8c1cd80c01cb49399df47f88b11f57be6fdf.file.Profilo.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lastminute/Entity/ECatalogo.php" afterPath="$PROJECT_DIR$/Lastminute/Entity/ECatalogo.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -48,22 +46,57 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="CAsta.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Lastminute/Controller/CAsta.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="129" column="43" lean-forward="false" selection-start-line="129" selection-start-column="43" selection-end-line="129" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VMieAste.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Lastminute/View/VMieAste.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="27" column="45" lean-forward="true" selection-start-line="27" selection-start-column="45" selection-end-line="27" selection-end-column="45" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VAsta.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Lastminute/View/VAsta.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="86" column="9" lean-forward="true" selection-start-line="86" selection-start-column="9" selection-end-line="86" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="View.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Lastminute/View/View.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="40" lean-forward="true" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="FValutazione.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Lastminute/Foundation/FValutazione.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
+            <state relative-caret-position="442">
               <caret line="26" column="33" lean-forward="false" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
               <folding>
-                <marker date="1508735960000" expanded="true" signature="299:1080" ph="..." />
                 <marker date="1508735960000" expanded="true" signature="434:517" ph="SELECT valut... valutazione" />
                 <marker date="1508735960000" expanded="true" signature="597:805" ph="..." />
                 <marker date="1508735960000" expanded="true" signature="624:749" ph="INSERT into valutazione... " />
                 <marker date="1508735960000" expanded="true" signature="1048:1070" ph="..." />
-                <marker date="1508735960000" expanded="true" signature="1119:1478" ph="..." />
-                <marker date="1508735960000" expanded="true" signature="1530:1743" ph="..." />
-                <marker date="1508735960000" expanded="true" signature="1783:1948" ph="..." />
                 <marker date="1508735960000" expanded="true" signature="1805:1858" ph="SELECT * FRO... valutazione" />
-                <marker date="1508735960000" expanded="true" signature="2018:2221" ph="..." />
                 <marker date="1508735960000" expanded="true" signature="2040:2173" ph="INSERT into valutazione... " />
                 <marker date="1508735960000" expanded="true" signature="2312:2369" ph="SELECT * FRO... valutazione" />
               </folding>
@@ -71,7 +104,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.inc.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="config.inc.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Lastminute/includes/config.inc.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
@@ -93,71 +126,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ECatalogo.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Lastminute/Entity/ECatalogo.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="765">
-              <caret line="45" column="13" lean-forward="false" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
-              <folding>
-                <marker date="1508735960000" expanded="true" signature="460:507" ph="SELECT * FRO... asta" />
-                <marker date="1508735960000" expanded="true" signature="993:1036" ph="SELECT * FRO... Asta" />
-                <marker date="1508735960000" expanded="true" signature="1486:1519" ph="SELECT * FRO... Asta" />
-                <marker date="1508735960000" expanded="true" signature="1486:1523" ph="SELECT * FRO... Asta" />
-                <marker date="1508735960000" expanded="true" signature="1486:1560" ph="SELECT * FRO... Asta" />
-                <marker date="1508735960000" expanded="true" signature="1583:1626" ph="SELECT * FRO... Asta" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ricerca.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Lastminute/templates/templates/css/ricerca.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="424">
-              <caret line="47" column="17" lean-forward="false" selection-start-line="47" selection-start-column="17" selection-end-line="47" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="slider.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Lastminute/templates/templates/js/slider.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="50" lean-forward="true" selection-start-line="20" selection-start-column="50" selection-end-line="20" selection-end-column="50" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Profilo.tpl" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Profilo.tpl" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Lastminute/templates/templates/Profilo.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1037">
-              <caret line="61" column="37" lean-forward="false" selection-start-line="61" selection-start-column="37" selection-end-line="61" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="home.tpl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Lastminute/templates/templates/home.tpl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="985">
-              <caret line="139" column="0" lean-forward="false" selection-start-line="139" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EValutazione.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Lastminute/Entity/EValutazione.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1088">
-              <caret line="64" column="38" lean-forward="false" selection-start-line="64" selection-start-column="38" selection-end-line="64" selection-end-column="38" />
+            <state relative-caret-position="442">
+              <caret line="41" column="80" lean-forward="false" selection-start-line="41" selection-start-column="80" selection-end-line="41" selection-end-column="80" />
               <folding>
-                <marker date="1508735960000" expanded="true" signature="1124:1177" ph="SELECT * FRO... valutazione" />
+                <element signature="n#style#0;n#p#1;n#section#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#2;n#section#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CHome.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Lastminute/Controller/CHome.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -229,7 +216,6 @@
         <option value="$PROJECT_DIR$/Lastminute/templates/templates/js/scroll.js" />
         <option value="$PROJECT_DIR$/Lastminute/templates/templates/insAnnuncio.tpl" />
         <option value="$PROJECT_DIR$/Lastminute/templates/templates/tasto_insMieAste.tpl" />
-        <option value="$PROJECT_DIR$/Lastminute/View/VMieAste.php" />
         <option value="$PROJECT_DIR$/Lastminute/Foundation/FAsta.php" />
         <option value="$PROJECT_DIR$/Lastminute/templates/templates/shop_item.tpl" />
         <option value="$PROJECT_DIR$/Lastminute/templates/templates/css/rating.css" />
@@ -239,12 +225,13 @@
         <option value="$PROJECT_DIR$/Lastminute/templates/templates/home.tpl" />
         <option value="$PROJECT_DIR$/Lastminute/Entity/ECatalogo.php" />
         <option value="$PROJECT_DIR$/Lastminute/templates/templates/js/slider.js" />
-        <option value="$PROJECT_DIR$/Lastminute/templates/templates/Profilo.tpl" />
         <option value="$PROJECT_DIR$/Lastminute/templates/templates/css/ricerca.css" />
-        <option value="$PROJECT_DIR$/Lastminute/Controller/CAsta.php" />
         <option value="$PROJECT_DIR$/Lastminute/templates/templates/js/rating.js" />
         <option value="$PROJECT_DIR$/Lastminute/Foundation/FValutazione.php" />
         <option value="$PROJECT_DIR$/Lastminute/includes/config.inc.php" />
+        <option value="$PROJECT_DIR$/Lastminute/Controller/CAsta.php" />
+        <option value="$PROJECT_DIR$/Lastminute/View/VMieAste.php" />
+        <option value="$PROJECT_DIR$/Lastminute/templates/templates/Profilo.tpl" />
       </list>
     </option>
   </component>
@@ -279,6 +266,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -512,7 +500,6 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -678,11 +665,12 @@
       <workItem from="1508748006993" duration="586000" />
       <workItem from="1508752614822" duration="4532000" />
       <workItem from="1508763839145" duration="2540000" />
+      <workItem from="1509787677300" duration="1054000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95142000" />
+    <option name="totallyTimeSpent" value="96386000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -708,23 +696,13 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21633889" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -746,13 +724,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Lastminute/Foundation/Utility/USEssion.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../php/php.ini">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="186">
@@ -905,14 +876,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Lastminute/Controller/CHome.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Lastminute/Entity/EPersona.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="578">
@@ -933,13 +896,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Lastminute/View/VAsta.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="86" column="9" lean-forward="true" selection-start-line="86" selection-start-column="9" selection-end-line="86" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -987,13 +943,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Lastminute/View/VMieAste.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="52" lean-forward="false" selection-start-line="16" selection-start-column="52" selection-end-line="16" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Lastminute/templates/templates/ricerca.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -1026,15 +975,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="20" column="50" lean-forward="true" selection-start-line="20" selection-start-column="50" selection-end-line="20" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Lastminute/Controller/CAsta.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="95" column="52" lean-forward="true" selection-start-line="95" selection-start-column="52" selection-end-line="95" selection-end-column="52" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1065,7 +1005,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Lastminute/templates/templates/home.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="985">
+        <state relative-caret-position="2363">
           <caret line="139" column="0" lean-forward="false" selection-start-line="139" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
           <folding />
         </state>
@@ -1073,16 +1013,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Lastminute/templates/templates/css/ricerca.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="424">
+        <state relative-caret-position="799">
           <caret line="47" column="17" lean-forward="false" selection-start-line="47" selection-start-column="17" selection-end-line="47" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Lastminute/templates/templates/Profilo.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1037">
-          <caret line="61" column="37" lean-forward="false" selection-start-line="61" selection-start-column="37" selection-end-line="61" selection-end-column="37" />
           <folding />
         </state>
       </provider>
@@ -1107,19 +1039,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Lastminute/Foundation/FValutazione.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
+        <state relative-caret-position="442">
           <caret line="26" column="33" lean-forward="false" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
           <folding>
-            <marker date="1508735960000" expanded="true" signature="299:1080" ph="..." />
             <marker date="1508735960000" expanded="true" signature="434:517" ph="SELECT valut... valutazione" />
             <marker date="1508735960000" expanded="true" signature="597:805" ph="..." />
             <marker date="1508735960000" expanded="true" signature="624:749" ph="INSERT into valutazione... " />
             <marker date="1508735960000" expanded="true" signature="1048:1070" ph="..." />
-            <marker date="1508735960000" expanded="true" signature="1119:1478" ph="..." />
-            <marker date="1508735960000" expanded="true" signature="1530:1743" ph="..." />
-            <marker date="1508735960000" expanded="true" signature="1783:1948" ph="..." />
             <marker date="1508735960000" expanded="true" signature="1805:1858" ph="SELECT * FRO... valutazione" />
-            <marker date="1508735960000" expanded="true" signature="2018:2221" ph="..." />
             <marker date="1508735960000" expanded="true" signature="2040:2173" ph="INSERT into valutazione... " />
             <marker date="1508735960000" expanded="true" signature="2312:2369" ph="SELECT * FRO... valutazione" />
           </folding>
@@ -1131,6 +1058,57 @@
         <state relative-caret-position="119">
           <caret line="7" column="39" lean-forward="false" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lastminute/Controller/CHome.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lastminute/View/VAsta.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="86" column="9" lean-forward="true" selection-start-line="86" selection-start-column="9" selection-end-line="86" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lastminute/View/View.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="40" lean-forward="true" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lastminute/Controller/CAsta.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="129" column="43" lean-forward="false" selection-start-line="129" selection-start-column="43" selection-end-line="129" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lastminute/View/VMieAste.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="27" column="45" lean-forward="true" selection-start-line="27" selection-start-column="45" selection-end-line="27" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lastminute/templates/templates/Profilo.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="41" column="80" lean-forward="false" selection-start-line="41" selection-start-column="80" selection-end-line="41" selection-end-column="80" />
+          <folding>
+            <element signature="n#style#0;n#p#1;n#section#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#2;n#section#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
