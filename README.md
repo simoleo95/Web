@@ -21,8 +21,8 @@ L'applicazione semplifica la compravendita di prodotti online fra privati e graz
       * Nome dell’asta in formato stringa;  
       * Descrizione del prodotto sotto forma di stringa;  
       * Categoria che si presenta come una select, quindi senza avere la possibilità di aggiungerne di nuove oltre a quelle offerte dal sistema;  
-      * Immagini per un massimo di 5 elementi, di cui una obbligatoria;  
-      * Durata dell’asta espressa in ore che va da un minimo di 1 ora fino ad un massimo di 24 ore;  
+      * Una immagine obbligatoria;  
+      * Durata dell’asta espressa in giorni;  
       * Prezzo di partenza che rappresenta la base da cui far partire le offerte.  
   * L’utente inserisce tutti i dati nella form e clicca sul bottone submit;  
   * Il sistema risponderà all’utente in uno dei seguenti modi:  
@@ -48,3 +48,5 @@ L'applicazione semplifica la compravendita di prodotti online fra privati e graz
 * _Valutazione del venditore:_ ogni utente che ha effettuato acquisti tramite l’app, ha la possibilità di rilisciare una valutazione (da 1 a 5) al venditore da cui ha acquistato il prodotto. Per effettuare ciò l’utente deve recarsi sul profilo del venditore nella quale troverà un apposito spazio addetto a tale compito. Ogni utente venditore avrà sul proprio profilo la media delle valutazioni ricevute per fornire maggiori dettagli ai prossimi acquirenti.
 
 ### Modello di dominio
+
+![Modello di dominio](ModelloDiDominio.jpg "Modello di dominio")
