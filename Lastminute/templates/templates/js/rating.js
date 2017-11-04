@@ -51,7 +51,7 @@ $(document).ready(function(){
 	  var utente= $("#utenteP").text();
 	  var valutazione=ratingValue;
 	  var url= "index.php?ajax=true&controller=asta&task=valuta&valutazione="+valutazione+"&username="+utente;
-	  alert(url);
+	 
 	 $.ajax({
 		  
 		  type: "POST",
@@ -59,7 +59,7 @@ $(document).ready(function(){
             dataType: "html",
             success: function(result)
             {
-            alert(result);
+            alert('La recensione è stata inserita correttamente');
 			
 			 
 			 
