@@ -1,4 +1,29 @@
-<script>
+<?php /* Smarty version Smarty-3.1.13, created on 2017-10-25 11:00:06
+         compiled from "C:\xampp\htdocs\Web\Lastminute\templates\templates\modulo_registrazione.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:1333159eb59024eef96-69143312%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_valid = $_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    '32c407b2fc7148b92bfba969e1a6f99fc9ee97bf' => 
+    array (
+      0 => 'C:\\xampp\\htdocs\\Web\\Lastminute\\templates\\templates\\modulo_registrazione.tpl',
+      1 => 1508922003,
+      2 => 'file',
+    ),
+  ),
+  'nocache_hash' => '1333159eb59024eef96-69143312',
+  'function' => 
+  array (
+  ),
+  'version' => 'Smarty-3.1.13',
+  'unifunc' => 'content_59eb590251f745_13006174',
+  'variables' => 
+  array (
+    'errore' => 0,
+  ),
+  'has_nocache_code' => false,
+),false); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_59eb590251f745_13006174')) {function content_59eb590251f745_13006174($_smarty_tpl) {?><script>
 var myFunction = function() {
         if (document.getElementById('password').value !== document.getElementById('password_1').value || document.getElementById('password').value=='') {
             alert('campi non validi prego ricontrollare');
@@ -24,9 +49,10 @@ var check = function() {
      
 </script> 
 
-                        {if isset($errore)}
-                            {$errore}
-                        {/if}
+                        <?php if (isset($_smarty_tpl->tpl_vars['errore']->value)){?>
+                            <?php echo $_smarty_tpl->tpl_vars['errore']->value;?>
+
+                        <?php }?>
 
 <div  class="col-md-9">
     <div class="row center-block">
@@ -63,4 +89,4 @@ var check = function() {
           </div>
         </div>
     </div>
-</div>
+</div><?php }} ?>

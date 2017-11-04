@@ -53,5 +53,10 @@
             $t=get_object_vars($p);
             return $t;
         }
+
+        public function store($EArticolo){
+            $FArticolo=USingleton::getInstance('FArticolo');
+            $FArticolo->store($EArticolo);
+        }
     }
 ?>

@@ -25,6 +25,14 @@
         $this->assign('asteVinte', $asteVinte);
         $this->assign('Utente',$Utente);
         $this->assign('creatore',$session->leggi_valore('username'));
+
+        //Calcolo della media dei voti
+        $EValutazione =USingleton::getInstance('EValutazione');
+        $media = $EValutazione->getMedia($user);
+
+
+        $this->assign('media',$media);
+
         //$Evalutazione = new EValutazione();
         //$ris = $Evalutazione->media($user);
         //$this->assign('tuaValutazione', $ris);

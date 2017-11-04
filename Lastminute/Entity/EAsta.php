@@ -58,6 +58,7 @@ class EAsta{
         $this->utentevincitore = $utentevincitore;
     }
 
+    //Se l'offerta è maggiore di quella attuale il prezzo inserito e' valido
     public function offerta(EUtente $u,  EPrezzo $p){
         
         if($p->getvalore()> $this->prezzoF->getvalore()){
@@ -88,12 +89,28 @@ class EAsta{
         $this->articolo = $articolo;
     }
 
+    //Carica tramite l'identificativo un'asta e viene ritornata in uscita
+    public function load($id){
+        $FAsta=USingleton::getInstance('FAsta');
+        $asta=$FAsta->load($id);
+        return $asta;
 
-public function Object_array(EAsta $p){
+    }
+    public function update($asta){
+        $FAsta=USingleton::getInstance('FAsta');
+        $FAsta->update($asta);
+    }
+
+    public function Object_array(EAsta $p){
     
     $t=get_object_vars($p);
     return $t;
 }
+
+    public function store($EAsta){
+        $FAsta=USingleton::getInstance('FAsta');
+        $FAsta->store($EAsta);
+    }
 
 }
 ?>

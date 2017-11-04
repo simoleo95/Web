@@ -47,16 +47,10 @@ public function Object_array(EValutazione $p){
 }
 
 
-    public function media($username){
-            $FAsta=  USingleton::getInstance('FValutazione');
-            $query="SELECT * FROM valutazione WHERE personaV ='".$user."'";
-            $FAsta->execute($query);
-            $tmp=$FAsta->getObjects();
-            $somma = 10;
-            for($i=0;$i<count($tmp);$i++) {
-                $ris[]=$FAsta->load($tmp[$i]->getIDvalutazione());
-            }
-            return $ris;
+    public function Getmedia($username){
+            $FValutazione=  USingleton::getInstance('FValutazione');
+            return $FValutazione->media($username);
+
     }
 
     public function valuta($valutazione,$usernameV,$usernameC){
@@ -66,13 +60,12 @@ public function Object_array(EValutazione $p){
 		$this->setUtenteV($usernameV);
 		$this->setVoto($valutazione);	
 		
-      /*if($FValutazione->verificaValutazione($usernameV, $usernameC))
-        return "utente gia valutato"; 
-        else{*/
-        /*$FValutazione->valuta($valutazione,$usernameV,$usernameC);    
-        return "utete valutato";*/
-       // }
 
+    }
+
+    public function store($EValutazione){
+        $FValutazione=  USingleton::getInstance('FValutazione');
+        $FValutazione->store($EValutazione);
     }
 
     }

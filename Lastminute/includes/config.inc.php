@@ -5,7 +5,7 @@
     $config['mysql']['dbms']='localhost';
     $config['mysql']['dbname']='web';
     $config['mysql']['host']='root';
-    $config['mysql']['password']='mysql';
+    $config['mysql']['password']='';
 
     // SMARTY
     $config['debug']=false;
