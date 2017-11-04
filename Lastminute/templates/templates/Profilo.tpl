@@ -36,7 +36,9 @@
                     </ul>
                 </div>
 
-                <p style="text-align: center;">La media dei voti e': {$media}</p>
+                {if $media}<p style="text-align: center;">La media dei voti e': {$media}</p>
+                {else}<p style="text-align: center;">Non ci sono ancora valutazioni.</p>
+                {/if}
 
                 {if $creatore  eq $Utente->getUsername()} <p style="text-align: center; font-weight: bold;">Non puoi autovalutarti.</p> {/if}
                 {if !$creatore} <p style="text-align: center; font-weight: bold;"> Fai il login per valutare un utente. </p> {/if}

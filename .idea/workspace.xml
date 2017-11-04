@@ -2,19 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e1bf6216-67df-4474-abef-f8edc160635b" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lastminute/templates/templates_c'/32c407b2fc7148b92bfba969e1a6f99fc9ee97bf.file.modulo_registrazione.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lastminute/templates/templates_c'/63f5c4c6ff0cac3ae626d3b7ecd37172a4d841e7.file.insAnnuncio.tpl.php" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lastminute/Controller/CAsta.php" afterPath="$PROJECT_DIR$/Lastminute/Controller/CAsta.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lastminute/View/VMieAste.php" afterPath="$PROJECT_DIR$/Lastminute/View/VMieAste.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lastminute/includes/config.inc.php" afterPath="$PROJECT_DIR$/Lastminute/includes/config.inc.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lastminute/templates/templates/Profilo.tpl" afterPath="$PROJECT_DIR$/Lastminute/templates/templates/Profilo.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lastminute/templates/templates_c'/585f0928f5ae2fb3addfe98f747341f1eb070ed6.file.login.tpl.php" afterPath="$PROJECT_DIR$/Lastminute/templates/templates_c'/585f0928f5ae2fb3addfe98f747341f1eb070ed6.file.login.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lastminute/templates/templates_c'/761f5145a91760afe928f53d78ffc6c4b1733048.file.tasto_insAnnuncio.tpl.php" afterPath="$PROJECT_DIR$/Lastminute/templates/templates_c'/761f5145a91760afe928f53d78ffc6c4b1733048.file.tasto_insAnnuncio.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lastminute/templates/templates_c'/a3216d14c5a1df902384e9234de22e8834fe7bd6.file.shop_item.tpl.php" afterPath="$PROJECT_DIR$/Lastminute/templates/templates_c'/a3216d14c5a1df902384e9234de22e8834fe7bd6.file.shop_item.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lastminute/templates/templates_c'/ab9ac539a9cea29da2afdfa2cc6a91f979a50ba5.file.tasto_logout.tpl.php" afterPath="$PROJECT_DIR$/Lastminute/templates/templates_c'/ab9ac539a9cea29da2afdfa2cc6a91f979a50ba5.file.tasto_logout.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lastminute/templates/templates_c'/dd6e43cf686f3a96e755b73f1c85a12bf2fdc4ed.file.ricerca.tpl.php" afterPath="$PROJECT_DIR$/Lastminute/templates/templates_c'/dd6e43cf686f3a96e755b73f1c85a12bf2fdc4ed.file.ricerca.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lastminute/templates/templates_c'/e7e6566d21414ab7baa89c20c13fd5cb6ab6a1d4.file.home.tpl.php" afterPath="$PROJECT_DIR$/Lastminute/templates/templates_c'/e7e6566d21414ab7baa89c20c13fd5cb6ab6a1d4.file.home.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lastminute/templates/templates_c'/ec28609ace976623b38fb407da98f90a6ad1c882.file.tasto_insMieAste.tpl.php" afterPath="$PROJECT_DIR$/Lastminute/templates/templates_c'/ec28609ace976623b38fb407da98f90a6ad1c882.file.tasto_insMieAste.tpl.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lastminute/templates/templates_c'/ff4b8c1cd80c01cb49399df47f88b11f57be6fdf.file.Profilo.tpl.php" afterPath="$PROJECT_DIR$/Lastminute/templates/templates_c'/ff4b8c1cd80c01cb49399df47f88b11f57be6fdf.file.Profilo.tpl.php" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -49,9 +39,11 @@
       <file leaf-file-name="CAsta.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Lastminute/Controller/CAsta.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="129" column="43" lean-forward="false" selection-start-line="129" selection-start-column="43" selection-end-line="129" selection-end-column="43" />
-              <folding />
+            <state relative-caret-position="340">
+              <caret line="136" column="43" lean-forward="false" selection-start-line="136" selection-start-column="43" selection-end-line="136" selection-end-column="43" />
+              <folding>
+                <marker date="1509788939583" expanded="true" signature="7426:7586" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -60,8 +52,13 @@
         <entry file="file://$PROJECT_DIR$/Lastminute/View/VMieAste.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="408">
-              <caret line="27" column="45" lean-forward="true" selection-start-line="27" selection-start-column="45" selection-end-line="27" selection-end-column="45" />
-              <folding />
+              <caret line="35" column="45" lean-forward="false" selection-start-line="35" selection-start-column="45" selection-end-line="35" selection-end-column="45" />
+              <folding>
+                <marker date="1509788983685" expanded="true" signature="123:1309" ph="..." />
+                <marker date="1509788983685" expanded="true" signature="1352:1388" ph="..." />
+                <marker date="1509788983685" expanded="true" signature="1425:1553" ph="..." />
+                <marker date="1509788983685" expanded="true" signature="1593:1727" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -70,7 +67,7 @@
         <entry file="file://$PROJECT_DIR$/Lastminute/View/VAsta.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="289">
-              <caret line="86" column="9" lean-forward="true" selection-start-line="86" selection-start-column="9" selection-end-line="86" selection-end-column="9" />
+              <caret line="86" column="9" lean-forward="false" selection-start-line="86" selection-start-column="9" selection-end-line="86" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -80,26 +77,8 @@
         <entry file="file://$PROJECT_DIR$/Lastminute/View/View.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
-              <caret line="15" column="40" lean-forward="true" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
+              <caret line="15" column="40" lean-forward="false" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FValutazione.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Lastminute/Foundation/FValutazione.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="26" column="33" lean-forward="false" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
-              <folding>
-                <marker date="1508735960000" expanded="true" signature="434:517" ph="SELECT valut... valutazione" />
-                <marker date="1508735960000" expanded="true" signature="597:805" ph="..." />
-                <marker date="1508735960000" expanded="true" signature="624:749" ph="INSERT into valutazione... " />
-                <marker date="1508735960000" expanded="true" signature="1048:1070" ph="..." />
-                <marker date="1508735960000" expanded="true" signature="1805:1858" ph="SELECT * FRO... valutazione" />
-                <marker date="1508735960000" expanded="true" signature="2040:2173" ph="INSERT into valutazione... " />
-                <marker date="1508735960000" expanded="true" signature="2312:2369" ph="SELECT * FRO... valutazione" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -114,14 +93,32 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Fdb.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Lastminute/Foundation/Fdb.php">
+      <file leaf-file-name="home.tpl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Lastminute/templates/templates/home.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="38" column="56" lean-forward="false" selection-start-line="38" selection-start-column="43" selection-end-line="38" selection-end-column="56" />
-              <folding>
-                <marker date="1508735960000" expanded="true" signature="3322:3386" ph="INSERT INTO ${$this-&gt;_table}... " />
-              </folding>
+            <state relative-caret-position="2363">
+              <caret line="139" column="0" lean-forward="false" selection-start-line="139" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.tpl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Lastminute/templates/templates/login.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="65" lean-forward="false" selection-start-line="11" selection-start-column="65" selection-end-line="11" selection-end-column="65" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="shop_item.tpl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Lastminute/templates/templates/shop_item.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="237">
+              <caret line="34" column="71" lean-forward="true" selection-start-line="34" selection-start-column="71" selection-end-line="34" selection-end-column="71" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -129,11 +126,29 @@
       <file leaf-file-name="Profilo.tpl" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Lastminute/templates/templates/Profilo.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="41" column="80" lean-forward="false" selection-start-line="41" selection-start-column="80" selection-end-line="41" selection-end-column="80" />
+            <state relative-caret-position="291">
+              <caret line="39" column="88" lean-forward="true" selection-start-line="39" selection-start-column="88" selection-end-line="39" selection-end-column="88" />
               <folding>
+                <element signature="n#style#0;n#p#0;n#section#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#p#1;n#section#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#p#2;n#section#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#3;n#section#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <marker date="1509789247193" expanded="false" signature="2849:2868" ph="..." />
+                <marker date="1509789247193" expanded="false" signature="2975:2982" ph="«" />
+                <marker date="1509789247193" expanded="false" signature="3030:3037" ph="»" />
+                <marker date="1509789247193" expanded="false" signature="3075:3092" ph="..." />
+                <marker date="1509789247193" expanded="false" signature="3223:3258" ph="..." />
+                <marker date="1509789247193" expanded="false" signature="3418:3469" ph="data:" />
+                <marker date="1509789247193" expanded="false" signature="3572:3591" ph="..." />
+                <marker date="1509789247193" expanded="false" signature="3842:3855" ph="..." />
+                <marker date="1509789247193" expanded="false" signature="4508:4527" ph="..." />
+                <marker date="1509789247193" expanded="false" signature="4645:4652" ph="«" />
+                <marker date="1509789247193" expanded="false" signature="4704:4711" ph="»" />
+                <marker date="1509789247193" expanded="false" signature="4753:4770" ph="..." />
+                <marker date="1509789247193" expanded="false" signature="5072:5123" ph="data:" />
+                <marker date="1509789247193" expanded="false" signature="5233:5252" ph="..." />
+                <marker date="1509789247193" expanded="false" signature="5515:5528" ph="..." />
+                <marker date="1509789247193" expanded="false" signature="5630:5665" ph="..." />
               </folding>
             </state>
           </provider>
@@ -144,16 +159,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="204">
               <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="rating.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Lastminute/templates/templates/js/rating.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="986">
-              <caret line="58" column="27" lean-forward="false" selection-start-line="58" selection-start-column="23" selection-end-line="58" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -228,9 +233,9 @@
         <option value="$PROJECT_DIR$/Lastminute/templates/templates/css/ricerca.css" />
         <option value="$PROJECT_DIR$/Lastminute/templates/templates/js/rating.js" />
         <option value="$PROJECT_DIR$/Lastminute/Foundation/FValutazione.php" />
-        <option value="$PROJECT_DIR$/Lastminute/includes/config.inc.php" />
         <option value="$PROJECT_DIR$/Lastminute/Controller/CAsta.php" />
         <option value="$PROJECT_DIR$/Lastminute/View/VMieAste.php" />
+        <option value="$PROJECT_DIR$/Lastminute/includes/config.inc.php" />
         <option value="$PROJECT_DIR$/Lastminute/templates/templates/Profilo.tpl" />
       </list>
     </option>
@@ -665,12 +670,12 @@
       <workItem from="1508748006993" duration="586000" />
       <workItem from="1508752614822" duration="4532000" />
       <workItem from="1508763839145" duration="2540000" />
-      <workItem from="1509787677300" duration="1054000" />
+      <workItem from="1509787677300" duration="1603000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="96386000" />
+    <option name="totallyTimeSpent" value="96935000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -804,13 +809,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Lastminute/templates/templates/login.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="65" lean-forward="false" selection-start-line="11" selection-start-column="65" selection-end-line="11" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Lastminute/templates/templates/css/popup.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -914,13 +912,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Lastminute/templates/templates/shop_item.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="34" column="71" lean-forward="true" selection-start-line="34" selection-start-column="71" selection-end-line="34" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Lastminute/Foundation/FAsta.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -983,12 +974,12 @@
         <state relative-caret-position="765">
           <caret line="45" column="13" lean-forward="false" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
           <folding>
-            <marker date="1508735960000" expanded="true" signature="460:507" ph="SELECT * FRO... asta" />
-            <marker date="1508735960000" expanded="true" signature="993:1036" ph="SELECT * FRO... Asta" />
-            <marker date="1508735960000" expanded="true" signature="1486:1519" ph="SELECT * FRO... Asta" />
-            <marker date="1508735960000" expanded="true" signature="1486:1523" ph="SELECT * FRO... Asta" />
-            <marker date="1508735960000" expanded="true" signature="1486:1560" ph="SELECT * FRO... Asta" />
-            <marker date="1508735960000" expanded="true" signature="1583:1626" ph="SELECT * FRO... Asta" />
+            <marker date="1509788871722" expanded="true" signature="460:507" ph="SELECT * FRO... asta" />
+            <marker date="1509788871722" expanded="true" signature="993:1036" ph="SELECT * FRO... Asta" />
+            <marker date="1509788871722" expanded="true" signature="1486:1519" ph="SELECT * FRO... Asta" />
+            <marker date="1509788871722" expanded="true" signature="1486:1523" ph="SELECT * FRO... Asta" />
+            <marker date="1509788871722" expanded="true" signature="1486:1560" ph="SELECT * FRO... Asta" />
+            <marker date="1509788871722" expanded="true" signature="1583:1626" ph="SELECT * FRO... Asta" />
           </folding>
         </state>
       </provider>
@@ -998,16 +989,8 @@
         <state relative-caret-position="1088">
           <caret line="64" column="38" lean-forward="false" selection-start-line="64" selection-start-column="38" selection-end-line="64" selection-end-column="38" />
           <folding>
-            <marker date="1508735960000" expanded="true" signature="1124:1177" ph="SELECT * FRO... valutazione" />
+            <marker date="1509788871784" expanded="true" signature="1124:1177" ph="SELECT * FRO... valutazione" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Lastminute/templates/templates/home.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2363">
-          <caret line="139" column="0" lean-forward="false" selection-start-line="139" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1042,22 +1025,15 @@
         <state relative-caret-position="442">
           <caret line="26" column="33" lean-forward="false" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
           <folding>
-            <marker date="1508735960000" expanded="true" signature="434:517" ph="SELECT valut... valutazione" />
-            <marker date="1508735960000" expanded="true" signature="597:805" ph="..." />
-            <marker date="1508735960000" expanded="true" signature="624:749" ph="INSERT into valutazione... " />
-            <marker date="1508735960000" expanded="true" signature="1048:1070" ph="..." />
-            <marker date="1508735960000" expanded="true" signature="1805:1858" ph="SELECT * FRO... valutazione" />
-            <marker date="1508735960000" expanded="true" signature="2040:2173" ph="INSERT into valutazione... " />
-            <marker date="1508735960000" expanded="true" signature="2312:2369" ph="SELECT * FRO... valutazione" />
+            <marker date="1509788871847" expanded="true" signature="434:517" ph="SELECT valut... valutazione" />
+            <marker date="1509788871847" expanded="true" signature="597:805" ph="..." />
+            <marker date="1509788871847" expanded="true" signature="624:749" ph="INSERT into valutazione... " />
+            <marker date="1509788871847" expanded="true" signature="1048:1070" ph="..." />
+            <marker date="1509788871847" expanded="true" signature="1783:2094" ph="..." />
+            <marker date="1509788871847" expanded="true" signature="2164:2367" ph="..." />
+            <marker date="1509788871847" expanded="true" signature="2186:2319" ph="INSERT into valutazione... " />
+            <marker date="1509788871847" expanded="true" signature="2458:2515" ph="SELECT * FRO... valutazione" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Lastminute/includes/config.inc.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="39" lean-forward="false" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1072,7 +1048,7 @@
     <entry file="file://$PROJECT_DIR$/Lastminute/View/VAsta.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
-          <caret line="86" column="9" lean-forward="true" selection-start-line="86" selection-start-column="9" selection-end-line="86" selection-end-column="9" />
+          <caret line="86" column="9" lean-forward="false" selection-start-line="86" selection-start-column="9" selection-end-line="86" selection-end-column="9" />
           <folding />
         </state>
       </provider>
@@ -1080,34 +1056,91 @@
     <entry file="file://$PROJECT_DIR$/Lastminute/View/View.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
-          <caret line="15" column="40" lean-forward="true" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
+          <caret line="15" column="40" lean-forward="false" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Lastminute/Controller/CAsta.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="129" column="43" lean-forward="false" selection-start-line="129" selection-start-column="43" selection-end-line="129" selection-end-column="43" />
-          <folding />
+        <state relative-caret-position="340">
+          <caret line="136" column="43" lean-forward="false" selection-start-line="136" selection-start-column="43" selection-end-line="136" selection-end-column="43" />
+          <folding>
+            <marker date="1509788939583" expanded="true" signature="7426:7586" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Lastminute/View/VMieAste.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
-          <caret line="27" column="45" lean-forward="true" selection-start-line="27" selection-start-column="45" selection-end-line="27" selection-end-column="45" />
+          <caret line="35" column="45" lean-forward="false" selection-start-line="35" selection-start-column="45" selection-end-line="35" selection-end-column="45" />
+          <folding>
+            <marker date="1509788983685" expanded="true" signature="123:1309" ph="..." />
+            <marker date="1509788983685" expanded="true" signature="1352:1388" ph="..." />
+            <marker date="1509788983685" expanded="true" signature="1425:1553" ph="..." />
+            <marker date="1509788983685" expanded="true" signature="1593:1727" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lastminute/includes/config.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="39" lean-forward="false" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lastminute/templates/templates/home.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2363">
+          <caret line="139" column="0" lean-forward="false" selection-start-line="139" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lastminute/templates/templates/login.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="65" lean-forward="false" selection-start-line="11" selection-start-column="65" selection-end-line="11" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lastminute/templates/templates/shop_item.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="34" column="71" lean-forward="true" selection-start-line="34" selection-start-column="71" selection-end-line="34" selection-end-column="71" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Lastminute/templates/templates/Profilo.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="41" column="80" lean-forward="false" selection-start-line="41" selection-start-column="80" selection-end-line="41" selection-end-column="80" />
+        <state relative-caret-position="291">
+          <caret line="39" column="88" lean-forward="true" selection-start-line="39" selection-start-column="88" selection-end-line="39" selection-end-column="88" />
           <folding>
+            <element signature="n#style#0;n#p#0;n#section#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#1;n#section#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#2;n#section#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#3;n#section#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <marker date="1509789247193" expanded="false" signature="2849:2868" ph="..." />
+            <marker date="1509789247193" expanded="false" signature="2975:2982" ph="«" />
+            <marker date="1509789247193" expanded="false" signature="3030:3037" ph="»" />
+            <marker date="1509789247193" expanded="false" signature="3075:3092" ph="..." />
+            <marker date="1509789247193" expanded="false" signature="3223:3258" ph="..." />
+            <marker date="1509789247193" expanded="false" signature="3418:3469" ph="data:" />
+            <marker date="1509789247193" expanded="false" signature="3572:3591" ph="..." />
+            <marker date="1509789247193" expanded="false" signature="3842:3855" ph="..." />
+            <marker date="1509789247193" expanded="false" signature="4508:4527" ph="..." />
+            <marker date="1509789247193" expanded="false" signature="4645:4652" ph="«" />
+            <marker date="1509789247193" expanded="false" signature="4704:4711" ph="»" />
+            <marker date="1509789247193" expanded="false" signature="4753:4770" ph="..." />
+            <marker date="1509789247193" expanded="false" signature="5072:5123" ph="data:" />
+            <marker date="1509789247193" expanded="false" signature="5233:5252" ph="..." />
+            <marker date="1509789247193" expanded="false" signature="5515:5528" ph="..." />
+            <marker date="1509789247193" expanded="false" signature="5630:5665" ph="..." />
           </folding>
         </state>
       </provider>
