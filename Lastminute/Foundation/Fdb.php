@@ -48,9 +48,9 @@
         // Restituisce un array di oggetti
         public function getObjects() {
 			$users =null;
-            $numero_colonne=$this->result->columnCount();
+            $numero_righe=$this->result->rowCount();
 			
-            if ($numero_colonne == 0)
+            if ($numero_righe == 0)
                 return  $this->result=false;
             else {
                while($user=$this->result->fetchObject($this->result_class)) {

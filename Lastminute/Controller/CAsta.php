@@ -36,6 +36,8 @@
             $ECatalogo=  USingleton::getInstance('ECatalogo');
             $ris=$ECatalogo->ricercafulltext($fields);
             $VRicerca=  USingleton::getInstance('VRicerca');
+			$ajax=false;
+			$VRicerca->impostaDati('ajax',$ajax);
             $VRicerca->impostaDati('dati',$ris);
             return $VRicerca->processaTemplate();
         }
@@ -207,6 +209,8 @@
             $ris=$ECatalogo->seleziona($group);
             $VRicerca=  USingleton::getInstance('VRicerca');
             $VRicerca->impostaDati('dati',$ris);
+			$ajax=false;
+			$VRicerca->impostaDati('ajax',$ajax);
             return $VRicerca->processaTemplate();
             
             
